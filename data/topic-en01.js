@@ -90,7 +90,7 @@ window.LEARN_TOPIC_EN01 = {
       "en": "A Paper 2 favourite: given one root, find the value of another expression. Two steps only:\n(1) write down $a\\alpha^{2}+b\\alpha+c=0$;\n(2) build the target expression as a multiple of $\\alpha^{2}$ (or $a\\alpha^{2}$) and substitute.\nExample: {{math:0}}\nThere is no need to find the value of $\\alpha$ itself (it is usually irrational) — the root relation is enough.\nAnother example (building $6\\beta^{2}$): {{math:1}}"
      },
      "math": [
-      "\\alpha^{2}-4\\alpha-2=0\n\\Rightarrow \\alpha^{2}-4\\alpha=2\n\\Rightarrow 3+8\\alpha-2\\alpha^{2}=3-2(2)=-1",
+      "\\alpha^{2}-4\\alpha-2=0\n\\Rightarrow \\alpha^{2}-4\\alpha=2\n\\Rightarrow 3+8\\alpha-2\\alpha^{2}=3-2(\\alpha^{2}-4\\alpha)=3-2(2)=-1",
       "3\\beta^{2}-5\\beta-7=0\n\\Rightarrow 3\\beta^{2}=5\\beta+7\n\\Rightarrow 6\\beta^{2}=10\\beta+14\n\\Rightarrow 4+10\\beta-6\\beta^{2}=-10"
      ],
      "vocab": [
