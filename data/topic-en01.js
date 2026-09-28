@@ -192,7 +192,7 @@ window.LEARN_TOPIC_EN01 = {
          "zh": "第 3 步 · 令各因式為零，寫出全部根",
          "en": "Step 3 · Set each factor to zero and state both roots"
         },
-        "math": "3x-2=0\\ \\text{或}\\ x-4=0\\ \\Rightarrow\\ x=\\frac{2}{3}\\ \\text{或}\\ x=4",
+        "math": "3x-2=0\\ \\text{or}\\ x-4=0\\ \\Rightarrow\\ x=\\frac{2}{3}\\ \\text{or}\\ x=4",
         "zh": "分別解得 $x=\\frac{2}{3}$ 或 $x=4$。必須寫齊「或 (or)」前後的兩個根，缺一不可。",
         "en": "Solve to obtain $x=\\frac{2}{3}$ or $x=4$. Both roots connected by “or” must be clearly stated.",
         "marking": "(1A)"
@@ -279,7 +279,7 @@ window.LEARN_TOPIC_EN01 = {
          "zh": "第 3 步 · 各因式等於零，寫出兩根",
          "en": "Step 3 · Set each factor to zero and state both roots"
         },
-        "math": "x=0\\ \\text{或}\\ x+8=0\\ \\Rightarrow\\ x=0\\ \\text{或}\\ x=-8",
+        "math": "x=0\\ \\text{or}\\ x+8=0\\ \\Rightarrow\\ x=0\\ \\text{or}\\ x=-8",
         "zh": "得出 $x=0$ 或 $x=-8$。兩個根必須完整寫出，只寫一個會失去答案分。",
         "en": "Obtain $x=0$ or $x=-8$. Both roots must be stated clearly; omitting either loses the answer mark.",
         "marking": "(1A)"
@@ -567,7 +567,7 @@ window.LEARN_TOPIC_EN01 = {
           "zh": "第 3 步 · 各自等於 0",
           "en": "Step 3 · Set each bracket to 0"
          },
-         "math": "x-3t=0\\ \\text{或}\\ 2x-8t=0\\ \\Rightarrow\\ x=3t\\ \\text{或}\\ x=4t",
+         "math": "x-3t=0\\ \\text{or}\\ 2x-8t=0\\ \\Rightarrow\\ x=3t\\ \\text{or}\\ x=4t",
          "zh": "得出 $x=3t$ 或 $x=4t$，答案選 D。",
          "en": "x = 3t or x = 4t. Answer: D.",
          "highlight": [
@@ -651,7 +651,7 @@ window.LEARN_TOPIC_EN01 = {
           "zh": "第 3 步 · 各自等於 0",
           "en": "Step 3 · Set each bracket to 0"
          },
-         "math": "x+4h=0\\ \\text{或}\\ 2x-2h=0\\ \\Rightarrow\\ x=-4h\\ \\text{或}\\ x=h",
+         "math": "x+4h=0\\ \\text{or}\\ 2x-2h=0\\ \\Rightarrow\\ x=-4h\\ \\text{or}\\ x=h",
          "zh": "得出 $x=-4h$ 或 $x=h$，答案選 C。",
          "en": "x = -4h or x = h. Answer: C.",
          "highlight": [
@@ -820,7 +820,7 @@ window.LEARN_TOPIC_EN01 = {
           "zh": "第 3 步 · 讀出兩個 $k$",
           "en": "Step 3 · Solve for k"
          },
-         "math": "k=-6\\ \\text{或}\\ k=18",
+         "math": "k=-6\\ \\text{or}\\ k=18",
          "zh": "所以 $k=-6$ 或 $k=18$，答案選 C。",
          "en": "k = -6 or k = 18. Answer: C.",
          "highlight": [
