@@ -31,8 +31,8 @@
     }
    ],
    "warn": {
-    "zh": "答案一定要寫齊所有根（「or」前後都要），少寫一個就是失一分。",
-    "en": "Always write every root (both sides of “or”); leaving one out costs a mark."
+    "zh": "計算機保底口訣：解二次方程必用 Casio fx-50FH II【FMLA 01】或 fx-3650P II【Prog 1】，輸入 $a$、$b$、$c$ 求根。逆推因式口訣：分數根 $x=\\frac{p}{q}$ 對應因式 $(qx-p)$；整數根 $x=k$ 對應 $(x-k)$。寫出因式過渡步穩拿 1M 方法分！答案務必寫齊所有根（「or」前後都要）。",
+    "en": "Calculator safety net: use FMLA 01 on Casio fx-50FH II, or run Prog 1 on fx-3650P II; enter $a$, $b$, $c$ to obtain the roots. Reverse rule: a fraction root $x=\\frac{p}{q}$ gives the factor $(qx-p)$; an integer root $x=k$ gives $(x-k)$. Writing the factored step secures the 1M method mark! Always write every root on both sides of “or”."
    }
   },
   {

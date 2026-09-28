@@ -19,7 +19,8 @@
     "C": "$x=2t$ or $x=6t$",
     "D": "$x=3t$ or $x=4t$"
    },
-   "review": null
+   "review": null,
+   "answer": "D"
   },
   {
    "id": "eph-en01-m2",
@@ -40,7 +41,8 @@
     "C": "$x=-4h$ or $x=h$",
     "D": "$x=-6h$ or $x=8h$"
    },
-   "review": null
+   "review": null,
+   "answer": "C"
   },
   {
    "id": "eph-en01-m4",
@@ -61,7 +63,8 @@
     "C": "$7$",
     "D": "$9$"
    },
-   "review": null
+   "review": null,
+   "answer": "B"
   },
   {
    "id": "eph-en01-m6",
@@ -82,7 +85,8 @@
     "C": "$-6$ or $18$",
     "D": "$-12$ or $9$"
    },
-   "review": null
+   "review": null,
+   "answer": "C"
   },
   {
    "id": "eph-en01-m3",
