@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Endeavour · S.5 課後補底（Lesson 1）</title>
+<meta name="description" content="Endeavour 是 S.5 課後補底班的專屬溫習站：只集中課堂討論過的題目（來自 WS05），先看概念卡，再逐題逐步拆題解，可以逐題重做。無計時、不計分，中英雙語可切換。">
+<link rel="stylesheet" href="vendor/katex/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="index">
+
+<div class="topbar">
+  <div class="inner">
+    <div class="brand">
+      <span class="l-zh">Endeavour 補底站<small>S.5 課後補底 · 逐課擊破</small></span>
+      <span class="l-en">Endeavour<small>S.5 after-school tutorial · one lesson at a time</small></span>
+    </div>
+    <div class="spacer"></div>
+    <span data-lang-slot></span>
+    <a id="wrong" class="btn btn-sm btn-ghost" href="wrong.html"><span id="wrong-count"><span class="l-zh">弱點升級庫</span><span class="l-en">Weak-spot list</span></span></a>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="hero">
+    <h1>
+      <span class="l-zh">課堂討論過的題目，逐題拆給你看</span>
+      <span class="l-en">The questions we discussed in class, taken apart one by one</span>
+    </h1>
+    <p id="site-stats"><span class="l-zh">載入中…</span><span class="l-en">Loading…</span></p>
+  </div>
+
+  <div class="card safety-note">
+    <span class="l-zh"><b>這裡沒有老師打分，也沒有排名。</b>
+    答錯只代表「還未學到」，不代表你不行；進度只屬於你，隨時可以重新開始。</span>
+    <span class="l-en"><b>Nobody marks you here, and there is no ranking.</b>
+    A wrong answer only means "not yet", not that you can't do it. Your progress belongs to you
+    alone, and you can always start over.</span>
+    <div class="pre-actions">
+      <a class="btn btn-sm btn-primary" href="start.html">
+        <span class="l-zh">第一次來？先看「開始之前」（3 分鐘）→</span>
+        <span class="l-en">First time here? Read "Before you start" (3 minutes) →</span>
+      </a>
+    </div>
+  </div>
+
+  <button id="continue" class="btn btn-primary btn-block hidden" style="margin-bottom:6px">
+    <span id="continue-label"></span>
+  </button>
+
+  <div id="topics"></div>
+
+
+  <div class="section-title"><span class="l-zh">設定</span><span class="l-en">Settings</span></div>
+  <div class="card">
+    <div class="small muted">
+      <span class="l-zh">進度只存在你手上這部裝置（瀏覽器）裡，換機或清除瀏覽器資料就會重設。
+      這個網站與 DSE Pass 自學站的進度完全分開，互相不影響。</span>
+      <span class="l-en">Your progress is stored only in this browser on this device, and is reset if
+      you change device or clear browsing data. This site is completely separate from the
+      DSE Pass site and the two do not affect each other.</span>
+    </div>
+    <div class="row" style="margin-top:12px">
+      <button id="reset" class="btn btn-sm btn-ghost">
+        <span class="l-zh">清除本機進度</span><span class="l-en">Clear progress on this device</span>
+      </button>
+      <a class="btn btn-sm btn-ghost" href="start.html">
+        <span class="l-zh">開始之前（使用指南）</span><span class="l-en">Before you start (guide)</span>
+      </a>
+      <a class="btn btn-sm btn-ghost" href="https://math-lov.github.io/dse-pass/">
+        <span class="l-zh">返回 DSE Pass</span><span class="l-en">Back to DSE Pass</span>
+      </a>
+    </div>
+  </div>
+
+  <p class="small muted center" style="margin:18px 0 0">
+    <span class="l-zh">題目取自課堂教材（WS05 相關）及歷屆文憑試試題，僅供本班同學溫習使用。</span>
+    <span class="l-en">The questions come from our lesson materials (WS05-related) and past HKDSE papers; for our own
+    students' revision only.</span>
+  </p>
+</div>
+
+<!-- KaTeX（自托管，defer）＋ 語言層 -->
+<script defer src="vendor/katex/katex.min.js"></script>
+<script defer src="vendor/katex/auto-render.min.js"></script>
+<script defer src="assets/i18n.js"></script>
+<script>
+  // 快取戳：由 tools/make_learn_data.py 依內容 hash 寫入（內容一變，?v= 就變 → 一定取到新檔）
+  window.__V = "59eec447";
+  document.write('<script src="data/index.js?v=' + window.__V + '"><\/script>');
+  document.write('<script src="assets/app.js?v=' + window.__V + '"><\/script>');
+</script>
+</body>
+</html>

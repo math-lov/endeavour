@@ -1,0 +1,89 @@
+{
+ "version": 1,
+ "_note": "Endeavour（S.5 課後補底班）：只收課堂討論過的題目，內容與 DSE Pass 可以重複。",
+ "stages": [
+  {
+   "id": 1,
+   "name": {
+    "zh": "S.5 課後補底",
+    "en": "S.5 After-school Tutorial"
+   },
+   "note": {
+    "zh": "每次課堂一節，只做課堂討論過的題目。",
+    "en": "One lesson per tutorial session, covering only the questions discussed in class."
+   }
+  }
+ ],
+ "topics": [
+  {
+   "id": "en01",
+   "stage": 1,
+   "unit": 5,
+   "subtopic": "quadratic-equations",
+   "source": "S.K.H. Bishop Baker Secondary School · S.5 After-School Tutorial · Endeavour Lesson 1（WS05 相關）",
+   "name": {
+    "zh": "Lesson 1 · 一元二次方程（解方程 ＋ 判別式）",
+    "en": "Lesson 1 · Quadratic equations (solving & discriminant)"
+   },
+   "intro": {
+    "zh": "這一節課堂討論三件事：① 用因式分解解一元二次方程（包括兩邊都有 $x$ 或同一個括號的題目）；② 已知方程的一個根，求另一條式子的值；③ 用判別式 $\\Delta=b^{2}-4ac$ 判斷實根／等根／無實根，並求 $k$ 的範圍。十題全部來自課堂教材（WS05）及歷屆文憑試，做完之後可以逐題重做。",
+    "en": "This lesson covers three things: (1) solving quadratic equations by factorisation, including equations with $x$ (or the same bracket) on both sides; (2) using a given root to evaluate another expression; (3) using the discriminant $\\Delta=b^{2}-4ac$ to decide real / equal / no real roots and to find the range of $k$. All ten questions come from our lesson materials (WS05) and past HKDSE papers, and every question can be redone."
+   },
+   "cmdHints": [
+    {
+     "en": "Solve the equation",
+     "zh": "解方程（「or」前後所有根都要寫）"
+    },
+    {
+     "en": "Let $k$ be a constant",
+     "zh": "$k$ 為常數（答案會是 $k$ 的式子）"
+    },
+    {
+     "en": "has real roots",
+     "zh": "有實根 → $\\Delta\\ge 0$（有等號）"
+    },
+    {
+     "en": "has equal roots",
+     "zh": "有等根 → $\\Delta=0$"
+    },
+    {
+     "en": "find the range of values of $k$",
+     "zh": "求 $k$ 的範圍 → 寫一條不等式"
+    }
+   ],
+   "lessons": [
+    {
+     "id": "en01-1",
+     "title": {
+      "zh": "Lesson 1（課堂 10 題）",
+      "en": "Lesson 1 (the 10 class questions)"
+     },
+     "conceptCards": [
+      "en1-c1",
+      "en1-c2",
+      "en1-c3"
+     ],
+     "longQuestionIds": [
+      "eph-en01-q1",
+      "eph-en01-q2",
+      "eph-en01-q3",
+      "eph-en01-q4"
+     ],
+     "mcPages": [
+      [
+       "eph-en01-m1",
+       "eph-en01-m2",
+       "eph-en01-m4"
+      ],
+      [
+       "eph-en01-m6",
+       "eph-en01-m3",
+       "eph-en01-m5"
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "assessments": []
+}

@@ -1,0 +1,106 @@
+{
+ "cards": [
+  {
+   "id": "en1-c1",
+   "topic": "en01",
+   "title": {
+    "zh": "解一元二次方程：三步曲，記住不要約走 $x$",
+    "en": "Solving a quadratic equation: three moves — and never cancel $x$"
+   },
+   "body": {
+    "zh": "解一元二次方程（factor method）永遠是這三步：\n① 展開，並把所有項搬去一邊，令右邊 $=0$；\n② 抽公因式或十字相乘；\n③ 每個因子各自 $=0$，寫出**全部**根。\n例子：{{math:0}}\n最常見的失分：方程兩邊都有 $x$（或同一個括號）時**兩邊約走它** —— 那等於假設它不等於 0，會少一個根：{{math:1}}",
+    "en": "Solving a quadratic equation by the factor method is always these three moves:\n(1) expand and move every term to one side so that the right-hand side is 0;\n(2) factor out the common factor or use the cross-method;\n(3) set each factor to 0 and write **all** the roots.\nExample: {{math:0}}\nThe classic loss of marks: when both sides contain $x$ (or the same bracket), cancelling it assumes it is not 0 and throws a root away: {{math:1}}"
+   },
+   "math": [
+    "x(14-3x)=8\\Rightarrow 3x^{2}-14x+8=0\\Rightarrow(3x-2)(x-4)=0\\Rightarrow x=\\frac{2}{3}\\text{ or }4",
+    "x(2x+3)=x(x-5)\n\\Rightarrow x^{2}+8x=0\n\\Rightarrow x(x+8)=0\n\\Rightarrow x=0\\text{ or }-8"
+   ],
+   "vocab": [
+    {
+     "en": "factor method",
+     "zh": "因式分解法"
+    },
+    {
+     "en": "root",
+     "zh": "根"
+    },
+    {
+     "en": "cancel",
+     "zh": "約走（兩邊同除）"
+    }
+   ],
+   "warn": {
+    "zh": "答案一定要寫齊所有根（「or」前後都要），少寫一個就是失一分。",
+    "en": "Always write every root (both sides of “or”); leaving one out costs a mark."
+   }
+  },
+  {
+   "id": "en1-c2",
+   "topic": "en01",
+   "title": {
+    "zh": "題目說「$\\alpha$ 是方程的一個根」＝把 $\\alpha$ 代入等於 0",
+    "en": "“$\\alpha$ is a root” means substituting it gives 0"
+   },
+   "body": {
+    "zh": "卷二最愛考這種題：已知一個根，要求另一條式子的值。做法只有兩步：\n① 寫下 $a\\alpha^{2}+b\\alpha+c=0$；\n② 把目標式砌成 $\\alpha^{2}$（或 $a\\alpha^{2}$）的倍數，再代入。\n例子：{{math:0}}\n**不需要**求出 $\\alpha$ 的數值（它通常是無理數）；用「根」這個關係就夠。\n另一個例子（砌出 $6\\beta^{2}$）：{{math:1}}",
+    "en": "A Paper 2 favourite: given one root, find the value of another expression. Two steps only:\n(1) write down $a\\alpha^{2}+b\\alpha+c=0$;\n(2) build the target expression as a multiple of $\\alpha^{2}$ (or $a\\alpha^{2}$) and substitute.\nExample: {{math:0}}\nThere is no need to find the value of $\\alpha$ itself (it is usually irrational) — the root relation is enough.\nAnother example (building $6\\beta^{2}$): {{math:1}}"
+   },
+   "math": [
+    "\\alpha^{2}-4\\alpha-2=0\\Rightarrow\\alpha^{2}-4\\alpha=2\\Rightarrow 3+8\\alpha-2\\alpha^{2}=3-2(2)=-1",
+    "3\\beta^{2}-5\\beta-7=0\\Rightarrow 3\\beta^{2}=5\\beta+7\\Rightarrow 6\\beta^{2}=10\\beta+14\\Rightarrow 4+10\\beta-6\\beta^{2}=-10"
+   ],
+   "vocab": [
+    {
+     "en": "root of an equation",
+     "zh": "方程的根"
+    },
+    {
+     "en": "substitute",
+     "zh": "代入"
+    }
+   ],
+   "warn": {
+    "zh": "砌倍數時要整條等式乘（包括常數項）：$3\\beta^{2}=5\\beta+7$ 乘 2 是 $6\\beta^{2}=10\\beta+14$，不是 $6\\beta^{2}=10\\beta+7$。",
+    "en": "Multiply the whole relation, constants included: $3\\beta^{2}=5\\beta+7$ doubled is $6\\beta^{2}=10\\beta+14$, not $6\\beta^{2}=10\\beta+7$."
+   }
+  },
+  {
+   "id": "en1-c3",
+   "topic": "en01",
+   "title": {
+    "zh": "判別式 $\\Delta=b^{2}-4ac$：有實根／等根／無實根",
+    "en": "The discriminant $\\Delta=b^{2}-4ac$: real, equal or no real roots"
+   },
+   "body": {
+    "zh": "先寫成 $ax^{2}+bx+c=0$，再算 $\\Delta=b^{2}-4ac$：{{math:0}}\n題目字眼對照：\n· 「有實根」→ $\\Delta\\ge 0$（包含等根，所以有等號）\n· 「有兩個相異實根」→ $\\Delta>0$\n· 「有等根／重根」→ $\\Delta=0$\n· 「無實根」→ $\\Delta<0$\n求 $k$（或 $r$）的範圍，就是解一條不等式：{{math:1}}",
+    "en": "Write the equation as $ax^{2}+bx+c=0$, then compute $\\Delta=b^{2}-4ac$: {{math:0}}\nMatching the wording:\n· “has real roots” → $\\Delta\\ge 0$ (equal roots count, so the equality is included)\n· “has two distinct real roots” → $\\Delta>0$\n· “has equal (repeated) roots” → $\\Delta=0$\n· “has no real roots” → $\\Delta<0$\nFinding the range of $k$ (or $r$) is simply solving an inequality: {{math:1}}"
+   },
+   "math": [
+    "\\Delta>0:\\ \\text{two distinct real roots};\\quad\\Delta=0:\\ \\text{equal roots};\\quad\\Delta<0:\\ \\text{no real roots}",
+    "2x^{2}-4x+k=1\\Rightarrow 2x^{2}-4x+(k-1)=0;\\ \\Delta=16-8(k-1)\\ge 0\\Rightarrow k\\le 3"
+   ],
+   "vocab": [
+    {
+     "en": "discriminant",
+     "zh": "判別式"
+    },
+    {
+     "en": "real roots",
+     "zh": "實根"
+    },
+    {
+     "en": "equal roots",
+     "zh": "等根／重根"
+    },
+    {
+     "en": "range of values",
+     "zh": "取值範圍"
+    }
+   ],
+   "warn": {
+    "zh": "最常見錯誤：忘記把方程搬成「$=0$」的標準形，令常數項寫錯（例如 $k=1$ 要搬過去變成 $k-1$）。",
+    "en": "The most common mistake: forgetting to rearrange into the “$=0$” standard form, so the constant term is wrong (e.g. $k=1$ must move across to become $k-1$)."
+   }
+  }
+ ]
+}

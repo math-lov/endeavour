@@ -1,0 +1,212 @@
+{
+ "questions": [
+  {
+   "id": "eph-en01-m1",
+   "type": "mc",
+   "topic": "en01",
+   "unit": 1,
+   "subtopic": "quadratic-equations",
+   "difficulty": 3,
+   "code": "EN1-M1",
+   "source": "EPH WS05 Q8 · [HKDSE 2022 Paper 2 Q4]",
+   "stem": {
+    "en": "Let $t$ be a constant. Solve the equation $(x-2t)(x-3t)=(6t-x)(x-3t)$.",
+    "zh": "設 $t$ 為常數。解方程 $(x-2t)(x-3t)=(6t-x)(x-3t)$。"
+   },
+   "options": {
+    "A": "$x=3t$",
+    "B": "$x=6t$",
+    "C": "$x=2t$ or $x=6t$",
+    "D": "$x=3t$ or $x=4t$"
+   },
+   "review": null
+  },
+  {
+   "id": "eph-en01-m2",
+   "type": "mc",
+   "topic": "en01",
+   "unit": 1,
+   "subtopic": "quadratic-equations",
+   "difficulty": 3,
+   "code": "EN1-M2",
+   "source": "EPH WS05 Q9",
+   "stem": {
+    "en": "Let $h$ be a constant. Solve the equation $(x+6h)(x+4h)=(8h-x)(x+4h)$.",
+    "zh": "設 $h$ 為常數。解方程 $(x+6h)(x+4h)=(8h-x)(x+4h)$。"
+   },
+   "options": {
+    "A": "$x=8h$",
+    "B": "$x=-4h$",
+    "C": "$x=-4h$ or $x=h$",
+    "D": "$x=-6h$ or $x=8h$"
+   },
+   "review": null
+  },
+  {
+   "id": "eph-en01-m4",
+   "type": "mc",
+   "topic": "en01",
+   "unit": 1,
+   "subtopic": "quadratic-equations",
+   "difficulty": 3,
+   "code": "EN1-M4",
+   "source": "EPH WS05 Q10 · [HKDSE 2015 Paper 2 Q7]",
+   "stem": {
+    "en": "If $\\alpha$ is a root of the equation $x^{2}-4x-2=0$, then $3+8\\alpha-2\\alpha^{2}=$",
+    "zh": "若 $\\alpha$ 是方程 $x^{2}-4x-2=0$ 的一個根，則 $3+8\\alpha-2\\alpha^{2}=$"
+   },
+   "options": {
+    "A": "$-3$",
+    "B": "$-1$",
+    "C": "$7$",
+    "D": "$9$"
+   },
+   "review": null
+  },
+  {
+   "id": "eph-en01-m6",
+   "type": "mc",
+   "topic": "en01",
+   "unit": 1,
+   "subtopic": "quadratic-equations",
+   "difficulty": 2,
+   "code": "EN1-M6",
+   "source": "EPH WS05 Q12 · [HKDSE 2016 Paper 2 Q8]",
+   "stem": {
+    "en": "If $k$ is a constant such that the quadratic equation $3x^{2}-kx+k+9=0$ has equal roots, then $k=$",
+    "zh": "設 $k$ 為常數。若二次方程 $3x^{2}-kx+k+9=0$ 有等根，則 $k=$"
+   },
+   "options": {
+    "A": "$-3$",
+    "B": "$12$",
+    "C": "$-6$ or $18$",
+    "D": "$-12$ or $9$"
+   },
+   "review": null
+  },
+  {
+   "id": "eph-en01-m3",
+   "type": "mc",
+   "topic": "en01",
+   "unit": 5,
+   "subtopic": "quadratic-equations",
+   "difficulty": 2,
+   "code": "EN1-M3",
+   "source": "WS05 課堂題 · [HKDSE Sample Paper 2 Q6]",
+   "stem": {
+    "en": "Let $b$ be a constant. Solve the equation $(x-b)(x-b-8)=(x-b)$.",
+    "zh": "設 $b$ 為常數。解方程 $(x-b)(x-b-8)=(x-b)$。"
+   },
+   "options": {
+    "A": "$x=b+8$",
+    "B": "$x=b+9$",
+    "C": "$x=b$ or $x=b+8$",
+    "D": "$x=b$ or $x=b+9$"
+   },
+   "answer": "D",
+   "review": null
+  },
+  {
+   "id": "eph-en01-m5",
+   "type": "mc",
+   "topic": "en01",
+   "unit": 5,
+   "subtopic": "quadratic-equations",
+   "difficulty": 3,
+   "code": "EN1-M5",
+   "source": "WS05 課堂題 · [HKDSE 2015 Paper 2 Q7 同款]",
+   "stem": {
+    "en": "If $\\beta$ is a root of the equation $3x^{2}-5x-7=0$, then $4+10\\beta-6\\beta^{2}=$",
+    "zh": "若 $\\beta$ 是方程 $3x^{2}-5x-7=0$ 的一個根，則 $4+10\\beta-6\\beta^{2}=$"
+   },
+   "options": {
+    "A": "$-10$",
+    "B": "$-3$",
+    "C": "$11$",
+    "D": "$18$"
+   },
+   "answer": "A",
+   "review": null
+  },
+  {
+   "id": "eph-en01-q1",
+   "type": "long",
+   "topic": "en01",
+   "unit": 5,
+   "subtopic": "quadratic-equations",
+   "difficulty": 2,
+   "code": "EN1-Q1",
+   "source": "WS05 課堂題（Basic Skills · 解方程）",
+   "stem": {
+    "en": "Solve $x(14-3x)=8$.",
+    "zh": "解 $x(14-3x)=8$。"
+   },
+   "kind": "short",
+   "marks": 3,
+   "review": null
+  },
+  {
+   "id": "eph-en01-q2",
+   "type": "long",
+   "topic": "en01",
+   "unit": 5,
+   "subtopic": "quadratic-equations",
+   "difficulty": 2,
+   "code": "EN1-Q2",
+   "source": "WS05 課堂題（Basic Skills · 解方程）",
+   "stem": {
+    "en": "Solve $x(2x+3)=x(x-5)$.",
+    "zh": "解 $x(2x+3)=x(x-5)$。"
+   },
+   "kind": "short",
+   "marks": 3,
+   "review": null
+  },
+  {
+   "id": "eph-en01-q3",
+   "type": "long",
+   "topic": "en01",
+   "unit": 5,
+   "subtopic": "quadratic-equations",
+   "difficulty": 2,
+   "code": "EN1-Q3",
+   "source": "WS05 課堂題 · [HKDSE Practice Paper 1 Q17(b)(ii)]（2 marks）",
+   "stem": {
+    "en": "Find the range of values of $r$ such that the quadratic equation $x^{2}-4x+9=r$ has real roots.",
+    "zh": "求 $r$ 的取值範圍，使二次方程 $x^{2}-4x+9=r$ 有實根。"
+   },
+   "marks": 2,
+   "review": null
+  },
+  {
+   "id": "eph-en01-q4",
+   "type": "long",
+   "topic": "en01",
+   "unit": 5,
+   "subtopic": "quadratic-equations",
+   "difficulty": 2,
+   "code": "EN1-Q4",
+   "source": "WS05 課堂題（判別式：求 $k$ 的範圍）",
+   "stem": {
+    "en": "If each of the following quadratic equations has real roots, find the range of values of $k$.",
+    "zh": "若以下每個二次方程都有實根，求 $k$ 的取值範圍。"
+   },
+   "parts": [
+    {
+     "label": "(a)",
+     "text": "$x^{2}+8x-k=0$",
+     "en": "$x^{2}+8x-k=0$",
+     "marks": 2
+    },
+    {
+     "label": "(b)",
+     "text": "$2x^{2}-4x+k=1$",
+     "en": "$2x^{2}-4x+k=1$",
+     "marks": 2
+    }
+   ],
+   "marks": 4,
+   "review": null
+  }
+ ]
+}

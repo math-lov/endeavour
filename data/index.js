@@ -1,0 +1,134 @@
+// 自動生成，請勿手改（來源：data/learn/；重新生成：python tools/make_learn_data.py）
+window.LEARN_INDEX = {
+ "version": 1,
+ "stages": [
+  {
+   "id": 1,
+   "name": {
+    "zh": "S.5 課後補底",
+    "en": "S.5 After-school Tutorial"
+   },
+   "note": {
+    "zh": "每次課堂一節，只做課堂討論過的題目。",
+    "en": "One lesson per tutorial session, covering only the questions discussed in class."
+   }
+  }
+ ],
+ "topics": [
+  {
+   "id": "en01",
+   "stage": 1,
+   "unit": 5,
+   "name": {
+    "zh": "Lesson 1 · 一元二次方程（解方程 ＋ 判別式）",
+    "en": "Lesson 1 · Quadratic equations (solving & discriminant)"
+   },
+   "intro": {
+    "zh": "這一節課堂討論三件事：① 用因式分解解一元二次方程（包括兩邊都有 $x$ 或同一個括號的題目）；② 已知方程的一個根，求另一條式子的值；③ 用判別式 $\\Delta=b^{2}-4ac$ 判斷實根／等根／無實根，並求 $k$ 的範圍。十題全部來自課堂教材（WS05）及歷屆文憑試，做完之後可以逐題重做。",
+    "en": "This lesson covers three things: (1) solving quadratic equations by factorisation, including equations with $x$ (or the same bracket) on both sides; (2) using a given root to evaluate another expression; (3) using the discriminant $\\Delta=b^{2}-4ac$ to decide real / equal / no real roots and to find the range of $k$. All ten questions come from our lesson materials (WS05) and past HKDSE papers, and every question can be redone."
+   },
+   "source": "S.K.H. Bishop Baker Secondary School · S.5 After-School Tutorial · Endeavour Lesson 1（WS05 相關）",
+   "stats": {
+    "mc": 6,
+    "long": 4,
+    "cards": 3,
+    "pages": 2
+   },
+   "lessonIds": [
+    "en01-1"
+   ]
+  }
+ ],
+ "assessments": [],
+ "promptTemplates": {
+  "version": 1,
+  "_note": "問 AI 提問模板（中英各一份）：前端所有 prompt 都由這份模板 + 題目資料即時生成，改一次＝全站更新。硬規則：新增課題不用改這裡；但改動這份檔案要跑 tools/learn_check.py（I6 會驗欄位齊全）。",
+  "zh": {
+   "role": "你是一位香港中學文憑試（DSE）數學科的補底老師，專門幫助基礎較弱的學生。請用繁體中文回答，語氣要鼓勵、具體，不要長篇大論。",
+   "student": "我是香港 DSE 數學科考生，正在用「自學追上站」自學。",
+   "headings": {
+    "source": "題目出處",
+    "question": "題目",
+    "items": "選項",
+    "parts": "分題",
+    "focus": "我卡住的地方",
+    "existing": "網站已經有的解說（請不要重複，直接針對我不明白的地方）",
+    "doubt": "我的具體疑問",
+    "requirements": "請你這樣做",
+    "format": "回答格式"
+   },
+   "focusAll": "整題（由第一步開始）",
+   "focusStep": "第 {n} 步：{title}",
+   "requirements": [
+    "用最淺白的語言解釋「為甚麼」要做這一步，不要只寫算式",
+    "如果涉及公式或恆等式，指出它對應題目的哪一部分（哪一項、哪個括號）",
+    "指出我這一步最可能犯的錯（符號、括號、運算次序）",
+    "最後給我一句可以帶去考試的提醒"
+   ],
+   "format": "先寫「你卡住的原因」，再寫「逐步解釋」，最後寫「考試提醒」。每段不超過 4 行。",
+   "doubtPlaceholder": "（例如：我不明白為甚麼抽負號時，括號內每一項都要變號）",
+   "optionLabels": {
+    "simpler": "用更淺白的方式解釋",
+    "examples": "用簡單數字示範一次（例如代入 x = 1）",
+    "examTips": "提醒我這類題在 DSE 的常見陷阱",
+    "visual": "用圖像或表格說明",
+    "practice": "出 2 題類似題給我練"
+   },
+   "options": {
+    "simpler": "請用更淺白的語言重講一次（假設我完全沒有基礎）。",
+    "examples": "請用簡單數字（例如代入 x = 1 或 x = 0）示範一次運算過程。",
+    "examTips": "請指出這類題目在 DSE 最常見的陷阱與失分位。",
+    "visual": "請用圖表或表格把這個關係呈現出來（可用文字描述表格）。",
+    "practice": "請出 2 題同類型、由淺入深的題目給我練，先不要給答案。"
+   }
+  },
+  "en": {
+   "role": "You are a patient HKDSE Mathematics tutor who specialises in helping weaker students. Answer in clear, simple English. Be encouraging and specific, and keep it short.",
+   "student": "I am a Hong Kong DSE Mathematics candidate studying on my own with the site \"Catch-up Maths\".",
+   "headings": {
+    "source": "Question source",
+    "question": "Question",
+    "items": "Options",
+    "parts": "Parts",
+    "focus": "Where I am stuck",
+    "existing": "The explanation the site already gives (do not repeat it — answer my exact point)",
+    "doubt": "My specific question",
+    "requirements": "Please do this",
+    "format": "Answer format"
+   },
+   "focusAll": "the whole question (from step 1)",
+   "focusStep": "step {n}: {title}",
+   "requirements": [
+    "Explain WHY this step is done, in the simplest possible language — do not just write the algebra",
+    "If a formula or identity is used, point out which part of the question it matches (which term or bracket)",
+    "Point out the mistake I am most likely to make here (signs, brackets, order of operations)",
+    "Finish with one sentence I can carry into the exam"
+   ],
+   "format": "First \"why you are stuck\", then \"step-by-step explanation\", then \"exam reminder\". Keep each part to 4 lines or fewer.",
+   "doubtPlaceholder": "(e.g. I don't understand why every term inside the bracket changes sign when a minus is taken out)",
+   "optionLabels": {
+    "simpler": "Explain it more simply",
+    "examples": "Show it with simple numbers (e.g. x = 1)",
+    "examTips": "Warn me about the usual DSE traps",
+    "visual": "Explain it with a diagram or table",
+    "practice": "Give me 2 similar questions to try"
+   },
+   "options": {
+    "simpler": "Please explain it again in simpler language (assume I have no background at all).",
+    "examples": "Please work through it once with simple numbers (e.g. substitute x = 1 or x = 0).",
+    "examTips": "Please tell me the most common traps and lost marks for this type of question in the DSE.",
+    "visual": "Please present the relationship as a diagram or table (a text-drawn table is fine).",
+    "practice": "Please give me 2 similar questions, easy to harder, without the answers yet."
+   }
+  }
+ },
+ "generatedAt": "2026-09-28T11:29:11Z",
+ "counts": {
+  "topics": 1,
+  "held": 0,
+  "mc": 6,
+  "long": 4,
+  "cards": 3,
+  "blocked": 0
+ }
+};
