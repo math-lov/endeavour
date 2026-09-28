@@ -1,4 +1,4 @@
-> ⚠️ **本檔由 DSE Pass repo 複製過來**（內容層的規則完全通用）。Endeavour 是「S.5 課後補底班」專屬站：
+> ⚠️ **本檔由 DSE Pass repo 複製過來**（內容層的規則完全通用）。Endeavour 是「S.5 課後研習（After-School Tutorial Session）」專屬站：
 > 只收**課堂討論過的題目**（現時：Lesson 1，課題 id `en01`，題目來自 WS05 及歷屆 DSE 試題），
 > 與 DSE Pass 內容重複是刻意的。前端課題 id 前綴已放寬為 `^eph-(ws\d+[a-z]?|as\d+|en\d+[a-z]?)-`，
 > 所以課題可以用 `en01`、`en02`… 命名。文中 ws01／ws01b／ws01c 的例子屬 DSE Pass，本 repo 未必有。

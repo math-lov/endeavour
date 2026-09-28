@@ -1,12 +1,12 @@
 {
  "version": 1,
- "_note": "Endeavour（S.5 課後補底班）：只收課堂討論過的題目，內容與 DSE Pass 可以重複。",
+ "_note": "Endeavour（S.5 課後研習 After-School Tutorial Session）：只收課堂討論過的題目，內容與 DSE Pass 可以重複。",
  "stages": [
   {
    "id": 1,
    "name": {
-    "zh": "S.5 課後補底",
-    "en": "S.5 After-school Tutorial"
+    "zh": "S.5 課後研習",
+    "en": "S.5 After-School Tutorial Session"
    },
    "note": {
     "zh": "每次課堂一節，只做課堂討論過的題目。",
