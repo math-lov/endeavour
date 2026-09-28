@@ -122,7 +122,7 @@ window.LEARN_INDEX = {
    }
   }
  },
- "generatedAt": "2026-09-28T12:57:33Z",
+ "generatedAt": "2026-09-28T13:04:25Z",
  "counts": {
   "topics": 1,
   "held": 0,

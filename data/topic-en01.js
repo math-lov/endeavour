@@ -317,6 +317,14 @@ window.LEARN_TOPIC_EN01 = {
         },
         "zh": "把求出的根分別代回原方程檢驗：代入 $x=0$，左邊 $=0(3)=0$，右邊 $=0(-5)=0$，左邊 $=$ 右邊；代入 $x=-8$，左邊 $=-8(2(-8)+3)=-8(-13)=104$，右邊 $=-8(-8-5)=-8(-13)=104$，左邊 $=$ 右邊。兩根均成立，肯定答案正確且無漏根。",
         "en": "Substitute each root back into the original equation: for $x=0$, LHS $=0(3)=0$ and RHS $=0(-5)=0$, LHS $=$ RHS; for $x=-8$, LHS $=-8(2(-8)+3)=-8(-13)=104$ and RHS $=-8(-8-5)=-8(-13)=104$, LHS $=$ RHS. Both roots satisfy the equation, confirming no arithmetic error or missing roots."
+       },
+       {
+        "name": {
+         "zh": "另解：分兩種情況（先取公因式為 0，再約走）",
+         "en": "Method 2: two cases (take the factor = 0 first, then cancel)"
+        },
+        "zh": "分兩種情況（不必移項，也不必抽公因式）：\n① 先取公因式 $x=0$ —— 兩邊都變成 $0$，方程自動成立，所以 $x=0$ 是一個根；\n② 其餘情況 $x\\ne 0$，才可以放心兩邊約走 $x$：$2x+3=x-5\\ \\Rightarrow\\ x=-8$。\n兩個根齊全：$x=0$ 或 $x=-8$。",
+        "en": "Two cases (no need to move terms or factor out):\n(1) take the common factor $x=0$ — both sides become $0$, so the equation holds automatically and $x=0$ is a root;\n(2) in every other case $x\\ne 0$, so you may safely cancel $x$ on both sides: $2x+3=x-5\\ \\Rightarrow\\ x=-8$.\nBoth roots: $x=0$ or $x=-8$."
        }
       ]
      },
@@ -600,6 +608,14 @@ window.LEARN_TOPIC_EN01 = {
          },
          "zh": "設 $t=2$（避開 $0$ 與 $1$）：方程變成 $(x-4)(x-6)=(12-x)(x-6)$，解出 $x=6$ 或 $8$。把 $t=2$ 代入四個選項，只有 D 得 $x=6$ 或 $8$。",
          "en": "Put $t=2$ (avoid $0$ and $1$): the equation becomes $(x-4)(x-6)=(12-x)(x-6)$, giving $x=6$ or $8$. Substituting $t=2$ into the options, only D gives $x=6$ or $8$."
+        },
+        {
+         "name": {
+          "zh": "另解：分兩種情況（先取公因式為 0，再約走）",
+          "en": "Method 2: two cases (take the factor = 0 first, then cancel)"
+         },
+         "zh": "分兩種情況：\n① 先取共同括號 $(x-3t)=0$ —— 兩邊都變成 $0$，所以 $x=3t$ 是一個根；\n② 其餘情況 $x-3t\\ne 0$，才可以放心兩邊約走 $(x-3t)$：$x-2t=6t-x\\ \\Rightarrow\\ 2x=8t\\ \\Rightarrow\\ x=4t$。\n兩個根齊全：$x=3t$ 或 $x=4t$，答案 D。",
+         "en": "Two cases:\n(1) take the shared bracket $(x-3t)=0$ — both sides become $0$, so $x=3t$ is a root;\n(2) otherwise $x-3t\\ne 0$, so you may safely cancel $(x-3t)$: $x-2t=6t-x\\ \\Rightarrow\\ 2x=8t\\ \\Rightarrow\\ x=4t$.\nBoth roots: $x=3t$ or $x=4t$, answer D."
         }
        ]
       },
@@ -684,6 +700,14 @@ window.LEARN_TOPIC_EN01 = {
          },
          "zh": "設 $h=1$：方程變成 $(x+6)(x+4)=(8-x)(x+4)$，解出 $x=-4$ 或 $1$。把 $h=1$ 代入選項，只有 C 得 $x=-4$ 或 $1$。",
          "en": "Put $h=1$: the equation becomes $(x+6)(x+4)=(8-x)(x+4)$, giving $x=-4$ or $1$. Substituting $h=1$ into the options, only C gives $x=-4$ or $1$."
+        },
+        {
+         "name": {
+          "zh": "另解：分兩種情況（先取公因式為 0，再約走）",
+          "en": "Method 2: two cases (take the factor = 0 first, then cancel)"
+         },
+         "zh": "分兩種情況：\n① 先取共同括號 $(x+4h)=0$ —— 兩邊都變成 $0$，所以 $x=-4h$ 是一個根；\n② 其餘情況 $x+4h\\ne 0$，才可以放心兩邊約走 $(x+4h)$：$x+6h=8h-x\\ \\Rightarrow\\ 2x=2h\\ \\Rightarrow\\ x=h$。\n兩個根齊全：$x=-4h$ 或 $x=h$，答案 C。",
+         "en": "Two cases:\n(1) take the shared bracket $(x+4h)=0$ — both sides become $0$, so $x=-4h$ is a root;\n(2) otherwise $x+4h\\ne 0$, so you may safely cancel $(x+4h)$: $x+6h=8h-x\\ \\Rightarrow\\ 2x=2h\\ \\Rightarrow\\ x=h$.\nBoth roots: $x=-4h$ or $x=h$, answer C."
         }
        ]
       },
