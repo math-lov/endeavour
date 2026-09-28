@@ -78,7 +78,7 @@
     "en": "Write the equation as $ax^{2}+bx+c=0$, then compute $\\Delta=b^{2}-4ac$: {{math:0}}\nMatching the wording:\n· “has real roots” → $\\Delta\\ge 0$ (equal roots count, so the equality is included)\n· “has two distinct real roots” → $\\Delta>0$\n· “has equal (repeated) roots” → $\\Delta=0$\n· “has no real roots” → $\\Delta<0$\nFinding the range of $k$ (or $r$) is simply solving an inequality: {{math:1}}"
    },
    "math": [
-    "\\Delta>0:\\ \\text{two distinct real roots};\\quad\\Delta=0:\\ \\text{equal roots};\\quad\\Delta<0:\\ \\text{no real roots}",
+    "\\Delta>0:\\ \\text{two distinct real roots}\n\\Delta=0:\\ \\text{equal roots}\n\\Delta<0:\\ \\text{no real roots}",
     "2x^{2}-4x+k=1\n\\Rightarrow 2x^{2}-4x+(k-1)=0;\\ \\Delta=16-8(k-1)\\ge 0\n\\Rightarrow k\\le 3"
    ],
    "vocab": [

@@ -121,7 +121,7 @@ window.LEARN_TOPIC_EN01 = {
       "en": "Write the equation as $ax^{2}+bx+c=0$, then compute $\\Delta=b^{2}-4ac$: {{math:0}}\nMatching the wording:\n· “has real roots” → $\\Delta\\ge 0$ (equal roots count, so the equality is included)\n· “has two distinct real roots” → $\\Delta>0$\n· “has equal (repeated) roots” → $\\Delta=0$\n· “has no real roots” → $\\Delta<0$\nFinding the range of $k$ (or $r$) is simply solving an inequality: {{math:1}}"
      },
      "math": [
-      "\\Delta>0:\\ \\text{two distinct real roots};\\quad\\Delta=0:\\ \\text{equal roots};\\quad\\Delta<0:\\ \\text{no real roots}",
+      "\\Delta>0:\\ \\text{two distinct real roots}\n\\Delta=0:\\ \\text{equal roots}\n\\Delta<0:\\ \\text{no real roots}",
       "2x^{2}-4x+k=1\n\\Rightarrow 2x^{2}-4x+(k-1)=0;\\ \\Delta=16-8(k-1)\\ge 0\n\\Rightarrow k\\le 3"
      ],
      "vocab": [
@@ -474,7 +474,7 @@ window.LEARN_TOPIC_EN01 = {
          "zh": "(b) 判別式並解不等式",
          "en": "(b) Use the discriminant and solve"
         },
-        "math": "\\Delta=(-4)^{2}-4(2)(k-1)=16-8k+8=24-8k\\ge 0\\ \\Rightarrow\\ k\\le 3",
+        "math": "\\Delta=(-4)^{2}-4(2)(k-1)\n=16-8k+8=24-8k\\ge 0\n\\Rightarrow k\\le 3",
         "zh": "$24-8k\\ge 0 \\Rightarrow 8k\\le 24 \\Rightarrow k\\le 3$。留意除以負數會令不等號反方向（這裡是把 $-8k$ 搬去右邊，不用反號）。",
         "en": "$24-8k\\ge 0 \\Rightarrow 8k\\le 24 \\Rightarrow k\\le 3$. (Moving $-8k$ to the right avoids dividing by a negative number.)",
         "marking": "(1A)"
@@ -558,7 +558,7 @@ window.LEARN_TOPIC_EN01 = {
           "zh": "第 2 步 · 抽公因式，注意變號",
           "en": "Step 2 · Factor out, mind the signs"
          },
-         "math": "(x-3t)[(x-2t)-(6t-x)]=(x-3t)[x-2t-6t+x]=(x-3t)(2x-8t)=0",
+         "math": "(x-3t)[(x-2t)-(6t-x)]\n=(x-3t)[x-2t-6t+x]\n=(x-3t)(2x-8t)=0",
          "zh": "抽出公因式 $(x-3t)$ 後，中括號內為 $(x-2t)-(6t-x)$。注意負號分配律：$-(6t-x)=-6t+x$。合併同類項得 $(x-3t)(2x-8t)=0$。",
          "en": "After factoring out $(x-3t)$, the expression inside the square brackets is $(x-2t)-(6t-x)$. Mind the minus sign: $-(6t-x)=-6t+x$. Collecting like terms yields $(x-3t)(2x-8t)=0$."
         },
