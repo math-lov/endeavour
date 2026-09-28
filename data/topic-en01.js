@@ -51,11 +51,12 @@ window.LEARN_TOPIC_EN01 = {
       "en": "Solving a quadratic equation: three moves — and never cancel $x$"
      },
      "body": {
-      "zh": "解一元二次方程（factor method）永遠是這三步：\n① 展開，並把所有項搬去一邊，令右邊 $=0$；\n② 抽公因式或十字相乘；\n③ 每個因子各自 $=0$，寫出**全部**根。\n例子：{{math:0}}\n最常見的失分：方程兩邊都有 $x$（或同一個括號）時**兩邊約走它** —— 那等於假設它不等於 0，會少一個根：{{math:1}}",
-      "en": "Solving a quadratic equation by the factor method is always these three moves:\n(1) expand and move every term to one side so that the right-hand side is 0;\n(2) factor out the common factor or use the cross-method;\n(3) set each factor to 0 and write **all** the roots.\nExample: {{math:0}}\nThe classic loss of marks: when both sides contain $x$ (or the same bracket), cancelling it assumes it is not 0 and throws a root away: {{math:1}}"
+      "zh": "解一元二次方程（因式分解法）永遠是這三步：\n① 展開，並把所有項搬去一邊，令右邊 $=0$；\n② 抽公因式或十字相乘；\n③ 每個因子各自 $=0$，寫出「全部」根。\n例：{{math:0}}\n最常見的失分：方程兩邊都有 $x$（或同一個括號）時，兩邊「約走它」——等於假設它不等於 0，會少一個根：\n✗ 錯（兩邊約走 $x$）：{{math:1}} → 只剩 $x=-8$，$x=0$ 不見了\n✓ 對（展開、搬去一邊、抽公因式）：{{math:2}}",
+      "en": "Solving a quadratic equation by the factor method is always these three moves:\n(1) expand and move every term to one side so that the right-hand side is 0;\n(2) factor out the common factor or use the cross-method;\n(3) set each factor to 0 and write down ALL the roots.\nExample: {{math:0}}\nThe classic loss of marks: when both sides contain $x$ (or the same bracket), cancelling it assumes it is not 0, so a root disappears:\n✗ Wrong (cancelling $x$): {{math:1}} → only $x=-8$ is left, $x=0$ is gone\n✓ Right (expand, move to one side, factor out): {{math:2}}"
      },
      "math": [
-      "x(14-3x)=8\\Rightarrow 3x^{2}-14x+8=0\\Rightarrow(3x-2)(x-4)=0\\Rightarrow x=\\frac{2}{3}\\text{ or }4",
+      "x(14-3x)=8\n\\Rightarrow 3x^{2}-14x+8=0\n\\Rightarrow(3x-2)(x-4)=0\n\\Rightarrow x=\\frac{2}{3}\\text{ or }4",
+      "x(2x+3)=x(x-5)\n\\Rightarrow 2x+3=x-5\n\\Rightarrow x=-8",
       "x(2x+3)=x(x-5)\n\\Rightarrow x^{2}+8x=0\n\\Rightarrow x(x+8)=0\n\\Rightarrow x=0\\text{ or }-8"
      ],
      "vocab": [
@@ -85,12 +86,12 @@ window.LEARN_TOPIC_EN01 = {
       "en": "“$\\alpha$ is a root” means substituting it gives 0"
      },
      "body": {
-      "zh": "卷二最愛考這種題：已知一個根，要求另一條式子的值。做法只有兩步：\n① 寫下 $a\\alpha^{2}+b\\alpha+c=0$；\n② 把目標式砌成 $\\alpha^{2}$（或 $a\\alpha^{2}$）的倍數，再代入。\n例子：{{math:0}}\n**不需要**求出 $\\alpha$ 的數值（它通常是無理數）；用「根」這個關係就夠。\n另一個例子（砌出 $6\\beta^{2}$）：{{math:1}}",
+      "zh": "卷二最愛考這種題：已知一個根，要求另一條式子的值。做法只有兩步：\n① 寫下 $a\\alpha^{2}+b\\alpha+c=0$；\n② 把目標式砌成 $\\alpha^{2}$（或 $a\\alpha^{2}$）的倍數，再代入。\n例子：{{math:0}}\n不需要求出 $\\alpha$ 的數值（它通常是無理數）；用「根」這個關係就夠。\n另一個例子（砌出 $6\\beta^{2}$）：{{math:1}}",
       "en": "A Paper 2 favourite: given one root, find the value of another expression. Two steps only:\n(1) write down $a\\alpha^{2}+b\\alpha+c=0$;\n(2) build the target expression as a multiple of $\\alpha^{2}$ (or $a\\alpha^{2}$) and substitute.\nExample: {{math:0}}\nThere is no need to find the value of $\\alpha$ itself (it is usually irrational) — the root relation is enough.\nAnother example (building $6\\beta^{2}$): {{math:1}}"
      },
      "math": [
-      "\\alpha^{2}-4\\alpha-2=0\\Rightarrow\\alpha^{2}-4\\alpha=2\\Rightarrow 3+8\\alpha-2\\alpha^{2}=3-2(2)=-1",
-      "3\\beta^{2}-5\\beta-7=0\\Rightarrow 3\\beta^{2}=5\\beta+7\\Rightarrow 6\\beta^{2}=10\\beta+14\\Rightarrow 4+10\\beta-6\\beta^{2}=-10"
+      "\\alpha^{2}-4\\alpha-2=0\n\\Rightarrow \\alpha^{2}-4\\alpha=2\n\\Rightarrow 3+8\\alpha-2\\alpha^{2}=3-2(2)=-1",
+      "3\\beta^{2}-5\\beta-7=0\n\\Rightarrow 3\\beta^{2}=5\\beta+7\n\\Rightarrow 6\\beta^{2}=10\\beta+14\n\\Rightarrow 4+10\\beta-6\\beta^{2}=-10"
      ],
      "vocab": [
       {
@@ -120,7 +121,7 @@ window.LEARN_TOPIC_EN01 = {
      },
      "math": [
       "\\Delta>0:\\ \\text{two distinct real roots};\\quad\\Delta=0:\\ \\text{equal roots};\\quad\\Delta<0:\\ \\text{no real roots}",
-      "2x^{2}-4x+k=1\\Rightarrow 2x^{2}-4x+(k-1)=0;\\ \\Delta=16-8(k-1)\\ge 0\\Rightarrow k\\le 3"
+      "2x^{2}-4x+k=1\n\\Rightarrow 2x^{2}-4x+(k-1)=0;\\ \\Delta=16-8(k-1)\\ge 0\n\\Rightarrow k\\le 3"
      ],
      "vocab": [
       {
@@ -191,7 +192,7 @@ window.LEARN_TOPIC_EN01 = {
          "en": "Cross-method, then write both roots"
         },
         "math": "(3x-2)(x-4)=0\\ \\Rightarrow\\ x=\\frac{2}{3}\\ \\text{or}\\ x=4",
-        "zh": "交叉相乘 $(3x)(-4)+(-2)(x)=-12x-2x=-14x$ ✓。兩個因子各自等於 0：$x=\\frac{2}{3}$ 或 $x=4$。**兩個根都要寫**，只寫一個會失分。",
+        "zh": "交叉相乘 $(3x)(-4)+(-2)(x)=-12x-2x=-14x$ ✓。兩個因子各自等於 0：$x=\\frac{2}{3}$ 或 $x=4$。兩個根都要寫，只寫一個會失分。",
         "en": "Cross products $(3x)(-4)+(-2)(x)=-14x$ ✓. Set each factor to zero: $x=\\frac{2}{3}$ or $x=4$. Write both roots — omitting one loses the mark.",
         "marking": "(1A)"
        }
@@ -258,7 +259,7 @@ window.LEARN_TOPIC_EN01 = {
          "en": "Expand both sides"
         },
         "math": "2x^{2}+3x=x^{2}-5x",
-        "zh": "左邊 $x(2x+3)=2x^{2}+3x$；右邊 $x(x-5)=x^{2}-5x$。**千萬不要在展開前把兩邊的 $x$ 約走**（那會失掉 $x=0$ 這個根）。",
+        "zh": "左邊 $x(2x+3)=2x^{2}+3x$；右邊 $x(x-5)=x^{2}-5x$。千萬不要在展開前把兩邊的 $x$ 約走（那會失掉 $x=0$ 這個根）。",
         "en": "Left: $x(2x+3)=2x^{2}+3x$; right: $x(x-5)=x^{2}-5x$. Never cancel the $x$ before expanding — that would lose the root $x=0$.",
         "marking": "(1M)"
        },
@@ -304,7 +305,7 @@ window.LEARN_TOPIC_EN01 = {
        }
       ],
       "tip": {
-       "zh": "方程兩邊都有 $x$：**展開 → 搬去一邊 → 抽公因式**，永遠不要約走 $x$。",
+       "zh": "方程兩邊都有 $x$：展開 → 搬去一邊 → 抽公因式，永遠不要約走 $x$。",
        "en": "When both sides contain $x$: expand, move to one side, factor out $x$ — never cancel."
       },
       "alt": [
@@ -885,7 +886,7 @@ window.LEARN_TOPIC_EN01 = {
           "en": "Move everything to one side: never cancel $(x-b)$"
          },
          "math": "(x-b)(x-b-8)-(x-b)=0",
-         "zh": "方程兩邊都有 $(x-b)$。**不可以兩邊約走它** —— 約走就等於假設 $x\\neq b$，會白白失掉一個根。正確做法是把右邊搬去左邊。",
+         "zh": "方程兩邊都有 $(x-b)$。不可以兩邊約走它 —— 約走就等於假設 $x\\neq b$，會白白失掉一個根。正確做法是把右邊搬去左邊。",
          "en": "Both sides contain $(x-b)$. Never divide both sides by it: doing so assumes $x\\neq b$ and throws away a root. Move the right-hand side over instead."
         },
         {
@@ -925,7 +926,7 @@ window.LEARN_TOPIC_EN01 = {
         }
        ],
        "tip": {
-        "zh": "方程兩邊有同一個括號（或同一個 $x$）時：**先搬去一邊，再抽走它**，千萬不要約走。",
+        "zh": "方程兩邊有同一個括號（或同一個 $x$）時：先搬去一邊，再抽走它，千萬不要約走。",
         "en": "When both sides share a bracket (or an $x$), move everything to one side and factor it out — never cancel it."
        },
        "alt": [

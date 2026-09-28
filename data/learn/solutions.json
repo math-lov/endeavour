@@ -280,7 +280,7 @@
        "en": "Move everything to one side: never cancel $(x-b)$"
       },
       "math": "(x-b)(x-b-8)-(x-b)=0",
-      "zh": "方程兩邊都有 $(x-b)$。**不可以兩邊約走它** —— 約走就等於假設 $x\\neq b$，會白白失掉一個根。正確做法是把右邊搬去左邊。",
+      "zh": "方程兩邊都有 $(x-b)$。不可以兩邊約走它 —— 約走就等於假設 $x\\neq b$，會白白失掉一個根。正確做法是把右邊搬去左邊。",
       "en": "Both sides contain $(x-b)$. Never divide both sides by it: doing so assumes $x\\neq b$ and throws away a root. Move the right-hand side over instead."
      },
      {
@@ -320,7 +320,7 @@
      }
     ],
     "tip": {
-     "zh": "方程兩邊有同一個括號（或同一個 $x$）時：**先搬去一邊，再抽走它**，千萬不要約走。",
+     "zh": "方程兩邊有同一個括號（或同一個 $x$）時：先搬去一邊，再抽走它，千萬不要約走。",
      "en": "When both sides share a bracket (or an $x$), move everything to one side and factor it out — never cancel it."
     },
     "alt": [
@@ -436,7 +436,7 @@
        "en": "Cross-method, then write both roots"
       },
       "math": "(3x-2)(x-4)=0\\ \\Rightarrow\\ x=\\frac{2}{3}\\ \\text{or}\\ x=4",
-      "zh": "交叉相乘 $(3x)(-4)+(-2)(x)=-12x-2x=-14x$ ✓。兩個因子各自等於 0：$x=\\frac{2}{3}$ 或 $x=4$。**兩個根都要寫**，只寫一個會失分。",
+      "zh": "交叉相乘 $(3x)(-4)+(-2)(x)=-12x-2x=-14x$ ✓。兩個因子各自等於 0：$x=\\frac{2}{3}$ 或 $x=4$。兩個根都要寫，只寫一個會失分。",
       "en": "Cross products $(3x)(-4)+(-2)(x)=-14x$ ✓. Set each factor to zero: $x=\\frac{2}{3}$ or $x=4$. Write both roots — omitting one loses the mark.",
       "marking": "(1A)"
      }
@@ -490,7 +490,7 @@
        "en": "Expand both sides"
       },
       "math": "2x^{2}+3x=x^{2}-5x",
-      "zh": "左邊 $x(2x+3)=2x^{2}+3x$；右邊 $x(x-5)=x^{2}-5x$。**千萬不要在展開前把兩邊的 $x$ 約走**（那會失掉 $x=0$ 這個根）。",
+      "zh": "左邊 $x(2x+3)=2x^{2}+3x$；右邊 $x(x-5)=x^{2}-5x$。千萬不要在展開前把兩邊的 $x$ 約走（那會失掉 $x=0$ 這個根）。",
       "en": "Left: $x(2x+3)=2x^{2}+3x$; right: $x(x-5)=x^{2}-5x$. Never cancel the $x$ before expanding — that would lose the root $x=0$.",
       "marking": "(1M)"
      },
@@ -536,7 +536,7 @@
      }
     ],
     "tip": {
-     "zh": "方程兩邊都有 $x$：**展開 → 搬去一邊 → 抽公因式**，永遠不要約走 $x$。",
+     "zh": "方程兩邊都有 $x$：展開 → 搬去一邊 → 抽公因式，永遠不要約走 $x$。",
      "en": "When both sides contain $x$: expand, move to one side, factor out $x$ — never cancel."
     },
     "alt": [
