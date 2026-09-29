@@ -10,8 +10,8 @@ window.LEARN_TOPIC_EN01 = {
   "en": "Lesson 1 · Quadratic equations (solving & discriminant)"
  },
  "intro": {
-  "zh": "這一節課堂討論三件事：① 用因式分解解一元二次方程（包括兩邊都有 $x$ 或同一個括號的題目）；② 已知方程的一個根，求另一條式子的值；③ 用判別式 $\\Delta=b^{2}-4ac$ 判斷實根／等根／無實根，並求 $k$ 的範圍。十題全部來自課堂教材（WS05）及歷屆文憑試，做完之後可以逐題重做。",
-  "en": "This lesson covers three things: (1) solving quadratic equations by factorisation, including equations with $x$ (or the same bracket) on both sides; (2) using a given root to evaluate another expression; (3) using the discriminant $\\Delta=b^{2}-4ac$ to decide real / equal / no real roots and to find the range of $k$. All ten questions come from our lesson materials (WS05) and past HKDSE papers, and every question can be redone."
+  "zh": "這一節課堂討論三件事：① 用因式分解解一元二次方程（包括兩邊都有 $x$ 或同一個括號的題目）；② 已知方程的一個根，求另一條式子的值；③ 用判別式 $\\Delta=b^{2}-4ac$ 判斷實根／等根／無實根，並求 $k$ 的範圍。課堂十題來自課堂教材（WS05）及歷屆文憑試，另外加 2 題針對練習（針對課堂上兩個常見錯誤：抽走共同括號後剩下的是 $1$ 不是 $0$；把 $\\beta^{2}$ 變為主項後整塊代入目標式），做完之後可以逐題重做。",
+  "en": "This lesson covers three things: (1) solving quadratic equations by factorisation, including equations with $x$ (or the same bracket) on both sides; (2) using a given root to evaluate another expression; (3) using the discriminant $\\Delta=b^{2}-4ac$ to decide real / equal / no real roots and to find the range of $k$. The ten class questions come from our lesson materials (WS05) and past HKDSE papers, plus two extra targeted exercises on the two common mistakes from class (the leftover after factoring out a shared bracket is 1, not 0; substitute $\\beta^{2}$ as a whole into the target expression). Every question can be redone."
  },
  "cmdHints": [
   {
@@ -39,8 +39,8 @@ window.LEARN_TOPIC_EN01 = {
   {
    "id": "en01-1",
    "title": {
-    "zh": "Lesson 1（課堂 10 題）",
-    "en": "Lesson 1 (the 10 class questions)"
+    "zh": "Lesson 1（課堂 10 題 ＋ 課後針對練習 2 題）",
+    "en": "Lesson 1 (the 10 class questions + 2 targeted exercises)"
    },
    "cards": [
     {
@@ -87,12 +87,12 @@ window.LEARN_TOPIC_EN01 = {
       "en": "“$\\alpha$ is a root” means substituting it gives 0"
      },
      "body": {
-      "zh": "卷二最愛考這種題：已知一個根，要求另一條式子的值 —— 做法通常是兩步：① 寫下 $a\\alpha^{2}+b\\alpha+c=0$；② 把目標式砌成 $\\alpha^{2}$（或 $a\\alpha^{2}$）的倍數，再代入。\n例：已知 $\\alpha$ 是方程 $x^{2}-4x-2=0$ 的一個根，求 $3+8\\alpha-2\\alpha^{2}$ 的值。{{math:0}}\n不需要求出 $\\alpha$ 的數值（它通常是無理數）；用「根」這個關係就夠。\n另一個例子：已知 $\\beta$ 是方程 $3\\beta^{2}-5\\beta-7=0$ 的一個根，求 $4+10\\beta-6\\beta^{2}$ 的值。{{math:1}}",
-      "en": "A Paper 2 favourite: given one root, find the value of another expression — usually two steps: (1) write down $a\\alpha^{2}+b\\alpha+c=0$; (2) build the target expression as a multiple of $\\alpha^{2}$ (or $a\\alpha^{2}$) and substitute.\nExample: given that $\\alpha$ is a root of $x^{2}-4x-2=0$, find the value of $3+8\\alpha-2\\alpha^{2}$. {{math:0}}\nYou do not need the value of $\\alpha$ itself (it is usually irrational); the root relation is enough.\nAnother example: given that $\\beta$ is a root of $3\\beta^{2}-5\\beta-7=0$, find the value of $4+10\\beta-6\\beta^{2}$. {{math:1}}"
+      "zh": "卷二最愛考這種題：已知一個根，要求另一條式子的值 —— 做法通常是兩步：① 寫下 $a\\alpha^{2}+b\\alpha+c=0$；② 把方程整理成「$\\alpha^{2}=$（一條含有 $\\alpha$ 的式子）」，再整塊代入目標式：那個式子是分數也可以 —— 分子整塊乘，約簡時每一項都要除。\n例：已知 $\\alpha$ 是方程 $x^{2}-4x-2=0$ 的一個根，求 $3+8\\alpha-2\\alpha^{2}$ 的值。{{math:0}}\n不需要求出 $\\alpha$ 的數值（它通常是無理數）；用「根」這個關係就夠。\n另一個例子：已知 $\\beta$ 是方程 $3\\beta^{2}-5\\beta-7=0$ 的一個根，求 $4+10\\beta-6\\beta^{2}$ 的值。{{math:1}}",
+      "en": "A Paper 2 favourite: given one root, find the value of another expression — usually two steps: (1) write down $a\\alpha^{2}+b\\alpha+c=0$; (2) rearrange the equation into $\\alpha^{2}=$ (an expression in $\\alpha$), then substitute that whole expression into the target; a fraction is fine — multiply the whole numerator, and divide every term when cancelling.\nExample: given that $\\alpha$ is a root of $x^{2}-4x-2=0$, find the value of $3+8\\alpha-2\\alpha^{2}$. {{math:0}}\nYou do not need the value of $\\alpha$ itself (it is usually irrational); the root relation is enough.\nAnother example: given that $\\beta$ is a root of $3\\beta^{2}-5\\beta-7=0$, find the value of $4+10\\beta-6\\beta^{2}$. {{math:1}}"
      },
      "math": [
       "\\alpha^{2}-4\\alpha-2=0\n\\Rightarrow \\alpha^{2}-4\\alpha=2\n\\Rightarrow 3+8\\alpha-2\\alpha^{2}=3-2(\\alpha^{2}-4\\alpha)=3-2(2)=-1",
-      "3\\beta^{2}-5\\beta-7=0\n\\Rightarrow 3\\beta^{2}=5\\beta+7\n\\Rightarrow 6\\beta^{2}=10\\beta+14\n\\Rightarrow 4+10\\beta-6\\beta^{2}=-10"
+      "3\\beta^{2}-5\\beta-7=0\n\\Rightarrow \\beta^{2}=\\frac{5\\beta+7}{3}\n\\Rightarrow -6\\beta^{2}=-6\\cdot\\frac{5\\beta+7}{3}=-2(5\\beta+7)=-10\\beta-14\n\\Rightarrow 4+10\\beta-6\\beta^{2}=4+10\\beta-(10\\beta+14)=-10"
      ],
      "vocab": [
       {
@@ -105,8 +105,8 @@ window.LEARN_TOPIC_EN01 = {
       }
      ],
      "warn": {
-      "zh": "砌倍數時要整條等式乘（包括常數項）：$3\\beta^{2}=5\\beta+7$ 乘 2 是 $6\\beta^{2}=10\\beta+14$，不是 $6\\beta^{2}=10\\beta+7$。",
-      "en": "Multiply the whole relation, constants included: $3\\beta^{2}=5\\beta+7$ doubled is $6\\beta^{2}=10\\beta+14$, not $6\\beta^{2}=10\\beta+7$."
+      "zh": "代入分數時分子要整塊乘：$-6\\times\\frac{5\\beta+7}{3}=-2(5\\beta+7)$（$-6\\div3=-2$），不是 $-2\\times5\\beta+7$；約簡時分子每一項都要除，常數項最容易漏（$-42\\div3=-14$）。",
+      "en": "When the subject is a fraction, multiply the whole numerator: $-6\\times\\frac{5\\beta+7}{3}=-2(5\\beta+7)$ (because $-6\\div3=-2$), not $-2\\times5\\beta+7$. Every term must be divided, and the constant is the one students forget."
      }
     },
     {
@@ -907,52 +907,65 @@ window.LEARN_TOPIC_EN01 = {
        "steps": [
         {
          "title": {
-          "zh": "搬去一邊：不要約走 $(x-b)$",
-          "en": "Move everything to one side: never cancel $(x-b)$"
+          "zh": "第 1 步 · 搬去一邊：不要兩邊約走 $(x-b)$",
+          "en": "Step 1 · Move everything to one side: never cancel $(x-b)$"
          },
          "math": "(x-b)(x-b-8)-(x-b)=0",
-         "zh": "方程兩邊都有 $(x-b)$。不可以兩邊約走它 —— 約走就等於假設 $x\\neq b$，會白白失掉一個根。正確做法是把右邊搬去左邊。",
-         "en": "Both sides contain $(x-b)$. Never divide both sides by it: doing so assumes $x\\neq b$ and throws away a root. Move the right-hand side over instead."
+         "zh": "方程兩邊都有 $(x-b)$。約走它就等於假設 $x\\ne b$，會白白失掉 $x=b$ 這個根。正確做法是把右邊那一份 $(x-b)$ 整塊搬去左邊。",
+         "en": "Both sides contain $(x-b)$. Cancelling it assumes $x\\neq b$ and throws away the root $x=b$. Move the whole $(x-b)$ across instead."
         },
         {
          "title": {
-          "zh": "抽走共同括號",
-          "en": "Factor out the common bracket"
+          "zh": "第 2 步 · 抽走 $(x-b)$：它剩下的是 1，不是 0",
+          "en": "Step 2 · Factor out $(x-b)$: the leftover is 1, not 0"
          },
-         "math": "=(x-b)[(x-b-8)-1]=(x-b)(x-b-9)=0",
-         "zh": "抽走 $(x-b)$ 之後，中括號內是 $(x-b-8)-1$。注意那個 $-1$（右邊被搬過來時留下的），漏了它就會變成 $x=b+8$。",
-         "en": "After factoring out $(x-b)$ the bracket reads $(x-b-8)-1$. Do not lose the $-1$ brought over from the right-hand side, or the answer becomes $x=b+8$."
+         "math": "(x-b)(x-b-8)-1\\cdot(x-b)=0\n\\Rightarrow (x-b)\\big[(x-b-8)-1\\big]=0\n\\Rightarrow (x-b)(x-b-9)=0",
+         "zh": "搬過來的那一項是 $-1\\times(x-b)$，所以抽走共同括號 $(x-b)$ 之後，它剩下的是 $1$。把這個 $1$ 寫清楚就不會出錯：$(x-b-8)-1$。",
+         "en": "The term moved across is $-1\\times(x-b)$, so after factoring out $(x-b)$ it leaves 1 behind: $(x-b-8)-1$."
         },
         {
          "title": {
-          "zh": "每個因子各自等於 0",
-          "en": "Set each factor to zero"
+          "zh": "第 3 步 · 最常見的錯法：把 $(x-b)$ 當成 0（✗）對照正確的 1（✓）",
+          "en": "Step 3 · The classic mistake: treating $(x-b)$ as 0 (✗) versus the correct 1 (✓)"
+         },
+         "math": "\\text{Wrong: }(x-b-8)-0\\ \\Rightarrow\\ x=b+8\n\\text{Right: }(x-b-8)-1\\ \\Rightarrow\\ x=b+9",
+         "zh": "✗ 很多同學把 $(x-b)$「約簡為 $0$」：寫成 $(x-b-8)-0$，於是得到 $x=b+8$（選項 C）。為甚麼是 $1$？因為 $(x-b)\\div(x-b)=1$ —— 抽走的只是那個括號，它仍然留有 $1$ 份。✓ 所以正確是 $(x-b-8)-1$，得到 $x=b+9$。一句記住：約簡後是 $1$，不是 $0$。",
+         "en": "✗ Many students “simplify” $(x-b)$ to 0: writing $(x-b-8)-0$ gives $x=b+8$ (option C). Why 1? Because $(x-b)\\div(x-b)=1$ — only the bracket is taken out and one copy of it stays. ✓ So it is $(x-b-8)-1$, giving $x=b+9$. Remember: the leftover is 1, not 0."
+        },
+        {
+         "title": {
+          "zh": "第 4 步 · 每個因子各自等於 0，兩個根都要寫",
+          "en": "Step 4 · Set each factor to zero; state both roots"
          },
          "math": "x-b=0\\ \\text{or}\\ x-b-9=0\\ \\Rightarrow\\ x=b\\ \\text{or}\\ x=b+9",
-         "zh": "兩個因子都要寫：$x=b$ 或 $x=b+9$。答案是 D。",
-         "en": "Both factors give a root: $x=b$ or $x=b+9$. The answer is D."
+         "zh": "兩個因子都要寫：$x=b$ 或 $x=b+9$，答案是 D。",
+         "en": "Both factors give a root: $x=b$ or $x=b+9$. The answer is D.",
+         "highlight": [
+          "x=b",
+          "x=b+9"
+         ]
         }
        ],
        "traps": [
         {
+         "opt": "C",
+         "zh": "選 C 是「把 $(x-b)$ 當成 $0$」：抽走 $(x-b)$ 之後，$(x-b-8)$ 要再減 $1$（寫成 $(x-b-8)-1$），不是減 $0$ —— 約簡後得 $1$，不是 $0$。",
+         "en": "Option C comes from “simplifying” $(x-b)$ to 0: the leftover is $(x-b-8)-1$, not $(x-b-8)-0$. Cancelling gives 1, not 0."
+        },
+        {
          "opt": "A",
-         "zh": "只寫 $x=b+8$：中括號內的 $-1$ 被漏掉了。",
-         "en": "Writing only $x=b+8$: the $-1$ inside the square bracket was lost."
+         "zh": "只寫 $x=b+8$：既漏了 $x-b=0$ 這個根，也把抽走之後剩下的 $1$ 寫成 $0$。",
+         "en": "Writing only $x=b+8$: the root $x=b$ is missing, and the leftover 1 was written as 0."
         },
         {
          "opt": "B",
-         "zh": "只寫 $x=b+9$：漏掉 $x-b=0$ 這個根（在兩邊約走 $(x-b)$ 就會得到這個錯）。",
+         "zh": "只寫 $x=b+9$：漏掉 $x-b=0$ 這個根（兩邊約走 $(x-b)$ 就會得到這個錯）。",
          "en": "Writing only $x=b+9$: the root $x-b=0$ is missing — the classic result of cancelling $(x-b)$."
-        },
-        {
-         "opt": "C",
-         "zh": "$x=b+8$ 的常數錯：$(x-b-8)-1=x-b-9$，所以是 $b+9$。",
-         "en": "$x=b+8$ has the wrong constant: $(x-b-8)-1=x-b-9$, so it is $b+9$."
         }
        ],
        "tip": {
-        "zh": "方程兩邊有同一個括號（或同一個 $x$）時：先搬去一邊，再抽走它，千萬不要約走。",
-        "en": "When both sides share a bracket (or an $x$), move everything to one side and factor it out — never cancel it."
+        "zh": "方程兩邊有同一個括號（或同一個 $x$）：先搬去一邊，再抽公因式；抽走之後剩下的是 $1$（不是 $0$），而且千萬不要兩邊約走。",
+        "en": "When both sides share a bracket (or an $x$): move everything to one side, then factor it out. The leftover is 1, not 0 — and never cancel it."
        },
        "alt": [
         {
@@ -992,52 +1005,55 @@ window.LEARN_TOPIC_EN01 = {
        "steps": [
         {
          "title": {
-          "zh": "第一步一定寫：根代入方程等於 0",
-          "en": "First line: substitute the root, the equation equals 0"
+          "zh": "第 1 步 · 先把 $\\beta^{2}$ 變為主項（有分數是正常的）",
+          "en": "Step 1 · Make $\\beta^{2}$ the subject (a fraction is fine)"
          },
-         "math": "3\\beta^{2}-5\\beta-7=0",
-         "zh": "「$\\beta$ 是根」的意思是代入之後等於 0。不要嘗試求出 $\\beta$ 的數值（它是無理數）。",
-         "en": "“$\\beta$ is a root” means the value 0 after substitution. Do not try to find $\\beta$ itself — it is irrational."
+         "math": "3\\beta^{2}-5\\beta-7=0\n\\Rightarrow 3\\beta^{2}=5\\beta+7\n\\Rightarrow \\beta^{2}=\\frac{5\\beta+7}{3}",
+         "zh": "「$\\beta$ 是方程的根」＝代入之後等於 $0$：$3\\beta^{2}-5\\beta-7=0$。把 $3\\beta^{2}$ 留在左邊，整條等式除以 $3$，得 $\\beta^{2}=\\frac{5\\beta+7}{3}$。不需要求 $\\beta$ 的數值（它是無理數）；有分數是正常的，下一步把它整塊代入。",
+         "en": "“$\\beta$ is a root” means the substitution gives 0: $3\\beta^{2}-5\\beta-7=0$. Keep $3\\beta^{2}$ on the left and divide the whole relation by 3: $\\beta^{2}=\\frac{5\\beta+7}{3}$. Do not try to find $\\beta$ itself — it is irrational."
         },
         {
          "title": {
-          "zh": "把目標式砌成 $3\\beta^{2}$ 的倍數",
-          "en": "Build a multiple of $3\\beta^{2}$ in the target expression"
+          "zh": "第 2 步 · 把這個分數整塊代入 $-6\\beta^{2}$",
+          "en": "Step 2 · Substitute the whole fraction into $-6\\beta^{2}$"
          },
-         "math": "3\\beta^{2}=5\\beta+7\\ \\Rightarrow\\ 6\\beta^{2}=10\\beta+14",
-         "zh": "目標式有 $6\\beta^{2}$，剛好是 $3\\beta^{2}$ 的 2 倍，所以整條等式乘 2。",
-         "en": "The target contains $6\\beta^{2}$, exactly twice $3\\beta^{2}$, so multiply the whole relation by 2."
+         "math": "-6\\beta^{2}=-6\\cdot\\frac{5\\beta+7}{3}\n=-2(5\\beta+7)=-10\\beta-14",
+         "zh": "目標式要 $-6\\beta^{2}$：把 $\\frac{5\\beta+7}{3}$ 整塊乘 $-6$。分子 $(5\\beta+7)$ 要整塊乘：$-6\\times(5\\beta+7)=-30\\beta-42$，再與分母 $3$ 約簡：$-30\\beta\\div3=-10\\beta$、$-42\\div3=-14$，得 $-10\\beta-14$。口訣：$-6\\div3=-2$，所以也可以直接寫 $-2(5\\beta+7)$。約簡時分子每一項都要除，只除 $\\beta$ 項就會錯。",
+         "en": "The target contains $-6\\beta^{2}$: multiply the whole fraction $\\frac{5\\beta+7}{3}$ by $-6$. Multiply the numerator as a whole: $-6\\times(5\\beta+7)=-30\\beta-42$, then cancel the 3: $-30\\beta\\div3=-10\\beta$ and $-42\\div3=-14$, giving $-10\\beta-14$. Shortcut: $-6\\div3=-2$, so $-2(5\\beta+7)$. Every term must be divided — not just the $\\beta$ term."
         },
         {
          "title": {
-          "zh": "代入並化簡",
-          "en": "Substitute and simplify"
+          "zh": "第 3 步 · 代回目標式化簡（$\\beta$ 項會相消）",
+          "en": "Step 3 · Substitute back and simplify (the $\\beta$ terms cancel)"
          },
-         "math": "4+10\\beta-6\\beta^{2}=4+10\\beta-(10\\beta+14)=-10",
-         "zh": "$10\\beta$ 與 $-10\\beta$ 相消，只剩 $4-14=-10$。答案是 A。",
-         "en": "$10\\beta$ cancels with $-10\\beta$, leaving $4-14=-10$. The answer is A."
+         "math": "4+10\\beta-6\\beta^{2}=4+10\\beta-(10\\beta+14)\n=4-14=-10",
+         "zh": "代入得 $4+10\\beta-10\\beta-14$。$+10\\beta$ 與 $-10\\beta$ 相消，剩下 $4-14=-10$，答案是 A。",
+         "en": "This gives $4+10\\beta-10\\beta-14$. The $\\beta$ terms cancel, leaving $4-14=-10$. The answer is A.",
+         "highlight": [
+          "-10"
+         ]
         }
        ],
        "traps": [
         {
          "opt": "B",
-         "zh": "$-3$ 是「只減 7 一次」（$4-7$）：要減的是 $2\\times 7=14$。",
-         "en": "$-3$ comes from subtracting 7 once ($4-7$); you must subtract $2\\times 7=14$."
+         "zh": "$-3$ 是只減了 $7$ 一次：$-2(5\\beta+7)=-10\\beta-14$，常數項是 $-14$（$-2\\times7$），不是 $-7$；寫成 $-7$ 就得 $4-7=-3$。",
+         "en": "$-3$ subtracts 7 once: $-2(5\\beta+7)=-10\\beta-14$, so the constant is $-14$, not $-7$."
         },
         {
          "opt": "C",
-         "zh": "$11$ 是「$4+7$」：忘了 $10\\beta-6\\beta^{2}$ 會相消。",
-         "en": "$11$ is $4+7$: it forgets that $10\\beta-6\\beta^{2}$ cancels."
+         "zh": "$11$ 是 $4+7$：展開 $-2(5\\beta+7)$ 時只把 $\\beta$ 項乘 $-2$，常數項漏了乘（保留了 $+7$），於是 $4+7=11$。",
+         "en": "$11$ is $4+7$: only the $\\beta$ term was multiplied by $-2$ and the constant kept its $+7$."
         },
         {
          "opt": "D",
-         "zh": "$18$ 是砌錯了倍數（用 $3\\beta^{2}=5\\beta+7$ 但乘錯或多加了一項）。",
-         "en": "$18$ comes from a wrong multiple of $3\\beta^{2}=5\\beta+7$."
+         "zh": "$18$ 是 $4+14$：$-2(5\\beta+7)$ 的常數項符號錯，寫成 $+14$，於是 $4+14=18$。",
+         "en": "$18$ is $4+14$: a sign slip turns the constant into $+14$."
         }
        ],
        "tip": {
-        "zh": "見到「已知一個根」，第一句寫 $a\\beta^{2}+b\\beta+c=0$，之後全部用「砌成目標式的倍數」去做。",
-        "en": "For any “given a root” question: write $a\\beta^{2}+b\\beta+c=0$ first, then build the target expression as a multiple of it."
+        "zh": "見到「已知一個根」：① 寫 $a\\beta^{2}+b\\beta+c=0$；② 整條除以 $a$，得 $\\beta^{2}=\\frac{\\ldots}{a}$；③ 把這個分數整塊代入目標式 —— 分子每一項都要乘，約簡時每一項都要除。",
+        "en": "For any “given a root” question: (1) write $a\\beta^{2}+b\\beta+c=0$; (2) divide the whole relation by $a$ to get $\\beta^{2}$ as a fraction; (3) substitute that whole fraction into the target — multiply every numerator term and divide every term when cancelling."
        },
        "alt": [
         {
@@ -1052,14 +1068,201 @@ window.LEARN_TOPIC_EN01 = {
       },
       "verify": "checked"
      }
+    ],
+    [
+     {
+      "id": "eph-en01-m7",
+      "type": "mc",
+      "topic": "en01",
+      "unit": 5,
+      "subtopic": "quadratic-equations",
+      "difficulty": 2,
+      "code": "EN1-M7",
+      "source": "WS05 課後針對練習（自編）· 抽走共同括號後剩下的是 1，不是 0",
+      "stem": {
+       "en": "Let $c$ be a constant. Solve the equation $(x-c)(x-c-5)=(x-c)$.",
+       "zh": "設 $c$ 為常數。解方程 $(x-c)(x-c-5)=(x-c)$。"
+      },
+      "options": {
+       "A": "$x=c+5$",
+       "B": "$x=c$ or $x=c+6$",
+       "C": "$x=c+6$",
+       "D": "$x=c$ or $x=c+5$"
+      },
+      "answer": "B",
+      "review": null,
+      "solution": {
+       "steps": [
+        {
+         "title": {
+          "zh": "第 1 步 · 搬去一邊：不要兩邊約走 $(x-c)$",
+          "en": "Step 1 · Move everything to one side: never cancel $(x-c)$"
+         },
+         "math": "(x-c)(x-c-5)-(x-c)=0",
+         "zh": "方程兩邊都有 $(x-c)$。約走它就等於假設 $x\\ne c$，會失掉 $x=c$ 這個根。先把右邊那一份 $(x-c)$ 整塊搬去左邊。",
+         "en": "Both sides contain $(x-c)$. Cancelling it assumes $x\\neq c$ and loses the root $x=c$. Move the whole $(x-c)$ across first."
+        },
+        {
+         "title": {
+          "zh": "第 2 步 · 抽走 $(x-c)$：它剩下的是 1，不是 0",
+          "en": "Step 2 · Factor out $(x-c)$: the leftover is 1, not 0"
+         },
+         "math": "(x-c)(x-c-5)-1\\cdot(x-c)=0\n\\Rightarrow (x-c)\\big[(x-c-5)-1\\big]=0\n\\Rightarrow (x-c)(x-c-6)=0",
+         "zh": "搬過來的那一項是 $-1\\times(x-c)$，所以抽走 $(x-c)$ 之後剩下 $1$：括號內是 $(x-c-5)-1$。✗ 若把 $(x-c)$ 當成 $0$，會寫成 $(x-c-5)-0$，得出 $x=c$ 或 $x=c+5$（選項 D）—— 這正是課堂上最常見的失分位。✓ 正確是 $(x-c-5)-1=x-c-6$。",
+         "en": "The term moved across is $-1\\times(x-c)$, so it leaves 1 behind: the bracket reads $(x-c-5)-1$. ✗ Treating $(x-c)$ as 0 gives $(x-c-5)-0$, i.e. $x=c$ or $x=c+5$ (option D). ✓ Correct: $(x-c-5)-1=x-c-6$."
+        },
+        {
+         "title": {
+          "zh": "第 3 步 · 各自等於 0，兩個根都要寫",
+          "en": "Step 3 · Set each factor to zero; state both roots"
+         },
+         "math": "x-c=0\\ \\text{or}\\ x-c-6=0\\ \\Rightarrow\\ x=c\\ \\text{or}\\ x=c+6",
+         "zh": "兩個因子都要寫：$x=c$ 或 $x=c+6$，答案是 B。只寫一個根（選項 A、C）會失去答案分。",
+         "en": "Both factors give a root: $x=c$ or $x=c+6$. The answer is B.",
+         "highlight": [
+          "x=c",
+          "x=c+6"
+         ]
+        }
+       ],
+       "traps": [
+        {
+         "opt": "D",
+         "zh": "把 $(x-c)$ 當成 $0$（寫成 $(x-c-5)-0$）就會得出 $x=c$ 或 $x=c+5$。抽走 $(x-c)$ 之後剩下的是 $1$：$(x-c-5)-1=x-c-6$，所以另一個根是 $x=c+6$，不是 $c+5$。",
+         "en": "Treating $(x-c)$ as 0 gives $x=c$ or $x=c+5$. The leftover is 1: $(x-c-5)-1=x-c-6$, so the root is $x=c+6$."
+        },
+        {
+         "opt": "C",
+         "zh": "$x=c+6$ 是兩邊約走 $(x-c)$ 的結果：約走 ＝ 假設 $x-c\\ne 0$，會漏掉 $x=c$ 這個根。",
+         "en": "$x=c+6$ alone comes from cancelling $(x-c)$ on both sides, which loses the root $x=c$."
+        },
+        {
+         "opt": "A",
+         "zh": "$x=c+5$ 是「把 $(x-c)$ 當成 $0$」之後又只寫一個根：既漏了 $x=c$，也把剩下的 $1$ 寫成 $0$。",
+         "en": "$x=c+5$ alone: the leftover 1 was written as 0, and the root $x=c$ is missing."
+        }
+       ],
+       "tip": {
+        "zh": "兩邊有同一個括號：先搬去一邊，再抽公因式。抽走之後它剩下 $1$（因為 $(x-c)\\div(x-c)=1$），不是 $0$；答案記得寫齊兩個根。",
+        "en": "When both sides share a bracket: move everything to one side, then factor it out. The leftover is 1, not 0 — and remember to write both roots."
+       },
+       "alt": [
+        {
+         "name": {
+          "zh": "卷二保底：數值代入法",
+          "en": "Substitution check"
+         },
+         "zh": "設 $c=1$：方程變成 $(x-1)(x-6)=(x-1)$，解得 $x=1$ 或 $7$。把 $c=1$ 代入四個選項，只有 B 得 $x=1$ 或 $7$（D 只得 $x=1$ 或 $6$ ✗）。",
+         "en": "Put $c=1$: the equation becomes $(x-1)(x-6)=(x-1)$, giving $x=1$ or $7$. Substituting $c=1$ into the options, only B gives $x=1$ or $7$ (D gives $x=1$ or $6$ ✗)."
+        },
+        {
+         "name": {
+          "zh": "另解：分兩種情況（先取公因式為 0，再約走）",
+          "en": "Method 2: two cases (take the factor = 0 first, then cancel)"
+         },
+         "zh": "① 先取 $(x-c)=0$ —— 兩邊都變成 $0$，所以 $x=c$ 是一個根；\n② 其餘情況 $x-c\\ne 0$，才可以兩邊約走 $(x-c)$：$x-c-5=1\\ \\Rightarrow\\ x=c+6$。\n兩個根齊全：$x=c$ 或 $x=c+6$。",
+         "en": "(1) Take $(x-c)=0$ — both sides become 0, so $x=c$ is a root;\n(2) otherwise $x-c\\ne 0$, so you may cancel $(x-c)$: $x-c-5=1\\ \\Rightarrow\\ x=c+6$.\nBoth roots: $x=c$ or $x=c+6$."
+        }
+       ]
+      },
+      "verify": "checked"
+     },
+     {
+      "id": "eph-en01-m8",
+      "type": "mc",
+      "topic": "en01",
+      "unit": 5,
+      "subtopic": "quadratic-equations",
+      "difficulty": 3,
+      "code": "EN1-M8",
+      "source": "WS05 課後針對練習（自編）· 分數代入：分子要整塊乘，再與分母約簡",
+      "stem": {
+       "en": "If $\\beta$ is a root of the equation $3x^{2}-4x-1=0$, then $12+8\\beta-6\\beta^{2}=$",
+       "zh": "若 $\\beta$ 是方程 $3x^{2}-4x-1=0$ 的一個根，則 $12+8\\beta-6\\beta^{2}=$"
+      },
+      "options": {
+       "A": "$-2$",
+       "B": "$6$",
+       "C": "$10$",
+       "D": "$13$"
+      },
+      "answer": "C",
+      "review": null,
+      "solution": {
+       "steps": [
+        {
+         "title": {
+          "zh": "第 1 步 · 先把 $\\beta^{2}$ 變為主項（整條除以 3）",
+          "en": "Step 1 · Make $\\beta^{2}$ the subject (divide the whole relation by 3)"
+         },
+         "math": "3\\beta^{2}-4\\beta-1=0\n\\Rightarrow 3\\beta^{2}=4\\beta+1\n\\Rightarrow \\beta^{2}=\\frac{4\\beta+1}{3}",
+         "zh": "「$\\beta$ 是方程的根」＝代入之後等於 $0$。把 $3\\beta^{2}$ 單獨留在左邊，再整條等式除以 $3$：$\\beta^{2}=\\frac{4\\beta+1}{3}$。有分數是正常的，不要嘗試求 $\\beta$ 的數值（它是無理數）。",
+         "en": "“$\\beta$ is a root” means the substitution gives 0. Keep $3\\beta^{2}$ on the left and divide the whole relation by 3: $\\beta^{2}=\\frac{4\\beta+1}{3}$. A fraction is fine — do not try to find $\\beta$ itself."
+        },
+        {
+         "title": {
+          "zh": "第 2 步 · 分數整塊代入 $-6\\beta^{2}$：分子每一項都要乘",
+          "en": "Step 2 · Substitute the whole fraction into $-6\\beta^{2}$: multiply every numerator term"
+         },
+         "math": "-6\\beta^{2}=-6\\cdot\\frac{4\\beta+1}{3}\n=-2(4\\beta+1)=-8\\beta-2",
+         "zh": "把 $\\frac{4\\beta+1}{3}$ 乘 $-6$：分子 $(4\\beta+1)$ 整塊乘，$-6\\times(4\\beta+1)=-24\\beta-6$；再與分母 $3$ 約簡：$-24\\beta\\div3=-8\\beta$、$-6\\div3=-2$，得 $-8\\beta-2$。口訣：$-6\\div3=-2$。分子每一項都要除 —— 漏了常數項就會寫成 $-8\\beta-6$，答案會變成 $6$。",
+         "en": "Multiply $\\frac{4\\beta+1}{3}$ by $-6$: multiply the numerator as a whole, $-6\\times(4\\beta+1)=-24\\beta-6$, then cancel the 3: $-24\\beta\\div3=-8\\beta$ and $-6\\div3=-2$, giving $-8\\beta-2$. Every term must be divided — missing the constant gives $-8\\beta-6$ and the wrong answer 6."
+        },
+        {
+         "title": {
+          "zh": "第 3 步 · 代回目標式化簡（$\\beta$ 項會相消）",
+          "en": "Step 3 · Substitute back and simplify (the $\\beta$ terms cancel)"
+         },
+         "math": "12+8\\beta-6\\beta^{2}=12+8\\beta-(8\\beta+2)\n=12-2=10",
+         "zh": "代入得 $12+8\\beta-8\\beta-2$。$+8\\beta$ 與 $-8\\beta$ 相消，剩下 $12-2=10$，答案是 C。",
+         "en": "This gives $12+8\\beta-8\\beta-2$. The $\\beta$ terms cancel, leaving $12-2=10$. The answer is C.",
+         "highlight": [
+          "10"
+         ]
+        }
+       ],
+       "traps": [
+        {
+         "opt": "A",
+         "zh": "$-2$ 是忘記了目標式開頭的 $12$：只計算 $-6\\beta^{2}$ 的部分（$-8\\beta-2$），$8\\beta$ 相消之後就只剩 $-2$。",
+         "en": "$-2$ forgets the 12 at the front of the target: only $-6\\beta^{2}$ was computed ($-8\\beta-2$), leaving $-2$ after cancelling."
+        },
+        {
+         "opt": "B",
+         "zh": "$6$ 是約簡時只除 $\\beta$ 項：$-24\\beta\\div3=-8\\beta$，但常數 $-6$ 忘了除 $3$（$-6\\div3=-2$），寫成 $-8\\beta-6$，於是 $12-6=6$。",
+         "en": "$6$ divides only the $\\beta$ term: $-24\\beta\\div3=-8\\beta$ but the constant $-6$ is not divided by 3, so $-8\\beta-6$ gives $12-6=6$."
+        },
+        {
+         "opt": "D",
+         "zh": "$13$ 是展開 $-2(4\\beta+1)$ 時常數項漏了乘 $-2$（保留了 $+1$），得 $-8\\beta+1$，於是 $12+1=13$。",
+         "en": "$13$ does not multiply the constant by $-2$: keeping $+1$ gives $-8\\beta+1$, so $12+1=13$."
+        }
+       ],
+       "tip": {
+        "zh": "$\\beta^{2}$ 是分數也可以直接代入：分子整塊乘，再與分母約簡，分子每一項都要除。最後 $\\beta$ 項通常會相消，剩下的常數就是答案。",
+        "en": "A fractional $\\beta^{2}$ can be substituted directly: multiply the whole numerator, then cancel with the denominator — every term must be divided. The $\\beta$ terms then cancel out."
+       },
+       "alt": [
+        {
+         "name": {
+          "zh": "計算機保底：求根後 Ans 鍵秒殺法",
+          "en": "Calculator safety net: Root finding and the Ans key"
+         },
+         "zh": "用 Casio fx-50FH II 按【FMLA】【01】，輸入 $a=3, b=-4, c=-1$，求得根 $x \\approx 1.549$。直接按鍵輸入 $12+8\\text{Ans}-6\\text{Ans}^{2}$ 按【EXE】，螢幕顯示 $10$，鎖定選項 C。",
+         "en": "On a Casio fx-50FH II press [FMLA] [01] with $a=3, b=-4, c=-1$ to get $x \\approx 1.549$. Type $12+8\\text{Ans}-6\\text{Ans}^{2}$ and press [EXE]: the display shows $10$, confirming option C."
+        }
+       ]
+      },
+      "verify": "checked"
+     }
     ]
    ]
   }
  ],
  "stats": {
-  "mc": 6,
+  "mc": 8,
   "long": 4,
   "cards": 3,
-  "pages": 2
+  "pages": 3
  }
 };

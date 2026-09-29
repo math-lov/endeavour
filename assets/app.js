@@ -51,7 +51,8 @@
     return Array.prototype.slice.call((root || document).querySelectorAll(sel));
   }
   /* 換卡／換內容後把視窗帶回頂部：要扣掉黏性頂部分頁列的高度。
-     不做這件事的話，內容重繪但滾動位置不變 → 學生會停在卡片底部。 */
+     不做這件事的話，內容重繪但滾動位置不變 → 學生會停在卡片底部。
+     （概念卡改成「一頁全部顯示」之後暫時沒有呼叫點，保留給日後的切換式 UI。） */
   function scrollToTopOf(node) {
     if (!node || typeof window.scrollTo !== "function") return;
     var bar = qs(".topbar");
@@ -782,36 +783,39 @@
     body.appendChild(box);
   }
 
+  /* 概念卡：一頁全部顯示（2026-09-29 老師指示）。
+     舊做法是「一次一張，按『下一張』才揭下一張」——學生要逐張按才能看完全部內容。
+     現在同一個學習頁由上而下順序列出所有卡片（每張仍有序號 i / N），
+     頁尾一個「看完了，開始練習 →」＝舊版最後一張的行為（標記完成並去下一頁）。
+     完成度仍然以「這一課」為單位（store.cards[lesson.id]），所以進度計算不用改。 */
   function renderCards(body, page, pages, cur, tid) {
     var cards = page.lesson.cards || [];
-    var i = 0;
-    var cardEl = null;          // 目前這一張卡（換卡後捲回它的頂部）
 
-    function draw() {
-      body.innerHTML = "";
-      if (i === 0) {
-        var intro = el("div", "card");
-        var hh = el("div", "q-head");
-        hh.appendChild(el("span", "q-code", T({ zh: "先學會", en: "Learn first" })));
-        hh.appendChild(el("span", "q-source", T({
-          zh: "看過概念卡再做練習", en: "Read the concept cards before practising"
-        })));
-        intro.appendChild(hh);
-        intro.appendChild(biNode({
-          zh: "這一課有 " + cards.length + " 張概念卡，每張都有定義、公式和常見錯誤。看完按「下一張」，最後一張會打 ✓。",
-          en: "This lesson has " + cards.length + " concept cards, each with definitions, formulas " +
-              "and common mistakes. Press \"Next card\" when you finish one; the last card gets a ✓."
-        }, "div", "ccard-body"));
-        body.appendChild(intro);
-      }
+    var intro = el("div", "card");
+    var hh = el("div", "q-head");
+    hh.appendChild(el("span", "q-code", T({ zh: "先學會", en: "Learn first" })));
+    hh.appendChild(el("span", "q-source", T({
+      zh: "看過概念卡再做練習", en: "Read the concept cards before practising"
+    })));
+    intro.appendChild(hh);
+    intro.appendChild(biNode({
+      zh: "這一課有 " + cards.length + " 張概念卡，全部就在這一頁：由上而下順序看（每張都有定義、公式和常見錯誤）。看完按最下面的「看完了，開始練習 →」。",
+      en: "This lesson has " + cards.length + " concept cards, all on this page: read them from top to " +
+          "bottom (each has definitions, formulas and common mistakes). When you finish, press " +
+          "\"Done — start practising →\" at the bottom."
+    }, "div", "ccard-body"));
+    body.appendChild(intro);
 
-      // 提示列要「常駐」：換卡時 body 被清空，所以要重新加上（否則學習頁會冇咗）
-      appendCommandHints(body);
+    /* 常駐提示列（題目字眼）由 renderPage() 在派頁前已加在最頂 ——
+       這裡不可以再加一次（舊版因為 draw() 會清空 body 才要重加），否則會出現兩條提示列。 */
 
-      var c = cards[i];
+    cards.forEach(function (c, i) {
       var card = el("div", "card");
+      card.setAttribute("data-card", "card-" + (i + 1));
       var head = el("div", "ccard-head");
       head.appendChild(biNode(c.title || { zh: "" }, "h3"));
+      // 卡序（第幾張 / 共幾張）：全部攤開之後仍然知道看到哪裡
+      head.appendChild(el("span", "ccard-num small muted", (i + 1) + " / " + cards.length));
       card.appendChild(head);
 
       // 概念卡示意圖（一張卡可以有多幅圖：例如變換多於一次就逐步畫）
@@ -847,32 +851,22 @@
         card.appendChild(v);
       }
 
-      var foot = el("div", "row");
-      foot.style.marginTop = "14px";
-      var prev = btnPair("btn btn-sm", { zh: "← 上一張", en: "← Previous card" });
-      prev.disabled = i === 0;
-      prev.onclick = function () { i--; draw(); scrollToTopOf(cardEl); };
-      var next = btnPair("btn btn-sm btn-primary", i === cards.length - 1
-        ? { zh: "看完了，開始練習 →", en: "Done — start practising →" }
-        : { zh: "下一張 →", en: "Next card →" });
-      next.onclick = function () {
-        if (i === cards.length - 1) {
-          store.cards[page.lesson.id] = true;
-          save();
-          gotoPage(tid, cur + 1);
-        } else { i++; draw(); scrollToTopOf(cardEl); }
-      };
-      foot.appendChild(prev);
-      foot.appendChild(next);
-      card.appendChild(foot);
-
-      var cnt = el("div", "small muted center", (i + 1) + " / " + cards.length);
-      cnt.style.marginTop = "10px";
-      card.appendChild(cnt);
       body.appendChild(card);
-      cardEl = card;
-    }
-    draw();
+    });
+
+    /* 頁尾：「看完了，開始練習 →」（＝舊版最後一張的行為：標記完成 → 下一頁） */
+    var footCard = el("div", "card");
+    var foot = el("div", "row");
+    var done = btnPair("btn btn-primary btn-block",
+                       { zh: "看完了，開始練習 →", en: "Done — start practising →" });
+    done.onclick = function () {
+      store.cards[page.lesson.id] = true;
+      save();
+      gotoPage(tid, cur + 1);
+    };
+    foot.appendChild(done);
+    footCard.appendChild(foot);
+    body.appendChild(footCard);
   }
 
   /* ── 長題目示範 ─────────────────────────────────────────────────────── */

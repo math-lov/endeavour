@@ -133,6 +133,50 @@
    "review": null
   },
   {
+   "id": "eph-en01-m7",
+   "type": "mc",
+   "topic": "en01",
+   "unit": 5,
+   "subtopic": "quadratic-equations",
+   "difficulty": 2,
+   "code": "EN1-M7",
+   "source": "WS05 課後針對練習（自編）· 抽走共同括號後剩下的是 1，不是 0",
+   "stem": {
+    "en": "Let $c$ be a constant. Solve the equation $(x-c)(x-c-5)=(x-c)$.",
+    "zh": "設 $c$ 為常數。解方程 $(x-c)(x-c-5)=(x-c)$。"
+   },
+   "options": {
+    "A": "$x=c+5$",
+    "B": "$x=c$ or $x=c+6$",
+    "C": "$x=c+6$",
+    "D": "$x=c$ or $x=c+5$"
+   },
+   "answer": "B",
+   "review": null
+  },
+  {
+   "id": "eph-en01-m8",
+   "type": "mc",
+   "topic": "en01",
+   "unit": 5,
+   "subtopic": "quadratic-equations",
+   "difficulty": 3,
+   "code": "EN1-M8",
+   "source": "WS05 課後針對練習（自編）· 分數代入：分子要整塊乘，再與分母約簡",
+   "stem": {
+    "en": "If $\\beta$ is a root of the equation $3x^{2}-4x-1=0$, then $12+8\\beta-6\\beta^{2}=$",
+    "zh": "若 $\\beta$ 是方程 $3x^{2}-4x-1=0$ 的一個根，則 $12+8\\beta-6\\beta^{2}=$"
+   },
+   "options": {
+    "A": "$-2$",
+    "B": "$6$",
+    "C": "$10$",
+    "D": "$13$"
+   },
+   "answer": "C",
+   "review": null
+  },
+  {
    "id": "eph-en01-q1",
    "type": "long",
    "topic": "en01",

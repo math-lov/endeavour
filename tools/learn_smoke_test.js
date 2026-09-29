@@ -108,8 +108,21 @@ for (const t of LESSONS.topics) {
   ok(navCells >= 1 && navCells <= expectedPages(t),
      t.id + " 分頁列只渲染需要顯示的格（" + navCells + " / 邏輯上最多 " + expectedPages(t) + "）");
   ok(!!p0.$("#pagenav .pg.current"), t.id + " 分頁列標出「現時頁」");
-  ok(p0.$$(".ccard-head h3").length === 1, t.id + " shows one concept card at a time");
-  ok(p0.$$(".concept-body").length === 1, t.id + " renders the card body");
+  /* 概念卡：一頁全部顯示（不再按「下一張」逐張揭）——卡片數、每張有序號、底部一個完成鈕 */
+  const nCards0 = (t.lessons[0].conceptCards || []).length;
+  ok(p0.$$(".ccard-head h3").length === nCards0,
+     t.id + " 學習頁一次顯示全部概念卡（" + p0.$$(".ccard-head h3").length + " / " + nCards0 + "）");
+  ok(p0.$$(".concept-body").length === nCards0, t.id + " renders every card body");
+  ok(p0.$$(".ccard-head .ccard-num").length === nCards0, t.id + " 每張卡有序號（1 / N）");
+  const cardDoneBtn = p0.$$(".card .btn").filter((b) => /看完了，開始練習/.test(b.textContent))[0];
+  ok(!!cardDoneBtn, t.id + " 學習頁底部有「看完了，開始練習 →」（不用逐張按）");
+  if (cardDoneBtn) {
+    cardDoneBtn.click();
+    ok(!!(p0.store().cards || {})[t.lessons[0].id],
+       t.id + " 按完之後標記這一課的概念卡完成（" + t.lessons[0].id + "）");
+    ok(/p=1\b/.test(p0.ctx.window.__LEARN_LAST_NAV || ""),
+       t.id + " 按完之後跳去下一頁（" + p0.ctx.window.__LEARN_LAST_NAV + "）");
+  }
   ok(p0.$$(".cmd-hints .ch-chip").length >= 4 && p0.$$(".cmd-hints .ch-chip").length <= 6,
      t.id + " keeps 4–6 command-word chips (got " + p0.$$(".cmd-hints .ch-chip").length + ")");
 
@@ -179,16 +192,11 @@ ok(!!mlCard, "at least one concept card carries a multi-line formula (" +
    CARDS.filter(mlMath).length + " cards)");
 if (mlCard) {
   const tc = boot("topic.html", "?t=" + mlCard.topic + "&p=0");
-  /* 用「同一課題第幾張卡」定位（標題含 $…$ 時，textContent 會被 KaTeX 換掉，比對會失效） */
-  const mlIdx = CARDS.filter((c) => c.topic === mlCard.topic).indexOf(mlCard);
-  for (let g = 0; g < mlIdx; g++) {
-    const b = tc.$$(".card .row .btn").filter((x) => /下一張/.test(x.textContent))[0];
-    if (!b) break;
-    b.click();
-  }
-  /* 一張卡可能有多過一條公式：把所有「有斷行」的 math 行數加起來（不再假設只有一條） */
-  const want = (mlCard.math || []).filter((m) => m.indexOf("\n") >= 0)
-    .reduce((n, m) => n + m.split("\n").filter((s) => s.trim()).length, 0);
+  /* 學習頁現在一次顯示該課題全部卡片，所以期望值＝「全部卡」的斷行公式行數總和
+     （一張卡可能有多過一條公式，所以逐條加起來；不再假設只有一張卡） */
+  const want = CARDS.filter((c) => c.topic === mlCard.topic).reduce((n, c) =>
+    n + (c.math || []).filter((m) => m.indexOf("\n") >= 0)
+      .reduce((k, m) => k + m.split("\n").filter((s) => s.trim()).length, 0), 0);
   /* 中英各渲染一份 → 計數要指定語言那一份（否則會被當成雙倍）*/
   const zhLines = tc.$$(".ccard-body > .l-zh .formula-multi .formula-line");
   const enLines = tc.$$(".ccard-body > .l-en .formula-multi .formula-line");

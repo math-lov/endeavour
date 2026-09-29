@@ -373,6 +373,8 @@ body {
 .ccard-head { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; margin-bottom: 6px; }
 .ccard-head h3 { margin: 0; font-size: 19px; font-weight: 800; letter-spacing: -.01em; }
 .ccard-head .en { font-size: 13.5px; font-weight: 500; color: var(--muted); }
+/* 學習頁改成一次顯示全部卡片之後，每張卡右上角顯示「第幾張 / 共幾張」 */
+.ccard-num { margin-left: auto; white-space: nowrap; }
 .ccard-body { font-size: 16.5px; }
 .concept-body { display: block; }
 .btext { margin: 8px 0; }
