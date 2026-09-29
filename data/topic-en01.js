@@ -10,8 +10,8 @@ window.LEARN_TOPIC_EN01 = {
   "en": "Lesson 1 · Quadratic equations (solving & discriminant)"
  },
  "intro": {
-  "zh": "這一節課堂討論三件事：① 用因式分解解一元二次方程（包括兩邊都有 $x$ 或同一個括號的題目）；② 已知方程的一個根，求另一條式子的值；③ 用判別式 $\\Delta=b^{2}-4ac$ 判斷實根／等根／無實根，並求 $k$ 的範圍。課堂十題來自課堂教材（WS05）及歷屆文憑試，另外加 2 題針對練習（針對課堂上兩個常見錯誤：抽走共同括號後剩下的是 $1$ 不是 $0$；把 $\\beta^{2}$ 變為主項後整塊代入目標式），做完之後可以逐題重做。",
-  "en": "This lesson covers three things: (1) solving quadratic equations by factorisation, including equations with $x$ (or the same bracket) on both sides; (2) using a given root to evaluate another expression; (3) using the discriminant $\\Delta=b^{2}-4ac$ to decide real / equal / no real roots and to find the range of $k$. The ten class questions come from our lesson materials (WS05) and past HKDSE papers, plus two extra targeted exercises on the two common mistakes from class (the leftover after factoring out a shared bracket is 1, not 0; substitute $\\beta^{2}$ as a whole into the target expression). Every question can be redone."
+  "zh": "這一節課堂討論三件事：① 用因式分解解一元二次方程（包括兩邊都有 $x$ 或同一個括號的題目）；② 已知方程的一個根，求另一條式子的值；③ 用判別式 $\\Delta=b^{2}-4ac$ 判斷實根／等根／無實根，並求 $k$ 的範圍。課堂 10 題完成後，可以試做 2 題針對練習看看自己是否掌握所學。",
+  "en": "This lesson covers three things: (1) solving quadratic equations by factorisation, including equations with $x$ (or the same bracket) on both sides; (2) using a given root to evaluate another expression; (3) using the discriminant $\\Delta=b^{2}-4ac$ to decide real / equal / no real roots and to find the range of $k$. After finishing the 10 class questions, try the 2 targeted exercises to see whether you have grasped what we learnt."
  },
  "cmdHints": [
   {
@@ -117,8 +117,8 @@ window.LEARN_TOPIC_EN01 = {
       "en": "The discriminant $\\Delta=b^{2}-4ac$: real, equal or no real roots"
      },
      "body": {
-      "zh": "先寫成 $ax^{2}+bx+c=0$，再算 $\\Delta=b^{2}-4ac$：{{math:0}}\n題目字眼對照：\n· 「有實根」→ $\\Delta\\ge 0$（包含等根，所以有等號）\n· 「有兩個相異實根」→ $\\Delta>0$\n· 「有等根／重根」→ $\\Delta=0$\n· 「無實根」→ $\\Delta<0$\n求 $k$（或 $r$）的範圍，就是解一條不等式：{{math:1}}",
-      "en": "Write the equation as $ax^{2}+bx+c=0$, then compute $\\Delta=b^{2}-4ac$: {{math:0}}\nMatching the wording:\n· “has real roots” → $\\Delta\\ge 0$ (equal roots count, so the equality is included)\n· “has two distinct real roots” → $\\Delta>0$\n· “has equal (repeated) roots” → $\\Delta=0$\n· “has no real roots” → $\\Delta<0$\nFinding the range of $k$ (or $r$) is simply solving an inequality: {{math:1}}"
+      "zh": "先寫成 $ax^{2}+bx+c=0$，再算 $\\Delta=b^{2}-4ac$：{{math:0}}\n題目字眼對照：\n· 「有實根」→ $\\Delta\\ge 0$（包含等根，所以有等號）\n· 「有兩個相異實根」→ $\\Delta>0$\n· 「有等根／重根」→ $\\Delta=0$\n· 「無實根」→ $\\Delta<0$\n使用判別式，多數是用來求未知的係數（如下列例子中的 $k$），因為判別式是不會包含方程式中的未知數（如下列例子中的 $x$）。{{math:1}}",
+      "en": "Write the equation as $ax^{2}+bx+c=0$, then compute $\\Delta=b^{2}-4ac$: {{math:0}}\nMatching the wording:\n· “has real roots” → $\\Delta\\ge 0$ (equal roots count, so the equality is included)\n· “has two distinct real roots” → $\\Delta>0$\n· “has equal (repeated) roots” → $\\Delta=0$\n· “has no real roots” → $\\Delta<0$\nThe discriminant is mostly used to find an unknown coefficient (such as $k$ in the example below), because the discriminant never contains the unknown in the equation (such as $x$ in the example below). {{math:1}}"
      },
      "math": [
       "\\Delta>0:\\ \\text{two distinct real roots}\n\\Delta=0:\\ \\text{equal roots}\n\\Delta<0:\\ \\text{no real roots}",

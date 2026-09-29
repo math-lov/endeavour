@@ -24,8 +24,8 @@ window.LEARN_INDEX = {
     "en": "Lesson 1 · Quadratic equations (solving & discriminant)"
    },
    "intro": {
-    "zh": "這一節課堂討論三件事：① 用因式分解解一元二次方程（包括兩邊都有 $x$ 或同一個括號的題目）；② 已知方程的一個根，求另一條式子的值；③ 用判別式 $\\Delta=b^{2}-4ac$ 判斷實根／等根／無實根，並求 $k$ 的範圍。課堂十題來自課堂教材（WS05）及歷屆文憑試，另外加 2 題針對練習（針對課堂上兩個常見錯誤：抽走共同括號後剩下的是 $1$ 不是 $0$；把 $\\beta^{2}$ 變為主項後整塊代入目標式），做完之後可以逐題重做。",
-    "en": "This lesson covers three things: (1) solving quadratic equations by factorisation, including equations with $x$ (or the same bracket) on both sides; (2) using a given root to evaluate another expression; (3) using the discriminant $\\Delta=b^{2}-4ac$ to decide real / equal / no real roots and to find the range of $k$. The ten class questions come from our lesson materials (WS05) and past HKDSE papers, plus two extra targeted exercises on the two common mistakes from class (the leftover after factoring out a shared bracket is 1, not 0; substitute $\\beta^{2}$ as a whole into the target expression). Every question can be redone."
+    "zh": "這一節課堂討論三件事：① 用因式分解解一元二次方程（包括兩邊都有 $x$ 或同一個括號的題目）；② 已知方程的一個根，求另一條式子的值；③ 用判別式 $\\Delta=b^{2}-4ac$ 判斷實根／等根／無實根，並求 $k$ 的範圍。課堂 10 題完成後，可以試做 2 題針對練習看看自己是否掌握所學。",
+    "en": "This lesson covers three things: (1) solving quadratic equations by factorisation, including equations with $x$ (or the same bracket) on both sides; (2) using a given root to evaluate another expression; (3) using the discriminant $\\Delta=b^{2}-4ac$ to decide real / equal / no real roots and to find the range of $k$. After finishing the 10 class questions, try the 2 targeted exercises to see whether you have grasped what we learnt."
    },
    "source": "S.K.H. Bishop Baker Secondary School · S.5 After-School Tutorial · Endeavour Lesson 1（WS05 相關）",
    "stats": {
@@ -122,7 +122,7 @@ window.LEARN_INDEX = {
    }
   }
  },
- "generatedAt": "2026-09-29T12:08:59Z",
+ "generatedAt": "2026-09-29T13:07:48Z",
  "counts": {
   "topics": 1,
   "held": 0,
