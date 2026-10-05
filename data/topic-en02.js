@@ -181,7 +181,7 @@ window.LEARN_TOPIC_EN02 = {
       "en": "Complex-number questions follow four fixed steps: (1) simplify any power of $i$ first by dividing the index by 4; (2) add, subtract, multiply or divide and tidy everything into the form $a+bi$ using $i^{2}=-1$; (3) when the denominator contains $i$, multiply the top and the bottom by its conjugate so that the denominator becomes $c^{2}+d^{2}$; (4) only then answer what is asked — the real part, the imaginary part, or use “is a real number” to mean that the imaginary part is zero.\n{{math:0}}\nFive ways marks are lost:\n(1) remembering $i^{4}$ as $-1$ instead of $1$, which spoils every higher power;\n(2) writing the conjugate product as $c^{2}-d^{2}$ instead of $c^{2}+d^{2}$, because minus $i$ squared is plus 1;\n(3) answering the imaginary part when the real part was asked, since the options usually contain both;\n(4) dropping the sign of the imaginary part ($2-4i$ has imaginary part $-4$, not $4$);\n(5) missing the constant terms that carry no $i$, such as minus $i$ to the 18th being plus 1."
      },
      "math": [
-      "z=a+bi:\\ \\text{real part}=a,\\ \\text{imaginary part}=b\nz\\ \\text{is real}\\ \\Leftrightarrow\\ b=0"
+      "z=a+bi:\\ \\text{real part}=a,\\ \\text{imaginary part}=b\nz\\ \\text{is purely imaginary}\\ \\Leftrightarrow\\ a=0\nz\\ \\text{is real}\\ \\Leftrightarrow\\ b=0"
      ],
      "vocab": [
       {

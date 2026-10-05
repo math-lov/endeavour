@@ -237,6 +237,21 @@ if (boxCards.length) {
   ok(/餘數/.test(bodyTxt) && /4/.test(bodyTxt), "重點框正文講明「除以 4 看餘數」");
 }
 
+/* ── 3e. 詞彙卡的中文詞義也要行內渲染 $…$（曾原樣顯示「實部 $=0$」）────── */
+console.log("\n— 詞彙卡行內數學 —");
+const vocabMath = CARDS.filter((c) => (c.vocab || []).some((v) => /\$/.test(v.zh || "")));
+ok(vocabMath.length >= 1, "at least one vocab chip carries inline maths (" + vocabMath.length + " cards)");
+if (vocabMath.length) {
+  const vc = vocabMath[0];
+  const pv = boot("topic.html", "?t=" + vc.topic + "&p=0");
+  const chips = pv.$$(".vocab .l-zh");
+  const rawDollar = chips.filter((s) => (s.textContent || "").indexOf("$") >= 0);
+  ok(rawDollar.length === 0,
+     "詞彙卡的中文詞義會行內渲染 $…$（原樣顯示的剩 " + rawDollar.length + " 個）");
+  ok(pv.$$(".vocab .l-zh .katex").length >= 1,
+     "詞彙卡的行內數學經 KaTeX 渲染（got " + pv.$$(".vocab .l-zh .katex").length + "）");
+}
+
 /* ── 4. MC 作答流程（用第一個課題）────────────────────────────────────── */
 console.log("\n— MC 練習 —");
 const t0 = LESSONS.topics[0];

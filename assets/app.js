@@ -866,7 +866,9 @@
           var sp = el("span");
           sp.appendChild(el("b", null, x.en));         // 英文術語永遠顯示（要學的就是它）
           var z = el("span", "l-zh");
-          z.textContent = " " + x.zh;
+          /* 中文詞義可以含行內數學（例：虛數單位 $i$、純虛數（實部 $=0$））——
+             與其他文字欄位一樣行內渲染。用 textContent 會把 $…$ 原樣顯示出來。 */
+          labelInto(z, " " + x.zh);
           sp.appendChild(z);
           v.appendChild(sp);
         });
