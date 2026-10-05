@@ -10,8 +10,8 @@ window.LEARN_TOPIC_EN01 = {
   "en": "Lesson 1 · Quadratic equations (solving & discriminant)"
  },
  "intro": {
-  "zh": "這一節課堂討論三件事：① 用因式分解解一元二次方程（包括兩邊都有 $x$ 或同一個括號的題目）；② 已知方程的一個根，求另一條式子的值；③ 用判別式 $\\Delta=b^{2}-4ac$ 判斷實根／等根／無實根，並求 $k$ 的範圍。課堂 10 題完成後，可以試做 2 題針對練習看看自己是否掌握所學。",
-  "en": "This lesson covers three things: (1) solving quadratic equations by factorisation, including equations with $x$ (or the same bracket) on both sides; (2) using a given root to evaluate another expression; (3) using the discriminant $\\Delta=b^{2}-4ac$ to decide real / equal / no real roots and to find the range of $k$. After finishing the 10 class questions, try the 2 targeted exercises to see whether you have grasped what we learnt."
+  "zh": "這一節課堂討論三件事：\n① 用因式分解解一元二次方程（包括兩邊都有 $x$ 或同一個括號的題目）；\n② 已知方程的一個根，求另一條式子的值；\n③ 用判別式 $\\Delta=b^{2}-4ac$ 判斷實根／等根／無實根，並求 $k$ 的範圍。\n課堂 10 題完成後，可以試做 2 題針對練習看看自己是否掌握所學。",
+  "en": "This lesson covers three things:\n(1) solving quadratic equations by factorisation, including equations with $x$ (or the same bracket) on both sides;\n(2) using a given root to evaluate another expression;\n(3) using the discriminant $\\Delta=b^{2}-4ac$ to decide real / equal / no real roots and to find the range of $k$.\nAfter finishing the 10 class questions, try the 2 targeted exercises to see whether you have grasped what we learnt."
  },
  "cmdHints": [
   {

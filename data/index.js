@@ -24,8 +24,8 @@ window.LEARN_INDEX = {
     "en": "Lesson 1 · Quadratic equations (solving & discriminant)"
    },
    "intro": {
-    "zh": "這一節課堂討論三件事：① 用因式分解解一元二次方程（包括兩邊都有 $x$ 或同一個括號的題目）；② 已知方程的一個根，求另一條式子的值；③ 用判別式 $\\Delta=b^{2}-4ac$ 判斷實根／等根／無實根，並求 $k$ 的範圍。課堂 10 題完成後，可以試做 2 題針對練習看看自己是否掌握所學。",
-    "en": "This lesson covers three things: (1) solving quadratic equations by factorisation, including equations with $x$ (or the same bracket) on both sides; (2) using a given root to evaluate another expression; (3) using the discriminant $\\Delta=b^{2}-4ac$ to decide real / equal / no real roots and to find the range of $k$. After finishing the 10 class questions, try the 2 targeted exercises to see whether you have grasped what we learnt."
+    "zh": "這一節課堂討論三件事：\n① 用因式分解解一元二次方程（包括兩邊都有 $x$ 或同一個括號的題目）；\n② 已知方程的一個根，求另一條式子的值；\n③ 用判別式 $\\Delta=b^{2}-4ac$ 判斷實根／等根／無實根，並求 $k$ 的範圍。\n課堂 10 題完成後，可以試做 2 題針對練習看看自己是否掌握所學。",
+    "en": "This lesson covers three things:\n(1) solving quadratic equations by factorisation, including equations with $x$ (or the same bracket) on both sides;\n(2) using a given root to evaluate another expression;\n(3) using the discriminant $\\Delta=b^{2}-4ac$ to decide real / equal / no real roots and to find the range of $k$.\nAfter finishing the 10 class questions, try the 2 targeted exercises to see whether you have grasped what we learnt."
    },
    "source": "S.K.H. Bishop Baker Secondary School · S.5 After-School Tutorial · Endeavour Lesson 1（WS05 相關）",
    "stats": {
@@ -47,8 +47,8 @@ window.LEARN_INDEX = {
     "en": "Lesson 2 · Discriminant, sum & product of roots, complex numbers"
    },
    "intro": {
-    "zh": "這一節課堂討論三件事：① 用判別式 $\\Delta=b^{2}-4ac$ 求 $k$（兩個相等實根／無實根／兩個相異實根／有實根）與 $k$ 的取值範圍；② 用根與係數 $\\alpha+\\beta=-\\frac{b}{a}$、$\\alpha\\beta=\\frac{c}{a}$ 求 $\\alpha^{2}+\\beta^{2}$（以 $k$ 或 $b$ 表示）；③ 複數：化簡成 $a+bi$、求實部與虛部、由「是實數」求 $k$，以及卷二的 $i$ 的冪題。① 在 Lesson 1 已學過（這一節是重溫），所以概念卡放 ② 與 ③；判別式的每一步仍寫在每題的題解裡，照著做就可以。",
-    "en": "This lesson covers three things: (1) using the discriminant $\\Delta=b^{2}-4ac$ to find $k$ (two equal real roots, no real roots, two distinct real roots, real roots) and the range of values of $k$; (2) using the sum and product of roots $\\alpha+\\beta=-\\frac{b}{a}$ and $\\alpha\\beta=\\frac{c}{a}$ to express $\\alpha^{2}+\\beta^{2}$ in terms of $k$ or $b$; (3) complex numbers: simplifying into the form $a+bi$, reading the real and imaginary parts, finding $k$ when a number is real, and the powers-of-$i$ questions in Paper 2. Topic (1) was already learnt in Lesson 1 and is revised here, so the concept cards cover (2) and (3); every step of the discriminant work is still shown in the step-by-step solutions."
+    "zh": "這一節課堂討論三件事：\n① 用判別式 $\\Delta=b^{2}-4ac$ 求 $k$（兩個相等實根／無實根／兩個相異實根／有實根）與 $k$ 的取值範圍；\n② 用根與係數 $\\alpha+\\beta=-\\frac{b}{a}$、$\\alpha\\beta=\\frac{c}{a}$ 求 $\\alpha^{2}+\\beta^{2}$（以 $k$ 或 $b$ 表示）；\n③ 複數：化簡成 $a+bi$、求實部與虛部、由「是實數」求 $k$，以及卷二的 $i$ 的冪題。\n其中 ① 在 Lesson 1 已學過（這一節是重溫），所以概念卡放 ② 與 ③；判別式的每一步仍寫在每題的題解裡，照著做就可以。",
+    "en": "This lesson covers three things:\n(1) using the discriminant $\\Delta=b^{2}-4ac$ to find $k$ (two equal real roots, no real roots, two distinct real roots, real roots) and the range of values of $k$;\n(2) using the sum and product of roots $\\alpha+\\beta=-\\frac{b}{a}$ and $\\alpha\\beta=\\frac{c}{a}$ to express $\\alpha^{2}+\\beta^{2}$ in terms of $k$ or $b$;\n(3) complex numbers: simplifying into the form $a+bi$, reading the real and imaginary parts, finding $k$ when a number is real, and the powers-of-$i$ questions in Paper 2.\nTopic (1) was already learnt in Lesson 1 and is revised here, so the concept cards cover (2) and (3); every step of the discriminant work is still shown in the step-by-step solutions."
    },
    "source": "S.K.H. Bishop Baker Secondary School · S.5 After-School Tutorial · Endeavour Lesson 2（EPH WS05 Q14–21、DSE P1 Q7–8、DSE P2 Q30–33）",
    "stats": {
@@ -145,7 +145,7 @@ window.LEARN_INDEX = {
    }
   }
  },
- "generatedAt": "2026-10-05T07:16:20Z",
+ "generatedAt": "2026-10-05T07:26:36Z",
  "counts": {
   "topics": 2,
   "held": 0,
