@@ -1118,8 +1118,8 @@
        "en": "(b) Apply the discriminant and solve the inequality"
       },
       "math": "\\Delta=(-4)^{2}-4(2)(k-1)\\ge 0\n\\Rightarrow 16-8(k-1)\\ge 0\n\\Rightarrow 16-[8k-8]\\ge 0\n\\Rightarrow 16-8k+8\\ge 0\n\\Rightarrow 24-8k\\ge 0\n\\Rightarrow 24\\ge 8k\n\\Rightarrow k\\le 3",
-      "zh": "$-4ac$ 的常數項是多項式 $(k-1)$，分配負號時最好把中括號寫出來：$16-[8k-8]=16-8k+8=24-8k$。最常見的錯就是漏了變號，寫成 $16-8k-8=8-8k$，之後的答案全部錯。最後把負項搬去右邊：$24\\ge 8k$，兩邊同除正數 $8$ 得 $k\\le 3$ —— 這樣就不會碰到「除以負數要反號」的陷阱。",
-      "en": "When working out -4ac, the constant term is the binomial k - 1, so write the bracket step 16 - [8k - 8] explicitly: forgetting the sign change gives 16 - 8k - 8, which ruins the rest. Moving -8k to the right gives 24 >= 8k, and dividing by the positive number 8 gives k <= 3 without any need to reverse the inequality.",
+      "zh": "$-4ac$ 的常數項是二項式 $(k-1)$，要記住 $-8(k-1)=-(8k-8)$：抽走負號時括號內每一項都要變號，所以最好把中括號寫出來：$16-[8k-8]=16-8k+8=24-8k$。最常見的失分就是漏了變號，寫成 $16-8k-8=8-8k$，之後的答案全部錯。最後把負項 $-8k$ 搬去右邊得 $24\\ge 8k$，兩邊同除正數 $8$ 得 $k\\le 3$ —— 這樣就不會碰到「除以負數要反號」的陷阱。",
+      "en": "Working out -4ac means expanding -8(k - 1), and every term inside the bracket changes sign: -8(k - 1) = -(8k - 8). Write that bracketed step down: 16 - [8k - 8] = 16 - 8k + 8 = 24 - 8k. The usual slip is dropping the sign change and writing 16 - 8k - 8 = 8 - 8k, which spoils everything that follows. Finally, move the negative term -8k to the right: 24 >= 8k, then divide by the positive number 8 to get k <= 3 — no need to reverse the inequality.",
       "marking": "(1A)",
       "highlight": [
        "k\\ge -16",
