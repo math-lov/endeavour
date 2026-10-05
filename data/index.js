@@ -145,7 +145,7 @@ window.LEARN_INDEX = {
    }
   }
  },
- "generatedAt": "2026-10-05T09:58:20Z",
+ "generatedAt": "2026-10-05T10:11:46Z",
  "counts": {
   "topics": 2,
   "held": 0,

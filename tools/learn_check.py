@@ -304,6 +304,22 @@ def main(argv: list[str] | None = None) -> int:
         if wn.get("zh") or wn.get("en"):
             need_pair("I3", "%s 常見錯誤" % cid, wn.get("zh"), wn.get("en"),
                       allow_han_in_en=False, min_en=10)
+        # 重點框（選填 box 欄位）：醒目面板（標籤＋標題＋正文＋公式），中英都要齊。
+        bx = c.get("box") or {}
+        if bx:
+            bt = bx.get("tag") or {}
+            if bt:
+                need_pair("I3", "%s 重點框標籤" % cid, bt.get("zh"), bt.get("en"), min_en=2)
+            bti = bx.get("title") or {}
+            need_pair("I4", "%s 重點框標題" % cid, bti.get("zh"), bti.get("en"))
+            need_pair("I3", "%s 重點框正文" % cid, bx.get("zh"), bx.get("en"),
+                      allow_han_in_en=False, min_en=15)
+            bmaths = bx.get("math") or []
+            if bmaths:
+                bmarks = (bx.get("zh") or "").count("{{math") + (bx.get("en") or "").count("{{math")
+                if bmarks != 2 * len(bmaths):
+                    warn("S7", "%s：重點框的 {{math:N}} 標記（中英合計 %d 個）與 math %d 條不符"
+                         % (cid, bmarks, len(bmaths)))
 
     for t in lessons.get("topics", []):
         tid = t.get("id", "?")

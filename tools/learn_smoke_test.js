@@ -210,6 +210,33 @@ if (mlCard) {
      "each line keeps data-tex so a late KaTeX load can still re-render it");
 }
 
+/* ── 3d. 概念卡「重點框」（box 欄位；例如 i 的四個冪）──────────────────── */
+console.log("\n— 概念卡重點框 —");
+const boxCards = CARDS.filter((c) => c.box && (c.box.math || []).length);
+ok(boxCards.length >= 1, "at least one concept card carries a key box (got " + boxCards.length + ")");
+if (boxCards.length) {
+  const bc = boxCards[0];
+  const pb = boot("topic.html", "?t=" + bc.topic + "&p=0");
+  ok(pb.$$(".key-box").length === 1, bc.topic + " 學習頁渲染 1 個重點框（got " + pb.$$(".key-box").length + "）");
+  ok(/餘數|重點/.test(((pb.$(".key-box .tag") || {}).textContent) || ""),
+     "重點框有醒目標籤（" + (((pb.$(".key-box .tag") || {}).textContent) || "") + "）");
+  const khead = pb.$(".key-box .key-head");
+  ok(!!khead && /i/.test(khead.textContent) && /餘數/.test(khead.textContent),
+     "重點框標題行寫明「除以 4 看餘數」（" + ((khead || {}).textContent || "").slice(0, 24) + "）");
+  /* 每條 math：單行＝1 個 .formula、多行＝N 個 .formula-line，兩者都帶 data-tex */
+  const wantTex = (bc.box.math || []).reduce((n, m) =>
+    n + m.split("\n").filter((s) => s.trim()).length, 0);
+  const zhTex = pb.$$(".key-box .box-body > .l-zh [data-tex]").length;
+  const enTex = pb.$$(".key-box .box-body > .l-en [data-tex]").length;
+  ok(zhTex === wantTex && enTex === wantTex,
+     "重點框 " + wantTex + " 行公式、中英各一份（" + zhTex + " / " + enTex + "）");
+  /* 只數「公式塊」內的 KaTeX（正文行內 $…$ 也是 .katex，不可混入計數）*/
+  const kbKatex = pb.$$(".key-box .box-body > .l-zh .formula .katex").length;
+  ok(kbKatex === wantTex, "重點框公式全部經 KaTeX 渲染（got " + kbKatex + " / " + wantTex + "）");
+  const bodyTxt = ((pb.$(".key-box .box-body > .l-zh") || {}).textContent || "");
+  ok(/餘數/.test(bodyTxt) && /4/.test(bodyTxt), "重點框正文講明「除以 4 看餘數」");
+}
+
 /* ── 4. MC 作答流程（用第一個課題）────────────────────────────────────── */
 console.log("\n— MC 練習 —");
 const t0 = LESSONS.topics[0];

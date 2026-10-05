@@ -831,6 +831,28 @@
       b.appendChild(be);
       card.appendChild(b);
 
+      /* 重點框（資料層 box 欄位，選填）：把一條要一眼看到的規則獨立成醒目面板 ——
+         藍框 ＋ 標籤（tag，預設「重點」）＋ 標題行 ＋ 正文（可插 {{math:N}}）＋ 公式。
+         例：en2-c2「$i$ 的四個冪：除以 4 看餘數」。 */
+      if (c.box && (c.box.zh || c.box.en)) {
+        var kb = el("div", "key-box");
+        var bt = c.box.tag && (c.box.tag.zh || c.box.tag.en)
+          ? c.box.tag : { zh: "重點", en: "Key point" };
+        kb.appendChild(el("span", "tag", T(bt)));
+        if (c.box.title && (c.box.title.zh || c.box.title.en)) {
+          kb.appendChild(biNode(c.box.title, "div", "key-head"));
+        }
+        var kbb = el("div", "box-body");
+        var kz = el("div", "l-zh");
+        renderMathBody(kz, c.box.zh || "", c.box.math || []);
+        var ke = el("div", "l-en");
+        renderMathBody(ke, c.box.en || (c.box && c.box.zh) || "", c.box.math || []);
+        kbb.appendChild(kz);
+        kbb.appendChild(ke);
+        kb.appendChild(kbb);
+        card.appendChild(kb);
+      }
+
       if (c.warn && (c.warn.zh || c.warn.en)) {
         var w = el("div", "callout");
         w.appendChild(el("span", "tag", T({ zh: "常見錯誤", en: "Common mistake" })));

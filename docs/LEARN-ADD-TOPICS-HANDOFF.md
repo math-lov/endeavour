@@ -190,11 +190,18 @@ $py = "C:\Users\t073\.workbuddy\binaries\python\envs\default\Scripts\python.exe"
  "body": { "zh": "正文…\n{{math:0}}\n{{math:1}} 可插在文字中間（不寫標記＝全部排在正文最後）" },
  "math": ["a^{2}-b^{2}\\equiv(a+b)(a-b)", "…"],   // 純 LaTeX，不加 $
  "vocab": [{ "en": "difference of two squares", "zh": "平方差" }],
- "warn": { "zh": "常見錯誤（顯示成橙框）" }
+ "warn": { "zh": "常見錯誤（顯示成橙框）" },
+ "box": {    // 選填：醒目「重點框」（藍框）—— 把一條要一眼看到的規則獨立出來
+  "tag": { "zh": "餘數法", "en": "Remainder rule" },      // 選填；預設「重點／Key point」
+  "title": { "zh": "$i$ 的四個冪：除以 4 看餘數", "en": "The four powers of $i$: …" },
+  "zh": "① …\n{{math:0}}\n② …", "en": "① …\n{{math:0}}\n② …",
+  "math": ["i^{1}=i,\\quad i^{2}=-1,\\quad i^{3}=-i,\\quad i^{4}=1", "…"]
+ }
 }
 ```
 
 * **`{{math:N}}` 數量要等於 `math` 陣列長度**（否則 `learn_check` S7 出警告）。
+* **`box`（選填）＝概念卡的醒目「重點框」**（2026-10-05 新增）：藍框＋標籤（`tag`，未給時用「重點／Key point」）＋標題行（`title`）＋正文（`zh`／`en`，可插 `{{math:N}}`）＋公式（`math`，框內用白底塊）。用途＝把一條要一眼看到的規則獨立出來；首個例子是 `en2-c2` 的「$i$ 的四個冪：除以 4 看餘數」（`assets/app.js` 的 `renderCards()` 內渲染，樣式在 `style.css` 的 `.key-box`）。中英要齊、`{{math:N}}` 數量要等於 `math` 長度（`learn_check` I3／I4＋S7 會驗；`learn_smoke_test.js` 另有 6 條斷言）。
 * vocab 的中文欄**不可以**以英文字開頭（S8 會擋）—— 這是「english 中文」被空格拆裂的徵狀；
   用面板輸入時格式是 **`english = 中文`**（等號分隔，見 §7）。
 * 概念卡內容用「方法一／二／三」編號，並在最後一張放「流程與常見錯誤」總覽。

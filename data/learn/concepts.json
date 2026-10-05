@@ -147,14 +147,31 @@
     "en": "Complex numbers: powers of $i$ and the four operations"
    },
    "body": {
-    "zh": "複數的基本規則只有一條：$i^{2}=-1$。\n{{math:0}}\n$i$ 的冪每 4 個一循環：$i^{1}=i$、$i^{2}=-1$、$i^{3}=-i$、$i^{4}=1$。要化簡 $i^{n}$，把 $n$ 除以 $4$ 看餘數：餘 $1$ → $i$；餘 $2$ → $-1$；餘 $3$ → $-i$；整除 → $1$。\n{{math:1}}\n加減：實部與實部合併、虛部與虛部合併 —— 例 $(4+5i)-(6-7i)=-2+12i$（減號要分配給每一項）。\n乘：展開之後把 $i^{2}$ 換成 $-1$，最後整理成 $a+bi$。\n{{math:2}}\n題目要求「express the result in the form $a+bi$」時，實部與虛部要分開兩份寫：$\\frac{3+i}{10}$ 寫成 $\\frac{3}{10}+\\frac{1}{10}i$。",
-    "en": "There is only one basic rule for complex numbers: $i^{2}=-1$.\n{{math:0}}\nThe powers of $i$ repeat every 4: $i^{1}=i$, $i^{2}=-1$, $i^{3}=-i$, $i^{4}=1$. To simplify $i^{n}$, divide $n$ by $4$ and look at the remainder: remainder $1$ gives $i$; remainder $2$ gives $-1$; remainder $3$ gives $-i$; no remainder gives $1$.\n{{math:1}}\nAdd and subtract: combine the real parts together and the imaginary parts together — for example $(4+5i)-(6-7i)=-2+12i$ (the minus sign applies to every term).\nMultiply: expand, replace $i^{2}$ by $-1$, then tidy everything into the form $a+bi$.\n{{math:2}}\nWhen the question says “express the result in the form $a+bi$”, keep the real part and the imaginary part as two separate terms: write $\\frac{3+i}{10}$ as $\\frac{3}{10}+\\frac{1}{10}i$."
+    "zh": "複數的基本規則只有一條：$i^{2}=-1$。\n{{math:0}}\n加減：實部與實部合併、虛部與虛部合併 —— 例 $(4+5i)-(6-7i)=-2+12i$（減號要分配給每一項）。\n乘：展開之後把 $i^{2}$ 換成 $-1$，最後整理成 $a+bi$。\n{{math:1}}\n題目要求「express the result in the form $a+bi$」時，實部與虛部要分開兩份寫：$\\frac{3+i}{10}$ 寫成 $\\frac{3}{10}+\\frac{1}{10}i$。\n高次冪（例如 $i^{18}$、$i^{31}$）不可以硬乘 —— 先看下面的重點框，用「除以 4 看餘數」一步化簡。",
+    "en": "There is only one basic rule for complex numbers: $i^{2}=-1$.\n{{math:0}}\nAdd and subtract: combine the real parts together and the imaginary parts together — for example $(4+5i)-(6-7i)=-2+12i$ (the minus sign applies to every term).\nMultiply: expand, replace $i^{2}$ by $-1$, then tidy everything into the form $a+bi$.\n{{math:1}}\nWhen the question says “express the result in the form $a+bi$”, keep the real part and the imaginary part as two separate terms: write $\\frac{3+i}{10}$ as $\\frac{3}{10}+\\frac{1}{10}i$.\nNever expand a high power such as $i^{18}$ or $i^{31}$ by hand — read the key box below and reduce it in one step by dividing the index by 4."
    },
    "math": [
     "i^{2}=-1",
-    "i^{18}=(i^{4})^{4}\\cdot i^{2}=1\\cdot(-1)=-1\ni^{31}=(i^{4})^{7}\\cdot i^{3}=1\\cdot(-i)=-i",
     "(1-2i)(3+4i)=3+4i-6i-8i^{2}\n=3-2i+8=11-2i"
    ],
+   "box": {
+    "tag": {
+     "zh": "餘數法",
+     "en": "Remainder rule"
+    },
+    "title": {
+     "zh": "$i$ 的四個冪：除以 4 看餘數",
+     "en": "The four powers of $i$: divide the index by 4 and look at the remainder"
+    },
+    "zh": "① 四個冪先順序記熟（餘數 1、2、3、0 依次對應 $i$、$-1$、$-i$、$1$）：\n{{math:0}}\n② 每 4 個一循環，所以第 5 個冪由頭開始：\n{{math:1}}\n③ 化簡 $i^{n}$ 只有一步 —— 把 $n$ 除以 4，看餘數（這是整個方法的重點）：\n{{math:2}}\n④ 例子：先把指數寫成 $4k+$ 餘數，再換成對應的冪。\n{{math:3}}",
+    "en": "① First learn the four powers in order (remainders 1, 2, 3 and 0 give $i$, $-1$, $-i$ and $1$):\n{{math:0}}\n② The pattern repeats every 4, so the fifth power starts the cycle again:\n{{math:1}}\n③ There is only one step in simplifying $i^{n}$ — divide $n$ by 4 and look at the remainder (this is the heart of the method):\n{{math:2}}\n④ Examples: write the index as $4k$ plus the remainder, then swap in the matching power.\n{{math:3}}",
+    "math": [
+     "i^{1}=i,\\quad i^{2}=-1,\\quad i^{3}=-i,\\quad i^{4}=1",
+     "i^{5}=i,\\quad i^{6}=-1,\\quad i^{7}=-i,\\quad i^{8}=1",
+     "\\text{remainder }1\\to i,\\quad 2\\to-1,\\quad 3\\to-i,\\quad 0\\to1",
+     "18=4\\times4+2\\ \\Rightarrow\\ i^{18}=i^{2}=-1\n31=4\\times7+3\\ \\Rightarrow\\ i^{31}=i^{3}=-i\n20=4\\times5+0\\ \\Rightarrow\\ i^{20}=i^{4}=1"
+    ]
+   },
    "vocab": [
     {
      "en": "imaginary unit",
@@ -165,12 +182,12 @@
      "zh": "$i$ 的冪"
     },
     {
-     "en": "in the form $a+bi$",
-     "zh": "寫成 $a+bi$ 的形式"
+     "en": "remainder",
+     "zh": "餘數（除以 4 之後餘下多少）"
     }
    ],
    "warn": {
-    "zh": "把 $i^{4}$ 誤記成 $-1$（正確是 $1$）最致命：$i^{20}=(i^{4})^{5}=1$，寫成 $-1$ 就會全盤皆錯。另一個常見錯：展開 $(3-2i)(1+i)$ 時漏了 $-2i\\times i=-2i^{2}=+2$，把虛部算成 $3-2=1$ 之外的東西。",
+    "zh": "把 $i^{4}$ 誤記成 $-1$（正確是 $1$）最致命：$i^{20}=(i^{4})^{5}=1$，寫成 $-1$ 就會全盤皆錯。另一個常見錯：展開 $(3-2i)(1+i)$ 時漏了 $-2i\\times i=-2i^{2}=+2$。",
     "en": "Remembering $i^{4}$ as $-1$ (it is $1$) ruins everything: $i^{20}=(i^{4})^{5}=1$, and writing $-1$ makes every later step wrong. Another common slip: when expanding $(3-2i)(1+i)$, the term $-2i\\times i=-2i^{2}=+2$ is missed."
    }
   },
