@@ -424,7 +424,7 @@ window.LEARN_TOPIC_EN01 = {
      "subtopic": "quadratic-equations",
      "difficulty": 2,
      "code": "EN1-Q4",
-     "source": "WS05 課堂題（判別式：求 $k$ 的範圍）",
+     "source": "WS05 課堂題（判別式：求 k 的範圍）",
      "stem": {
       "en": "If each of the following quadratic equations has real roots, find the range of values of $k$.",
       "zh": "若以下每個二次方程都有實根，求 $k$ 的取值範圍。"

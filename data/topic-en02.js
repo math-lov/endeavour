@@ -288,11 +288,11 @@ window.LEARN_TOPIC_EN02 = {
       "alt": [
        {
         "name": {
-         "zh": "驗算法：把 $k$ 代回，看是否真的重根",
-         "en": "Check: substitute each k back and test for a repeated root"
+         "zh": "計算機保底驗算法：Formula 01 重根檢驗",
+         "en": "Calculator safety net: repeated root check with Formula 01"
         },
-        "zh": "把 $k=4$ 代回 (a)：$x^{2}+4x+4=0$，即 $(x+2)^{2}=0$，只有一個根 $x=-2$（重根）✓。把 $k=25$ 代回 (b)：$25x^{2}-30x+9=0$，用計算機按【FMLA】【01】看兩個根是否相同，相同就代表 $\\Delta=0$。",
-        "en": "Put k = 4 back into (a): x^2 + 4x + 4 = 0 is (x + 2)^2 = 0, a repeated root at x = -2. Put k = 25 back into (b) and check with the calculator that both roots coincide, which confirms the discriminant is zero."
+        "zh": "把求得的 $k$ 代回方程檢驗：用考評局准用的 Casio fx-50FH II 按【FMLA】【01】（或 fx-3650P II 執行 Prog 1）。(a) 輸入 $a=1$、$b=4$、$c=4$，屏幕顯示 $x=-2$，兩個根是同一個數值 → 重根，證明 $\\Delta=0$；(b) 輸入 $a=25$、$b=-30$、$c=9$，屏幕顯示 $x=0.6$（即 $\\frac{3}{5}$），兩個根同樣相同 → 重根，證明 $k=25$ 正確。（卷一仍要寫出手算步驟才得分，這裡只是驗算。）",
+        "en": "Substitute each value of k back and check: on a Casio fx-50FH II press [FMLA] [01] (or run Prog 1 on a fx-3650P II). For (a) enter a = 1, b = 4, c = 4: the screen shows x = -2 with both roots equal, confirming a repeated root and Δ = 0. For (b) enter a = 25, b = -30, c = 9: the screen shows x = 0.6, again a repeated root, so k = 25 is correct. (Marks in Paper 1 still come from the written steps — this is only a check.)"
        }
       ]
      },
@@ -483,9 +483,9 @@ window.LEARN_TOPIC_EN02 = {
          "zh": "第 4 步 (b) · 判別式 $\\ge 0$ 並解不等式",
          "en": "(b) Apply the discriminant and solve the inequality"
         },
-        "math": "\\Delta=(-4)^{2}-4(2)(k-1)\n=24-8k\\ge 0\n\\Rightarrow k\\le 3",
-        "zh": "$16-8k+8=24-8k\\ge 0$，把 $-8k$ 搬去右邊得 $24\\ge 8k$，即 $k\\le 3$。（搬項就不會兩邊除負數反號。）",
-        "en": "The discriminant is 24 - 8k, which must be at least 0, so k is at most 3. Moving the negative term across keeps the inequality direction.",
+        "math": "\\Delta=(-4)^{2}-4(2)(k-1)\\ge 0\n\\Rightarrow 16-8(k-1)\\ge 0\n\\Rightarrow 16-[8k-8]\\ge 0\n\\Rightarrow 16-8k+8\\ge 0\n\\Rightarrow 24-8k\\ge 0\n\\Rightarrow 24\\ge 8k\n\\Rightarrow k\\le 3",
+        "zh": "$-4ac$ 的常數項是多項式 $(k-1)$，分配負號時最好把中括號寫出來：$16-[8k-8]=16-8k+8=24-8k$。最常見的錯就是漏了變號，寫成 $16-8k-8=8-8k$，之後的答案全部錯。最後把負項搬去右邊：$24\\ge 8k$，兩邊同除正數 $8$ 得 $k\\le 3$ —— 這樣就不會碰到「除以負數要反號」的陷阱。",
+        "en": "When working out -4ac, the constant term is the binomial k - 1, so write the bracket step 16 - [8k - 8] explicitly: forgetting the sign change gives 16 - 8k - 8, which ruins the rest. Moving -8k to the right gives 24 >= 8k, and dividing by the positive number 8 gives k <= 3 without any need to reverse the inequality.",
         "marking": "(1A)",
         "highlight": [
          "k\\ge -16",
@@ -855,11 +855,11 @@ window.LEARN_TOPIC_EN02 = {
       "alt": [
        {
         "name": {
-         "zh": "驗算法：(c) 用計算機以 $i$ 的形式核對",
-         "en": "Check: verify part (c) with a calculator"
+         "zh": "計算機保底驗算法：複數模式（CMPLX）核對三小題",
+         "en": "Calculator safety net: verify all three parts in CMPLX mode"
         },
-        "zh": "把 $\\frac{2+i}{7+i}$ 的分子分母同乘 $7-i$ 的結果 $\\frac{15+5i}{50}$ 再約簡：$\\frac{15}{50}=0.3$、$\\frac{5}{50}=0.1$，與 $\\frac{3}{10}+\\frac{1}{10}i$ 一致。也可以用計算機的複數模式輸入 $(2+i)\\div(7+i)$ 核對。",
-        "en": "The fraction reduces to three tenths plus one tenth i, which is 0.3 + 0.1i, and a calculator in complex mode can confirm the same value."
+        "zh": "考評局准用的 Casio fx-50FH II 可以直接計複數：按【MODE】【2】轉去 CMPLX 模式（屏幕上方顯示 CMPLX），$i$ 用【ENG】鍵輸入，做完按【MODE】【1】返回 COMP 模式。(a) 輸入 $(4+5i)-(6-7i)$ 按【=】得 $-2$，再按【SHIFT】【=】（Re⇔Im）讀出虛部 $12$ → $-2+12i$；(b) 輸入 $(1-2i)(3+4i)$ 得 $11$，虛部 $-2$ → $11-2i$；(c) 輸入 $(2+i)\\div(7+i)$ 得 $0.3$（即 $\\frac{3}{10}$），虛部 $0.1$（即 $\\frac{1}{10}$）→ $\\frac{3}{10}+\\frac{1}{10}i$。三小題十秒內核完。（卷一仍要寫出手算步驟才得分。）",
+        "en": "An approved Casio fx-50FH II can work with complex numbers directly: press [MODE] [2] for CMPLX mode (the screen shows CMPLX), type the imaginary unit with the [ENG] key, and return with [MODE] [1]. For (a) enter (4+5i)-(6-7i): the screen gives -2 and SHIFT = (Re to Im) shows the imaginary part 12, so the answer is -2+12i; for (b) (1-2i)(3+4i) gives 11 and -2i; for (c) (2+i) divided by (7+i) gives 0.3 and 0.1i, that is three tenths plus one tenth i. Marks in Paper 1 still come from the written steps."
        }
       ]
      },
@@ -910,8 +910,8 @@ window.LEARN_TOPIC_EN02 = {
          "en": "Step 3 · Substitute back and read off both parts"
         },
         "math": "5-\\frac{4+3i}{i}=5-(3-4i)\n=5-3+4i\n=2+4i",
-        "zh": "$5-(3-4i)$：減號要分配，$-(-4i)=+4i$。結果是 $2+4i$，所以實部是 $2$、虛部是 $4$。",
-        "en": "The minus sign applies to both terms, so the expression becomes 2 + 4i: the real part is 2 and the imaginary part is 4.",
+        "zh": "$5-(3-4i)$：減號要分配給括號內的每一項，$-(-4i)=+4i$。結果是 $2+4i$，所以實部是 $2$、虛部是 $4$ —— 虛部只取 $i$ 前面的係數（連符號），不包含 $i$ 本身。",
+        "en": "The minus sign must be distributed over both terms: 5 - 3 + 4i = 2 + 4i. The real part is 2 and the imaginary part is 4 — the imaginary part is the coefficient of i on its own, with its sign.",
         "marking": "(1A)",
         "highlight": [
          "\\text{real part}=2",
@@ -1000,9 +1000,9 @@ window.LEARN_TOPIC_EN02 = {
          "zh": "第 3 步 · 「是實數」⇒ 虛部 $=0$",
          "en": "Step 3 · Being real means the imaginary part is zero"
         },
-        "math": "\\frac{2k+1}{5}=0\n\\Rightarrow 2k+1=0\n\\Rightarrow k=-\\frac{1}{2}",
-        "zh": "實數的虛部是 $0$：$-\\frac{2k+1}{5}=0$，即 $2k+1=0$，所以 $k=-\\frac{1}{2}$。（驗算：代入後虛部是 $0$，整個複數就是實部 $\\frac{k-2}{5}$，確實是實數。）",
-        "en": "A real number has zero imaginary part, so 2k + 1 is zero and k is minus one half; substituting back leaves a purely real value.",
+        "math": "-\\frac{2k+1}{5}=0\n\\Rightarrow -(2k+1)=0\n\\Rightarrow 2k+1=0\n\\Rightarrow 2k=-1\n\\Rightarrow k=-\\frac{1}{2}",
+        "zh": "題目說這個複數「是實數」，即虛部 $=0$。由標準形 $\\frac{k-2}{5}-\\frac{2k+1}{5}i$ 可見虛部是 $-\\frac{2k+1}{5}$（連負號）。令它等於 $0$：兩邊同乘 $-5$ 得 $2k+1=0$，解得 $k=-\\frac{1}{2}$。這裡右邊是 $0$，負號最後會消去；但每次都把虛部連負號寫出來，遇到右邊不是 $0$ 的題目（例如虛部 $=3$）就不會漏符號。",
+        "en": "The number is real, so its imaginary part is 0. In the standard form the imaginary part is -(2k + 1)/5, negative sign included. Setting it to zero and multiplying both sides by -5 gives 2k + 1 = 0, hence k = -1/2. The sign disappears here only because the right-hand side is zero; writing it every time stops sign errors when the right-hand side is not zero.",
         "marking": "(1A)",
         "highlight": [
          "k=-\\frac{1}{2}"
@@ -1322,11 +1322,11 @@ window.LEARN_TOPIC_EN02 = {
        "alt": [
         {
          "name": {
-          "zh": "驗算法：代一個具體的 $k$ 核對",
-          "en": "Check: substitute a value for k"
+          "zh": "卷二保底：質數代入法（避開 $k=0$、$k=1$）",
+          "en": "Paper 2 safety net: substitute a prime (avoid 0 and 1)"
          },
-         "zh": "設 $k=0$：原式 $=\\frac{i}{-2i}-\\frac{2}{2i}=-\\frac{1}{2}-\\frac{1}{i}=-\\frac{1}{2}+i$，虛部是 $1$（這一步確認計法正確）。再設 $k=3$：虛部應是 $\\frac{3+4}{3^{2}+4}=\\frac{7}{13}$，只有 B 給 $\\frac{7}{13}$（A 給 $\\frac{3-4}{9-4}=-\\frac{1}{5}$ ✗），所以答案是 B。",
-         "en": "Substituting k = 0 gives an imaginary part of 1 and several options agree, so test a second value such as k = 3 to single out the correct expression."
+         "zh": "$k=0$ 會令選項巧合地相同（A、B 都得 $1$），所以要取一個「不靚」的數。設 $k=3$：原式 $=\\frac{i}{3-2i}-\\frac{2}{3+2i}$，虛部應該是 $\\frac{3+4}{3^{2}+4}=\\frac{7}{13}$。把 $k=3$ 逐個代入選項：A 得 $\\frac{3-4}{9-4}=-\\frac{1}{5}$、B 得 $\\frac{3+4}{9+4}=\\frac{7}{13}$、C 得 $\\frac{6-2}{9-4}=\\frac{4}{5}$、D 得 $\\frac{6+2}{9+4}=\\frac{8}{13}$ —— 只有 B 吻合。",
+         "en": "With k = 0 the options coincide (A and B both give 1), so pick a value that separates them. Put k = 3: the expression is i/(3-2i) - 2/(3+2i), whose imaginary part should be 7/13. Substituting k = 3 into each option gives A = -1/5, B = 7/13, C = 4/5 and D = 8/13, so only B matches."
         }
        ]
       },
@@ -1415,11 +1415,11 @@ window.LEARN_TOPIC_EN02 = {
        "alt": [
         {
          "name": {
-          "zh": "驗算法：代 $a=0$ 快速核對",
-          "en": "Check: put a equal to zero"
+          "zh": "卷二保底：質數代入法（$a=1$ 會令分母為 0）",
+          "en": "Paper 2 safety net: substitute a prime (a = 1 makes denominators zero)"
          },
-         "zh": "設 $a=0$：原式 $=\\frac{8-i}{-i}+1=\\frac{(8-i)(i)}{(-i)(i)}+1=\\frac{8i-i^{2}}{1}+1=8i+1+1=2+8i$，實部是 $2$。答案 D 在 $a=0$ 時是 $\\frac{0+0+2}{0+1}=2$ ✓（A、C 的分母是 $-1$，得 $-2$ ✗；B 得 $1$ ✗）。",
-         "en": "Putting a equal to zero gives a real part of 2, which matches option D and rules out the others."
+         "zh": "$a=1$ 會令選項 A、C 的分母變成 $0$，$a=0$ 又容易看漏符號 —— 取 $a=2$ 最穩。先化簡 $i^{13}=i$、$-i^{18}=-(-1)=+1$，原式成為 $\\frac{8-i}{2-i}+1$，實部應該是 $\\frac{4+16+2}{4+1}=\\frac{22}{5}=4.4$。把 $a=2$ 逐個代入選項：A 得 $\\frac{17}{3}$、B 得 $\\frac{17}{5}=3.4$、C 得 $\\frac{22}{3}$、D 得 $\\frac{22}{5}=4.4$ —— 只有 D 吻合，穩奪此分。",
+         "en": "Putting a = 1 makes the denominators of options A and C zero, and a = 0 hides sign errors, so take a = 2. With i^13 = i and -i^18 = +1 the expression becomes (8-i)/(2-i) + 1, whose real part should be 22/5 = 4.4. At a = 2 the four options give A = 17/3, B = 17/5, C = 22/3 and D = 22/5, so only D matches."
         }
        ]
       },
@@ -1587,11 +1587,11 @@ window.LEARN_TOPIC_EN02 = {
        "alt": [
         {
          "name": {
-          "zh": "驗算法：逐項核對四個積",
-          "en": "Check: verify the four products one by one"
+          "zh": "計算機保底：CMPLX 模式 5 秒直出虛部",
+          "en": "Calculator safety net: read the imaginary part in CMPLX mode"
          },
-         "zh": "$3(1)=3$、$3(i)=3i$、$(-2i)(1)=-2i$、$(-2i)(i)=-2i^{2}=+2$：實部 $3+2=5$、虛部 $3-2=1$ ✓ 結果 $5+i$。",
-         "en": "Checking the four products gives 3, 3i, minus 2i and plus 2, so the value is 5 + i with imaginary part 1."
+         "zh": "卷二複數四則運算不用手寫展開：按【MODE】【2】進入 CMPLX 模式，輸入 $(3-2i)(1+i)$ 按【=】先顯示實部 $5$，再按【SHIFT】【=】（Re⇔Im）顯示虛部 $1$ —— 即時排除干擾項 $5$，選 B。",
+         "en": "No need to expand by hand in Paper 2: press [MODE] [2] for CMPLX mode, enter (3-2i)(1+i) and press = to see the real part 5, then SHIFT = (Re to Im) to read the imaginary part 1, which rules out the distractor 5 and gives B."
         }
        ]
       },
