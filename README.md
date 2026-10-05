@@ -7,7 +7,7 @@ S.5 課後研習的專屬溫習站：**概念卡 → 逐步示範 → MC／短�
 | 線上 | `https://math-lov.github.io/endeavour/` |
 | Repo | `https://github.com/math-lov/endeavour` |
 | 本機 | `C:\Code Buddy\Endeavour` |
-| 現有內容 | 課題 `en01`：12 題（MC 8：EN1-M1～M6 ＋ 課後針對練習 M7／M8；短答／長題 4）＋ 3 張概念卡 |
+| 現有內容 | `en01`（Lesson 1）：12 題（MC 8：EN1-M1～M6 ＋ 課後針對練習 M7／M8；短答／長題 4）＋ 3 張概念卡<br>`en02`（Lesson 2）：14 題（長題 8：EN2-Q1～Q8；MC 6：EN2-M1～M6，其中 M5／M6 為課後針對練習）＋ 4 張概念卡（**根與係數 ＋ 複數** —— 判別式在 Lesson 1 已學，本課只作重溫，步驟仍見於每題題解） |
 | 進度 | 只存學生瀏覽器（與其他三個站完全分開） |
 
 ## 命名與用語（2026-09-28 老師指示）

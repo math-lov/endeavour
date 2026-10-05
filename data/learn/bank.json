@@ -255,6 +255,335 @@
    ],
    "marks": 4,
    "review": null
+  },
+  {
+   "id": "eph-en02-q1",
+   "type": "long",
+   "topic": "en02",
+   "unit": 5,
+   "subtopic": "quadratic-equations",
+   "difficulty": 2,
+   "code": "EN2-Q1",
+   "source": "Endeavour Lesson 2 Q19 · EPH WS05 Q19（判別式：兩個相等實根）",
+   "stem": {
+    "en": "If each of the following quadratic equations has two equal real roots, find $k$.",
+    "zh": "若下列每個二次方程都有兩個相等實根，求 $k$。"
+   },
+   "parts": [
+    {
+     "label": "(a)",
+     "text": "$x^{2}+4x+k=0$",
+     "en": "$x^{2}+4x+k=0$",
+     "zh": "$x^{2}+4x+k=0$",
+     "marks": 2
+    },
+    {
+     "label": "(b)",
+     "text": "$kx^{2}-30x+9=0$",
+     "en": "$kx^{2}-30x+9=0$",
+     "zh": "$kx^{2}-30x+9=0$",
+     "marks": 2
+    }
+   ],
+   "marks": 4,
+   "review": null
+  },
+  {
+   "id": "eph-en02-q2",
+   "type": "long",
+   "topic": "en02",
+   "unit": 5,
+   "subtopic": "quadratic-equations",
+   "difficulty": 2,
+   "code": "EN2-Q2",
+   "source": "Endeavour Lesson 2 Q20 · EPH WS05 Q20（判別式：求 k 的範圍）",
+   "stem": {
+    "en": "For each of the following quadratic equations, find the range of values of $k$.",
+    "zh": "就下列每個二次方程，求 $k$ 的取值範圍。"
+   },
+   "parts": [
+    {
+     "label": "(a)",
+     "text": "$x^{2}-6x+k=0$ has no real roots.",
+     "en": "$x^{2}-6x+k=0$ has no real roots.",
+     "zh": "$x^{2}-6x+k=0$ 無實根。",
+     "marks": 2
+    },
+    {
+     "label": "(b)",
+     "text": "$9x^{2}+3x-k=0$ has two unequal real roots.",
+     "en": "$9x^{2}+3x-k=0$ has two unequal real roots.",
+     "zh": "$9x^{2}+3x-k=0$ 有兩個相異實根。",
+     "marks": 2
+    }
+   ],
+   "marks": 4,
+   "review": null
+  },
+  {
+   "id": "eph-en02-q3",
+   "type": "long",
+   "topic": "en02",
+   "unit": 5,
+   "subtopic": "quadratic-equations",
+   "difficulty": 2,
+   "code": "EN2-Q3",
+   "source": "Endeavour Lesson 2 Q21 · EPH WS05 Q21（判別式：有實根）",
+   "stem": {
+    "en": "If each of the following quadratic equations has real roots, find the range of values of $k$.",
+    "zh": "若下列每個二次方程都有實根，求 $k$ 的取值範圍。"
+   },
+   "parts": [
+    {
+     "label": "(a)",
+     "text": "$x^{2}+8x-k=0$",
+     "en": "$x^{2}+8x-k=0$",
+     "zh": "$x^{2}+8x-k=0$",
+     "marks": 2
+    },
+    {
+     "label": "(b)",
+     "text": "$2x^{2}-4x+k=1$",
+     "en": "$2x^{2}-4x+k=1$",
+     "zh": "$2x^{2}-4x+k=1$",
+     "marks": 2
+    }
+   ],
+   "marks": 4,
+   "review": null
+  },
+  {
+   "id": "eph-en02-q4",
+   "type": "long",
+   "topic": "en02",
+   "unit": 5,
+   "subtopic": "quadratic-equations",
+   "difficulty": 3,
+   "code": "EN2-Q4",
+   "source": "Endeavour Lesson 2 Q7 · EPH WS05 DSE P1 Q7 · [HKDSE 2022 Paper 1 Q17(a)]（3 marks）",
+   "stem": {
+    "en": "Let $k$ be a real constant. The roots of the equation $x^{2}+kx-15=0$ are $\\alpha$ and $\\beta$. Express $\\alpha^{2}+\\beta^{2}$ in terms of $k$.",
+    "zh": "設 $k$ 為實常數。方程 $x^{2}+kx-15=0$ 的兩個根是 $\\alpha$ 與 $\\beta$。以 $k$ 表示 $\\alpha^{2}+\\beta^{2}$。"
+   },
+   "kind": "short",
+   "marks": 3,
+   "review": null
+  },
+  {
+   "id": "eph-en02-q5",
+   "type": "long",
+   "topic": "en02",
+   "unit": 5,
+   "subtopic": "quadratic-equations",
+   "difficulty": 3,
+   "code": "EN2-Q5",
+   "source": "Endeavour Lesson 2 Q8 · EPH WS05 DSE P1 Q8（2022 P1 Q17(a) 同款變式，3 marks）",
+   "stem": {
+    "en": "Let $b$ be a real constant. The roots of the equation $2x^{2}-bx+8=0$ are $\\alpha$ and $\\beta$. Express $\\alpha^{2}+\\beta^{2}$ in terms of $b$.",
+    "zh": "設 $b$ 為實常數。方程 $2x^{2}-bx+8=0$ 的兩個根是 $\\alpha$ 與 $\\beta$。以 $b$ 表示 $\\alpha^{2}+\\beta^{2}$。"
+   },
+   "kind": "short",
+   "marks": 3,
+   "review": null
+  },
+  {
+   "id": "eph-en02-q6",
+   "type": "long",
+   "topic": "en02",
+   "unit": 6,
+   "subtopic": "complex-numbers",
+   "difficulty": 2,
+   "code": "EN2-Q6",
+   "source": "Endeavour Lesson 2 Q14–16 · EPH WS05 Q14–16（複數化簡：寫成 a+bi）",
+   "stem": {
+    "en": "Simplify the following and express the results in the form $a+bi$.",
+    "zh": "化簡下列各題，並以 $a+bi$ 的形式表示結果。"
+   },
+   "parts": [
+    {
+     "label": "(a)",
+     "text": "$(4+5i)-(6-7i)$",
+     "en": "$(4+5i)-(6-7i)$",
+     "zh": "$(4+5i)-(6-7i)$",
+     "marks": 2
+    },
+    {
+     "label": "(b)",
+     "text": "$(1-2i)(3+4i)$",
+     "en": "$(1-2i)(3+4i)$",
+     "zh": "$(1-2i)(3+4i)$",
+     "marks": 2
+    },
+    {
+     "label": "(c)",
+     "text": "$\\frac{2+i}{7+i}$",
+     "en": "$\\frac{2+i}{7+i}$",
+     "zh": "$\\frac{2+i}{7+i}$",
+     "marks": 3
+    }
+   ],
+   "marks": 7,
+   "review": null
+  },
+  {
+   "id": "eph-en02-q7",
+   "type": "long",
+   "topic": "en02",
+   "unit": 6,
+   "subtopic": "complex-numbers",
+   "difficulty": 2,
+   "code": "EN2-Q7",
+   "source": "Endeavour Lesson 2 Q17 · EPH WS05 Q17（複數的實部與虛部）",
+   "stem": {
+    "en": "Find the real part and the imaginary part of $5-\\frac{4+3i}{i}$.",
+    "zh": "求 $5-\\frac{4+3i}{i}$ 的實部與虛部。"
+   },
+   "kind": "short",
+   "marks": 3,
+   "review": null
+  },
+  {
+   "id": "eph-en02-q8",
+   "type": "long",
+   "topic": "en02",
+   "unit": 6,
+   "subtopic": "complex-numbers",
+   "difficulty": 3,
+   "code": "EN2-Q8",
+   "source": "Endeavour Lesson 2 Q18 · EPH WS05 Q18（複數：已知是實數求 k）",
+   "stem": {
+    "en": "If $k$ and $\\frac{k-i}{1+2i}$ are real numbers, find $k$.",
+    "zh": "若 $k$ 與 $\\frac{k-i}{1+2i}$ 都是實數，求 $k$。"
+   },
+   "kind": "short",
+   "marks": 3,
+   "review": null
+  },
+  {
+   "id": "eph-en02-m1",
+   "type": "mc",
+   "topic": "en02",
+   "unit": 6,
+   "subtopic": "complex-numbers",
+   "difficulty": 3,
+   "code": "EN2-M1",
+   "source": "Endeavour Lesson 2 Q30 · EPH WS05 Q30 · [HKDSE 2023 Paper 2 Q34]",
+   "stem": {
+    "en": "If $k$ is a real number, then the imaginary part of $\\frac{i}{k-2i}-\\frac{2}{k+2i}$ is",
+    "zh": "若 $k$ 是實數，則 $\\frac{i}{k-2i}-\\frac{2}{k+2i}$ 的虛部是"
+   },
+   "options": {
+    "A": "$\\frac{k-4}{k^{2}-4}$",
+    "B": "$\\frac{k+4}{k^{2}+4}$",
+    "C": "$\\frac{2k-2}{k^{2}-4}$",
+    "D": "$\\frac{2k+2}{k^{2}+4}$"
+   },
+   "review": null
+  },
+  {
+   "id": "eph-en02-m2",
+   "type": "mc",
+   "topic": "en02",
+   "unit": 6,
+   "subtopic": "complex-numbers",
+   "difficulty": 2,
+   "code": "EN2-M2",
+   "source": "Endeavour Lesson 2 Q31 · EPH WS05 Q31 · [HKDSE 2013 Paper 2 Q36]",
+   "stem": {
+    "en": "The real part of $3i^{18}+2i^{19}-3i^{20}-5i^{21}$ is",
+    "zh": "$3i^{18}+2i^{19}-3i^{20}-5i^{21}$ 的實部是"
+   },
+   "options": {
+    "A": "$-7$",
+    "B": "$-6$",
+    "C": "$0$",
+    "D": "$6$"
+   },
+   "review": null
+  },
+  {
+   "id": "eph-en02-m3",
+   "type": "mc",
+   "topic": "en02",
+   "unit": 6,
+   "subtopic": "complex-numbers",
+   "difficulty": 2,
+   "code": "EN2-M3",
+   "source": "Endeavour Lesson 2 Q32 · EPH WS05 Q32 · [HKDSE 2018 Paper 2 Q37]",
+   "stem": {
+    "en": "The imaginary part of $\\frac{9i^{5}+8i^{6}+3i^{7}-8i^{8}-8i^{9}}{1-i}$ is",
+    "zh": "$\\frac{9i^{5}+8i^{6}+3i^{7}-8i^{8}-8i^{9}}{1-i}$ 的虛部是"
+   },
+   "options": {
+    "A": "$-9$",
+    "B": "$-7$",
+    "C": "$7$",
+    "D": "$9$"
+   },
+   "review": null
+  },
+  {
+   "id": "eph-en02-m4",
+   "type": "mc",
+   "topic": "en02",
+   "unit": 6,
+   "subtopic": "complex-numbers",
+   "difficulty": 3,
+   "code": "EN2-M4",
+   "source": "Endeavour Lesson 2 Q33 · EPH WS05 Q33 · [HKDSE 2019 Paper 2 Q34]",
+   "stem": {
+    "en": "If $a$ is a real number, then the real part of $\\frac{8-i^{13}}{a-i}-i^{18}$ is",
+    "zh": "若 $a$ 是實數，則 $\\frac{8-i^{13}}{a-i}-i^{18}$ 的實部是"
+   },
+   "options": {
+    "A": "$\\frac{8a+1}{a^{2}-1}$",
+    "B": "$\\frac{8a+1}{a^{2}+1}$",
+    "C": "$\\frac{a^{2}+8a+2}{a^{2}-1}$",
+    "D": "$\\frac{a^{2}+8a+2}{a^{2}+1}$"
+   },
+   "review": null
+  },
+  {
+   "id": "eph-en02-m5",
+   "type": "mc",
+   "topic": "en02",
+   "unit": 5,
+   "subtopic": "quadratic-equations",
+   "difficulty": 2,
+   "code": "EN2-M5",
+   "source": "Lesson 2 課後針對練習（自編）· 判別式：無實根 → 求 k 的範圍",
+   "stem": {
+    "en": "Let $k$ be a constant. If the quadratic equation $x^{2}+4x+k=0$ has no real roots, find the range of values of $k$.",
+    "zh": "設 $k$ 為常數。若二次方程 $x^{2}+4x+k=0$ 無實根，求 $k$ 的取值範圍。"
+   },
+   "options": {
+    "A": "$k<4$",
+    "B": "$k>4$",
+    "C": "$k\\le 4$",
+    "D": "$k\\ge 4$"
+   },
+   "review": null
+  },
+  {
+   "id": "eph-en02-m6",
+   "type": "mc",
+   "topic": "en02",
+   "unit": 6,
+   "subtopic": "complex-numbers",
+   "difficulty": 1,
+   "code": "EN2-M6",
+   "source": "Lesson 2 課後針對練習（自編）· 複數：展開後讀虛部（分清實部與虛部）",
+   "stem": {
+    "en": "The imaginary part of $(3-2i)(1+i)$ is",
+    "zh": "$(3-2i)(1+i)$ 的虛部是"
+   },
+   "options": {
+    "A": "$3$",
+    "B": "$1$",
+    "C": "$5$",
+    "D": "$5+i$"
+   },
+   "review": null
   }
  ]
 }

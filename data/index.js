@@ -37,6 +37,29 @@ window.LEARN_INDEX = {
    "lessonIds": [
     "en01-1"
    ]
+  },
+  {
+   "id": "en02",
+   "stage": 1,
+   "unit": 5,
+   "name": {
+    "zh": "Lesson 2 · 判別式、根與係數、複數",
+    "en": "Lesson 2 · Discriminant, sum & product of roots, complex numbers"
+   },
+   "intro": {
+    "zh": "這一節課堂討論三件事：① 用判別式 $\\Delta=b^{2}-4ac$ 求 $k$（兩個相等實根／無實根／兩個相異實根／有實根）與 $k$ 的取值範圍；② 用根與係數 $\\alpha+\\beta=-\\frac{b}{a}$、$\\alpha\\beta=\\frac{c}{a}$ 求 $\\alpha^{2}+\\beta^{2}$（以 $k$ 或 $b$ 表示）；③ 複數：化簡成 $a+bi$、求實部與虛部、由「是實數」求 $k$，以及卷二的 $i$ 的冪題。① 在 Lesson 1 已學過（這一節是重溫），所以概念卡放 ② 與 ③；判別式的每一步仍寫在每題的題解裡，照著做就可以。",
+    "en": "This lesson covers three things: (1) using the discriminant $\\Delta=b^{2}-4ac$ to find $k$ (two equal real roots, no real roots, two distinct real roots, real roots) and the range of values of $k$; (2) using the sum and product of roots $\\alpha+\\beta=-\\frac{b}{a}$ and $\\alpha\\beta=\\frac{c}{a}$ to express $\\alpha^{2}+\\beta^{2}$ in terms of $k$ or $b$; (3) complex numbers: simplifying into the form $a+bi$, reading the real and imaginary parts, finding $k$ when a number is real, and the powers-of-$i$ questions in Paper 2. Topic (1) was already learnt in Lesson 1 and is revised here, so the concept cards cover (2) and (3); every step of the discriminant work is still shown in the step-by-step solutions."
+   },
+   "source": "S.K.H. Bishop Baker Secondary School · S.5 After-School Tutorial · Endeavour Lesson 2（EPH WS05 Q14–21、DSE P1 Q7–8、DSE P2 Q30–33）",
+   "stats": {
+    "mc": 6,
+    "long": 8,
+    "cards": 4,
+    "pages": 2
+   },
+   "lessonIds": [
+    "en02-1"
+   ]
   }
  ],
  "assessments": [],
@@ -122,13 +145,13 @@ window.LEARN_INDEX = {
    }
   }
  },
- "generatedAt": "2026-09-29T13:26:47Z",
+ "generatedAt": "2026-10-05T07:16:20Z",
  "counts": {
-  "topics": 1,
+  "topics": 2,
   "held": 0,
-  "mc": 8,
-  "long": 4,
-  "cards": 3,
+  "mc": 14,
+  "long": 12,
+  "cards": 7,
   "blocked": 0
  }
 };

@@ -103,6 +103,140 @@
     "zh": "最常見錯誤：忘記把方程搬成「$=0$」的標準形，令常數項寫錯（例如 $k=1$ 要搬過去變成 $k-1$）。",
     "en": "The most common mistake: forgetting to rearrange into the “$=0$” standard form, so the constant term is wrong (e.g. $k=1$ must move across to become $k-1$)."
    }
+  },
+  {
+   "id": "en2-c1",
+   "topic": "en02",
+   "title": {
+    "zh": "根與係數：$\\alpha+\\beta$、$\\alpha\\beta$ 與 $\\alpha^{2}+\\beta^{2}$",
+    "en": "Sum and product of roots, and $\\alpha^{2}+\\beta^{2}$"
+   },
+   "body": {
+    "zh": "如果 $\\alpha$、$\\beta$ 是方程 $ax^{2}+bx+c=0$ 的兩個根：\n{{math:0}}\n不用解方程（根通常是無理數，解出來也不漂亮）—— 用這兩個關係就夠。\n最常考的目標式：\n{{math:1}}\n例（本課第 4 題）：$x^{2}+kx-15=0$ 的根是 $\\alpha$ 與 $\\beta$，以 $k$ 表示 $\\alpha^{2}+\\beta^{2}$：\n{{math:2}}\n（延伸：$(\\alpha-\\beta)^{2}=(\\alpha+\\beta)^{2}-4\\alpha\\beta$；$\\frac{1}{\\alpha}+\\frac{1}{\\beta}=\\frac{\\alpha+\\beta}{\\alpha\\beta}$。）\n這一課的第 4、5 題就是考這一招（各 3 分）：(1M) 寫出 $\\alpha+\\beta$ 與 $\\alpha\\beta$、(1M) 用恆等式拆開 $\\alpha^{2}+\\beta^{2}$、(1A) 代入並寫出答案。",
+    "en": "If $\\alpha$ and $\\beta$ are the roots of $ax^{2}+bx+c=0$:\n{{math:0}}\nThere is no need to solve the equation (the roots are usually irrational) — these two relations are enough.\nThe most common target expression:\n{{math:1}}\nExample (question 4 of this lesson): the roots of $x^{2}+kx-15=0$ are $\\alpha$ and $\\beta$; express $\\alpha^{2}+\\beta^{2}$ in terms of $k$:\n{{math:2}}\n(Also useful: $(\\alpha-\\beta)^{2}=(\\alpha+\\beta)^{2}-4\\alpha\\beta$ and $\\frac{1}{\\alpha}+\\frac{1}{\\beta}=\\frac{\\alpha+\\beta}{\\alpha\\beta}$.)\nQuestions 4 and 5 of this lesson test exactly this routine (3 marks each): one mark for the sum and the product, one for the identity, and one for the final answer."
+   },
+   "math": [
+    "\\alpha+\\beta=-\\frac{b}{a},\\ \\alpha\\beta=\\frac{c}{a}",
+    "\\alpha^{2}+\\beta^{2}=(\\alpha+\\beta)^{2}-2\\alpha\\beta",
+    "x^{2}+kx-15=0\n\\Rightarrow \\alpha+\\beta=-k,\\ \\alpha\\beta=-15\n\\Rightarrow \\alpha^{2}+\\beta^{2}=(-k)^{2}-2(-15)\n=k^{2}+30"
+   ],
+   "vocab": [
+    {
+     "en": "sum of roots",
+     "zh": "兩根之和"
+    },
+    {
+     "en": "product of roots",
+     "zh": "兩根之積"
+    },
+    {
+     "en": "in terms of",
+     "zh": "以…表示"
+    }
+   ],
+   "warn": {
+    "zh": "最常見錯誤：硬解方程求 $\\alpha$、$\\beta$ 的數值，再逐個平方相加 —— 這樣既花時間又容易計錯。看到「兩根是 $\\alpha$ 和 $\\beta$」就要反射式寫出 $\\alpha+\\beta$ 與 $\\alpha\\beta$。另外，$\\alpha\\beta$ 要連符號：$x^{2}+kx-15=0$ 的 $\\alpha\\beta=-15$。",
+    "en": "The classic mistake is solving the equation for $\\alpha$ and $\\beta$ and squaring them one by one — slow and error-prone. When a question says “the roots are $\\alpha$ and $\\beta$”, immediately write down $\\alpha+\\beta$ and $\\alpha\\beta$. Keep the sign of the product: for $x^{2}+kx-15=0$ we have $\\alpha\\beta=-15$."
+   }
+  },
+  {
+   "id": "en2-c2",
+   "topic": "en02",
+   "title": {
+    "zh": "複數：$i$ 的冪與四則運算",
+    "en": "Complex numbers: powers of $i$ and the four operations"
+   },
+   "body": {
+    "zh": "複數的基本規則只有一條：$i^{2}=-1$。\n{{math:0}}\n$i$ 的冪每 4 個一循環：$i^{1}=i$、$i^{2}=-1$、$i^{3}=-i$、$i^{4}=1$。要化簡 $i^{n}$，把 $n$ 除以 $4$ 看餘數：餘 $1$ → $i$；餘 $2$ → $-1$；餘 $3$ → $-i$；整除 → $1$。\n{{math:1}}\n加減：實部與實部合併、虛部與虛部合併 —— 例 $(4+5i)-(6-7i)=-2+12i$（減號要分配給每一項）。\n乘：展開之後把 $i^{2}$ 換成 $-1$，最後整理成 $a+bi$。\n{{math:2}}\n題目要求「express the result in the form $a+bi$」時，實部與虛部要分開兩份寫：$\\frac{3+i}{10}$ 寫成 $\\frac{3}{10}+\\frac{1}{10}i$。",
+    "en": "There is only one basic rule for complex numbers: $i^{2}=-1$.\n{{math:0}}\nThe powers of $i$ repeat every 4: $i^{1}=i$, $i^{2}=-1$, $i^{3}=-i$, $i^{4}=1$. To simplify $i^{n}$, divide $n$ by $4$ and look at the remainder: remainder $1$ gives $i$; remainder $2$ gives $-1$; remainder $3$ gives $-i$; no remainder gives $1$.\n{{math:1}}\nAdd and subtract: combine the real parts together and the imaginary parts together — for example $(4+5i)-(6-7i)=-2+12i$ (the minus sign applies to every term).\nMultiply: expand, replace $i^{2}$ by $-1$, then tidy everything into the form $a+bi$.\n{{math:2}}\nWhen the question says “express the result in the form $a+bi$”, keep the real part and the imaginary part as two separate terms: write $\\frac{3+i}{10}$ as $\\frac{3}{10}+\\frac{1}{10}i$."
+   },
+   "math": [
+    "i^{2}=-1",
+    "i^{18}=(i^{4})^{4}\\cdot i^{2}=1\\cdot(-1)=-1\ni^{31}=(i^{4})^{7}\\cdot i^{3}=1\\cdot(-i)=-i",
+    "(1-2i)(3+4i)=3+4i-6i-8i^{2}\n=3-2i+8=11-2i"
+   ],
+   "vocab": [
+    {
+     "en": "imaginary unit",
+     "zh": "虛數單位 $i$"
+    },
+    {
+     "en": "power of $i$",
+     "zh": "$i$ 的冪"
+    },
+    {
+     "en": "in the form $a+bi$",
+     "zh": "寫成 $a+bi$ 的形式"
+    }
+   ],
+   "warn": {
+    "zh": "把 $i^{4}$ 誤記成 $-1$（正確是 $1$）最致命：$i^{20}=(i^{4})^{5}=1$，寫成 $-1$ 就會全盤皆錯。另一個常見錯：展開 $(3-2i)(1+i)$ 時漏了 $-2i\\times i=-2i^{2}=+2$，把虛部算成 $3-2=1$ 之外的東西。",
+    "en": "Remembering $i^{4}$ as $-1$ (it is $1$) ruins everything: $i^{20}=(i^{4})^{5}=1$, and writing $-1$ makes every later step wrong. Another common slip: when expanding $(3-2i)(1+i)$, the term $-2i\\times i=-2i^{2}=+2$ is missed."
+   }
+  },
+  {
+   "id": "en2-c3",
+   "topic": "en02",
+   "title": {
+    "zh": "複數的實部／虛部與除法：分母乘共軛",
+    "en": "Real part, imaginary part and division: multiply by the conjugate"
+   },
+   "body": {
+    "zh": "把複數寫成 $a+bi$ 之後：$a$ 是實部（real part）、$b$ 是虛部（imaginary part）。兩者都是實數，虛部只寫 $i$ 前面那個數，而且要連符號 —— $3-7i$ 的實部是 $3$、虛部是 $-7$（不是 $7$）。\n{{math:0}}\n分母有 $i$ 時，分子分母同乘分母的共軛（conjugate），把分母變成實數：$(c+di)(c-di)=c^{2}+d^{2}$。\n{{math:1}}\n兩個高頻題型：\n① 求 real part／imaginary part：先化簡成 $a+bi$，再讀出 $a$、$b$ —— 讀完要核對正負號；\n② 「is a real number」（是實數）＝虛部 $=0$：把 $i$ 的係數寫成一條方程，就求得 $k$。\n{{math:2}}",
+    "en": "Once a complex number is written as $a+bi$: $a$ is the real part and $b$ is the imaginary part. Both are real numbers, and the imaginary part is only the number in front of $i$, with its sign — for $3-7i$ the real part is $3$ and the imaginary part is $-7$, not $7$.\n{{math:0}}\nWhen the denominator contains $i$, multiply the top and the bottom by the conjugate of the denominator: $(c+di)(c-di)=c^{2}+d^{2}$ makes the denominator real.\n{{math:1}}\nTwo frequent question types:\n(1) find the real part or the imaginary part: simplify into $a+bi$ first, then read off $a$ and $b$ and check the signs;\n(2) “is a real number” means the imaginary part is $0$: set the coefficient of $i$ equal to zero and solve for $k$.\n{{math:2}}"
+   },
+   "math": [
+    "3-7i:\\ \\text{real part}=3,\\ \\text{imaginary part}=-7",
+    "\\frac{2+i}{7+i}=\\frac{(2+i)(7-i)}{(7+i)(7-i)}\n=\\frac{15+5i}{50}=\\frac{3}{10}+\\frac{1}{10}i",
+    "\\frac{k-i}{1+2i}=\\frac{(k-i)(1-2i)}{(1+2i)(1-2i)}\n=\\frac{(k-2)-(2k+1)i}{5}\n\\text{real number}\\ \\Rightarrow 2k+1=0\n\\Rightarrow k=-\\frac{1}{2}"
+   ],
+   "vocab": [
+    {
+     "en": "conjugate",
+     "zh": "共軛"
+    },
+    {
+     "en": "real part",
+     "zh": "實部"
+    },
+    {
+     "en": "imaginary part",
+     "zh": "虛部"
+    }
+   ],
+   "warn": {
+    "zh": "讀虛部時要連符號：$2-4i$ 的虛部是 $-4$。另外，$(c+di)(c-di)=c^{2}+d^{2}$（因為 $-i^{2}=+1$），不是 $c^{2}-d^{2}$ —— 這個符號錯是複數題最常見的失分位。",
+    "en": "The imaginary part keeps its sign: the imaginary part of $2-4i$ is $-4$. Also $(c+di)(c-di)=c^{2}+d^{2}$ (because $-i^{2}=+1$), not $c^{2}-d^{2}$ — that wrong sign is the most common slip in complex-number questions."
+   }
+  },
+  {
+   "id": "en2-c4",
+   "topic": "en02",
+   "title": {
+    "zh": "複數題的流程與常見錯誤（帶走這一張）",
+    "en": "Complex-number routine and common mistakes (take this card away)"
+   },
+   "body": {
+    "zh": "複數題固定四步：① 有 $i$ 的冪就先化簡（除以 4 看餘數）；② 加減乘除之後整理成 $a+bi$（$i^{2}=-1$）；③ 分母有 $i$ 就分子分母同乘共軛，分母變成 $c^{2}+d^{2}$；④ 最後才回答題目問的東西 —— real part、imaginary part，或者由「是實數」寫出虛部 $=0$。\n{{math:0}}\n五個最常見的失分位：\n① 把 $i^{4}$ 記成 $-1$（正確是 $1$）：之後 $i^{18}$、$i^{20}$ 全部錯；\n② 共軛相乘的分母寫成 $c^{2}-d^{2}$（正確是 $c^{2}+d^{2}$，因為 $-i^{2}=+1$）；\n③ 問 real part 卻答了 imaginary part（選項通常兩個都放進去）；\n④ 讀虛部時漏了負號（$2-4i$ 的虛部是 $-4$，不是 $4$）；\n⑤ 漏掉式子後面不含 $i$ 的常數項（例如 $-i^{18}=+1$），少了一項答案就錯。",
+    "en": "Complex-number questions follow four fixed steps: (1) simplify any power of $i$ first by dividing the index by 4; (2) add, subtract, multiply or divide and tidy everything into the form $a+bi$ using $i^{2}=-1$; (3) when the denominator contains $i$, multiply the top and the bottom by its conjugate so that the denominator becomes $c^{2}+d^{2}$; (4) only then answer what is asked — the real part, the imaginary part, or use “is a real number” to mean that the imaginary part is zero.\n{{math:0}}\nFive ways marks are lost:\n(1) remembering $i^{4}$ as $-1$ instead of $1$, which spoils every higher power;\n(2) writing the conjugate product as $c^{2}-d^{2}$ instead of $c^{2}+d^{2}$, because minus $i$ squared is plus 1;\n(3) answering the imaginary part when the real part was asked, since the options usually contain both;\n(4) dropping the sign of the imaginary part ($2-4i$ has imaginary part $-4$, not $4$);\n(5) missing the constant terms that carry no $i$, such as minus $i$ to the 18th being plus 1."
+   },
+   "math": [
+    "z=a+bi:\\ \\text{real part}=a,\\ \\text{imaginary part}=b\nz\\ \\text{is real}\\ \\Leftrightarrow\\ b=0"
+   ],
+   "vocab": [
+    {
+     "en": "conjugate",
+     "zh": "共軛"
+    },
+    {
+     "en": "purely imaginary",
+     "zh": "純虛數（實部 $=0$）"
+    }
+   ],
+   "warn": {
+    "zh": "「是實數」＝虛部 $=0$；「是純虛數」＝實部 $=0$ —— 兩個條件剛好相反，是複數題最常見的混淆。",
+    "en": "Being real means the imaginary part is zero, while being purely imaginary means the real part is zero; the two conditions are opposites and are easily confused."
+   }
   }
  ]
 }
