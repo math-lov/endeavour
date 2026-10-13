@@ -60,5 +60,4 @@ git add -A; git commit -m "…"; git push     # 約 1 分鐘上線
 
 ## 與其他站的關係
 
-首頁有「其他網站」跳轉列：每日三題 Daily 3 ／ 自學追上站 DSE Pass ／ 5A 數學溫習站 ／ 本站。
-⚠️ **不要連去 `daily.math/learn/`**（該站計劃砍掉重做）。
+首頁有「其他網站」跳轉列：自學追上站 DSE Pass ／ 5A 數學溫習站 ／ 本站。
