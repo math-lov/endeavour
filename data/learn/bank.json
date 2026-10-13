@@ -584,6 +584,214 @@
     "D": "$5+i$"
    },
    "review": null
+  },
+  {
+   "id": "eph-en03-q1",
+   "type": "long",
+   "topic": "en03",
+   "unit": 10,
+   "subtopic": "straight-lines",
+   "difficulty": 1,
+   "code": "EN3-Q1",
+   "source": "Endeavour Lesson 3 Q1 · Chapter 4 Extra Questions（已知點在直線上，求 b、斜率與 y 截距）",
+   "stem": {
+    "en": "It is given that $A(-3,\\ 4)$ lies on the straight line $L: 3x+by-7=0$.",
+    "zh": "已知 $A(-3,\\ 4)$ 在直線 $L: 3x+by-7=0$ 上。"
+   },
+   "parts": [
+    {
+     "label": "(a)",
+     "text": "Find the value of $b$.",
+     "en": "Find the value of $b$.",
+     "zh": "求 $b$ 的值。",
+     "marks": 1
+    },
+    {
+     "label": "(b)",
+     "text": "Find the slope and the $y$-intercept of $L$.",
+     "en": "Find the slope and the $y$-intercept of $L$.",
+     "zh": "求 $L$ 的斜率與 $y$ 截距。",
+     "marks": 2
+    }
+   ],
+   "marks": 3,
+   "review": null
+  },
+  {
+   "id": "eph-en03-q2",
+   "type": "long",
+   "topic": "en03",
+   "unit": 10,
+   "subtopic": "straight-lines",
+   "difficulty": 1,
+   "code": "EN3-Q2",
+   "source": "Endeavour Lesson 3 Q2 · Chapter 4 Extra Questions（已知 x 截距與斜率，求方程）",
+   "stem": {
+    "en": "Find the equation of a straight line with $x$-intercept $-3$ and slope $-2$.",
+    "zh": "求一條 $x$ 截距是 $-3$、斜率是 $-2$ 的直線方程。"
+   },
+   "kind": "short",
+   "marks": 2,
+   "review": null
+  },
+  {
+   "id": "eph-en03-q3",
+   "type": "long",
+   "topic": "en03",
+   "unit": 10,
+   "subtopic": "straight-lines",
+   "difficulty": 2,
+   "code": "EN3-Q3",
+   "source": "Endeavour Lesson 3 Q3 · Chapter 4 Extra Questions（讀圖：由圖判斷 m、n 的範圍）",
+   "stem": {
+    "en": "The figure shows the straight line $L: x+my+n=0$. Find the ranges of values of $m$ and $n$. (Working steps are NOT required.)",
+    "zh": "圖中直線 $L: x+my+n=0$。求 $m$ 與 $n$ 的取值範圍。（不需列出工作步驟。）"
+   },
+   "kind": "short",
+   "marks": 2,
+   "figBefore": true,
+   "review": null
+  },
+  {
+   "id": "eph-en03-q4",
+   "type": "long",
+   "topic": "en03",
+   "unit": 10,
+   "subtopic": "straight-lines",
+   "difficulty": 2,
+   "code": "EN3-Q4",
+   "source": "Endeavour Lesson 3 Q4 · Chapter 4 Extra Questions（平行直線，過一點求方程）",
+   "stem": {
+    "en": "Find the equation of the straight line $L_2$ which is parallel to $L_1: 4x-y+5=0$ and passes through $A(-1,\\ 2)$.",
+    "zh": "求直線 $L_2$ 的方程：$L_2$ 平行於 $L_1: 4x-y+5=0$，且通過 $A(-1,\\ 2)$。"
+   },
+   "kind": "short",
+   "marks": 3,
+   "review": null
+  },
+  {
+   "id": "eph-en03-q5",
+   "type": "long",
+   "topic": "en03",
+   "unit": 10,
+   "subtopic": "straight-lines",
+   "difficulty": 2,
+   "code": "EN3-Q5",
+   "source": "Endeavour Lesson 3 Q5 · Chapter 4 Extra Questions（兩線同交於 x 軸一點，求方程）",
+   "stem": {
+    "en": "It is given that the straight lines $L_1: x+y-3=0$ and $L_2$ cut the $x$-axis at the same point $A$, and $L_2$ passes through $(-3,\\ 2)$. Find the equation of $L_2$.",
+    "zh": "已知直線 $L_1: x+y-3=0$ 與 $L_2$ 同交 $x$ 軸於點 $A$，且 $L_2$ 通過 $(-3,\\ 2)$。求 $L_2$ 的方程。"
+   },
+   "kind": "short",
+   "marks": 3,
+   "review": null
+  },
+  {
+   "id": "eph-en03-q6",
+   "type": "long",
+   "topic": "en03",
+   "unit": 10,
+   "subtopic": "straight-lines",
+   "difficulty": 2,
+   "code": "EN3-Q6",
+   "source": "Endeavour Lesson 3 Q6 · Chapter 4 Extra Questions（截距點、AB = BC 與求 AC 的方程）",
+   "stem": {
+    "en": "In the figure, the straight line $L: 3x+4y+12=0$ cuts the $x$-axis and the $y$-axis at $A$ and $B$ respectively. $C$ is a point on the $y$-axis such that $AB=BC$.",
+    "zh": "圖中直線 $L: 3x+4y+12=0$ 分別與 $x$ 軸、$y$ 軸交於 $A$、$B$。$C$ 是 $y$ 軸上的一點，且 $AB=BC$。"
+   },
+   "parts": [
+    {
+     "label": "(a)",
+     "text": "Find the coordinates of $A$ and $B$.",
+     "en": "Find the coordinates of $A$ and $B$.",
+     "zh": "求 $A$ 與 $B$ 的坐標。",
+     "marks": 2
+    },
+    {
+     "label": "(b)(i)",
+     "text": "Find the coordinates of $C$.",
+     "en": "Find the coordinates of $C$.",
+     "zh": "求 $C$ 的坐標。",
+     "marks": 2
+    },
+    {
+     "label": "(b)(ii)",
+     "text": "Find the equation of $AC$.",
+     "en": "Find the equation of $AC$.",
+     "zh": "求 $AC$ 的方程。",
+     "marks": 2
+    }
+   ],
+   "marks": 6,
+   "figBefore": true,
+   "review": null
+  },
+  {
+   "id": "eph-en03-q7",
+   "type": "long",
+   "topic": "en03",
+   "unit": 10,
+   "subtopic": "straight-lines",
+   "difficulty": 3,
+   "code": "EN3-Q7",
+   "source": "Endeavour Lesson 3 Q7 · Chapter 4 Extra Questions（兩線同交 x 軸，用面積求方程）",
+   "stem": {
+    "en": "In the figure, the two straight lines $L_1$ and $L_2: 2x+3y-20=0$ intersect the $x$-axis at the same point $C$. $L_1$ and $L_2$ cut the $y$-axis at $B$ and $A$ respectively. If the area of $\\triangle ABC$ is 50 square units, find the equation of $L_1$.",
+    "zh": "圖中兩條直線 $L_1$ 與 $L_2: 2x+3y-20=0$ 同交 $x$ 軸於點 $C$，而 $L_1$、$L_2$ 分別與 $y$ 軸交於 $B$、$A$。若 $\\triangle ABC$ 的面積是 50 平方單位，求 $L_1$ 的方程。"
+   },
+   "marks": 6,
+   "figBefore": true,
+   "review": null
+  },
+  {
+   "id": "eph-en03-q8",
+   "type": "long",
+   "topic": "en03",
+   "unit": 10,
+   "subtopic": "straight-lines",
+   "difficulty": 1,
+   "code": "EN3-Q8",
+   "source": "Endeavour Lesson 3 Q8 · Chapter 4 Extra Questions（求兩線交點）",
+   "stem": {
+    "en": "The figure shows two straight lines $L_1: x+2y-14=0$ and $L_2: x=4$. Find the coordinates of their intersection.",
+    "zh": "圖中兩條直線 $L_1: x+2y-14=0$ 與 $L_2: x=4$。求它們的交點坐標。"
+   },
+   "kind": "short",
+   "marks": 2,
+   "figBefore": true,
+   "review": null
+  },
+  {
+   "id": "eph-en03-q9",
+   "type": "long",
+   "topic": "en03",
+   "unit": 10,
+   "subtopic": "straight-lines",
+   "difficulty": 3,
+   "code": "EN3-Q9",
+   "source": "Endeavour Lesson 3 Q9 · Chapter 4 Extra Questions（垂直條件求 k，再解聯立方程求交點）",
+   "stem": {
+    "en": "It is given that the straight lines $L_1: 6x+8y+5=0$ and $L_2: kx-3y-5=0$ are perpendicular to each other, and they intersect at a point $P$.",
+    "zh": "已知直線 $L_1: 6x+8y+5=0$ 與 $L_2: kx-3y-5=0$ 互相垂直，並相交於點 $P$。"
+   },
+   "parts": [
+    {
+     "label": "(a)",
+     "text": "Find the value of $k$.",
+     "en": "Find the value of $k$.",
+     "zh": "求 $k$ 的值。",
+     "marks": 2
+    },
+    {
+     "label": "(b)",
+     "text": "Find the coordinates of $P$.",
+     "en": "Find the coordinates of $P$.",
+     "zh": "求 $P$ 的坐標。",
+     "marks": 2
+    }
+   ],
+   "marks": 4,
+   "review": null
   }
  ]
 }

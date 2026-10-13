@@ -165,6 +165,74 @@
      ]
     }
    ]
+  },
+  {
+   "id": "en03",
+   "stage": 1,
+   "unit": 10,
+   "subtopic": "straight-lines",
+   "source": "S.K.H. Bishop Baker Secondary School · S.5 After-School Tutorial · Endeavour Lesson 3（Chapter 4 Extra Questions）",
+   "name": {
+    "zh": "Lesson 3 · 直線方程（斜率、截距與求方程）",
+    "en": "Lesson 3 · Equations of straight lines (slope, intercepts and equations)"
+   },
+   "intro": {
+    "zh": "這一節課堂討論直線方程的四類題目：\n① 已知一點在直線上、已知截距或斜率，求直線方程；\n② 由圖像讀出 $x+my+n=0$ 中 $m$、$n$ 的正負與範圍；\n③ 平行、垂直與兩線交點（解聯立方程）；\n④ 圖形應用：三角形面積、$AB=BC$ 這類相等長度條件。\n9 題全部是卷一的作答題格式，每題的題解都照官方評分寫上 1M／1A，做完可以逐分對。",
+    "en": "This lesson covers four kinds of straight-line questions:\n(1) finding the equation of a line when a point on it, an intercept or the slope is given;\n(2) reading the signs and ranges of $m$ and $n$ from the graph of $x+my+n=0$;\n(3) parallel and perpendicular lines, and the intersection of two lines (solving simultaneous equations);\n(4) graphical applications: the area of a triangle and equal-length conditions such as $AB=BC$.\nAll 9 questions are in Paper 1 answer format, and every solution shows the official 1M / 1A marks so that you can check your work mark by mark."
+   },
+   "cmdHints": [
+    {
+     "en": "is parallel to ...",
+     "zh": "「平行」→ 斜率相同（照抄 $L_1$ 的斜率）"
+    },
+    {
+     "en": "is perpendicular to ...",
+     "zh": "「垂直」→ 斜率乘積 $=-1$，要取負倒數"
+    },
+    {
+     "en": "cuts the $x$-axis and the $y$-axis at $A$ and $B$",
+     "zh": "「與 $x$ 軸／$y$ 軸交於」→ 代入 $y=0$ ／ $x=0$ 求另一坐標"
+    },
+    {
+     "en": "find the ranges of values of $m$ and $n$",
+     "zh": "求範圍 → 由圖讀斜率與截距的正負，答案寫不等式"
+    },
+    {
+     "en": "the area of $\\triangle ABC$ is 50 square units",
+     "zh": "面積 → $\\frac{1}{2}\\times$ 底 $\\times$ 高，先看清楚底和高是哪兩段"
+    },
+    {
+     "en": "Find the coordinates of their intersection",
+     "zh": "「交點」→ 解兩條方程的聯立方程"
+    }
+   ],
+   "lessons": [
+    {
+     "id": "en03-1",
+     "title": {
+      "zh": "Lesson 3（課堂 9 題：求方程、讀圖、圖形應用）",
+      "en": "Lesson 3 (9 class questions: finding equations, reading graphs, graphical applications)"
+     },
+     "conceptCards": [
+      "en3-c1",
+      "en3-c2",
+      "en3-c3",
+      "en3-c4"
+     ],
+     "longQuestionIds": [
+      "eph-en03-q1",
+      "eph-en03-q2",
+      "eph-en03-q3",
+      "eph-en03-q4",
+      "eph-en03-q5",
+      "eph-en03-q6",
+      "eph-en03-q7",
+      "eph-en03-q8",
+      "eph-en03-q9"
+     ],
+     "mcPages": []
+    }
+   ]
   }
  ],
  "assessments": []

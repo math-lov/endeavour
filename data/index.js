@@ -60,6 +60,29 @@ window.LEARN_INDEX = {
    "lessonIds": [
     "en02-1"
    ]
+  },
+  {
+   "id": "en03",
+   "stage": 1,
+   "unit": 10,
+   "name": {
+    "zh": "Lesson 3 · 直線方程（斜率、截距與求方程）",
+    "en": "Lesson 3 · Equations of straight lines (slope, intercepts and equations)"
+   },
+   "intro": {
+    "zh": "這一節課堂討論直線方程的四類題目：\n① 已知一點在直線上、已知截距或斜率，求直線方程；\n② 由圖像讀出 $x+my+n=0$ 中 $m$、$n$ 的正負與範圍；\n③ 平行、垂直與兩線交點（解聯立方程）；\n④ 圖形應用：三角形面積、$AB=BC$ 這類相等長度條件。\n9 題全部是卷一的作答題格式，每題的題解都照官方評分寫上 1M／1A，做完可以逐分對。",
+    "en": "This lesson covers four kinds of straight-line questions:\n(1) finding the equation of a line when a point on it, an intercept or the slope is given;\n(2) reading the signs and ranges of $m$ and $n$ from the graph of $x+my+n=0$;\n(3) parallel and perpendicular lines, and the intersection of two lines (solving simultaneous equations);\n(4) graphical applications: the area of a triangle and equal-length conditions such as $AB=BC$.\nAll 9 questions are in Paper 1 answer format, and every solution shows the official 1M / 1A marks so that you can check your work mark by mark."
+   },
+   "source": "S.K.H. Bishop Baker Secondary School · S.5 After-School Tutorial · Endeavour Lesson 3（Chapter 4 Extra Questions）",
+   "stats": {
+    "mc": 0,
+    "long": 9,
+    "cards": 4,
+    "pages": 0
+   },
+   "lessonIds": [
+    "en03-1"
+   ]
   }
  ],
  "assessments": [],
@@ -145,13 +168,13 @@ window.LEARN_INDEX = {
    }
   }
  },
- "generatedAt": "2026-10-05T10:25:16Z",
+ "generatedAt": "2026-10-13T05:04:27Z",
  "counts": {
-  "topics": 2,
+  "topics": 3,
   "held": 0,
   "mc": 14,
-  "long": 12,
-  "cards": 7,
+  "long": 21,
+  "cards": 11,
   "blocked": 0
  }
 };

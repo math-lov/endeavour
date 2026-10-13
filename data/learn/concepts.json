@@ -254,6 +254,167 @@
     "zh": "「是實數」＝虛部 $=0$；「是純虛數」＝實部 $=0$ —— 兩個條件剛好相反，是複數題最常見的混淆。",
     "en": "Being real means the imaginary part is zero, while being purely imaginary means the real part is zero; the two conditions are opposites and are easily confused."
    }
+  },
+  {
+   "id": "en3-c1",
+   "topic": "en03",
+   "title": {
+    "zh": "直線方程的三種寫法與斜率",
+    "en": "Three forms of a straight line and the slope"
+   },
+   "body": {
+    "zh": "同一條直線可以寫成不同形式，認得三種就足夠應付本課：\n斜截式（一眼看到斜率與 $y$ 截距）：\n{{math:0}}\n點斜式（有一點＋斜率時最好用）：\n{{math:1}}\n一般式（題目只說「find the equation」時最穩）：\n{{math:2}}\n由兩點求斜率：\n{{math:3}}\n做題時先問自己「手上有甚麼」：有兩點 → 先求斜率；有一點＋斜率 → 用點斜式；有斜率＋$y$ 截距 → 直接寫斜截式；最後整理成一般式（習慣令 $x$ 的係數為正）。",
+    "en": "The same straight line can be written in several forms; three of them are enough for this lesson:\nSlope-intercept form (the slope and the $y$-intercept are visible at once):\n{{math:0}}\nPoint-slope form (best when you have one point and the slope):\n{{math:1}}\nGeneral form (safest when the question only says “find the equation”):\n{{math:2}}\nThe slope from two points:\n{{math:3}}\nStart every question by asking what you already have: two points → find the slope first; one point and the slope → use point-slope form; the slope and the $y$-intercept → write the slope-intercept form straight away; then tidy the answer into the general form with a positive coefficient of $x$."
+   },
+   "math": [
+    "y=mx+c",
+    "y-y_{1}=m(x-x_{1})",
+    "Ax+By+C=0",
+    "m=\\frac{y_{2}-y_{1}}{x_{2}-x_{1}}"
+   ],
+   "vocab": [
+    {
+     "en": "slope",
+     "zh": "斜率"
+    },
+    {
+     "en": "point-slope form",
+     "zh": "點斜式"
+    },
+    {
+     "en": "general form",
+     "zh": "一般式（$Ax+By+C=0$）"
+    }
+   ],
+   "warn": {
+    "zh": "「點在直線上」＝ 該點的坐標代入方程之後等於 0 —— 忘記代入就無從入手。另外，代入負數一定要連括號：$x=-3$ 代入 $3x$ 是 $3(-3)=-9$，不是 $-9$ 與 $9$ 之間的混亂。",
+    "en": "“A point lies on the line” means that substituting its coordinates gives 0 — without that substitution there is no way to start. Always keep the bracket for a negative value: $x=-3$ in $3x$ means $3(-3)=-9$."
+   }
+  },
+  {
+   "id": "en3-c2",
+   "topic": "en03",
+   "title": {
+    "zh": "由圖像讀出 $x+my+n=0$ 的 $m$、$n$",
+    "en": "Reading $m$ and $n$ from the graph of $x+my+n=0$"
+   },
+   "body": {
+    "zh": "圖像題考的是符號與範圍，不是數字。方程 $x+my+n=0$ 要先改寫成斜截式才讀得到資料：\n{{math:0}}\n於是三項資料可以逐項對應：\n{{math:1}}\n{{math:2}}\n{{math:3}}\n讀圖只有兩步：\n① 線的傾斜方向 → 斜率正負：往右上斜 $>0$、往右下斜 $<0$；\n② 線與兩軸的交點位置 → 兩個截距的正負（在原點之上是正、之下是負）。\n如果交點落在兩條刻度之間（例如在 $-5$ 與 $0$ 之間），答案要寫範圍，不是寫等號。",
+    "en": "Graph questions test signs and ranges, not numbers. Rewrite $x+my+n=0$ in slope-intercept form before reading anything off the figure:\n{{math:0}}\nThree quantities can then be matched one by one:\n{{math:1}}\n{{math:2}}\n{{math:3}}\nReading the graph takes only two steps:\n(1) the direction of the line gives the sign of the slope: rising to the right is $>0$, falling to the right is $<0$;\n(2) where the line meets each axis gives the signs of the two intercepts (above the origin is positive, below is negative).\nIf a crossing lies between two marks on the axis (say between $-5$ and $0$), the answer must be a range, not an equality."
+   },
+   "math": [
+    "x+my+n=0\\ \\Rightarrow\\ y=-\\frac{1}{m}x-\\frac{n}{m}",
+    "\\text{slope}=-\\frac{1}{m}",
+    "x\\text{-intercept}=-n",
+    "y\\text{-intercept}=-\\frac{n}{m}"
+   ],
+   "box": {
+    "tag": {
+     "zh": "讀圖口訣",
+     "en": "Graph-reading rule"
+    },
+    "title": {
+     "zh": "$x+my+n=0$：每一個量都差一個負號",
+     "en": "$x+my+n=0$: every quantity carries a minus sign"
+    },
+    "zh": "① 先改寫成斜截式：\n{{math:0}}\n② 對應表（由左邊的 $m$、$n$ 去右邊的「斜率／截距」時，每個都要反一次號）：\n{{math:1}}\n③ 範圍題：交點落在兩條刻度之間就寫不等式，不要寫等號。",
+    "en": "① Rewrite it in slope-intercept form first:\n{{math:0}}\n② Matching table (every quantity changes sign when you go from $m$, $n$ to the slope and the intercepts):\n{{math:1}}\n③ Range questions: if the crossing lies between two marks, write an inequality, never an equality.",
+    "math": [
+     "x+my+n=0\\ \\Rightarrow\\ y=-\\frac{1}{m}x-\\frac{n}{m}",
+     "\\text{slope}=-\\frac{1}{m}\nx\\text{-intercept}=-n\ny\\text{-intercept}=-\\frac{n}{m}"
+    ]
+   },
+   "vocab": [
+    {
+     "en": "x-intercept",
+     "zh": "與 $x$ 軸的交點（$y=0$ 時的 $x$）"
+    },
+    {
+     "en": "y-intercept",
+     "zh": "與 $y$ 軸的交點（$x=0$ 時的 $y$）"
+    },
+    {
+     "en": "range of values",
+     "zh": "取值範圍（寫成不等式）"
+    }
+   ],
+   "warn": {
+    "zh": "最常見的兩個錯：① 把圖上讀到的 $y$ 截距直接當成 $n$（其實是 $-\\frac{n}{m}$）；② 見到「線往右下斜」就寫 $m<0$（斜率是 $-\\frac{1}{m}$，所以 $m$ 反而是正數）。每次由圖上的數寫成 $m$、$n$ 都要反一次號。",
+    "en": "Two standard mistakes: ① taking the $y$-intercept read from the graph as $n$ (it is $-\\frac{n}{m}$); ② writing $m<0$ because the line falls to the right (the slope is $-\\frac{1}{m}$, so $m$ is in fact positive). Every quantity read from the graph changes sign when it is turned into $m$ or $n$."
+   }
+  },
+  {
+   "id": "en3-c3",
+   "topic": "en03",
+   "title": {
+    "zh": "平行、垂直、交點與距離",
+    "en": "Parallel, perpendicular, intersection and distance"
+   },
+   "body": {
+    "zh": "兩條線的關係全部由斜率決定：\n{{math:0}}\n{{math:1}}\n平行＝直接抄斜率；垂直＝取負倒數（$\\frac{3}{4}$ 的負倒數是 $-\\frac{4}{3}$：先顛倒、再變號）。\n求兩線交點＝解它們的聯立方程；其中一條寫成 $x=k$ 或 $y=k$ 時，直接代入另一條最快。\n要比較兩點之間的長度（例如 $AB=BC$）就用距離公式：\n{{math:2}}\n座標相減一定要連括號再平方：$(-4)^{2}=16$、$[0-(-3)]^{2}=9$。",
+    "en": "Everything about the relationship between two lines is decided by their slopes:\n{{math:0}}\n{{math:1}}\nParallel means copy the slope; perpendicular means the negative reciprocal ($\\frac{3}{4}$ becomes $-\\frac{4}{3}$: invert first, then change the sign).\nTo find the intersection, solve the two equations simultaneously; when one of them is $x=k$ or $y=k$, substituting into the other is the fastest route.\nTo compare two lengths (for example $AB=BC$), use the distance formula:\n{{math:2}}\nKeep the brackets when subtracting coordinates: $(-4)^{2}=16$ and $[0-(-3)]^{2}=9$."
+   },
+   "math": [
+    "L_{1}\\parallel L_{2}\\ \\Leftrightarrow\\ m_{1}=m_{2}",
+    "L_{1}\\perp L_{2}\\ \\Leftrightarrow\\ m_{1}m_{2}=-1",
+    "AB=\\sqrt{(x_{2}-x_{1})^{2}+(y_{2}-y_{1})^{2}}"
+   ],
+   "vocab": [
+    {
+     "en": "parallel",
+     "zh": "平行（斜率相同）"
+    },
+    {
+     "en": "perpendicular",
+     "zh": "垂直（斜率乘積 $=-1$）"
+    },
+    {
+     "en": "distance formula",
+     "zh": "距離公式"
+    },
+    {
+     "en": "intersection",
+     "zh": "交點（解聯立方程求得）"
+    }
+   ],
+   "warn": {
+    "zh": "垂直只顧「顛倒」而忘記「變號」是最常見的錯：$\\frac{2}{3}$ 的負倒數是 $-\\frac{3}{2}$。另外，讀斜率要按 $x$、$y$ 的次序讀係數：$Ax+By+C=0$ 的斜率是 $-\\frac{A}{B}$，不是 $-\\frac{B}{A}$。",
+    "en": "The commonest error is inverting without changing the sign: the negative reciprocal of $\\frac{2}{3}$ is $-\\frac{3}{2}$. Also, read the coefficients in the order of $x$ then $y$: the slope of $Ax+By+C=0$ is $-\\frac{A}{B}$, not $-\\frac{B}{A}$."
+   }
+  },
+  {
+   "id": "en3-c4",
+   "topic": "en03",
+   "title": {
+    "zh": "解題流程與常見錯誤",
+    "en": "Workflow and common mistakes"
+   },
+   "body": {
+    "zh": "看到直線題，先分類再落手：\n① 求方程（已知一點、截距、平行或垂直）→ 先找斜率 → 用點斜式 {{math:0}} → 整理成一般式 → 把已知點代回驗算。\n② 由圖求 $m$、$n$ 的範圍 → 改寫成斜截式 → 比較斜率與兩個截距的符號 → 答案寫成不等式。\n③ 圖形應用（三角形面積、$AB=BC$）→ 先把軸上的點求出來（代 $y=0$ 或 $x=0$）→ 用距離公式或面積公式列方程：{{math:1}}。\n④ 兩線交點 → 解聯立方程（其中一條是 $x=k$ 就直接代入）。\n常見失分：① 求完方程沒有整理成一般式；② 負數截距漏括號（$y-(-3)$ 寫成 $y-3$）；③ 面積忘記乘 $\\frac{1}{2}$；④ 範圍題寫了等號；⑤ 求完答案沒有驗算。",
+    "en": "Sort every straight-line question into one of four kinds before you start:\n(1) Find the equation (a point, an intercept, parallel or perpendicular) → find the slope → use point-slope form {{math:0}} → tidy it into general form → substitute the given point back to check.\n(2) Read the ranges of $m$ and $n$ from a graph → rewrite in slope-intercept form → compare the signs of the slope and the two intercepts → give the answer as inequalities.\n(3) Graphical applications (area of a triangle, $AB=BC$) → find every axis point first (put $y=0$ or $x=0$) → write a distance or area equation: {{math:1}}.\n(4) Intersection of two lines → solve them simultaneously (if one is $x=k$, substitute).\nCommon ways to lose marks: ① leaving the answer out of general form; ② dropping the bracket for a negative intercept ($y-(-3)$ written as $y-3$); ③ forgetting the $\\frac{1}{2}$ in an area; ④ writing an equality in a range question; ⑤ never checking the answer."
+   },
+   "math": [
+    "y-y_{1}=m(x-x_{1})",
+    "A=\\frac{1}{2}\\times\\text{base}\\times\\text{height}"
+   ],
+   "vocab": [
+    {
+     "en": "substitute",
+     "zh": "代入"
+    },
+    {
+     "en": "check",
+     "zh": "驗算（把答案代回題目）"
+    },
+    {
+     "en": "square units",
+     "zh": "平方單位（面積的單位）"
+    }
+   ],
+   "warn": {
+    "zh": "最貴的失分是「沒有驗算」：求完方程，只要把題目給的一點代入答案（等於 0 就正確）；求完未知數，就把答案代回原式。這個動作只需十秒，但可以救回整題的分數。",
+    "en": "The most expensive mistake is not checking: after finding an equation, substitute one given point into it (0 means correct); after finding an unknown, put it back into the original equation. Ten seconds of work can save the whole question."
+   }
   }
  ]
 }

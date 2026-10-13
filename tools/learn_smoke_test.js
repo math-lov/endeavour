@@ -157,15 +157,24 @@ for (const t of LESSONS.topics) {
     ok(!!dots && dots.dataset.page === "4" && /收起/.test(dots.title || ""),
        "「…」指向第一條收起的題目（第 4 格＝Q4），並說明收起了幾題");
     /* 摺疊後「現時頁」與「✓ 完成」都要認 dataset.page（不再靠 .pg 清單位置）：
-       ws01c 第 32 格 = 第 4 節第 5 題（Q29）—— 摺疊後它排在第 7 個位置 */
-    const dNav = boot("topic.html", "?t=" + t.id + "&p=32",
-      JSON.stringify({ mc: {}, long: { "eph-ws01c-q29": true }, cards: {}, weak: {} }), "zh");
+       由 lessons.json 推算最後一條長題的頁碼（第 0 格＝概念卡頁，之後每條長題一頁），
+       這一頁離現時位置最遠，摺疊後一定不會排在原本的位置 */
+    const longIds = t.lessons.reduce((a, l) => a.concat(l.longQuestionIds || []), []);
+    let lastQPage = 0;
+    t.lessons.forEach((l) => {
+      if ((l.conceptCards || []).length) lastQPage++;      // 概念卡頁
+      lastQPage += (l.longQuestionIds || []).length;       // 每條長題各佔一頁
+    });
+    lastQPage -= 1;
+    const lastQid = longIds[longIds.length - 1];
+    const dNav = boot("topic.html", "?t=" + t.id + "&p=" + lastQPage,
+      JSON.stringify({ mc: {}, long: { [lastQid]: true }, cards: {}, weak: {} }), "zh");
     const curCell = dNav.$("#pagenav .pg.current");
-    ok(!!curCell && curCell.dataset.page === "32",
-       "摺疊後「現時頁」仍指對格（dataset.page=" + (curCell && curCell.dataset.page) + "）");
+    ok(!!curCell && curCell.dataset.page === String(lastQPage),
+       t.id + " 摺疊後「現時頁」仍指對格（dataset.page=" + (curCell && curCell.dataset.page) + "）");
     const doneCells = dNav.$$("#pagenav .pg.done");
-    ok(doneCells.length === 1 && doneCells[0].dataset.page === "32",
-       "摺疊後「✓ 完成」標在正確的格（" +
+    ok(doneCells.length === 1 && doneCells[0].dataset.page === String(lastQPage),
+       t.id + " 摺疊後「✓ 完成」標在正確的格（" +
        doneCells.map((x) => x.dataset.page).join(",") + "）");
     /* 頁底要有「← 上一題」（按「全部顯示」看完示範後才會出現；跳頁本身是 go()，jsdom 不模擬） */
     const pPrev = boot("topic.html", "?t=" + t.id + "&p=5");     // 第 5 格 = 第 1 節的第 5 題
