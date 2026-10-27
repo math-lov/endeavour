@@ -100,7 +100,7 @@ window.LEARN_INDEX = {
    "stats": {
     "mc": 8,
     "long": 9,
-    "cards": 5,
+    "cards": 6,
     "pages": 3
    },
    "lessonIds": [
@@ -191,13 +191,13 @@ window.LEARN_INDEX = {
    }
   }
  },
- "generatedAt": "2026-10-27T11:51:19Z",
+ "generatedAt": "2026-10-27T12:00:45Z",
  "counts": {
   "topics": 4,
   "held": 0,
   "mc": 22,
   "long": 30,
-  "cards": 16,
+  "cards": 17,
   "blocked": 0
  }
 };

@@ -504,6 +504,10 @@ def main(argv: list[str] | None = None) -> int:
             if "math" not in path and "highlight" not in path:
                 continue
             for ln in text.split("\n"):
+                # 直式（array）本身就要一行過：前端的 formulaBlock 依 \n 斷行，
+                # 斷開會把 array 拆散；長除法直式亦無法在 =／⇒ 前分行，故不計行長。
+                if ln.lstrip().startswith("\\begin{array}"):
+                    continue
                 w = _disp_width(ln)
                 if w > 44:
                     warn("I11", "%s：數式有一行長 %d 字，建議在 =／⇒ 之前分行（%s）"

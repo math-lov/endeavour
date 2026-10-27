@@ -459,10 +459,11 @@
     "en": "Long division and the division algorithm"
    },
    "body": {
-    "zh": "多項式除法跟數字長除法一樣：每次用最高次項相除，乘回除式，再相減。\n最重要的一條關係是除法算式（商 $Q(x)$、餘式 $R(x)$）：\n{{math:0}}\n兩個必記的限制：餘式的次數一定要低過除式的次數；被除式的次數等於除式與商的次數相加。\n{{math:1}}\n被除式缺項時要補 $0x$（例如 $x^{3}+8x^{2}-8$ 寫成 $x^{3}+8x^{2}+0x-8$），否則很容易錯位。\n驗算方法：把「除式 × 商 ＋ 餘式」乘開，應該等於原來的被除式。\n{{math:2}}",
-    "en": "Polynomial long division is like division with numbers: divide the highest powers, multiply back, and subtract.\nThe basic relationship uses the quotient $Q(x)$ and the remainder $R(x)$:\n{{math:0}}\nRemember two rules: the degree of the remainder must be lower than the degree of the divisor. The degree of the dividend equals the degree of the divisor plus the degree of the quotient:\n{{math:1}}\nIf a term is missing in the dividend, add $0x$ (write $x^{3}+8x^{2}-8$ as $x^{3}+8x^{2}+0x-8$) to keep the columns aligned.\nTo check the answer, expand: Divisor × Quotient + Remainder. The result must equal the dividend:\n{{math:2}}"
+    "zh": "多項式長除法跟數字長除法一樣，重複四步，直到餘式的次數低過除式：\n① 最高次項相除 → 得商的下一項；\n② 把這一項乘回整個除式，寫在下面對齊；\n③ 相減（等於整條變號後相加）；\n④ 拉下一個項，重複。\n以 $2x^{3}-5x^{2}-4x+7$ 除以 $2x-5$ 為例，真正的長除法是這樣排：\n{{math:0}}\n第一輪：$2x^{3}\\div 2x=x^{2}$，$x^{2}(2x-5)=2x^{3}-5x^{2}$，相減後 $x^{3}$、$x^{2}$ 兩項抵消，拉下 $-4x$。\n第二輪：$-4x\\div 2x=-2$，$-2(2x-5)=-4x+10$，相減剩 $-3$；$-3$ 是常數（0 次），已低過除式（1 次），停止。\n除法算式（商 $Q(x)$、餘式 $R(x)$）：\n{{math:1}}\n兩個必記的限制：餘式的次數一定要低過除式；被除式的次數 ＝ 除式次數 ＋ 商次數。\n{{math:2}}\n被除式缺項要補 $0x$（例如 $x^{3}+8x^{2}-8$ 寫成 $x^{3}+8x^{2}+0x-8$），否則相減時會錯位。\n最後一定要驗算：\n{{math:3}}",
+    "en": "Polynomial long division repeats four steps until the remainder has a lower degree than the divisor:\n(1) divide the leading terms to get the next term of the quotient;\n(2) multiply that term by the whole divisor and line it up underneath;\n(3) subtract (change every sign, then add);\n(4) bring down the next term and repeat.\nFor $2x^{3}-5x^{2}-4x+7$ divided by $2x-5$, the working is written like this:\n{{math:0}}\nRound 1: $2x^{3}\\div 2x=x^{2}$ and $x^{2}(2x-5)=2x^{3}-5x^{2}$; subtracting cancels both the $x^{3}$ and $x^{2}$ terms, so bring down $-4x$.\nRound 2: $-4x\\div 2x=-2$ and $-2(2x-5)=-4x+10$; subtracting leaves $-3$, a constant (degree 0). It is lower than the divisor's degree 1, so stop.\nThe division algorithm links the quotient $Q(x)$ and the remainder $R(x)$:\n{{math:1}}\nTwo rules to remember: the degree of the remainder must be lower than the degree of the divisor; the degree of the dividend equals the degree of the divisor plus the degree of the quotient.\n{{math:2}}\nIf a term is missing, add $0x$ (write $x^{3}+8x^{2}-8$ as $x^{3}+8x^{2}+0x-8$) so the columns stay aligned.\nAlways check the answer by expanding:\n{{math:3}}"
    },
    "math": [
+    "\\begin{array}{r}x^{2}-2\\\\[2pt]2x-5\\;\\overline{\\big)\\,2x^{3}-5x^{2}-4x+7}\\\\[1pt]2x^{3}-5x^{2}\\phantom{{}-4x+7}\\\\[-1pt]\\underline{\\phantom{2x^{3}-5x^{2}-4x+7}}\\\\[3pt]-4x+7\\\\[1pt]-4x+10\\phantom{{}+7}\\\\[-1pt]\\underline{\\phantom{-4x+10+7}}\\\\[3pt]-3\\end{array}",
     "f(x)=g(x)Q(x)+R(x)",
     "\\deg R<\\deg g",
     "(2x-5)(x^{2}-2)-3\n=2x^{3}-5x^{2}-4x+7"
@@ -486,7 +487,7 @@
     }
    ],
    "warn": {
-    "zh": "減的時候忘記整條變號，是最常見的出錯位：$2x^{3}-5x^{2}$ 減 $2x^{3}-5x^{2}$ 應該抵消，但寫成相加就會多出 $4x^{3}-10x^{2}$。另外，餘式的次數一定要低過除式，未低過就代表除法未做完。",
+    "zh": "減的時候忘記整條變號，是最常見的出錯位：減 $(2x^{3}-5x^{2})$ 等於加 $(-2x^{3}+5x^{2})$，寫成相加就會多出 $4x^{3}-10x^{2}$。另外，餘式的次數一定要低過除式，未低過就代表除法未做完。",
     "en": "Change every sign when you subtract. For example, $(2x^3 - 5x^2) - (2x^3 - 5x^2) = 0$. If you do not change signs, you get $4x^3 - 10x^2$. Also, the remainder degree must be strictly lower than the divisor degree."
    }
   },
@@ -597,6 +598,42 @@
    "warn": {
     "zh": "H.C.F. 取「最低」次方，L.C.M. 取「最高」次方，兩者剛好相反；把 H.C.F. 當成把全部因式乘起來（那其實是 L.C.M.）是常見的失分位。化簡時亦只可以約去「整塊因式」，不可以只約一條中的一個字母。",
     "en": "H.C.F. uses the lowest power. L.C.M. uses the highest power. When you simplify rational functions, cancel complete factors only. Never cancel a single variable inside an addition or subtraction."
+   }
+  },
+  {
+   "id": "en4-c6",
+   "topic": "en04",
+   "title": {
+    "zh": "有理函數的加減",
+    "en": "Adding and subtracting rational functions"
+   },
+   "body": {
+    "zh": "有理函數是「一個多項式除以另一個多項式」。加減跟分數完全一樣：先通分母。\n① 每個分母先因式分解；\n② 取所有分母的 L.C.M. 作公分母；\n③ 分子整塊加括號，減號後面的每一項都要變號；\n④ 合併同類項，最後才約去公因式。\n{{math:0}}\n減法最常見的錯是「減號只乘第一項」：\n{{math:1}}\n{{math:2}}\n所以第二塊分子要寫成 $-5(x+4)=-5x-20$，不是 $-5x+4$。\n如果兩個分母是 $(x-5)$ 與 $(5-x)$，它們只差一個負號：$-(x-5)=5-x$。分子分母要同時變號，值才不變：\n{{math:3}}\n通分後要再看一眼分子：只可以約「整塊公因式」，不可以把單一個 $x$ 或一項約走。",
+    "en": "A rational function is one polynomial divided by another. Adding and subtracting works exactly like fractions: get a common denominator first.\n(1) Factorise every denominator.\n(2) Take the L.C.M. of the denominators as the common denominator.\n(3) Put the whole numerator in brackets; after a minus sign every term changes sign.\n(4) Collect like terms, then cancel common factors.\n{{math:0}}\nThe commonest slip in subtraction is applying the minus sign to the first term only:\n{{math:1}}\n{{math:2}}\nSo the second numerator must be written as $-5(x+4)=-5x-20$, not $-5x+4$.\nIf the denominators are $(x-5)$ and $(5-x)$, they differ only by a sign: $-(x-5)=5-x$. Multiply the numerator and denominator by $-1$:\n{{math:3}}\nAfter getting a common denominator, check the numerator: only complete common factors may be cancelled, never a single $x$ or a single term."
+   },
+   "math": [
+    "\\frac{2}{x-1}+\\frac{3}{x+2}\n=\\frac{2(x+2)+3(x-1)}{(x-1)(x+2)}\n=\\frac{5x+1}{(x-1)(x+2)}",
+    "\\frac{4}{x+4}-\\frac{5}{x-5}\n=\\frac{4(x-5)-5(x+4)}{(x+4)(x-5)}",
+    "=\\frac{-x-40}{(x+4)(x-5)}",
+    "\\frac{-(x+40)}{(x+4)(x-5)}\n=\\frac{x+40}{(x+4)(5-x)}"
+   ],
+   "vocab": [
+    {
+     "en": "common denominator",
+     "zh": "公分母"
+    },
+    {
+     "en": "numerator",
+     "zh": "分子"
+    },
+    {
+     "en": "cancel",
+     "zh": "約去"
+    }
+   ],
+   "warn": {
+    "zh": "兩個最常見的錯：① 減號只乘第一項 —— 通分後第二塊要寫成 $-5(x+4)=-5x-20$，漏了負號整個分子都錯；② 以為分子可以與分母「約字母」，例如把 $\\frac{5x+1}{(x-1)(x+2)}$ 的 $x$ 約走。約分只可以約整塊公因式。",
+    "en": "Two common errors. (1) Applying the minus sign to the first term only: the second numerator must be $-5(x+4)=-5x-20$. (2) Cancelling a single $x$ against the denominator; only complete common factors may be cancelled."
    }
   }
  ]

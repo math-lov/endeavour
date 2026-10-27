@@ -571,7 +571,7 @@ ok(t07.$$("#pagenav .pg").length === 12, "ws06 = two lessons (1+2+3 and 1+2+3 pa
 ## 9. 已知事項／技術債（不急，但要知道）
 
 * **EN04（Lesson 4 · 多項式）已加入（2026-10-27）**：課題 `en04`，17 題
-  （結構題 9：EN4-Q1～Q9；MC 8：EN4-M1～M8）＋ 5 張概念卡，頁數 13
+  （結構題 9：EN4-Q1～Q9；MC 8：EN4-M1～M8）＋ 6 張概念卡，頁數 13
   （1 概念卡頁 ＋ 9 條長題各一頁 ＋ 3 頁 MC，MC 頁形 `[3, 3, 2]`）。
   題型覆蓋：恆等式比較係數、長除法、除法算式、餘式定理（兩個條件）、因式定理＋完全分解、
   有理根數目、H.C.F.／L.C.M.、有理函數化簡、DSE 式 claim 題。
@@ -579,6 +579,10 @@ ok(t07.$$("#pagenav .pg").length === 12, "ws06 = two lessons (1+2+3 and 1+2+3 pa
   版式照 Lesson 1–3：A4、Times New Roman、分數用 Word 公式、出處右對齊）。
   ⚠️ 新增課題後要跑齊 `make_learn_data.py` → `learn_check.py`（0 錯 0 警）→
   `learn_katex_check.js` → `learn_lang_check.py` → `learn_smoke_test.js`（全過）才可 push。
+  **2026-10-27 追加**：`en4-c2` 改為真正的長除法直式（KaTeX `array` ＋ `\overline{\big)}` ＋ `\phantom`
+  對齊；直式必須寫成**一行**（前端 `formulaBlock` 依 `\n` 斷行，斷開會拆散 array），
+  所以 `learn_check.py` 的 I11 行長檢查對 `\begin{array}` 開頭的行不作警告。
+  另新增 `en4-c6` 有理函數加減卡（通分母三步 ＋ 減號陷阱 ＋ `(x-5)`／`(5-x)` 變號）。
 
 * **舊學生的進度百分比會回落**：加了過渡題令分母變大
   （ws01 18→20 題、ws02 14→18、ws03 18→22、ws04 12→16、ws05a 17、ws05b 17、**ws06 17**）。
