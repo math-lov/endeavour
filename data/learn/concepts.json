@@ -415,6 +415,189 @@
     "zh": "最貴的失分是「沒有驗算」：求完方程，只要把題目給的一點代入答案（等於 0 就正確）；求完未知數，就把答案代回原式。這個動作只需十秒，但可以救回整題的分數。",
     "en": "The most expensive mistake is not checking: after finding an equation, substitute one given point into it (0 means correct); after finding an unknown, put it back into the original equation. Ten seconds of work can save the whole question."
    }
+  },
+  {
+   "id": "en4-c1",
+   "topic": "en04",
+   "title": {
+    "zh": "多項式的加減乘與恆等式",
+    "en": "Adding, subtracting, multiplying and identities"
+   },
+   "body": {
+    "zh": "多項式加減只看同類項；乘法用分配律，逐項乘完再合併。\n去括號時，括號前面是「減」就要整條變號：\n{{math:0}}\n乘法：外面的每一項都要乘到括號內每一項：\n{{math:1}}\n恆等式 $\\equiv$ 的意思是「任何 $x$ 都成立」，所以左右兩邊同類項的係數一定相等：\n{{math:2}}\n看到 $\\equiv$ 就不要只代一個數 —— 代一個數只會得到一條方程，不足夠求幾個未知數。",
+    "en": "When adding or subtracting polynomials, only like terms can be combined; when multiplying, use the distributive law and multiply every term before collecting.\nWhen a bracket is subtracted, every sign inside it changes:\n{{math:0}}\nFor multiplication, each term outside must multiply every term inside:\n{{math:1}}\nAn identity $\\equiv$ holds for every value of $x$, so the coefficients of like terms on the two sides must be equal:\n{{math:2}}\nWhen you see $\\equiv$, do not just substitute one value of $x$: one substitution gives only one equation, which is not enough for several unknowns."
+   },
+   "math": [
+    "(3x^{3}+6x^{2}-5x-10)\n-(-x^{3}+8x+6)\n=4x^{3}+6x^{2}-13x-16",
+    "(x+2)(x^{2}-3x+4)\n=x^{3}-x^{2}-2x+8",
+    "Ax^{2}+Bx+C\\equiv ax^{2}+bx+c\n\\Rightarrow A=a,\\ B=b,\\ C=c"
+   ],
+   "vocab": [
+    {
+     "en": "identity",
+     "zh": "恆等式"
+    },
+    {
+     "en": "like terms",
+     "zh": "同類項"
+    },
+    {
+     "en": "coefficient",
+     "zh": "係數"
+    }
+   ],
+   "warn": {
+    "zh": "最常見的錯是去括號時只變第一項的符號：$-(x^{2}-3x+4)$ 應該是 $-x^{2}+3x-4$，三項全部變號。另一個錯是把恆等式當方程，只代 $x=0$ 就以為求到全部未知數。",
+    "en": "The commonest slip is changing only the first sign when a bracket is removed: $-(x^{2}-3x+4)$ should become $-x^{2}+3x-4$, with every term changed. Another is treating an identity as an equation and substituting $x=0$ once, as if that found every unknown."
+   }
+  },
+  {
+   "id": "en4-c2",
+   "topic": "en04",
+   "title": {
+    "zh": "長除法與除法算式",
+    "en": "Long division and the division algorithm"
+   },
+   "body": {
+    "zh": "多項式除法跟數字長除法一樣：每次用最高次項相除，乘回除式，再相減。\n最重要的一條關係是除法算式（商 $Q(x)$、餘式 $R(x)$）：\n{{math:0}}\n兩個必記的限制：餘式的次數一定要低過除式的次數；被除式的次數等於除式與商的次數相加。\n{{math:1}}\n被除式缺項時要補 $0x$（例如 $x^{3}+8x^{2}-8$ 寫成 $x^{3}+8x^{2}+0x-8$），否則很容易錯位。\n驗算方法：把「除式 × 商 ＋ 餘式」乘開，應該等於原來的被除式。\n{{math:2}}",
+    "en": "Polynomial long division works like long division with numbers: divide the highest-degree terms, multiply back by the divisor, then subtract.\nThe key relationship uses the quotient $Q(x)$ and the remainder $R(x)$:\n{{math:0}}\nTwo limits to remember: the degree of the remainder must be lower than the degree of the divisor, and the degree of the dividend equals the degrees of the divisor and quotient added together.\n{{math:1}}\nIf a term is missing in the dividend, insert $0x$ (write $x^{3}+8x^{2}-8$ as $x^{3}+8x^{2}+0x-8$), otherwise the columns shift.\nTo check, expand divisor times quotient plus remainder; it must give back the dividend.\n{{math:2}}"
+   },
+   "math": [
+    "f(x)=g(x)Q(x)+R(x)",
+    "\\deg R<\\deg g",
+    "(2x-5)(x^{2}-2)-3\n=2x^{3}-5x^{2}-4x+7"
+   ],
+   "vocab": [
+    {
+     "en": "dividend",
+     "zh": "被除式"
+    },
+    {
+     "en": "divisor",
+     "zh": "除式"
+    },
+    {
+     "en": "quotient",
+     "zh": "商"
+    },
+    {
+     "en": "remainder",
+     "zh": "餘式"
+    }
+   ],
+   "warn": {
+    "zh": "減的時候忘記整條變號，是最常見的出錯位：$2x^{3}-5x^{2}$ 減 $2x^{3}-5x^{2}$ 應該抵消，但寫成相加就會多出 $4x^{3}-10x^{2}$。另外，餘式的次數一定要低過除式，未低過就代表除法未做完。",
+    "en": "Forgetting to change every sign when subtracting is the usual failure: subtracting $2x^{3}-5x^{2}$ from $2x^{3}-5x^{2}$ should cancel, but adding instead produces $4x^{3}-10x^{2}$. Also, the remainder must have lower degree than the divisor; if not, the division is unfinished."
+   }
+  },
+  {
+   "id": "en4-c3",
+   "topic": "en04",
+   "title": {
+    "zh": "餘式定理與因式定理",
+    "en": "The remainder theorem and the factor theorem"
+   },
+   "body": {
+    "zh": "求餘式不必做長除法：把除式設成 0，解出 $x$，再代入 $f(x)$ 就是餘式。\n除以 $x-a$：\n{{math:0}}\n除以 $mx-n$：\n{{math:1}}\n因式定理是餘式定理的特例：餘式是 0 就代表整除，也就是「因式」。\n{{math:2}}\n最常錯的是符號：除以 $x+5$ 要代 $x=-5$，不是 $5$；除以 $2x-1$ 要代 $x=\\frac{1}{2}$，不是 $2$。",
+    "en": "You do not need long division to find a remainder: set the divisor equal to 0, solve for $x$, and substitute into $f(x)$.\nFor division by $x-a$:\n{{math:0}}\nFor division by $mx-n$:\n{{math:1}}\nThe factor theorem is the special case where the remainder is 0, which means the divisor is a factor:\n{{math:2}}\nThe usual mistake is the sign: dividing by $x+5$ means substituting $x=-5$, not $5$; dividing by $2x-1$ means $x=\\frac{1}{2}$, not $2$."
+   },
+   "math": [
+    "\\text{remainder of }f(x)\\div(x-a)=f(a)",
+    "\\text{remainder of }f(x)\\div(mx-n)\n=f\\left(\\frac{n}{m}\\right)",
+    "f(a)=0\\iff x-a\\text{ is a factor of }f(x)"
+   ],
+   "vocab": [
+    {
+     "en": "remainder theorem",
+     "zh": "餘式定理"
+    },
+    {
+     "en": "factor theorem",
+     "zh": "因式定理"
+    },
+    {
+     "en": "divisible",
+     "zh": "可整除"
+    }
+   ],
+   "warn": {
+    "zh": "「$x+2$ 是因式」代表 $f(-2)=0$，不是 $f(2)=0$；「除以 $2x+3$」要代 $x=-\\frac{3}{2}$。符號一錯，之後整題的 $k$ 都會錯。",
+    "en": "“$x+2$ is a factor” means $f(-2)=0$, not $f(2)=0$; “divided by $2x+3$” means substituting $x=-\\frac{3}{2}$. One sign error here makes every later value of $k$ wrong."
+   }
+  },
+  {
+   "id": "en4-c4",
+   "topic": "en04",
+   "title": {
+    "zh": "三次方程：有理根、無理根與實根",
+    "en": "Cubic equations: rational, irrational and real roots"
+   },
+   "body": {
+    "zh": "三次方程 $f(x)=0$ 通常先抽一個因式，剩下一條二次方程，再用判別式判斷。\n{{math:0}}\n二次部分 $ax^{2}+bx+c=0$ 的判別式：\n{{math:1}}\n三種情況要分清楚：$\\Delta<0$ 代表二次部分沒有實根；$\\Delta$ 是完全平方數（例如 $49$、$64$）代表兩個有理根；$\\Delta>0$ 但不是完全平方數，代表兩個無理根（答案帶根號）。\n{{math:2}}\n所以「有無理根」和「無實根」是兩件完全不同的事，這是這一課最常見的混淆。",
+    "en": "For a cubic $f(x)=0$, take out one factor first, leaving a quadratic that is decided by its discriminant.\n{{math:0}}\nFor the quadratic part $ax^{2}+bx+c=0$, the discriminant is\n{{math:1}}\nKeep the three cases apart: $\\Delta<0$ means the quadratic part has no real roots; $\\Delta$ being a perfect square (such as $49$ or $64$) gives two rational roots; $\\Delta>0$ but not a perfect square gives two irrational roots (the answers contain surds).\n{{math:2}}\nSo “has irrational roots” and “has no real roots” are completely different statements — the commonest confusion in this lesson."
+   },
+   "math": [
+    "f(x)=(x-r)(ax^{2}+bx+c)",
+    "\\Delta=b^{2}-4ac",
+    "\\Delta=93\\Rightarrow x=\\frac{-7\\pm\\sqrt{93}}{2}"
+   ],
+   "vocab": [
+    {
+     "en": "rational number",
+     "zh": "有理數"
+    },
+    {
+     "en": "irrational number",
+     "zh": "無理數"
+    },
+    {
+     "en": "real root",
+     "zh": "實根"
+    },
+    {
+     "en": "perfect square",
+     "zh": "完全平方數"
+    }
+   ],
+   "warn": {
+    "zh": "見到「無理根」不要立刻寫「無實根」：$\\sqrt{93}$ 是實數但無理數，所以那兩個根是無理根，不是無實根。另外，只有二次部分的係數是整數時，「$\\Delta$ 是完全平方數」才保證有理根。",
+    "en": "Do not read “irrational roots” as “no real roots”: $\\sqrt{93}$ is a real number but not rational, so those two roots are irrational, not non-real. Also, “$\\Delta$ is a perfect square” only guarantees rational roots when the coefficients of the quadratic are integers."
+   }
+  },
+  {
+   "id": "en4-c5",
+   "topic": "en04",
+   "title": {
+    "zh": "H.C.F.、L.C.M. 與有理函數",
+    "en": "H.C.F., L.C.M. and rational functions"
+   },
+   "body": {
+    "zh": "多項式的 H.C.F. 與 L.C.M. 跟數字一樣，先把每項分解成最細的因式（係數用質因數）。\nH.C.F.：每種因式取最低次方（而且只取每一項都有的因式）：\n{{math:0}}\nL.C.M.：每種因式取最高次方（所有出現過的因式都要）：\n{{math:1}}\n化簡有理函數：先分解所有分子分母，再約去公因式；做除法時把第二個分數倒轉相乘。\n{{math:2}}",
+    "en": "The H.C.F. and L.C.M. of polynomials work like numbers: factorise everything first, using prime factors for the coefficients.\nH.C.F.: take the lowest power of each factor (and only factors common to every expression):\n{{math:0}}\nL.C.M.: take the highest power of every factor that appears:\n{{math:1}}\nTo simplify a rational function, factorise every numerator and denominator, then cancel common factors; for a division, turn the second fraction upside down and multiply.\n{{math:2}}"
+   },
+   "math": [
+    "\\text{H.C.F. of }a^{2}b^{3},a^{4}bc^{2}=a^{2}b",
+    "\\text{L.C.M. of }a^{2}b^{3},a^{4}bc^{2}=a^{4}b^{3}c^{2}",
+    "\\frac{A}{B}\\div\\frac{C}{D}=\\frac{A}{B}\\times\\frac{D}{C}"
+   ],
+   "vocab": [
+    {
+     "en": "H.C.F.",
+     "zh": "最大公因式"
+    },
+    {
+     "en": "L.C.M.",
+     "zh": "最小公倍式"
+    },
+    {
+     "en": "rational function",
+     "zh": "有理函數"
+    }
+   ],
+   "warn": {
+    "zh": "H.C.F. 取「最低」次方，L.C.M. 取「最高」次方，兩者剛好相反；把 H.C.F. 當成把全部因式乘起來（那其實是 L.C.M.）是常見的失分位。化簡時亦只可以約去「整塊因式」，不可以只約一條中的一個字母。",
+    "en": "The H.C.F. takes the lowest powers while the L.C.M. takes the highest — they are opposites. A common loss is multiplying every factor and calling it the H.C.F., which is really the L.C.M. When cancelling, cancel whole factors only, never a single letter inside a sum."
+   }
   }
  ]
 }

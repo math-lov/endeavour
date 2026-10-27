@@ -1,5 +1,5 @@
 > ⚠️ **本檔由 DSE Pass repo 複製過來**（內容層的規則完全通用）。Endeavour 是「S.5 課後研習（After-School Tutorial Session）」專屬站：
-> 只收**課堂討論過的題目**（現時：Lesson 1，課題 id `en01`，題目來自 WS05 及歷屆 DSE 試題），
+> 只收**課堂討論過的題目**（現時：Lesson 1–4，課題 id `en01`–`en04`；Lesson 4 題目來自 WS06 及歷屆 DSE 試題），
 > 與 DSE Pass 內容重複是刻意的。前端課題 id 前綴已放寬為 `^eph-(ws\d+[a-z]?|as\d+|en\d+[a-z]?)-`，
 > 所以課題可以用 `en01`、`en02`… 命名。文中 ws01／ws01b／ws01c 的例子屬 DSE Pass，本 repo 未必有。
 
@@ -569,6 +569,16 @@ ok(t07.$$("#pagenav .pg").length === 12, "ws06 = two lessons (1+2+3 and 1+2+3 pa
 ---
 
 ## 9. 已知事項／技術債（不急，但要知道）
+
+* **EN04（Lesson 4 · 多項式）已加入（2026-10-27）**：課題 `en04`，17 題
+  （結構題 9：EN4-Q1～Q9；MC 8：EN4-M1～M8）＋ 5 張概念卡，頁數 13
+  （1 概念卡頁 ＋ 9 條長題各一頁 ＋ 3 頁 MC，MC 頁形 `[3, 3, 2]`）。
+  題型覆蓋：恆等式比較係數、長除法、除法算式、餘式定理（兩個條件）、因式定理＋完全分解、
+  有理根數目、H.C.F.／L.C.M.、有理函數化簡、DSE 式 claim 題。
+  工作紙：`docs/worksheets/endeavour-lesson4.docx`（由 `tools/make_lesson4_worksheet.py` 產生，
+  版式照 Lesson 1–3：A4、Times New Roman、分數用 Word 公式、出處右對齊）。
+  ⚠️ 新增課題後要跑齊 `make_learn_data.py` → `learn_check.py`（0 錯 0 警）→
+  `learn_katex_check.js` → `learn_lang_check.py` → `learn_smoke_test.js`（全過）才可 push。
 
 * **舊學生的進度百分比會回落**：加了過渡題令分母變大
   （ws01 18→20 題、ws02 14→18、ws03 18→22、ws04 12→16、ws05a 17、ws05b 17、**ws06 17**）。

@@ -83,6 +83,29 @@ window.LEARN_INDEX = {
    "lessonIds": [
     "en03-1"
    ]
+  },
+  {
+   "id": "en04",
+   "stage": 1,
+   "unit": 4,
+   "name": {
+    "zh": "Lesson 4 · 多項式（恆等式、長除法、餘式與因式定理）",
+    "en": "Lesson 4 · More about polynomials (identities, division, remainder & factor theorems)"
+   },
+   "intro": {
+    "zh": "這一節課堂討論多項式的五類題目：\n① 多項式的加減乘與恆等式（比較係數）；\n② 長除法與除法算式 $f(x)=g(x)Q(x)+R(x)$；\n③ 餘式定理與因式定理（求餘式、求未知數、分解三次式）；\n④ 三次方程的根：幾時是有理根、無理根、無實根；\n⑤ H.C.F.／L.C.M. 與有理函數化簡。\n9 條結構題照卷一格式寫上 1M／1A，另有 8 題卷二 MC，做完可以逐分對。",
+    "en": "This lesson covers five kinds of polynomial questions:\n(1) adding, subtracting and multiplying polynomials, and identities solved by comparing coefficients;\n(2) long division and the division algorithm $f(x)=g(x)Q(x)+R(x)$;\n(3) the remainder theorem and the factor theorem: finding a remainder, finding an unknown, factorising a cubic;\n(4) the roots of a cubic equation: when they are rational, irrational or not real;\n(5) H.C.F. and L.C.M. of polynomials, and simplifying rational functions.\nThe 9 structured questions are in Paper 1 format with 1M / 1A marks shown, followed by 8 Paper 2 multiple-choice questions."
+   },
+   "source": "S.K.H. Bishop Baker Secondary School · S.5 After-School Tutorial · Endeavour Lesson 4（EPH WS06 More about Polynomials）",
+   "stats": {
+    "mc": 8,
+    "long": 9,
+    "cards": 5,
+    "pages": 3
+   },
+   "lessonIds": [
+    "en04-1"
+   ]
   }
  ],
  "assessments": [],
@@ -168,13 +191,13 @@ window.LEARN_INDEX = {
    }
   }
  },
- "generatedAt": "2026-10-13T05:04:27Z",
+ "generatedAt": "2026-10-27T01:49:31Z",
  "counts": {
-  "topics": 3,
+  "topics": 4,
   "held": 0,
-  "mc": 14,
-  "long": 21,
-  "cards": 11,
+  "mc": 22,
+  "long": 30,
+  "cards": 16,
   "blocked": 0
  }
 };

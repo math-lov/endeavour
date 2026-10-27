@@ -3,6 +3,9 @@
 *.docx
 paper2025.json
 
+# 例外：本站自行產生的工作紙（由 tools/make_lesson4_worksheet.py 生成）要入庫
+!docs/worksheets/*.docx
+
 # 依賴與快取
 node_modules/
 __pycache__/
