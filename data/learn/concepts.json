@@ -421,11 +421,11 @@
    "topic": "en04",
    "title": {
     "zh": "多項式的加減乘與恆等式",
-    "en": "Adding, subtracting, multiplying and identities"
+    "en": "Operations on polynomials and identities"
    },
    "body": {
     "zh": "多項式加減只看同類項；乘法用分配律，逐項乘完再合併。\n去括號時，括號前面是「減」就要整條變號：\n{{math:0}}\n乘法：外面的每一項都要乘到括號內每一項：\n{{math:1}}\n恆等式 $\\equiv$ 的意思是「任何 $x$ 都成立」，所以左右兩邊同類項的係數一定相等：\n{{math:2}}\n看到 $\\equiv$ 就不要只代一個數 —— 代一個數只會得到一條方程，不足夠求幾個未知數。",
-    "en": "When adding or subtracting polynomials, only like terms can be combined; when multiplying, use the distributive law and multiply every term before collecting.\nWhen a bracket is subtracted, every sign inside it changes:\n{{math:0}}\nFor multiplication, each term outside must multiply every term inside:\n{{math:1}}\nAn identity $\\equiv$ holds for every value of $x$, so the coefficients of like terms on the two sides must be equal:\n{{math:2}}\nWhen you see $\\equiv$, do not just substitute one value of $x$: one substitution gives only one equation, which is not enough for several unknowns."
+    "en": "To add or subtract polynomials, combine like terms only. To multiply, use the distributive law and multiply each term before you simplify.\nWhen a minus sign is before brackets, change every sign inside:\n{{math:0}}\nTo multiply, multiply each term outside by each term inside:\n{{math:1}}\nAn identity $\\equiv$ is true for all values of $x$. Therefore, the coefficients of like terms on both sides are equal:\n{{math:2}}\nDo not substitute only one value of $x$. One substitution gives only one equation. It cannot solve for several unknowns."
    },
    "math": [
     "(3x^{3}+6x^{2}-5x-10)\n-(-x^{3}+8x+6)\n=4x^{3}+6x^{2}-13x-16",
@@ -448,7 +448,7 @@
    ],
    "warn": {
     "zh": "最常見的錯是去括號時只變第一項的符號：$-(x^{2}-3x+4)$ 應該是 $-x^{2}+3x-4$，三項全部變號。另一個錯是把恆等式當方程，只代 $x=0$ 就以為求到全部未知數。",
-    "en": "The commonest slip is changing only the first sign when a bracket is removed: $-(x^{2}-3x+4)$ should become $-x^{2}+3x-4$, with every term changed. Another is treating an identity as an equation and substituting $x=0$ once, as if that found every unknown."
+    "en": "Do not change only the first sign when you remove brackets. $-(x^{2}-3x+4)$ becomes $-x^{2}+3x-4$. You must change all signs. Also, do not substitute $x=0$ only. Comparing coefficients is necessary to find all unknowns."
    }
   },
   {
@@ -460,7 +460,7 @@
    },
    "body": {
     "zh": "多項式除法跟數字長除法一樣：每次用最高次項相除，乘回除式，再相減。\n最重要的一條關係是除法算式（商 $Q(x)$、餘式 $R(x)$）：\n{{math:0}}\n兩個必記的限制：餘式的次數一定要低過除式的次數；被除式的次數等於除式與商的次數相加。\n{{math:1}}\n被除式缺項時要補 $0x$（例如 $x^{3}+8x^{2}-8$ 寫成 $x^{3}+8x^{2}+0x-8$），否則很容易錯位。\n驗算方法：把「除式 × 商 ＋ 餘式」乘開，應該等於原來的被除式。\n{{math:2}}",
-    "en": "Polynomial long division works like long division with numbers: divide the highest-degree terms, multiply back by the divisor, then subtract.\nThe key relationship uses the quotient $Q(x)$ and the remainder $R(x)$:\n{{math:0}}\nTwo limits to remember: the degree of the remainder must be lower than the degree of the divisor, and the degree of the dividend equals the degrees of the divisor and quotient added together.\n{{math:1}}\nIf a term is missing in the dividend, insert $0x$ (write $x^{3}+8x^{2}-8$ as $x^{3}+8x^{2}+0x-8$), otherwise the columns shift.\nTo check, expand divisor times quotient plus remainder; it must give back the dividend.\n{{math:2}}"
+    "en": "Polynomial long division is like division with numbers: divide the highest powers, multiply back, and subtract.\nThe basic relationship uses the quotient $Q(x)$ and the remainder $R(x)$:\n{{math:0}}\nRemember two rules: the degree of the remainder must be lower than the degree of the divisor. The degree of the dividend equals the degree of the divisor plus the degree of the quotient:\n{{math:1}}\nIf a term is missing in the dividend, add $0x$ (write $x^{3}+8x^{2}-8$ as $x^{3}+8x^{2}+0x-8$) to keep the columns aligned.\nTo check the answer, expand: Divisor × Quotient + Remainder. The result must equal the dividend:\n{{math:2}}"
    },
    "math": [
     "f(x)=g(x)Q(x)+R(x)",
@@ -487,7 +487,7 @@
    ],
    "warn": {
     "zh": "減的時候忘記整條變號，是最常見的出錯位：$2x^{3}-5x^{2}$ 減 $2x^{3}-5x^{2}$ 應該抵消，但寫成相加就會多出 $4x^{3}-10x^{2}$。另外，餘式的次數一定要低過除式，未低過就代表除法未做完。",
-    "en": "Forgetting to change every sign when subtracting is the usual failure: subtracting $2x^{3}-5x^{2}$ from $2x^{3}-5x^{2}$ should cancel, but adding instead produces $4x^{3}-10x^{2}$. Also, the remainder must have lower degree than the divisor; if not, the division is unfinished."
+    "en": "Change every sign when you subtract. For example, $(2x^3 - 5x^2) - (2x^3 - 5x^2) = 0$. If you do not change signs, you get $4x^3 - 10x^2$. Also, the remainder degree must be strictly lower than the divisor degree."
    }
   },
   {
@@ -499,7 +499,7 @@
    },
    "body": {
     "zh": "求餘式不必做長除法：把除式設成 0，解出 $x$，再代入 $f(x)$ 就是餘式。\n除以 $x-a$：\n{{math:0}}\n除以 $mx-n$：\n{{math:1}}\n因式定理是餘式定理的特例：餘式是 0 就代表整除，也就是「因式」。\n{{math:2}}\n最常錯的是符號：除以 $x+5$ 要代 $x=-5$，不是 $5$；除以 $2x-1$ 要代 $x=\\frac{1}{2}$，不是 $2$。",
-    "en": "You do not need long division to find a remainder: set the divisor equal to 0, solve for $x$, and substitute into $f(x)$.\nFor division by $x-a$:\n{{math:0}}\nFor division by $mx-n$:\n{{math:1}}\nThe factor theorem is the special case where the remainder is 0, which means the divisor is a factor:\n{{math:2}}\nThe usual mistake is the sign: dividing by $x+5$ means substituting $x=-5$, not $5$; dividing by $2x-1$ means $x=\\frac{1}{2}$, not $2$."
+    "en": "You do not need long division to find a remainder. Set the divisor to 0, solve for $x$, and substitute $x$ into $f(x)$.\nWhen divided by $x-a$:\n{{math:0}}\nWhen divided by $mx-n$:\n{{math:1}}\nThe factor theorem is a special case: when the remainder is 0, the divisor is a factor of $f(x)$:\n{{math:2}}\nWatch the signs: for division by $x+5$, substitute $x=-5$ (not $5$). For division by $2x-1$, substitute $x=\\frac{1}{2}$ (not $2$)."
    },
    "math": [
     "\\text{remainder of }f(x)\\div(x-a)=f(a)",
@@ -522,7 +522,7 @@
    ],
    "warn": {
     "zh": "「$x+2$ 是因式」代表 $f(-2)=0$，不是 $f(2)=0$；「除以 $2x+3$」要代 $x=-\\frac{3}{2}$。符號一錯，之後整題的 $k$ 都會錯。",
-    "en": "“$x+2$ is a factor” means $f(-2)=0$, not $f(2)=0$; “divided by $2x+3$” means substituting $x=-\\frac{3}{2}$. One sign error here makes every later value of $k$ wrong."
+    "en": "“$x+2$ is a factor” means $f(-2)=0$, not $f(2)=0$. “Divided by $2x+3$” means you must substitute $x=-\\frac{3}{2}$. A sign error here makes all subsequent values incorrect."
    }
   },
   {
@@ -534,7 +534,7 @@
    },
    "body": {
     "zh": "三次方程 $f(x)=0$ 通常先抽一個因式，剩下一條二次方程，再用判別式判斷。\n{{math:0}}\n二次部分 $ax^{2}+bx+c=0$ 的判別式：\n{{math:1}}\n三種情況要分清楚：$\\Delta<0$ 代表二次部分沒有實根；$\\Delta$ 是完全平方數（例如 $49$、$64$）代表兩個有理根；$\\Delta>0$ 但不是完全平方數，代表兩個無理根（答案帶根號）。\n{{math:2}}\n所以「有無理根」和「無實根」是兩件完全不同的事，這是這一課最常見的混淆。",
-    "en": "For a cubic $f(x)=0$, take out one factor first, leaving a quadratic that is decided by its discriminant.\n{{math:0}}\nFor the quadratic part $ax^{2}+bx+c=0$, the discriminant is\n{{math:1}}\nKeep the three cases apart: $\\Delta<0$ means the quadratic part has no real roots; $\\Delta$ being a perfect square (such as $49$ or $64$) gives two rational roots; $\\Delta>0$ but not a perfect square gives two irrational roots (the answers contain surds).\n{{math:2}}\nSo “has irrational roots” and “has no real roots” are completely different statements — the commonest confusion in this lesson."
+    "en": "To solve a cubic equation $f(x)=0$, find one linear factor first. Then solve the remaining quadratic equation using the discriminant:\n{{math:0}}\nFor the quadratic equation $ax^{2}+bx+c=0$, the discriminant is:\n{{math:1}}\nIdentify the three cases:\n(1) $\\Delta<0$: no real roots.\n(2) $\\Delta>0$ and $\\Delta$ is a perfect square: two rational roots.\n(3) $\\Delta>0$ but $\\Delta$ is not a perfect square: two irrational roots (roots with surds):\n{{math:2}}\n“Irrational roots” and “no real roots” have different meanings. Do not confuse them."
    },
    "math": [
     "f(x)=(x-r)(ax^{2}+bx+c)",
@@ -561,7 +561,7 @@
    ],
    "warn": {
     "zh": "見到「無理根」不要立刻寫「無實根」：$\\sqrt{93}$ 是實數但無理數，所以那兩個根是無理根，不是無實根。另外，只有二次部分的係數是整數時，「$\\Delta$ 是完全平方數」才保證有理根。",
-    "en": "Do not read “irrational roots” as “no real roots”: $\\sqrt{93}$ is a real number but not rational, so those two roots are irrational, not non-real. Also, “$\\Delta$ is a perfect square” only guarantees rational roots when the coefficients of the quadratic are integers."
+    "en": "Do not treat “irrational roots” as “no real roots”. $\\sqrt{93}$ is a real number. Therefore, the roots are real and irrational. Also, “$\\Delta$ is a perfect square” guarantees rational roots only when all coefficients are integers."
    }
   },
   {
@@ -573,7 +573,7 @@
    },
    "body": {
     "zh": "多項式的 H.C.F. 與 L.C.M. 跟數字一樣，先把每項分解成最細的因式（係數用質因數）。\nH.C.F.：每種因式取最低次方（而且只取每一項都有的因式）：\n{{math:0}}\nL.C.M.：每種因式取最高次方（所有出現過的因式都要）：\n{{math:1}}\n化簡有理函數：先分解所有分子分母，再約去公因式；做除法時把第二個分數倒轉相乘。\n{{math:2}}",
-    "en": "The H.C.F. and L.C.M. of polynomials work like numbers: factorise everything first, using prime factors for the coefficients.\nH.C.F.: take the lowest power of each factor (and only factors common to every expression):\n{{math:0}}\nL.C.M.: take the highest power of every factor that appears:\n{{math:1}}\nTo simplify a rational function, factorise every numerator and denominator, then cancel common factors; for a division, turn the second fraction upside down and multiply.\n{{math:2}}"
+    "en": "Find the H.C.F. and L.C.M. by factorising each term first. Write numerical coefficients as prime factors.\nH.C.F.: take the lowest power of each common factor that appears in all terms:\n{{math:0}}\nL.C.M.: take the highest power of every factor that appears in any term:\n{{math:1}}\nTo simplify a rational function, factorise the numerators and denominators. Cancel common factors. For division, multiply by the reciprocal of the second fraction:\n{{math:2}}"
    },
    "math": [
     "\\text{H.C.F. of }a^{2}b^{3},a^{4}bc^{2}=a^{2}b",
@@ -596,7 +596,7 @@
    ],
    "warn": {
     "zh": "H.C.F. 取「最低」次方，L.C.M. 取「最高」次方，兩者剛好相反；把 H.C.F. 當成把全部因式乘起來（那其實是 L.C.M.）是常見的失分位。化簡時亦只可以約去「整塊因式」，不可以只約一條中的一個字母。",
-    "en": "The H.C.F. takes the lowest powers while the L.C.M. takes the highest — they are opposites. A common loss is multiplying every factor and calling it the H.C.F., which is really the L.C.M. When cancelling, cancel whole factors only, never a single letter inside a sum."
+    "en": "H.C.F. uses the lowest power. L.C.M. uses the highest power. When you simplify rational functions, cancel complete factors only. Never cancel a single variable inside an addition or subtraction."
    }
   }
  ]

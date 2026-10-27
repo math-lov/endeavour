@@ -94,7 +94,7 @@ window.LEARN_INDEX = {
    },
    "intro": {
     "zh": "這一節課堂討論多項式的五類題目：\n① 多項式的加減乘與恆等式（比較係數）；\n② 長除法與除法算式 $f(x)=g(x)Q(x)+R(x)$；\n③ 餘式定理與因式定理（求餘式、求未知數、分解三次式）；\n④ 三次方程的根：幾時是有理根、無理根、無實根；\n⑤ H.C.F.／L.C.M. 與有理函數化簡。\n9 條結構題照卷一格式寫上 1M／1A，另有 8 題卷二 MC，做完可以逐分對。",
-    "en": "This lesson covers five kinds of polynomial questions:\n(1) adding, subtracting and multiplying polynomials, and identities solved by comparing coefficients;\n(2) long division and the division algorithm $f(x)=g(x)Q(x)+R(x)$;\n(3) the remainder theorem and the factor theorem: finding a remainder, finding an unknown, factorising a cubic;\n(4) the roots of a cubic equation: when they are rational, irrational or not real;\n(5) H.C.F. and L.C.M. of polynomials, and simplifying rational functions.\nThe 9 structured questions are in Paper 1 format with 1M / 1A marks shown, followed by 8 Paper 2 multiple-choice questions."
+    "en": "This lesson covers five main topics on polynomials:\n(1) Polynomial operations and identities (compare coefficients);\n(2) Long division and the division algorithm $f(x)=g(x)Q(x)+R(x)$;\n(3) The remainder theorem and the factor theorem;\n(4) Roots of a cubic equation (rational, irrational, or non-real);\n(5) H.C.F., L.C.M., and rational functions.\nThe 9 structured questions follow Paper 1 format with 1M / 1A marks shown. They are followed by 8 Paper 2 multiple-choice questions."
    },
    "source": "S.K.H. Bishop Baker Secondary School · S.5 After-School Tutorial · Endeavour Lesson 4（EPH WS06 More about Polynomials）",
    "stats": {
@@ -191,7 +191,7 @@ window.LEARN_INDEX = {
    }
   }
  },
- "generatedAt": "2026-10-27T01:49:31Z",
+ "generatedAt": "2026-10-27T11:51:19Z",
  "counts": {
   "topics": 4,
   "held": 0,
