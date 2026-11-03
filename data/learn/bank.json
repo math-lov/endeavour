@@ -1160,15 +1160,29 @@
    "type": "long",
    "kind": "short",
    "topic": "en05",
-   "unit": 5,
-   "subtopic": "quadratic-equations",
-   "difficulty": 2,
+   "unit": 10,
+   "subtopic": "variation",
+   "difficulty": 1,
    "code": "EN5-Q1",
-   "source": "EPH WS05 P1 Q1 · 長方形對角線（同款：HKDSE 2019 Paper 1 Q3）",
+   "source": "Endeavour Lesson 5 Q1 · 正變（direct variation）",
    "stem": {
-    "en": "The breadth and the length of a rectangle are $(26+2r)$ cm and $(10-4r)$ cm respectively. If the length of a diagonal of the rectangle is 34 cm, find $r$.",
-    "zh": "一個長方形的闊與長分別為 $(26+2r)$ cm 與 $(10-4r)$ cm。若長方形的一條對角線長 34 cm，求 $r$。"
+    "en": "It is given that $y$ varies directly as $x$. When $x=5$, $y=10$.",
+    "zh": "已知 $y$ 隨 $x$ 正變。當 $x=5$ 時，$y=10$。"
    },
+   "parts": [
+    {
+     "label": "(a)",
+     "en": "Express $y$ in terms of $x$.",
+     "zh": "以 $x$ 表示 $y$。",
+     "marks": 2
+    },
+    {
+     "label": "(b)",
+     "en": "Find the value of $y$ when $x=7$.",
+     "zh": "求當 $x=7$ 時 $y$ 的值。",
+     "marks": 1
+    }
+   ],
    "marks": 3,
    "review": null
   },
@@ -1177,15 +1191,29 @@
    "type": "long",
    "kind": "short",
    "topic": "en05",
-   "unit": 5,
-   "subtopic": "quadratic-equations",
+   "unit": 10,
+   "subtopic": "variation",
    "difficulty": 2,
    "code": "EN5-Q2",
-   "source": "EPH WS05 P1 Q2 · [HKCEE 2007 Paper 1 Q5]",
+   "source": "Endeavour Lesson 5 Q2 · $y$ 隨 $\\sqrt{x}$ 正變",
    "stem": {
-    "en": "Let $k$ be a constant. If the quadratic equation $15x^{2}+6x-k=0$ has no real roots, find the range of values of $k$.",
-    "zh": "設 $k$ 為常數。若二次方程 $15x^{2}+6x-k=0$ 沒有實根，求 $k$ 的取值範圍。"
+    "en": "It is given that $y$ varies directly as $\\sqrt{x}$. When $x=36$, $y=4$.",
+    "zh": "已知 $y$ 隨 $\\sqrt{x}$ 正變。當 $x=36$ 時，$y=4$。"
    },
+   "parts": [
+    {
+     "label": "(a)",
+     "en": "Express $y$ in terms of $x$.",
+     "zh": "以 $x$ 表示 $y$。",
+     "marks": 2
+    },
+    {
+     "label": "(b)",
+     "en": "If the value of $x$ is increased from 36 to 81, find the change in the value of $y$.",
+     "zh": "若 $x$ 的值由 36 增加至 81，求 $y$ 的改變量。",
+     "marks": 2
+    }
+   ],
    "marks": 4,
    "review": null
   },
@@ -1194,16 +1222,30 @@
    "type": "long",
    "kind": "short",
    "topic": "en05",
-   "unit": 5,
-   "subtopic": "quadratic-equations",
-   "difficulty": 1,
+   "unit": 10,
+   "subtopic": "variation",
+   "difficulty": 2,
    "code": "EN5-Q3",
-   "source": "EPH WS05 P1 Q3 · [HKDSE Practice Paper 1 Q17(b)(ii)]",
+   "source": "Endeavour Lesson 5 Q3 · $y$ 隨 $x^{2}$ 反變",
    "stem": {
-    "en": "Find the range of values of $a$ such that the quadratic equation $-5x^{2}+10x-2=a$ has real roots.",
-    "zh": "求 $a$ 的取值範圍，使二次方程 $-5x^{2}+10x-2=a$ 有實根。"
+    "en": "It is given that $y$ varies inversely as $x^{2}$. When $x=12$, $y=48$.",
+    "zh": "已知 $y$ 隨 $x^{2}$ 反變。當 $x=12$ 時，$y=48$。"
    },
-   "marks": 2,
+   "parts": [
+    {
+     "label": "(a)",
+     "en": "Express $y$ in terms of $x$.",
+     "zh": "以 $x$ 表示 $y$。",
+     "marks": 2
+    },
+    {
+     "label": "(b)",
+     "en": "If the value of $x$ is increased from 12 to 16, find the change in the value of $y$.",
+     "zh": "若 $x$ 的值由 12 增加至 16，求 $y$ 的改變量。",
+     "marks": 2
+    }
+   ],
+   "marks": 4,
    "review": null
   },
   {
@@ -1211,14 +1253,14 @@
    "type": "long",
    "kind": "short",
    "topic": "en05",
-   "unit": 5,
-   "subtopic": "quadratic-equations",
+   "unit": 10,
+   "subtopic": "variation",
    "difficulty": 3,
    "code": "EN5-Q4",
-   "source": "EPH WS05 P1 Q4 · [HKDSE 2022 Paper 1 Q17(a)]（工作紙用 $a$、$b$ 表示兩根，與常數 $b$ 撞名，本站改用 $\\alpha$、$\\beta$）",
+   "source": "Endeavour Lesson 5 Q4 · 聯變（$z$ 隨 $\\sqrt{x}$ 正變、隨 $y$ 反變）",
    "stem": {
-    "en": "Let $b$ be a real constant. The roots of the equation $2x^{2}-bx+8=0$ are $\\alpha$ and $\\beta$. Express $\\alpha^{2}+\\beta^{2}$ in terms of $b$.",
-    "zh": "設 $b$ 為實常數。方程 $2x^{2}-bx+8=0$ 的兩個根為 $\\alpha$ 與 $\\beta$。以 $b$ 表示 $\\alpha^{2}+\\beta^{2}$。"
+    "en": "Suppose $z$ varies directly as $\\sqrt{x}$ and inversely as $y$. When $x=16$ and $y=8$, $z=5$. Find the value of $x$ when $y=\\frac{4}{5}$ and $z=25$.",
+    "zh": "設 $z$ 隨 $\\sqrt{x}$ 正變，並隨 $y$ 反變。當 $x=16$、$y=8$ 時，$z=5$。求當 $y=\\frac{4}{5}$、$z=25$ 時 $x$ 的值。"
    },
    "marks": 3,
    "review": null
@@ -1228,66 +1270,162 @@
    "type": "long",
    "kind": "short",
    "topic": "en05",
-   "unit": 5,
-   "subtopic": "quadratic-equations",
-   "difficulty": 3,
+   "unit": 10,
+   "subtopic": "variation",
+   "difficulty": 2,
    "code": "EN5-Q5",
-   "source": "EPH WS05 P1 Q5 · [HKDSE 2023 Paper 1 Q16(a)]",
+   "source": "Endeavour Lesson 5 Q11 · 部分變（一部分為常數、一部分隨 $x^{2}$ 變化）",
    "stem": {
-    "en": "Let $r$ and $s$ be real constants. If the roots of the equation $x^{2}+rx+s=0$ are $3p$ and $4p$, prove that $12r^{2}=49s$.",
-    "zh": "設 $r$、$s$ 為實常數。若方程 $x^{2}+rx+s=0$ 的兩個根為 $3p$ 與 $4p$，求證 $12r^{2}=49s$。"
+    "en": "It is given that $y$ is the sum of two parts. One part is a constant and the other part varies directly as $x^{2}$. When $x=2$, $y=1$ and when $x=3$, $y=-4$. Express $y$ in terms of $x$.",
+    "zh": "已知 $y$ 是兩部分之和：一部分為常數，另一部分隨 $x^{2}$ 正變。當 $x=2$ 時 $y=1$；當 $x=3$ 時 $y=-4$。以 $x$ 表示 $y$。"
    },
-   "marks": 2,
+   "marks": 4,
    "review": null
   },
   {
    "id": "eph-en05-q6",
    "type": "long",
    "topic": "en05",
-   "unit": 5,
-   "subtopic": "quadratic-equations",
+   "unit": 10,
+   "subtopic": "variation",
    "difficulty": 3,
    "code": "EN5-Q6",
-   "source": "EPH WS05 P1 Q6 · [HKDSE Practice Paper 1 Q17]",
+   "source": "Endeavour Lesson 5 Q14 · 部分變應用題（Helen 賣首飾）",
    "stem": {
-    "en": "Let $p$, $q$ and $r$ be real constants.",
-    "zh": "設 $p$、$q$、$r$ 為實常數。"
+    "en": "When Helen sells $n$ pieces of jewellery in a month, her income in that month is $S$ dollars. It is given that $S$ is a sum of two parts, one part is a constant and the other part varies as $n$. When $n=5$, $S=10200$; when $n=8$, $S=12000$.",
+    "zh": "Helen 每月賣出 $n$ 件首飾，該月收入為 $S$ 元。已知 $S$ 是兩部分之和：一部分為常數，另一部分隨 $n$ 變化。當 $n=5$ 時 $S=10200$；當 $n=8$ 時 $S=12000$。"
    },
    "parts": [
     {
      "label": "(a)",
-     "en": "Express $\\dfrac{1}{1+7i}$ in the form $a+bi$, where $a$ and $b$ are real numbers.",
-     "zh": "把 $\\dfrac{1}{1+7i}$ 寫成 $a+bi$ 的形式，其中 $a$、$b$ 為實數。",
-     "marks": 2
+     "en": "When Helen sells 22 pieces of jewellery in a month, find her income in that month.",
+     "zh": "若 Helen 在某月賣出 22 件首飾，求她該月的收入。",
+     "marks": 4
     },
     {
      "label": "(b)",
-     "en": "The roots of the quadratic equation $x^{2}+px+q=0$ are $\\dfrac{100}{1+7i}$ and $\\dfrac{100}{1-7i}$. Find (i) $p$ and $q$, (ii) the range of values of $r$ such that the quadratic equation $x^{2}+px+q=r$ has real roots.",
-     "zh": "二次方程 $x^{2}+px+q=0$ 的兩個根為 $\\dfrac{100}{1+7i}$ 與 $\\dfrac{100}{1-7i}$。求 (i) $p$ 與 $q$；(ii) $r$ 的取值範圍，使二次方程 $x^{2}+px+q=r$ 有實根。",
-     "marks": 5
+     "en": "Is it possible that when Helen sells a certain number of pieces of jewellery in a month, her income in that month is 30000 dollars? Explain your answer.",
+     "zh": "是否可能在某月賣出若干件首飾時，該月收入為 30000 元？試解釋。",
+     "marks": 2
     }
    ],
-   "marks": 7,
+   "marks": 6,
+   "review": null
+  },
+  {
+   "id": "eph-en05-q7",
+   "type": "long",
+   "topic": "en05",
+   "unit": 10,
+   "subtopic": "variation",
+   "difficulty": 3,
+   "code": "EN5-Q7",
+   "source": "Endeavour Lesson 5 Q15 · 部分變＋二次方程",
+   "stem": {
+    "en": "It is given that $f(x)$ is partly constant and partly varies as $x$. Suppose that $f(3)=220$ and $f(-3)=-20$.",
+    "zh": "已知 $f(x)$ 一部分為常數，另一部分隨 $x$ 變化。設 $f(3)=220$ 且 $f(-3)=-20$。"
+   },
+   "parts": [
+    {
+     "label": "(a)",
+     "en": "Find $f(x)$.",
+     "zh": "求 $f(x)$。",
+     "marks": 3
+    },
+    {
+     "label": "(b)",
+     "en": "Solve the equation $f(x)=-4x^{2}$.",
+     "zh": "解方程 $f(x)=-4x^{2}$。",
+     "marks": 2
+    }
+   ],
+   "marks": 5,
+   "review": null
+  },
+  {
+   "id": "eph-en05-q8",
+   "type": "long",
+   "topic": "en05",
+   "unit": 10,
+   "subtopic": "variation",
+   "difficulty": 3,
+   "code": "EN5-Q8",
+   "source": "Endeavour Lesson 5 Q16 · 部分變（$x$ 與 $x^{2}$ 兩部分）",
+   "stem": {
+    "en": "It is given that $f(x)$ is the sum of two parts, one part varies as $x$ and the other part varies as $x^{2}$. Suppose that $f(5)=60$ and $f(8)=120$.",
+    "zh": "已知 $f(x)$ 是兩部分之和：一部分隨 $x$ 變化，另一部分隨 $x^{2}$ 變化。設 $f(5)=60$ 且 $f(8)=120$。"
+   },
+   "parts": [
+    {
+     "label": "(a)",
+     "en": "Find $f(x)$.",
+     "zh": "求 $f(x)$。",
+     "marks": 3
+    },
+    {
+     "label": "(b)",
+     "en": "Solve the equation $f(x)=30$.",
+     "zh": "解方程 $f(x)=30$。",
+     "marks": 2
+    }
+   ],
+   "marks": 5,
+   "review": null
+  },
+  {
+   "id": "eph-en05-q9",
+   "type": "long",
+   "topic": "en05",
+   "unit": 10,
+   "subtopic": "variation",
+   "difficulty": 3,
+   "code": "EN5-Q9",
+   "source": "Endeavour Lesson 5 Q17 · 部分變＋截距＋判別式",
+   "stem": {
+    "en": "It is given that $f(x)$ partly varies as $x$ and partly varies as $x^{2}$. Suppose that $f(3)=-12$ and $f(-1)=12$.",
+    "zh": "已知 $f(x)$ 一部分隨 $x$ 變化，另一部分隨 $x^{2}$ 變化。設 $f(3)=-12$ 且 $f(-1)=12$。"
+   },
+   "parts": [
+    {
+     "label": "(a)",
+     "en": "Find $f(x)$.",
+     "zh": "求 $f(x)$。",
+     "marks": 3
+    },
+    {
+     "label": "(b)",
+     "en": "Write down the $x$-intercept(s) of the graph of $y=7f(x)$.",
+     "zh": "寫出 $y=7f(x)$ 的圖像的 $x$ 截距。",
+     "marks": 1
+    },
+    {
+     "label": "(c)",
+     "en": "Let $k$ be a real constant. Find the range of values of $k$ such that the equation $f(x)=k$ has two distinct real roots.",
+     "zh": "設 $k$ 為實常數。求 $k$ 的取值範圍，使方程 $f(x)=k$ 有兩個相異實根。",
+     "marks": 2
+    }
+   ],
+   "marks": 6,
    "review": null
   },
   {
    "id": "eph-en05-m1",
    "type": "mc",
    "topic": "en05",
-   "unit": 5,
-   "subtopic": "quadratic-equations",
-   "difficulty": 1,
+   "unit": 10,
+   "subtopic": "variation",
+   "difficulty": 2,
    "code": "EN5-M1",
-   "source": "EPH WS05 Q5 · [HKDSE 2013 Paper 2 Q6]",
+   "source": "Endeavour Lesson 5 Q5 · 聯變（反變 $x$、正變 $y$）",
    "stem": {
-    "en": "Let $k$ be a constant. Solve the equation $(x+k)^{2}=9k^{2}$.",
-    "zh": "設 $k$ 為常數。解方程 $(x+k)^{2}=9k^{2}$。"
+    "en": "It is given that $z$ varies inversely as $x$ and directly as $y$. When $x=9$ and $y=3$, $z=1$. When $x=3$ and $z=9$, $y=$",
+    "zh": "已知 $z$ 隨 $x$ 反變，並隨 $y$ 正變。當 $x=9$、$y=3$ 時 $z=1$。當 $x=3$、$z=9$ 時，$y=$"
    },
    "options": {
-    "A": "$x=2k$",
-    "B": "$x=8k$",
-    "C": "$x=-4k$ or $x=2k$",
-    "D": "$x=-10k$ or $x=8k$"
+    "A": "$\\frac{1}{9}$",
+    "B": "$1$",
+    "C": "$3$",
+    "D": "$9$"
    },
    "review": null
   },
@@ -1295,20 +1433,20 @@
    "id": "eph-en05-m2",
    "type": "mc",
    "topic": "en05",
-   "unit": 5,
-   "subtopic": "quadratic-equations",
-   "difficulty": 2,
+   "unit": 10,
+   "subtopic": "variation",
+   "difficulty": 3,
    "code": "EN5-M2",
-   "source": "EPH WS05 Q7 · [HKDSE Sample Paper 2 Q6]",
+   "source": "Endeavour Lesson 5 Q6 · 聯變（$\\sqrt{x}$ 與 $y^{3}$）",
    "stem": {
-    "en": "Let $c$ be a constant. Solve the equation $(x+3c)(x-c+1)=(x+3c)$.",
-    "zh": "設 $c$ 為常數。解方程 $(x+3c)(x-c+1)=(x+3c)$。"
+    "en": "It is given that $z$ varies directly as the square root of $x$ and the cube of $y$. When $x=9$ and $y=3$, $z=27$. When $x=4$ and $y=9$, $z=$",
+    "zh": "已知 $z$ 隨 $x$ 的平方根及 $y$ 的立方正變。當 $x=9$、$y=3$ 時 $z=27$。當 $x=4$、$y=9$ 時，$z=$"
    },
    "options": {
-    "A": "$x=c$",
-    "B": "$x=c-1$",
-    "C": "$x=-3c$ or $x=c$",
-    "D": "$x=-3c$ or $x=c-1$"
+    "A": "$64$",
+    "B": "$486$",
+    "C": "$576$",
+    "D": "$4374$"
    },
    "review": null
   },
@@ -1316,20 +1454,20 @@
    "id": "eph-en05-m3",
    "type": "mc",
    "topic": "en05",
-   "unit": 5,
-   "subtopic": "quadratic-equations",
+   "unit": 10,
+   "subtopic": "variation",
    "difficulty": 2,
    "code": "EN5-M3",
-   "source": "EPH WS05 Q11 · [HKDSE Practice Paper 2 Q6, HKCEE 2009 Paper 2 Q8]",
+   "source": "Endeavour Lesson 5 Q7 · 哪一條式一定是常數",
    "stem": {
-    "en": "Let $m$ be a constant. If the quadratic equation $x^{2}-mx+6m=0$ has equal roots, then $m=$",
-    "zh": "設 $m$ 為常數。若二次方程 $x^{2}-mx+6m=0$ 有等根，則 $m=$"
+    "en": "If $z$ varies inversely as $x$ and directly as $y^{2}$, which of the following must be constant?",
+    "zh": "若 $z$ 隨 $x$ 反變，並隨 $y^{2}$ 正變，下列哪一個一定是常數？"
    },
    "options": {
-    "A": "$6$",
-    "B": "$24$",
-    "C": "$0$ or $6$",
-    "D": "$0$ or $24$"
+    "A": "$\\frac{x}{zy^{2}}$",
+    "B": "$\\frac{y^{2}}{zx}$",
+    "C": "$\\frac{xy^{2}}{z}$",
+    "D": "$xy^{2}z$"
    },
    "review": null
   },
@@ -1337,20 +1475,20 @@
    "id": "eph-en05-m4",
    "type": "mc",
    "topic": "en05",
-   "unit": 5,
-   "subtopic": "quadratic-equations",
-   "difficulty": 2,
+   "unit": 10,
+   "subtopic": "variation",
+   "difficulty": 3,
    "code": "EN5-M4",
-   "source": "EPH WS05 Q14 · [HKDSE Sample Paper 2 Q7, HKCEE 2010 Paper 2 Q10]",
+   "source": "Endeavour Lesson 5 Q8 · 哪一條式一定是常數（$\\sqrt{q}$ 與 $r^{4}$）",
    "stem": {
-    "en": "Find the range of values of $k$ such that the quadratic equation $x^{2}-4x+k=1$ has no real roots.",
-    "zh": "求 $k$ 的取值範圍，使二次方程 $x^{2}-4x+k=1$ 沒有實根。"
+    "en": "If $p$ varies inversely as $\\sqrt{q}$ and directly as $r^{4}$, which of the following must be constant?",
+    "zh": "若 $p$ 隨 $\\sqrt{q}$ 反變，並隨 $r^{4}$ 正變，下列哪一個一定是常數？"
    },
    "options": {
-    "A": "$k>4$",
-    "B": "$k<4$",
-    "C": "$k>5$",
-    "D": "$k<5$"
+    "A": "$\\frac{p^{2}r^{8}}{q}$",
+    "B": "$\\frac{p^{2}q}{r^{8}}$",
+    "C": "$\\frac{p}{r^{4}\\sqrt{q}}$",
+    "D": "$pr^{4}\\sqrt{q}$"
    },
    "review": null
   },
@@ -1358,20 +1496,20 @@
    "id": "eph-en05-m5",
    "type": "mc",
    "topic": "en05",
-   "unit": 5,
-   "subtopic": "quadratic-equations",
-   "difficulty": 3,
+   "unit": 10,
+   "subtopic": "variation",
+   "difficulty": 2,
    "code": "EN5-M5",
-   "source": "EPH WS05 Q20 · [HKDSE 2018 Paper 2 Q36, HKCEE 2004 Paper 2 Q42]",
+   "source": "Endeavour Lesson 5 Q9 · 百分比變化（$x$ 加 25%、$y$ 加 20%）",
    "stem": {
-    "en": "If $a\\ne b$ and $a^{2}=12-3a$, $b^{2}=12-3b$, then $(a-1)(b-1)=$",
-    "zh": "若 $a\\ne b$ 且 $a^{2}=12-3a$、$b^{2}=12-3b$，則 $(a-1)(b-1)=$"
+    "en": "It is given that $z$ varies directly as $x$ and directly as $y^{2}$. If $x$ is increased by $25\\%$ and $y$ is increased by $20\\%$, then $z$",
+    "zh": "已知 $z$ 隨 $x$ 正變，並隨 $y^{2}$ 正變。若 $x$ 增加 $25\\%$ 而 $y$ 增加 $20\\%$，則 $z$"
    },
    "options": {
-    "A": "$-14$",
-    "B": "$-8$",
-    "C": "$10$",
-    "D": "$16$"
+    "A": "is increased by $50\\%$.",
+    "B": "is decreased by $50\\%$.",
+    "C": "is increased by $80\\%$.",
+    "D": "is decreased by $80\\%$."
    },
    "review": null
   },
@@ -1379,20 +1517,20 @@
    "id": "eph-en05-m6",
    "type": "mc",
    "topic": "en05",
-   "unit": 5,
-   "subtopic": "quadratic-equations",
+   "unit": 10,
+   "subtopic": "variation",
    "difficulty": 3,
    "code": "EN5-M6",
-   "source": "EPH WS05 Q22 · [HKCEE 2001 Paper 2 Q39]",
+   "source": "Endeavour Lesson 5 Q10 · 百分比變化（$x$ 加 25%、$y$ 減 36%）",
    "stem": {
-    "en": "If $a$ and $b$ are distinct real numbers such that $a^{2}+2a-9=0$ and $b^{2}+2b-9=0$, find $a^{2}+b^{2}$.",
-    "zh": "若 $a$、$b$ 為相異實數，且 $a^{2}+2a-9=0$、$b^{2}+2b-9=0$，求 $a^{2}+b^{2}$。"
+    "en": "It is given that $z$ varies inversely as $x$ and directly as $\\sqrt{y}$. If $x$ is increased by $25\\%$ and $y$ is decreased by $36\\%$, then $z$",
+    "zh": "已知 $z$ 隨 $x$ 反變，並隨 $\\sqrt{y}$ 正變。若 $x$ 增加 $25\\%$ 而 $y$ 減少 $36\\%$，則 $z$"
    },
    "options": {
-    "A": "$-14$",
-    "B": "$4$",
-    "C": "$22$",
-    "D": "$81$"
+    "A": "is increased by $48\\%$.",
+    "B": "is increased by $52\\%$.",
+    "C": "is decreased by $36\\%$.",
+    "D": "is decreased by $64\\%$."
    },
    "review": null
   },
@@ -1400,20 +1538,20 @@
    "id": "eph-en05-m7",
    "type": "mc",
    "topic": "en05",
-   "unit": 5,
-   "subtopic": "quadratic-equations",
+   "unit": 10,
+   "subtopic": "variation",
    "difficulty": 2,
    "code": "EN5-M7",
-   "source": "EPH WS05 Q23 · [HKDSE 2015 Paper 2 Q34]",
+   "source": "Endeavour Lesson 5 Q12 · 部分變（求 $x$）",
    "stem": {
-    "en": "Let $q$ be a constant. If the roots of the quadratic equation $x^{2}+qx+6=0$ are $\\alpha$ and $\\beta$, then $\\alpha^{2}+\\beta^{2}=$",
-    "zh": "設 $q$ 為常數。若二次方程 $x^{2}+qx+6=0$ 的兩根為 $\\alpha$ 與 $\\beta$，則 $\\alpha^{2}+\\beta^{2}=$"
+    "en": "It is given that $y$ is partly constant and partly varies directly as $x$. When $x=3$, $y=-6$ and when $x=-2$, $y=14$. When $y=18$, $x=$",
+    "zh": "已知 $y$ 一部分為常數，另一部分隨 $x$ 正變。當 $x=3$ 時 $y=-6$；當 $x=-2$ 時 $y=14$。當 $y=18$ 時，$x=$"
    },
    "options": {
-    "A": "$q^{2}$",
-    "B": "$q^{2}-12$",
-    "C": "$q^{2}+12$",
-    "D": "$q^{2}+24$"
+    "A": "$-66$",
+    "B": "$-3$",
+    "C": "$6$",
+    "D": "$78$"
    },
    "review": null
   },
@@ -1421,104 +1559,20 @@
    "id": "eph-en05-m8",
    "type": "mc",
    "topic": "en05",
-   "unit": 5,
-   "subtopic": "quadratic-equations",
-   "difficulty": 3,
+   "unit": 10,
+   "subtopic": "variation",
+   "difficulty": 2,
    "code": "EN5-M8",
-   "source": "EPH WS05 Q24 · [改編自 HKDSE 2015 Paper 2 Q34]",
+   "source": "Endeavour Lesson 5 Q13 · 部分變（求 $y$）",
    "stem": {
-    "en": "Let $m$ be a constant. If the roots of the quadratic equation $x^{2}-mx-8=0$ are $\\alpha$ and $\\beta$, then $\\alpha^{2}+\\alpha\\beta+\\beta^{2}=$",
-    "zh": "設 $m$ 為常數。若二次方程 $x^{2}-mx-8=0$ 的兩根為 $\\alpha$ 與 $\\beta$，則 $\\alpha^{2}+\\alpha\\beta+\\beta^{2}=$"
+    "en": "It is given that $y$ is the sum of two parts, one part is a constant and the other part varies as $x^{2}$. When $x=-1$, $y=1$ and when $x=3$, $y=25$. If $x=4$, then $y=$",
+    "zh": "已知 $y$ 是兩部分之和：一部分為常數，另一部分隨 $x^{2}$ 變化。當 $x=-1$ 時 $y=1$；當 $x=3$ 時 $y=25$。若 $x=4$，則 $y=$"
    },
    "options": {
-    "A": "$m^{2}-16$",
-    "B": "$m^{2}-8$",
-    "C": "$m^{2}+8$",
-    "D": "$m^{2}+16$"
-   },
-   "review": null
-  },
-  {
-   "id": "eph-en05-m9",
-   "type": "mc",
-   "topic": "en05",
-   "unit": 5,
-   "subtopic": "quadratic-equations",
-   "difficulty": 2,
-   "code": "EN5-M9",
-   "source": "EPH WS05 Q26 · [HKDSE 2012 Paper 2 Q35]",
-   "stem": {
-    "en": "$i^{7}(\\alpha i-6)=$",
-    "zh": "$i^{7}(\\alpha i-6)=$"
-   },
-   "options": {
-    "A": "$\\alpha+6i$",
-    "B": "$\\alpha-6i$",
-    "C": "$-\\alpha+6i$",
-    "D": "$-\\alpha-6i$"
-   },
-   "review": null
-  },
-  {
-   "id": "eph-en05-m10",
-   "type": "mc",
-   "topic": "en05",
-   "unit": 5,
-   "subtopic": "quadratic-equations",
-   "difficulty": 3,
-   "code": "EN5-M10",
-   "source": "EPH WS05 Q28 · [HKDSE Sample Paper 2 Q34]",
-   "stem": {
-    "en": "If $k$ is a real number, then $3ki-\\dfrac{2k-3i}{i}=$",
-    "zh": "若 $k$ 為實數，則 $3ki-\\dfrac{2k-3i}{i}=$"
-   },
-   "options": {
-    "A": "$3+5ki$",
-    "B": "$-3+5ki$",
-    "C": "$3+ki$",
-    "D": "$-3+ki$"
-   },
-   "review": null
-  },
-  {
-   "id": "eph-en05-m11",
-   "type": "mc",
-   "topic": "en05",
-   "unit": 5,
-   "subtopic": "quadratic-equations",
-   "difficulty": 2,
-   "code": "EN5-M11",
-   "source": "EPH WS05 Q31 · [HKDSE 2013 Paper 2 Q36]",
-   "stem": {
-    "en": "The real part of $3i^{18}+2i^{19}-3i^{20}-5i^{21}$ is",
-    "zh": "$3i^{18}+2i^{19}-3i^{20}-5i^{21}$ 的實部是"
-   },
-   "options": {
-    "A": "$-7$",
-    "B": "$-6$",
-    "C": "$0$",
-    "D": "$6$"
-   },
-   "review": null
-  },
-  {
-   "id": "eph-en05-m12",
-   "type": "mc",
-   "topic": "en05",
-   "unit": 5,
-   "subtopic": "quadratic-equations",
-   "difficulty": 3,
-   "code": "EN5-M12",
-   "source": "EPH WS05 Q37 · [HKDSE 2020 Paper 2 Q37]",
-   "stem": {
-    "en": "Define $z_{1}=\\dfrac{3-ki}{2+i}$ and $z_{2}=\\dfrac{-k-4i}{3-i}$, where $k$ is a real number. If the imaginary part of $z_{1}$ is equal to the imaginary part of $z_{2}$, then $z_{2}-z_{1}=$",
-    "zh": "定義 $z_{1}=\\dfrac{3-ki}{2+i}$ 與 $z_{2}=\\dfrac{-k-4i}{3-i}$，其中 $k$ 為實數。若 $z_{1}$ 的虛部等於 $z_{2}$ 的虛部，則 $z_{2}-z_{1}=$"
-   },
-   "options": {
-    "A": "$-1$",
-    "B": "$0$",
-    "C": "$1$",
-    "D": "$2$"
+    "A": "$29$",
+    "B": "$35$",
+    "C": "$46$",
+    "D": "$50$"
    },
    "review": null
   }

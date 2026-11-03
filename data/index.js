@@ -110,21 +110,21 @@ window.LEARN_INDEX = {
   {
    "id": "en05",
    "stage": 1,
-   "unit": 5,
+   "unit": 10,
    "name": {
-    "zh": "Lesson 5 · 一元二次方程與複數（全章重溫）",
-    "en": "Lesson 5 · Quadratic equations and complex numbers (chapter review)"
+    "zh": "Lesson 5 · 變分（正變、反變、聯變、部分變）",
+    "en": "Lesson 5 · Variation (direct, inverse, joint and partial)"
    },
    "intro": {
-    "zh": "這一課是「一元二次方程與複數」的整章重溫，題目照工作紙 WS05 的編排分四組：\n① 解方程：因式分解、兩邊開平方、二次公式；兩邊有同一個括號時，先移項再令每個因式 $=0$；\n② 判別式 $\\Delta=b^{2}-4ac$：判斷根的性質，並求 $k$ 的範圍；\n③ 根與係數 $\\alpha+\\beta=-\\frac{b}{a}$、$\\alpha\\beta=\\frac{c}{a}$：把對稱式化成和與積，或者消去未知的 $p$；\n④ 複數：$i^{2}=-1$、$i$ 的冪、加減乘與除法（分母乘共軛）。\n卷一有 6 條長題，步驟照官方評分寫上 1M／1A；卷二有 12 題 MC，每頁 3 題。",
-    "en": "This lesson reviews the whole chapter on quadratic equations and complex numbers, following the four groups in worksheet WS05:\n(1) solving equations: factorisation, taking square roots, the quadratic formula; when the same bracket appears on both sides, move everything to one side and set each factor to $0$;\n(2) the discriminant $\\Delta=b^{2}-4ac$: decide the nature of the roots and find the range of $k$;\n(3) sum and product of roots $\\alpha+\\beta=-\\frac{b}{a}$ and $\\alpha\\beta=\\frac{c}{a}$: turn symmetric expressions into the sum and the product, or eliminate an unknown $p$;\n(4) complex numbers: $i^{2}=-1$, powers of $i$, the four operations, and division by multiplying by the conjugate.\nThere are 6 Paper 1 questions with the official 1M / 1A marks written out, and 12 Paper 2 multiple-choice questions, three per page."
+    "zh": "這一課是第 10 章「變分」的課後練習，四組題型：\n① 正變與反變：寫出 $y=kx^{n}$ 或 $y=\\frac{k}{x^{n}}$，先求 $k$，再寫關係式；\n② 聯變：$z$ 同時隨兩個量變化（正變放分子、反變放分母），以及「must be constant」怎樣整理成 $k=\\ldots$；\n③ 部分變：一部分是常數、一部分隨 $x$ 變化，用兩對數值解 $c$ 與 $k$；\n④ 百分比變化：把「增加 25%」、「減少 36%」變成倍數再相乘。\n卷一 9 題照評分寫上 1M／1A，卷二 8 題 MC，做完可以逐題核對。",
+    "en": "This is the after-school worksheet for Chapter 10, Variation, with four groups of questions:\n(1) direct and inverse variation: write $y=kx^{n}$ or $y=\\frac{k}{x^{n}}$, find $k$, then write the relation;\n(2) joint variation: $z$ changes with two quantities at once (direct on top, inverse at the bottom), plus how to turn “must be constant” into $k=\\ldots$;\n(3) partial variation: one part constant and one part varying, using two pairs of values to find $c$ and $k$;\n(4) percentage change: turn “increased by 25%” and “decreased by 36%” into multipliers.\nThe 9 Paper 1 questions show the official 1M / 1A marks; the 8 Paper 2 multiple-choice questions follow."
    },
-   "source": "S.K.H. Bishop Baker Secondary School · S.5 After-School Tutorial · Endeavour Lesson 5（EPH WS05：Quadratic Equations in One Unknown and Complex Numbers）",
+   "source": "S.K.H. Bishop Baker Secondary School · S.5 After-School Tutorial · Endeavour Lesson 5（Ch.10 Variation，17 題）",
    "stats": {
-    "mc": 12,
-    "long": 6,
-    "cards": 6,
-    "pages": 4
+    "mc": 8,
+    "long": 9,
+    "cards": 5,
+    "pages": 3
    },
    "lessonIds": [
     "en05-1"
@@ -214,13 +214,13 @@ window.LEARN_INDEX = {
    }
   }
  },
- "generatedAt": "2026-11-03T05:15:01Z",
+ "generatedAt": "2026-11-03T05:55:32Z",
  "counts": {
   "topics": 5,
   "held": 0,
-  "mc": 34,
-  "long": 36,
-  "cards": 23,
+  "mc": 30,
+  "long": 39,
+  "cards": 22,
   "blocked": 0
  }
 };

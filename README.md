@@ -7,7 +7,7 @@ S.5 課後研習的專屬溫習站：**概念卡 → 逐步示範 → MC／短�
 | 線上 | `https://math-lov.github.io/endeavour/` |
 | Repo | `https://github.com/math-lov/endeavour` |
 | 本機 | `C:\Code Buddy\Endeavour` |
-| 現有內容 | `en01`（Lesson 1）：12 題（MC 8：EN1-M1～M6 ＋ 課後針對練習 M7／M8；短答／長題 4）＋ 3 張概念卡<br>`en02`（Lesson 2）：14 題（長題 8：EN2-Q1～Q8；MC 6：EN2-M1～M6，其中 M5／M6 為課後針對練習）＋ 4 張概念卡（**根與係數 ＋ 複數** —— 判別式在 Lesson 1 已學，本課只作重溫，步驟仍見於每題題解）<br>`en03`（Lesson 3）：9 題（直線方程，全部卷一格式）＋ 4 張概念卡<br>`en04`（Lesson 4）：17 題（多項式：結構題 9：EN4-Q1～Q9；MC 8：EN4-M1～M8）＋ 6 張概念卡（含**長除法直式**、**有理函數加減**），工作紙見 `docs/worksheets/endeavour-lesson4.docx`<br>`en05`（Lesson 5）：18 題（EPH WS05「一元二次方程與複數」全章重溫：卷一 6 題 EN5-Q1～Q6；MC 12：EN5-M1～M12，每頁 3 題）＋ 6 張概念卡（含 **$i$ 的冪：除以 4 看餘數** 重點框、**複數除法**），教材見 `C:\Code Buddy\DSEPass\inbox\Endeavour\EPH_DSEL5_WS05_e.docx` |
+| 現有內容 | `en01`（Lesson 1）：12 題（MC 8：EN1-M1～M6 ＋ 課後針對練習 M7／M8；短答／長題 4）＋ 3 張概念卡<br>`en02`（Lesson 2）：14 題（長題 8：EN2-Q1～Q8；MC 6：EN2-M1～M6，其中 M5／M6 為課後針對練習）＋ 4 張概念卡（**根與係數 ＋ 複數** —— 判別式在 Lesson 1 已學，本課只作重溫，步驟仍見於每題題解）<br>`en03`（Lesson 3）：9 題（直線方程，全部卷一格式）＋ 4 張概念卡<br>`en04`（Lesson 4）：17 題（多項式：結構題 9：EN4-Q1～Q9；MC 8：EN4-M1～M8）＋ 6 張概念卡（含**長除法直式**、**有理函數加減**），工作紙見 `docs/worksheets/endeavour-lesson4.docx`<br>`en05`（Lesson 5）：17 題（Ch.10 變分：卷一 9 題 EN5-Q1～Q9；卷二 8 題 EN5-M1～M8，MC 頁 3／3／2）＋ 5 張概念卡（正變反變、聯變、部分變、百分比變化、四步流程），教材見 `C:\Code Buddy\DSEPass\inbox\Endeavour\Endeavour Lesson 5.docx` |
 | 進度 | 只存學生瀏覽器（與其他三個站完全分開） |
 
 ## 命名與用語（2026-09-28 老師指示）

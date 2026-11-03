@@ -4163,69 +4163,72 @@
    "answer": null,
    "verify": "checked",
    "topic": "en05",
-   "source": "EPH WS05 P1 Q1 · 長方形對角線（同款：HKDSE 2019 Paper 1 Q3）",
+   "source": "Endeavour Lesson 5 Q1 · 正變（direct variation）",
    "solution": {
     "steps": [
      {
       "title": {
-       "zh": "第 1 步 · 對角線是直角三角形的斜邊",
-       "en": "Step 1 · The diagonal is the hypotenuse"
+       "zh": "第 1 步 · 「正變」寫成 $y=kx$",
+       "en": "Step 1 · “Varies directly” becomes $y=kx$"
       },
-      "math": "(26+2r)^{2}+(10-4r)^{2}=34^{2}",
-      "zh": "長方形的長與闊互相垂直，所以「長、闊、對角線」組成一個直角三角形，而對角線是最長的一邊（斜邊）。用畢氏定理就可以列式：$(26+2r)^{2}+(10-4r)^{2}=34^{2}$。",
-      "en": "The length and the breadth of a rectangle meet at a right angle, so they form a right-angled triangle whose hypotenuse is the diagonal. By Pythagoras' theorem, $(26+2r)^{2}+(10-4r)^{2}=34^{2}$.",
+      "math": "y=kx",
+      "zh": "$y$ 隨 $x$ 正變，代表 $y$ 與 $x$ 成正比，即 $y=kx$，其中 $k$ 是變分常數。",
+      "en": "“$y$ varies directly as $x$” means $y$ is proportional to $x$, that is $y=kx$, where $k$ is the constant of variation.",
       "marking": "(1M)"
      },
      {
       "title": {
-       "zh": "第 2 步 · 展開並整理成 $ar^{2}+br+c=0$",
-       "en": "Step 2 · Expand and rearrange into $ar^{2}+br+c=0$"
+       "zh": "第 2 步 · 代入已知值求 $k$，寫出關係式",
+       "en": "Step 2 · Substitute the given values to find $k$, then write the relation"
       },
-      "math": "676+104r+4r^{2}+100-80r+16r^{2}=1156\n\\Rightarrow 20r^{2}+24r-380=0\n\\Rightarrow 5r^{2}+6r-95=0",
-      "zh": "逐項展開：$(26+2r)^{2}=676+104r+4r^{2}$，$(10-4r)^{2}=100-80r+16r^{2}$。合併同類項並把 $1156$ 搬到左邊，得 $20r^{2}+24r-380=0$；全式除以 $4$ 之後是 $5r^{2}+6r-95=0$，數字細一點就易分解。",
-      "en": "Expand each square: $(26+2r)^{2}=676+104r+4r^{2}$ and $(10-4r)^{2}=100-80r+16r^{2}$. Collect like terms and move $1156$ to the left: $20r^{2}+24r-380=0$. Dividing every term by $4$ gives $5r^{2}+6r-95=0$, with smaller numbers that factorise more easily.",
-      "marking": "(1M)"
-     },
-     {
-      "title": {
-       "zh": "第 3 步 · 分解、寫兩個根，再檢查邊長",
-       "en": "Step 3 · Factorise, write both roots, then check the side lengths"
-      },
-      "math": "(r+5)(5r-19)=0\n\\Rightarrow r=-5\\text{ or }r=\\frac{19}{5}",
-      "zh": "分解得 $(r+5)(5r-19)=0$，所以 $r=-5$ 或 $r=\\frac{19}{5}$。兩個都要代回檢查：$r=\\frac{19}{5}$ 時闊 $10-4r=-5.2$，邊長不可以是負數，所以捨去；$r=-5$ 時三邊是 $16$、$30$、$34$，而 $16^{2}+30^{2}=1156=34^{2}$，成立。所以 $r=-5$。",
-      "en": "Factorising gives $(r+5)(5r-19)=0$, so $r=-5$ or $r=\\frac{19}{5}$. Check both: when $r=\\frac{19}{5}$, the breadth $10-4r=-5.2$ is negative, which is impossible, so it is rejected. When $r=-5$, the sides are $16$, $30$ and $34$, and $16^{2}+30^{2}=1156=34^{2}$. Hence $r=-5$.",
+      "math": "10=k(5)\n\\Rightarrow k=2\n\\Rightarrow y=2x",
+      "zh": "代入 $x=5$、$y=10$：$10=5k$，所以 $k=2$。把 $k$ 寫回方程，得到關係式 $y=2x$ —— 這條式一定要寫出來，否則下一部分無從入手。",
+      "en": "Substituting $x=5$ and $y=10$ gives $10=5k$, so $k=2$. Putting $k$ back gives the relation $y=2x$, which must be written down before the next part.",
       "marking": "(1A)",
       "highlight": [
-       "r=-5"
+       "y=2x"
+      ]
+     },
+     {
+      "title": {
+       "zh": "第 3 步 · (b) 代入 $x=7$",
+       "en": "Step 3 · (b) Substitute $x=7$"
+      },
+      "math": "y=2(7)=14",
+      "zh": "把 $x=7$ 代入關係式：$y=2(7)=14$。所以當 $x=7$ 時，$y=14$。",
+      "en": "Substitute $x=7$ into the relation: $y=2(7)=14$. Hence $y=14$ when $x=7$.",
+      "marking": "(1A)",
+      "highlight": [
+       "14"
       ]
      }
     ],
     "traps": [
      {
-      "label": "兩個根都保留",
-      "labelEn": "Keeping both roots",
-      "zh": "$r=\\frac{19}{5}$ 會令闊 $10-4r$ 變成負數 —— 邊長不可能是負數，所以一定要寫 rejected。做完方程不等於做完題目，最後要檢查每個根合不合理。",
-      "en": "$r=\\frac{19}{5}$ makes the breadth $10-4r$ negative, and a length cannot be negative, so it must be rejected. Solving the equation is not the end of the question — always check each root."
+      "label": "把 $k$ 當成答案",
+      "labelEn": "Stopping at $k$",
+      "zh": "$k=2$ 只是常數，不是題目要的答案。寫不出 $y=2x$ 這條關係式，(b) 就沒有東西可以代入。",
+      "en": "$k=2$ is only the constant, not the answer. Without the relation $y=2x$, part (b) has nothing to substitute into."
      },
      {
-      "label": "對角線當成邊",
-      "labelEn": "Treating the diagonal as a side",
-      "zh": "把 34 cm 當成長或闊代入，方程由第一步就錯。34 cm 是斜邊，要單獨放在等號一邊。",
-      "en": "Substituting 34 cm as the length or the breadth is wrong from the first line. 34 cm is the hypotenuse and must sit alone on one side."
+      "label": "把 $x$、$y$ 對調",
+      "labelEn": "Swapping $x$ and $y$",
+      "zh": "寫成 $k=\\frac{10}{5}$ 之外的 $\\frac{5}{10}=0.5$ 就完全相反。正變是 $y=kx$，所以 $k=\\frac{y}{x}$，分子是 $y$。",
+      "en": "Writing $k=\\frac{5}{10}=0.5$ reverses the ratio. For $y=kx$ we have $k=\\frac{y}{x}$, with $y$ on top."
      }
     ],
     "tip": {
-     "zh": "這類題固定三步：列畢氏定理 → 整理成 $=0$ 並約簡係數 → 分解後逐個根檢查，不合理的寫 rejected。最後補一句驗算（$16$、$30$、$34$）就穩拿滿分。",
-     "en": "Three fixed steps: write Pythagoras' theorem, rearrange into the $=0$ form and simplify the coefficients, then factorise and check every root, writing \"rejected\" for the impossible one. Adding the check $16$, $30$, $34$ secures the last mark."
+     "zh": "正變三件事：寫 $y=kx$ → 求 $k$ → 寫回關係式。第 3 步那條關係式是之後每一步的基礎，評分也會看。",
+     "en": "Three steps for direct variation: write $y=kx$, find $k$, write the relation back. That relation is the basis of every later step and earns a mark."
     },
     "alt": [
      {
       "name": {
-       "zh": "驗算：代回三邊",
-       "en": "Check: substitute back into the sides"
+       "zh": "驗算：用比例法",
+       "en": "Check: use the ratio"
       },
-      "zh": "$r=-5$ 時長 $=10-4(-5)=30$ cm、闊 $=26+2(-5)=16$ cm，對角線 $=\\sqrt{16^{2}+30^{2}}=\\sqrt{1156}=34$ cm，與題目相符。",
-      "en": "With $r=-5$ the length is $10-4(-5)=30$ cm and the breadth is $26+2(-5)=16$ cm, so the diagonal is $\\sqrt{16^{2}+30^{2}}=\\sqrt{1156}=34$ cm, which matches the question."
+      "zh": "$x$ 由 5 增至 7，倍數是 $\\frac{7}{5}$，所以 $y$ 也是 $10\\times\\frac{7}{5}=14$，與 $y=2x$ 的結果一致。",
+      "en": "Going from $x=5$ to $x=7$ multiplies $x$ by $\\frac{7}{5}$, so $y=10\\times\\frac{7}{5}=14$, which agrees with $y=2x$."
      }
     ]
    }
@@ -4234,79 +4237,82 @@
    "answer": null,
    "verify": "checked",
    "topic": "en05",
-   "source": "EPH WS05 P1 Q2 · [HKCEE 2007 Paper 1 Q5]",
+   "source": "Endeavour Lesson 5 Q2 · $y$ 隨 $\\sqrt{x}$ 正變",
    "solution": {
     "steps": [
      {
       "title": {
-       "zh": "第 1 步 · 把「無實根」翻譯成 $\\Delta<0$",
-       "en": "Step 1 · Translate “no real roots” into $\\Delta<0$"
+       "zh": "第 1 步 · 寫出 $y=k\\sqrt{x}$",
+       "en": "Step 1 · Write $y=k\\sqrt{x}$"
       },
-      "math": "\\Delta<0",
-      "zh": "二次方程沒有實根，就是判別式小於 $0$。留意「無實根」只有 $<$，沒有等號；有等號的是「有實根」。",
-      "en": "A quadratic equation has no real roots exactly when its discriminant is less than $0$. Note that “no real roots” uses $<$ only; the version with $\\ge$ is “has real roots”.",
+      "math": "y=k\\sqrt{x}",
+      "zh": "「$y$ 隨 $\\sqrt{x}$ 正變」即 $y=k\\sqrt{x}$。留意 $\\sqrt{x}$ 在分子（正變），不是 $x$。",
+      "en": "“$y$ varies directly as $\\sqrt{x}$” means $y=k\\sqrt{x}$: the square root, not $x$, sits on top.",
       "marking": "(1M)"
      },
      {
       "title": {
-       "zh": "第 2 步 · 讀出 $a$、$b$、$c$ 並代入",
-       "en": "Step 2 · Read off $a$, $b$, $c$ and substitute"
+       "zh": "第 2 步 · 代入 $x=36$、$y=4$ 求 $k$",
+       "en": "Step 2 · Substitute $x=36$, $y=4$ to find $k$"
       },
-      "math": "\\Delta=6^{2}-4(15)(-k)",
-      "zh": "方程已經是 $15x^{2}+6x-k=0$ 的標準形，所以 $a=15$、$b=6$、$c=-k$。代入 $\\Delta=b^{2}-4ac$ 時，$c$ 是 $-k$，兩個負號相乘會變正，所以是 $-4(15)(-k)$。",
-      "en": "The equation is already in the form $15x^{2}+6x-k=0$, so $a=15$, $b=6$ and $c=-k$. In $\\Delta=b^{2}-4ac$ the constant is $-k$, and two minus signs give a plus: $-4(15)(-k)$.",
-      "marking": "(1M)"
-     },
-     {
-      "title": {
-       "zh": "第 3 步 · 化簡判別式",
-       "en": "Step 3 · Simplify the discriminant"
-      },
-      "math": "36+60k<0",
-      "zh": "展開：$6^{2}=36$，而 $-4\\times15\\times(-k)=+60k$。所以判別式是 $36+60k$，條件是 $36+60k<0$。",
-      "en": "Expand: $6^{2}=36$ and $-4\\times15\\times(-k)=+60k$, so the discriminant is $36+60k$ and the condition is $36+60k<0$.",
-      "marking": "(1A)"
-     },
-     {
-      "title": {
-       "zh": "第 4 步 · 解不等式",
-       "en": "Step 4 · Solve the inequality"
-      },
-      "math": "60k<-36\n\\Rightarrow k<-\\frac{3}{5}",
-      "zh": "把 $36$ 搬到右邊得 $60k<-36$，兩邊除以 $60$（正數，不等號方向不變），得 $k<-\\frac{3}{5}$。",
-      "en": "Move $36$ to the right: $60k<-36$. Divide both sides by $60$, a positive number, so the inequality keeps its direction: $k<-\\frac{3}{5}$.",
+      "math": "4=k\\sqrt{36}=6k\n\\Rightarrow k=\\frac{2}{3}\n\\Rightarrow y=\\frac{2}{3}\\sqrt{x}",
+      "zh": "$\\sqrt{36}=6$，所以 $4=6k$，$k=\\frac{2}{3}$。關係式是 $y=\\frac{2}{3}\\sqrt{x}$。",
+      "en": "$\\sqrt{36}=6$, so $4=6k$ and $k=\\frac{2}{3}$. The relation is $y=\\frac{2}{3}\\sqrt{x}$.",
       "marking": "(1A)",
       "highlight": [
-       "k<-\\frac{3}{5}"
+       "y=\\frac{2}{3}\\sqrt{x}"
+      ]
+     },
+     {
+      "title": {
+       "zh": "第 3 步 · 求 $x=81$ 時的 $y$",
+       "en": "Step 3 · Find $y$ when $x=81$"
+      },
+      "math": "y=\\frac{2}{3}\\sqrt{81}=\\frac{2}{3}(9)=6",
+      "zh": "$\\sqrt{81}=9$，所以 $y=\\frac{2}{3}(9)=6$。",
+      "en": "$\\sqrt{81}=9$, so $y=\\frac{2}{3}(9)=6$.",
+      "marking": "(1M)"
+     },
+     {
+      "title": {
+       "zh": "第 4 步 · 求改變量",
+       "en": "Step 4 · Find the change"
+      },
+      "math": "\\text{change}=6-4=2",
+      "zh": "題目問 change，要寫「新值 − 舊值」：$6-4=2$，即 $y$ 增加了 2。",
+      "en": "The question asks for the change: new value minus old value, $6-4=2$, so $y$ increases by 2.",
+      "marking": "(1A)",
+      "highlight": [
+       "2"
       ]
      }
     ],
     "traps": [
      {
-      "label": "把 $-k$ 當成 $+k$",
-      "labelEn": "Using $+k$ instead of $-k$",
-      "zh": "常數項是 $-k$，代入時是 $-4(15)(-k)=+60k$。若寫成 $-60k$，最後的答案會變成 $k<\\frac{3}{5}$，方向完全不同。",
-      "en": "The constant term is $-k$, so $-4(15)(-k)=+60k$. Writing $-60k$ flips the final answer to $k<\\frac{3}{5}$, which is a different set of values."
+      "label": "忘記開方",
+      "labelEn": "Forgetting the square root",
+      "zh": "把 $\\sqrt{36}$ 當成 36、$\\sqrt{81}$ 當成 81，$k$ 與答案都會細了 6 倍或 9 倍。見到 $\\sqrt{x}$ 就要真的開方。",
+      "en": "Treating $\\sqrt{36}$ as 36 or $\\sqrt{81}$ as 81 makes $k$ and the answer wrong by a factor of 6 or 9. Always take the square root."
      },
      {
-      "label": "不等號方向倒轉",
-      "labelEn": "Reversing the inequality",
-      "zh": "除以正數 $60$ 時不等號不變；只有除以負數才要倒轉。這一步倒轉了，答案就會是 $k>-\\frac{3}{5}$。",
-      "en": "Dividing by the positive number $60$ keeps the inequality as it is; only division by a negative number reverses it. Reversing here gives $k>-\\frac{3}{5}$ instead."
+      "label": "答了新值而不是改變量",
+      "labelEn": "Answering the new value, not the change",
+      "zh": "題目問「change in the value of $y$」，答案要寫 $6-4=2$（increased by 2），不是 6。",
+      "en": "The question asks for “the change in the value of $y$”, so the answer is $6-4=2$ (increased by 2), not 6."
      }
     ],
     "tip": {
-     "zh": "判別式題目的次序永遠一樣：先寫條件（$<0$、$=0$、$>0$ 還是 $\\ge 0$）→ 代入 $a$、$b$、$c$ → 化簡 → 解不等式。先在草稿寫下「無實根＝$\\Delta<0$」就不會用錯。",
-     "en": "The routine never changes: write the condition ($<0$, $=0$, $>0$ or $\\ge 0$), substitute $a$, $b$, $c$, simplify, then solve the inequality. Writing “no real roots means $\\Delta<0$” on your draft prevents the wrong condition."
+     "zh": "「increased from 36 to 81」問的是改變量：先後各計一次 $y$，再相減。負數就寫「decreased by」。",
+     "en": "“Increased from 36 to 81” asks for the change: compute $y$ at both values and subtract. A negative result is a decrease."
     },
     "alt": [
      {
       "name": {
-       "zh": "驗算：代兩個數入去",
-       "en": "Check: test two values"
+       "zh": "驗算：用倍數",
+       "en": "Check: use a multiplier"
       },
-      "zh": "取 $k=-1$（符合 $k<-\\frac{3}{5}$）：$\\Delta=36-60=-24<0$，確實無實根。取 $k=0$（不符合）：$\\Delta=36>0$，有實根 —— 與結論一致。",
-      "en": "Take $k=-1$ (which satisfies $k<-\\frac{3}{5}$): $\\Delta=36-60=-24<0$, so there are no real roots. Take $k=0$ (which does not satisfy it): $\\Delta=36>0$ and real roots exist, as expected."
+      "zh": "$\\sqrt{x}$ 由 6 變成 9（×1.5），正變之下 $y$ 也 ×1.5：$4\\times1.5=6$，改變量 $6-4=2$。",
+      "en": "$\\sqrt{x}$ goes from 6 to 9 (a factor of 1.5), and a direct variation multiplies $y$ by the same factor: $4\\times1.5=6$, so the change is 2."
      }
     ]
    }
@@ -4315,59 +4321,82 @@
    "answer": null,
    "verify": "checked",
    "topic": "en05",
-   "source": "EPH WS05 P1 Q3 · [HKDSE Practice Paper 1 Q17(b)(ii)]",
+   "source": "Endeavour Lesson 5 Q3 · $y$ 隨 $x^{2}$ 反變",
    "solution": {
     "steps": [
      {
       "title": {
-       "zh": "第 1 步 · 搬成 $ax^{2}+bx+c=0$ 的標準形",
-       "en": "Step 1 · Rearrange into the standard form $ax^{2}+bx+c=0$"
+       "zh": "第 1 步 · 寫出 $y=\\frac{k}{x^{2}}$",
+       "en": "Step 1 · Write $y=\\frac{k}{x^{2}}$"
       },
-      "math": "-5x^{2}+10x-2=a\n\\Rightarrow 5x^{2}-10x+(a+2)=0",
-      "zh": "先把所有項搬到左邊：$-5x^{2}+10x-2-a=0$。為了方便，兩邊乘 $-1$，得 $5x^{2}-10x+(2+a)=0$，這樣 $a$ 的係數是正的，解不等式時就不易出錯。",
-      "en": "Move everything to the left: $-5x^{2}+10x-2-a=0$. Multiply both sides by $-1$ to get $5x^{2}-10x+(2+a)=0$, so that the coefficient of $x^{2}$ is positive and the inequality is safer.",
+      "math": "y=\\frac{k}{x^{2}}",
+      "zh": "「$y$ 隨 $x^{2}$ 反變」即 $y$ 與 $x^{2}$ 成反比：$y=\\frac{k}{x^{2}}$，$x^{2}$ 在分母。",
+      "en": "“$y$ varies inversely as $x^{2}$” means $y$ is inversely proportional to $x^{2}$: $y=\\frac{k}{x^{2}}$, with $x^{2}$ at the bottom.",
       "marking": "(1M)"
      },
      {
       "title": {
-       "zh": "第 2 步 · 有實根 → $\\Delta\\ge 0$，再解 $a$",
-       "en": "Step 2 · Real roots means $\\Delta\\ge 0$; solve for $a$"
+       "zh": "第 2 步 · 代入求 $k$，寫出關係式",
+       "en": "Step 2 · Substitute to find $k$, then write the relation"
       },
-      "math": "\\Delta=(-10)^{2}-4(5)(a+2)\\ge 0\n\\Rightarrow 60-20a\\ge 0\n\\Rightarrow a\\le 3",
-      "zh": "「有實根」包含等根，所以是 $\\Delta\\ge 0$（有等號）。代入 $a=5$、$b=-10$、$c=a+2$：$\\Delta=100-20(a+2)=100-20a-40=60-20a$。令 $60-20a\\ge 0$，移項得 $20a\\le 60$，所以 $a\\le 3$。",
-      "en": "“Has real roots” includes equal roots, so $\\Delta\\ge 0$. With $a=5$, $b=-10$ and $c=a+2$: $\\Delta=100-20(a+2)=100-20a-40=60-20a$. From $60-20a\\ge 0$ we get $20a\\le 60$, so $a\\le 3$.",
+      "math": "48=\\frac{k}{12^{2}}=\\frac{k}{144}\n\\Rightarrow k=6912\n\\Rightarrow y=\\frac{6912}{x^{2}}",
+      "zh": "代入 $x=12$、$y=48$：$48=\\frac{k}{144}$，兩邊乘 $144$ 得 $k=6912$。關係式是 $y=\\frac{6912}{x^{2}}$。",
+      "en": "Substituting $x=12$ and $y=48$: $48=\\frac{k}{144}$, so $k=6912$ after multiplying by 144. The relation is $y=\\frac{6912}{x^{2}}$.",
       "marking": "(1A)",
       "highlight": [
-       "a\\le 3"
+       "y=\\frac{6912}{x^{2}}"
+      ]
+     },
+     {
+      "title": {
+       "zh": "第 3 步 · 求 $x=16$ 時的 $y$",
+       "en": "Step 3 · Find $y$ when $x=16$"
+      },
+      "math": "y=\\frac{6912}{16^{2}}=\\frac{6912}{256}=27",
+      "zh": "$16^{2}=256$，所以 $y=\\frac{6912}{256}=27$。",
+      "en": "$16^{2}=256$, so $y=\\frac{6912}{256}=27$.",
+      "marking": "(1M)"
+     },
+     {
+      "title": {
+       "zh": "第 4 步 · 求改變量",
+       "en": "Step 4 · Find the change"
+      },
+      "math": "\\text{change}=27-48=-21",
+      "zh": "新值減舊值：$27-48=-21$，即 $y$ 減少了 21。",
+      "en": "New value minus old value: $27-48=-21$, so $y$ decreases by 21.",
+      "marking": "(1A)",
+      "highlight": [
+       "-21"
       ]
      }
     ],
     "traps": [
      {
-      "label": "漏了等號",
-      "labelEn": "Dropping the equality",
-      "zh": "「有實根」要寫 $\\Delta\\ge 0$；寫成 $\\Delta>0$ 會把「兩個相等實根」的情況排除，答案就少了 $a=3$。",
-      "en": "“Has real roots” needs $\\Delta\\ge 0$. Using $\\Delta>0$ excludes the case of two equal real roots, so $a=3$ would be missing from the answer."
+      "label": "反變寫成乘積",
+      "labelEn": "Writing inverse variation as a product",
+      "zh": "寫成 $y=kx^{2}$ 就變成正變，$k$ 會算成 $48\\times144$，答案完全相反。反變是除以 $x^{2}$。",
+      "en": "Writing $y=kx^{2}$ turns it into a direct variation and gives $k=48\\times144$, the opposite answer. Inverse means dividing by $x^{2}$."
      },
      {
-      "label": "搬項時符號出錯",
-      "labelEn": "Sign slip when rearranging",
-      "zh": "$-2=a$ 搬到左邊是 $-2-a$，乘 $-1$ 之後是 $+a+2$；寫成 $a-2$ 就會得到 $a\\le 7$ 這個錯答案。",
-      "en": "Moving $-2=a$ to the left gives $-2-a$; multiplying by $-1$ gives $+a+2$. Writing $a-2$ leads to the wrong answer $a\\le 7$."
+      "label": "$x^{2}$ 忘記平方",
+      "labelEn": "Forgetting to square $x$",
+      "zh": "反變的是 $x^{2}$ 而不是 $x$：代入要用 $12^{2}=144$、$16^{2}=256$，用了 12 或 16 就整題錯。",
+      "en": "The variation is in $x^{2}$, not $x$: use $12^{2}=144$ and $16^{2}=256$. Using 12 or 16 spoils the whole question."
      }
     ],
     "tip": {
-     "zh": "「有實根」＝ $\\Delta\\ge 0$；「有兩個相異實根」才是 $\\Delta>0$。寫答案前再讀一次題目用的是哪一句。",
-     "en": "“Has real roots” means $\\Delta\\ge 0$; only “two distinct real roots” means $\\Delta>0$. Re-read the wording before writing the final line."
+     "zh": "反變的「反」在分母：$y=\\frac{k}{x^{n}}$。求 $k$ 時先乘 $x^{n}$，數字大也要照乘（$48\\times144=6912$）。",
+     "en": "Inverse variation puts the variable in the denominator: $y=\\frac{k}{x^{n}}$. When finding $k$, multiply by $x^{n}$ even when the number is large ($48\\times144=6912$)."
     },
     "alt": [
      {
       "name": {
-       "zh": "驗算：取邊界值與界外值",
-       "en": "Check: the boundary and one value outside"
+       "zh": "驗算：用倍數",
+       "en": "Check: use multipliers"
       },
-      "zh": "$a=3$ 時方程是 $5x^{2}-10x+5=0$，即 $5(x-1)^{2}=0$，有一個重根 —— 算「有實根」。$a=4$ 時 $\\Delta=100-4(5)(6)=-20<0$，沒有實根，所以答案應該是 $a\\le 3$。",
-      "en": "For $a=3$ the equation is $5x^{2}-10x+5=0$, i.e. $5(x-1)^{2}=0$, which has a repeated root, so real roots exist. For $a=4$, $\\Delta=100-4(5)(6)=-20<0$ and there are none, so the answer is $a\\le 3$."
+      "zh": "$x$ 由 12 增至 16（×$\\frac{4}{3}$），$x^{2}$ 就 ×$\\frac{16}{9}$，反變之下 $y$ 要 ×$\\frac{9}{16}$：$48\\times\\frac{9}{16}=27$ ✓。",
+      "en": "$x$ goes from 12 to 16 (a factor of $\\frac{4}{3}$), so $x^{2}$ grows by $\\frac{16}{9}$ and $y$ shrinks by $\\frac{9}{16}$: $48\\times\\frac{9}{16}=27$."
      }
     ]
    }
@@ -4376,69 +4405,72 @@
    "answer": null,
    "verify": "checked",
    "topic": "en05",
-   "source": "EPH WS05 P1 Q4 · [HKDSE 2022 Paper 1 Q17(a)]（工作紙用 $a$、$b$ 表示兩根，與常數 $b$ 撞名，本站改用 $\\alpha$、$\\beta$）",
+   "source": "Endeavour Lesson 5 Q4 · 聯變（$z$ 隨 $\\sqrt{x}$ 正變、隨 $y$ 反變）",
    "solution": {
     "steps": [
      {
       "title": {
-       "zh": "第 1 步 · 寫出兩根之和與積",
-       "en": "Step 1 · Write down the sum and the product of the roots"
+       "zh": "第 1 步 · 寫出聯變方程",
+       "en": "Step 1 · Write the joint variation equation"
       },
-      "math": "\\alpha+\\beta=\\frac{b}{2},\\ \\alpha\\beta=\\frac{8}{2}=4",
-      "zh": "方程是 $2x^{2}-bx+8=0$：$x^{2}$ 的係數是 $2$，$x$ 的係數是 $-b$，常數項是 $8$。所以和 $=-\\frac{-b}{2}=\\frac{b}{2}$（兩個負號相消），積 $=\\frac{8}{2}=4$。",
-      "en": "The equation is $2x^{2}-bx+8=0$: the coefficient of $x^{2}$ is $2$, the coefficient of $x$ is $-b$ and the constant is $8$. Hence the sum is $-\\frac{-b}{2}=\\frac{b}{2}$ and the product is $\\frac{8}{2}=4$.",
+      "math": "z=\\frac{k\\sqrt{x}}{y}",
+      "zh": "「隨 $\\sqrt{x}$ 正變」放分子，「隨 $y$ 反變」放分母，所以 $z=\\frac{k\\sqrt{x}}{y}$。",
+      "en": "The direct part $\\sqrt{x}$ goes on top and the inverse part $y$ goes at the bottom: $z=\\frac{k\\sqrt{x}}{y}$.",
       "marking": "(1M)"
      },
      {
       "title": {
-       "zh": "第 2 步 · 用恆等式把 $\\alpha^{2}+\\beta^{2}$ 拆成和與積",
-       "en": "Step 2 · Express $\\alpha^{2}+\\beta^{2}$ with the sum and the product"
+       "zh": "第 2 步 · 代入 $x=16$、$y=8$、$z=5$ 求 $k$",
+       "en": "Step 2 · Substitute $x=16$, $y=8$, $z=5$ to find $k$"
       },
-      "math": "\\alpha^{2}+\\beta^{2}=(\\alpha+\\beta)^{2}-2\\alpha\\beta",
-      "zh": "目標式不可以硬解方程（根含 $b$，還可能是複數），所以用恆等式 $(\\alpha+\\beta)^{2}=\\alpha^{2}+2\\alpha\\beta+\\beta^{2}$，移項就得多減 $2\\alpha\\beta$。",
-      "en": "Do not solve the equation (the roots involve $b$ and may be non-real). Use $(\\alpha+\\beta)^{2}=\\alpha^{2}+2\\alpha\\beta+\\beta^{2}$, so $2\\alpha\\beta$ must be subtracted again.",
-      "marking": "(1M)"
-     },
-     {
-      "title": {
-       "zh": "第 3 步 · 代入並化簡",
-       "en": "Step 3 · Substitute and simplify"
-      },
-      "math": "=\\left(\\frac{b}{2}\\right)^{2}-2(4)\n=\\frac{b^{2}}{4}-8",
-      "zh": "代入 $\\alpha+\\beta=\\frac{b}{2}$ 與 $\\alpha\\beta=4$：$\\left(\\frac{b}{2}\\right)^{2}=\\frac{b^{2}}{4}$，再減 $2(4)=8$，所以 $\\alpha^{2}+\\beta^{2}=\\frac{b^{2}}{4}-8$。",
-      "en": "Substituting $\\alpha+\\beta=\\frac{b}{2}$ and $\\alpha\\beta=4$: $\\left(\\frac{b}{2}\\right)^{2}=\\frac{b^{2}}{4}$, then subtract $2(4)=8$, giving $\\alpha^{2}+\\beta^{2}=\\frac{b^{2}}{4}-8$.",
+      "math": "5=\\frac{k(4)}{8}=\\frac{k}{2}\n\\Rightarrow k=10\n\\Rightarrow z=\\frac{10\\sqrt{x}}{y}",
+      "zh": "$\\sqrt{16}=4$，所以 $5=\\frac{4k}{8}=\\frac{k}{2}$，得 $k=10$。關係式是 $z=\\frac{10\\sqrt{x}}{y}$。",
+      "en": "$\\sqrt{16}=4$, so $5=\\frac{4k}{8}=\\frac{k}{2}$, giving $k=10$. The relation is $z=\\frac{10\\sqrt{x}}{y}$.",
       "marking": "(1A)",
       "highlight": [
-       "\\frac{b^{2}}{4}-8"
+       "z=\\frac{10\\sqrt{x}}{y}"
+      ]
+     },
+     {
+      "title": {
+       "zh": "第 3 步 · 代入 $y=\\frac{4}{5}$、$z=25$ 求 $x$",
+       "en": "Step 3 · Substitute $y=\\frac{4}{5}$, $z=25$ to find $x$"
+      },
+      "math": "25=\\frac{10\\sqrt{x}}{4/5}\n\\Rightarrow 25\\cdot\\frac{4}{5}=10\\sqrt{x}\n\\Rightarrow 20=10\\sqrt{x}\n\\Rightarrow x=4",
+      "zh": "把 $y=\\frac{4}{5}$ 代入，分母是 $\\frac{4}{5}$（除以 $\\frac{4}{5}$ 等於乘 $\\frac{5}{4}$）：$25=\\frac{10\\sqrt{x}}{4/5}$。兩邊乘 $\\frac{4}{5}$ 得 $20=10\\sqrt{x}$，所以 $\\sqrt{x}=2$，$x=4$。",
+      "en": "With $y=\\frac{4}{5}$ the denominator is $\\frac{4}{5}$ (dividing by it is multiplying by $\\frac{5}{4}$): $25=\\frac{10\\sqrt{x}}{4/5}$. Multiplying by $\\frac{4}{5}$ gives $20=10\\sqrt{x}$, so $\\sqrt{x}=2$ and $x=4$.",
+      "marking": "(1A)",
+      "highlight": [
+       "x=4"
       ]
      }
     ],
     "traps": [
      {
-      "label": "係數與根同名",
-      "labelEn": "The coefficient and the root share a letter",
-      "zh": "工作紙用 $a$、$b$ 同時做「兩根」與「常數」，數學上是矛盾的（會推出 $b^{2}=-8$）。所以本站把兩根寫成 $\\alpha$、$\\beta$：看到 $b$ 就當它是常數，看到 $\\alpha$、$\\beta$ 才是根。",
-      "en": "The worksheet uses $a$ and $b$ for both the roots and the constant, which is inconsistent (it would force $b^{2}=-8$). Here the roots are $\\alpha$ and $\\beta$: $b$ is always the constant."
+      "label": "正反調轉",
+      "labelEn": "Swapping direct and inverse",
+      "zh": "寫成 $z=\\frac{ky}{\\sqrt{x}}$ 就把兩邊方向都倒轉，$k$ 會算成 $5\\times\\frac{8}{4}=10$ 之外的數，最後 $x$ 一定錯。",
+      "en": "Writing $z=\\frac{ky}{\\sqrt{x}}$ reverses both directions; $k$ comes out wrong and $x$ cannot be right."
      },
      {
-      "label": "和的負號算錯",
-      "labelEn": "Wrong sign on the sum",
-      "zh": "和是 $-\\frac{b}{a}=-\\frac{-b}{2}=\\frac{b}{2}$，兩個負號相消。若寫成 $-\\frac{b}{2}$ 或 $b$，最後的答案就會多一個負號或差四倍。",
-      "en": "The sum is $-\\frac{b}{a}=-\\frac{-b}{2}=\\frac{b}{2}$, because the two minus signs cancel. Writing $-\\frac{b}{2}$ or $b$ gives an answer with the wrong sign or the wrong factor."
+      "label": "忘記開方",
+      "labelEn": "Forgetting the square root",
+      "zh": "$\\sqrt{16}=4$、$\\sqrt{x}$ 最後要平方：$\\sqrt{x}=2$ 時 $x=4$，不是 2。",
+      "en": "$\\sqrt{16}=4$, and $\\sqrt{x}$ must be squared at the end: $\\sqrt{x}=2$ gives $x=4$, not 2."
      }
     ],
     "tip": {
-     "zh": "公式只有一組：和 $=-\\frac{b}{a}$、積 $=\\frac{c}{a}$。代入時先問「$a$ 是幾？」（這裡是 $2$，不是 $1$），就不會把和寫成 $b$。",
-     "en": "There is only one pair of formulas: sum $=-\\frac{b}{a}$ and product $=\\frac{c}{a}$. Before substituting, ask “what is $a$?” (here $2$, not $1$) so the sum does not become $b$."
+     "zh": "聯變只有一個原則：正變放分子、反變放分母。求 $k$ 之後，把關係式寫清楚再做第二部分，就不會把 $\\sqrt{x}$ 與 $y$ 的位置搞亂。",
+     "en": "One rule for joint variation: direct on top, inverse at the bottom. Write the relation clearly after finding $k$ so the positions of $\\sqrt{x}$ and $y$ do not get mixed up."
     },
     "alt": [
      {
       "name": {
-       "zh": "驗算：代一個 $b$ 的數值",
-       "en": "Check: substitute a value of $b$"
+       "zh": "驗算：代回兩組數值",
+       "en": "Check: substitute both pairs"
       },
-      "zh": "取 $b=10$：方程是 $2x^{2}-10x+8=0$，即 $x^{2}-5x+4=0$，兩根是 $1$ 與 $4$。和 $=1+4=5=\\frac{10}{2}$ ✓，而 $\\alpha^{2}+\\beta^{2}=1+16=17$；公式給 $\\frac{100}{4}-8=17$ ✓。",
-      "en": "Take $b=10$: the equation is $2x^{2}-10x+8=0$, i.e. $x^{2}-5x+4=0$, with roots $1$ and $4$. The sum is $5=\\frac{10}{2}$, and $\\alpha^{2}+\\beta^{2}=1+16=17$; the formula gives $\\frac{100}{4}-8=17$."
+      "zh": "$x=16$、$y=8$：$z=\\frac{10(4)}{8}=5$ ✓；$x=4$、$y=\\frac{4}{5}$：$z=\\frac{10(2)}{4/5}=\\frac{20}{0.8}=25$ ✓。",
+      "en": "For $x=16$, $y=8$: $z=\\frac{10(4)}{8}=5$. For $x=4$, $y=\\frac{4}{5}$: $z=\\frac{10(2)}{4/5}=25$. Both match."
      }
     ]
    }
@@ -4447,59 +4479,79 @@
    "answer": null,
    "verify": "checked",
    "topic": "en05",
-   "source": "EPH WS05 P1 Q5 · [HKDSE 2023 Paper 1 Q16(a)]",
+   "source": "Endeavour Lesson 5 Q11 · 部分變（一部分為常數、一部分隨 $x^{2}$ 變化）",
    "solution": {
     "steps": [
      {
       "title": {
-       "zh": "第 1 步 · 用根與係數寫出兩條式子",
-       "en": "Step 1 · Write two equations from the sum and the product"
+       "zh": "第 1 步 · 寫出 $y=c+kx^{2}$ 與兩條方程",
+       "en": "Step 1 · Write $y=c+kx^{2}$ and the two equations"
       },
-      "math": "3p+4p=-r\\ \\Rightarrow\\ 7p=-r\\ \\ldots(1)\n3p(4p)=s\\ \\Rightarrow\\ 12p^{2}=s\\ \\ldots(2)",
-      "zh": "方程的 $x^{2}$ 係數是 $1$，所以和 $=-r$、積 $=s$。把兩個根 $3p$、$4p$ 代入：和是 $7p$，積是 $12p^{2}$，得出 (1) 與 (2) 兩條式。",
-      "en": "The coefficient of $x^{2}$ is $1$, so the sum is $-r$ and the product is $s$. With the roots $3p$ and $4p$: the sum is $7p$ and the product is $12p^{2}$, giving (1) and (2).",
+      "math": "y=c+kx^{2}\n1=c+4k\\ \\ldots(1)\n-4=c+9k\\ \\ldots(2)",
+      "zh": "一部分是常數 $c$，另一部分隨 $x^{2}$ 正變，所以 $y=c+kx^{2}$。代入兩組數值：$x=2$ 得 $1=c+4k$；$x=3$ 得 $-4=c+9k$。",
+      "en": "One part is the constant $c$ and the other varies as $x^{2}$, so $y=c+kx^{2}$. Substituting the two pairs gives $1=c+4k$ and $-4=c+9k$.",
       "marking": "(1M)"
      },
      {
       "title": {
-       "zh": "第 2 步 · 消去 $p$，得出要證的等式",
-       "en": "Step 2 · Eliminate $p$ to reach the required identity"
+       "zh": "第 2 步 · 兩式相減消去 $c$，求 $k$",
+       "en": "Step 2 · Subtract to eliminate $c$ and find $k$"
       },
-      "math": "p=-\\frac{r}{7}\n\\Rightarrow 12\\left(-\\frac{r}{7}\\right)^{2}=s\n\\Rightarrow \\frac{12r^{2}}{49}=s\n\\Rightarrow 12r^{2}=49s",
-      "zh": "目標式 $12r^{2}=49s$ 不含 $p$，所以由 (1) 把 $p$ 寫成 $-\\frac{r}{7}$，代入 (2)：$12\\left(\\frac{r^{2}}{49}\\right)=s$，兩邊乘 $49$ 就是 $12r^{2}=49s$（證明完畢）。注意負號平方之後消失。",
-      "en": "The target $12r^{2}=49s$ contains no $p$, so make $p$ the subject of (1): $p=-\\frac{r}{7}$, and substitute into (2): $12\\left(\\frac{r^{2}}{49}\\right)=s$. Multiplying by $49$ gives $12r^{2}=49s$.",
+      "math": "(2)-(1):\\ 5k=-5\n\\Rightarrow k=-1",
+      "zh": "$(2)-(1)$：左邊 $9k-4k=5k$，右邊 $-4-1=-5$，所以 $5k=-5$，$k=-1$。",
+      "en": "$(2)-(1)$ gives $9k-4k=5k$ on the left and $-4-1=-5$ on the right, so $5k=-5$ and $k=-1$.",
+      "marking": "(1A)"
+     },
+     {
+      "title": {
+       "zh": "第 3 步 · 代回求 $c$",
+       "en": "Step 3 · Substitute back to find $c$"
+      },
+      "math": "c=1-4(-1)=5",
+      "zh": "把 $k=-1$ 代入 (1)：$1=c-4$，所以 $c=5$。",
+      "en": "With $k=-1$ in (1): $1=c-4$, so $c=5$.",
+      "marking": "(1A)"
+     },
+     {
+      "title": {
+       "zh": "第 4 步 · 寫出關係式",
+       "en": "Step 4 · Write the relation"
+      },
+      "math": "y=5-x^{2}",
+      "zh": "把 $c=5$、$k=-1$ 寫回方程：$y=5-x^{2}$。答案要寫這條關係式，不可以只寫 $c=5$、$k=-1$。",
+      "en": "Putting $c=5$ and $k=-1$ back gives $y=5-x^{2}$. The answer is this relation, not the separate values of $c$ and $k$.",
       "marking": "(1A)",
       "highlight": [
-       "12r^{2}=49s"
+       "y=5-x^{2}"
       ]
      }
     ],
     "traps": [
      {
-      "label": "和的負號漏了",
-      "labelEn": "Dropping the minus sign in the sum",
-      "zh": "和是 $-r$（因為 $r$ 在 $x$ 的係數），不是 $r$。若寫成 $7p=r$，代入之後會得 $12r^{2}=-49s$，證不到題目要的等式。",
-      "en": "The sum is $-r$ (because $r$ is the coefficient of $x$), not $r$. Writing $7p=r$ leads to $12r^{2}=-49s$, which is not what the question asks."
+      "label": "漏了常數 $c$",
+      "labelEn": "Dropping the constant $c$",
+      "zh": "寫成 $y=kx^{2}$ 就少了一個未知數，兩組數值只能求出一條方程，解不到兩個未知數。",
+      "en": "Writing $y=kx^{2}$ leaves only one unknown; the two pairs then give one equation, which cannot fix both unknowns."
      },
      {
-      "label": "先解出 $p$ 的數值",
-      "labelEn": "Trying to find a number for $p$",
-      "zh": "$p$ 是未知的，題目沒有給數值；正確做法是「消去 $p$」，不是求 $p$。看到目標式沒有 $p$ 就要想到消去。",
-      "en": "$p$ is unknown and no value is given. The task is to eliminate $p$, not to find it. When the target has no $p$, elimination is the way."
+      "label": "相減時符號錯",
+      "labelEn": "Sign slip when subtracting",
+      "zh": "$(1)-(2)$ 也可以，但要一致：$4k-9k=-5k$、$1-(-4)=5$，同樣得 $k=-1$。半途換方向就會得 $k=1$。",
+      "en": "$(1)-(2)$ is also fine as long as it is consistent: $4k-9k=-5k$ and $1-(-4)=5$, again giving $k=-1$. Switching direction halfway gives $k=1$."
      }
     ],
     "tip": {
-     "zh": "證明題的固定思路：先寫根與係數的兩條式，再看「目標式缺哪個字母」—— 缺 $p$ 就把 $p$ 消去。這一步做對，(1A) 就自動到手。",
-     "en": "For a proof, first write the two root relations, then look at which letter the target is missing. If $p$ is missing, eliminate $p$. Once that step is right, the answer mark follows."
+     "zh": "部分變＝兩個未知數，一定要兩對數值。做法固定：寫 $y=c+kx^{n}$ → 兩條方程 → 相減消 $c$ → 代回 → 寫關係式。",
+     "en": "Partial variation has two unknowns and always needs two pairs of values: write $y=c+kx^{n}$, form two equations, subtract to remove $c$, substitute back, then write the relation."
     },
     "alt": [
      {
       "name": {
-       "zh": "驗算：代 $p=1$",
-       "en": "Check: put $p=1$"
+       "zh": "驗算：代回兩組數值",
+       "en": "Check: substitute both pairs"
       },
-      "zh": "取 $p=1$，兩根是 $3$ 與 $4$，方程是 $x^{2}-7x+12=0$，所以 $r=-7$、$s=12$。左邊 $12(-7)^{2}=588$，右邊 $49(12)=588$ ✓。",
-      "en": "Put $p=1$: the roots are $3$ and $4$, so the equation is $x^{2}-7x+12=0$ with $r=-7$ and $s=12$. Left side $12(-7)^{2}=588$ and right side $49(12)=588$."
+      "zh": "$x=2$：$5-4=1$ ✓；$x=3$：$5-9=-4$ ✓。",
+      "en": "For $x=2$: $5-4=1$. For $x=3$: $5-9=-4$. Both match."
      }
     ]
    }
@@ -4508,482 +4560,747 @@
    "answer": null,
    "verify": "checked",
    "topic": "en05",
-   "source": "EPH WS05 P1 Q6 · [HKDSE Practice Paper 1 Q17]",
+   "source": "Endeavour Lesson 5 Q14 · 部分變應用題（Helen 賣首飾）",
    "solution": {
     "steps": [
      {
       "title": {
-       "zh": "第 1 步 · (a) 分子分母乘共軛 $(1-7i)$",
-       "en": "Step 1 · (a) Multiply by the conjugate $(1-7i)$"
+       "zh": "第 1 步 · 寫出 $S=c+kn$ 與兩條方程",
+       "en": "Step 1 · Write $S=c+kn$ and the two equations"
       },
-      "math": "\\frac{1}{1+7i}=\\frac{1-7i}{(1+7i)(1-7i)}\n=\\frac{1-7i}{1-49i^{2}}",
-      "zh": "分母是 $1+7i$，共軛是 $1-7i$。分子分母同時乘 $1-7i$，分母就變成 $(1+7i)(1-7i)=1^{2}-(7i)^{2}=1-49i^{2}$。",
-      "en": "The denominator is $1+7i$ and its conjugate is $1-7i$. Multiply numerator and denominator by $1-7i$; the denominator becomes $(1+7i)(1-7i)=1^{2}-(7i)^{2}=1-49i^{2}$.",
+      "math": "S=c+kn\n10200=c+5k\\ \\ldots(1)\n12000=c+8k\\ \\ldots(2)",
+      "zh": "$S$ 的一部分是固定收入 $c$，另一部分隨件數 $n$ 正變，所以 $S=c+kn$。代入 $(n,S)=(5,10200)$ 與 $(8,12000)$ 得兩條方程。",
+      "en": "One part of $S$ is a fixed $c$ and the other varies directly as $n$, so $S=c+kn$. Substituting $(n,S)=(5,10200)$ and $(8,12000)$ gives two equations.",
       "marking": "(1M)"
      },
      {
       "title": {
-       "zh": "第 2 步 · (a) 把 $i^{2}=-1$ 代入，寫成 $a+bi$",
-       "en": "Step 2 · (a) Put $i^{2}=-1$ and write the answer as $a+bi$"
+       "zh": "第 2 步 · 相減求 $k$",
+       "en": "Step 2 · Subtract to find $k$"
       },
-      "math": "=\\frac{1-7i}{1+49}\n=\\frac{1-7i}{50}\n=\\frac{1}{50}-\\frac{7}{50}i",
-      "zh": "$1-49i^{2}=1-49(-1)=50$。所以結果是 $\\frac{1-7i}{50}$；題目要求 $a+bi$，要把實部與虛部分開寫成 $\\frac{1}{50}-\\frac{7}{50}i$。",
-      "en": "$1-49i^{2}=1-49(-1)=50$, so the result is $\\frac{1-7i}{50}$. The form $a+bi$ needs the two parts separately: $\\frac{1}{50}-\\frac{7}{50}i$.",
+      "math": "(2)-(1):\\ 3k=1800\n\\Rightarrow k=600",
+      "zh": "$(2)-(1)$：$3k=1800$，所以 $k=600$，即每賣出一件首飾多得 600 元。",
+      "en": "$(2)-(1)$ gives $3k=1800$, so $k=600$: each piece sold adds 600 dollars.",
+      "marking": "(1A)"
+     },
+     {
+      "title": {
+       "zh": "第 3 步 · 求 $c$，寫出關係式",
+       "en": "Step 3 · Find $c$ and write the relation"
+      },
+      "math": "c=10200-5(600)=7200\n\\Rightarrow S=7200+600n",
+      "zh": "代回 (1)：$10200=c+3000$，所以 $c=7200$。關係式是 $S=7200+600n$。",
+      "en": "Back in (1): $10200=c+3000$, so $c=7200$. The relation is $S=7200+600n$.",
       "marking": "(1A)",
       "highlight": [
-       "\\frac{1}{50}-\\frac{7}{50}i"
+       "S=7200+600n"
       ]
      },
      {
       "title": {
-       "zh": "第 3 步 · (b)(i) 用 (a) 的結果化簡兩個根",
-       "en": "Step 3 · (b)(i) Use part (a) to simplify both roots"
+       "zh": "第 4 步 · (a) 代入 $n=22$",
+       "en": "Step 4 · (a) Substitute $n=22$"
       },
-      "math": "\\frac{100}{1+7i}=100\\left(\\frac{1}{50}-\\frac{7}{50}i\\right)=2-14i\n\\frac{100}{1-7i}=2+14i",
-      "zh": "(a) 已求得 $\\frac{1}{1+7i}=\\frac{1}{50}-\\frac{7}{50}i$，乘 $100$ 得 $2-14i$。另一個根的分母是 $1-7i$，只是中間的符號不同，所以虛部的符號相反：$2+14i$。",
-      "en": "Part (a) gives $\\frac{1}{1+7i}=\\frac{1}{50}-\\frac{7}{50}i$, and multiplying by $100$ gives $2-14i$. The other root has denominator $1-7i$, only the middle sign differs, so the imaginary part changes sign: $2+14i$.",
+      "math": "S=7200+600(22)=20400",
+      "zh": "$600\\times22=13200$，所以 $S=7200+13200=20400$，即 20400 元。",
+      "en": "$600\\times22=13200$, so $S=7200+13200=20400$, that is 20400 dollars.",
+      "marking": "(1A)",
+      "highlight": [
+       "20400"
+      ]
+     },
+     {
+      "title": {
+       "zh": "第 5 步 · (b) 令 $S=30000$，解 $n$",
+       "en": "Step 5 · (b) Put $S=30000$ and solve for $n$"
+      },
+      "math": "30000=7200+600n\n\\Rightarrow 600n=22800",
+      "zh": "把 $S=30000$ 代入關係式：$30000=7200+600n$，移項得 $600n=22800$。",
+      "en": "Substituting $S=30000$: $30000=7200+600n$, so $600n=22800$.",
       "marking": "(1M)"
      },
      {
       "title": {
-       "zh": "第 4 步 · (b)(i) 兩根之和求 $p$",
-       "en": "Step 4 · (b)(i) Find $p$ from the sum of the roots"
+       "zh": "第 6 步 · (b) 判斷 $n$ 是否可以是件數",
+       "en": "Step 6 · (b) Decide whether that $n$ is possible"
       },
-      "math": "\\alpha+\\beta=(2-14i)+(2+14i)=4\n\\Rightarrow -p=4\\ \\Rightarrow\\ p=-4",
-      "zh": "方程 $x^{2}+px+q=0$ 的兩根之和是 $-p$。兩根相加，虛部 $-14i$ 與 $+14i$ 抵銷，得 $4$；所以 $-p=4$，即 $p=-4$。",
-      "en": "For $x^{2}+px+q=0$ the sum of the roots is $-p$. Adding the roots, $-14i$ and $+14i$ cancel, leaving $4$; hence $-p=4$ and $p=-4$.",
+      "math": "n=38",
+      "zh": "$n=38$ 是正整數，代表賣出 38 件，所以有可能；答案寫「Yes, when $n=38$」。若解出來的 $n$ 不是整數（例如 38.5），就不可能。",
+      "en": "$n=38$ is a positive integer, so selling 38 pieces is possible: “Yes, when $n=38$”. If $n$ were not an integer (say 38.5), it would be impossible.",
       "marking": "(1A)",
       "highlight": [
-       "p=-4"
-      ]
-     },
-     {
-      "title": {
-       "zh": "第 5 步 · (b)(i) 兩根之積求 $q$",
-       "en": "Step 5 · (b)(i) Find $q$ from the product of the roots"
-      },
-      "math": "\\alpha\\beta=(2-14i)(2+14i)\n=2^{2}-(14i)^{2}=4+196=200\n\\Rightarrow q=200",
-      "zh": "兩根之積是 $q$。用平方差：$(2-14i)(2+14i)=2^{2}-(14i)^{2}=4-196i^{2}=4+196=200$，所以 $q=200$。這裡的 $196$ 之後在 (ii) 會再用到。",
-      "en": "The product of the roots is $q$. Using the difference of two squares: $(2-14i)(2+14i)=2^{2}-(14i)^{2}=4-196i^{2}=4+196=200$, so $q=200$.",
-      "marking": "(1A)",
-      "highlight": [
-       "q=200"
-      ]
-     },
-     {
-      "title": {
-       "zh": "第 6 步 · (b)(ii) 搬成標準形，寫出 $\\Delta\\ge 0$",
-       "en": "Step 6 · (b)(ii) Rearrange and write $\\Delta\\ge 0$"
-      },
-      "math": "x^{2}-4x+200=r\n\\Rightarrow x^{2}-4x+(200-r)=0\n\\Rightarrow \\Delta=(-4)^{2}-4(1)(200-r)\\ge 0",
-      "zh": "代入 $p=-4$、$q=200$，方程是 $x^{2}-4x+200=r$；把 $r$ 搬到左邊得 $x^{2}-4x+(200-r)=0$。有實根代表 $\\Delta\\ge 0$。",
-      "en": "With $p=-4$ and $q=200$ the equation is $x^{2}-4x+200=r$; moving $r$ to the left gives $x^{2}-4x+(200-r)=0$. Real roots mean $\\Delta\\ge 0$.",
-      "marking": "(1M)"
-     },
-     {
-      "title": {
-       "zh": "第 7 步 · (b)(ii) 解不等式求 $r$ 的範圍",
-       "en": "Step 7 · (b)(ii) Solve the inequality for $r$"
-      },
-      "math": "16-800+4r\\ge 0\n\\Rightarrow 4r\\ge 784\n\\Rightarrow r\\ge 196",
-      "zh": "$\\Delta=16-4(200-r)=16-800+4r=4r-784$。令 $4r-784\\ge 0$，得 $4r\\ge 784$，所以 $r\\ge 196$。",
-      "en": "$\\Delta=16-4(200-r)=16-800+4r=4r-784$. From $4r-784\\ge 0$ we get $4r\\ge 784$, so $r\\ge 196$.",
-      "marking": "(1A)",
-      "highlight": [
-       "r\\ge 196"
+       "38"
       ]
      }
     ],
     "traps": [
      {
-      "label": "共軛只乘分子",
-      "labelEn": "Multiplying only the numerator",
-      "zh": "分母也要乘 $(1-7i)$，否則分數的值就變了。乘完分母一定是實數：$(1+7i)(1-7i)=50$，如果分母仍有 $i$，就是漏了這一步。",
-      "en": "The denominator must be multiplied by $1-7i$ as well, otherwise the value changes. After the multiplication the denominator is real ($50$); if an $i$ is left there, this step was missed."
+      "label": "只寫「不可能」",
+      "labelEn": "Answering “impossible” without checking",
+      "zh": "(b) 要真的解方程：$600n=22800$ 得 $n=38$，是整數，所以有可能。只說「不可能」而沒有計，拿不到分。",
+      "en": "Part (b) needs the equation solved: $600n=22800$ gives $n=38$, an integer, so it is possible. Answering “impossible” without solving earns nothing."
      },
      {
-      "label": "$(b)$ 的兩根用加法算乘積",
-      "labelEn": "Using a sum where a product is needed",
-      "zh": "$q$ 是兩根之積，要用乘；$(2-14i)+(2+14i)=4$ 是兩根之和（用來求 $p$）。兩個混了，$p$、$q$ 就會調轉。",
-      "en": "$q$ is the product of the roots, so multiply; $(2-14i)+(2+14i)=4$ is the sum, used for $p$. Mixing them swaps $p$ and $q$."
-     },
-     {
-      "label": "用 $\\Delta>0$ 代替 $\\Delta\\ge 0$",
-      "labelEn": "Using $\\Delta>0$ instead of $\\Delta\\ge 0$",
-      "zh": "題目說「有實根」，重根也算，所以要 $\\ge 0$；寫成 $>0$ 就會把 $r=196$ 漏掉。",
-      "en": "The question says “has real roots”, and a repeated root counts, so $\\ge 0$ is needed. Using $>0$ would lose $r=196$."
+      "label": "答了倍數而不是件數",
+      "labelEn": "Answering with $k$ instead of $n$",
+      "zh": "(a) 問的是收入（20400），不是 $k=600$；(b) 問的是件數（38），不是收入。看清楚問哪個量。",
+      "en": "Part (a) asks for the income (20400), not $k=600$; part (b) asks for the number of pieces (38), not the income."
      }
     ],
     "tip": {
-     "zh": "(a) 的答案要留著，(b) 直接用：$\\frac{100}{1+7i}=100\\times\\frac{1}{1+7i}$，比重新做一次除法快得多。做完 (i) 的 $p$、$q$，(ii) 只是判別式加解不等式。",
-     "en": "Keep the answer to (a) and reuse it: $\\frac{100}{1+7i}=100\\times\\frac{1}{1+7i}$ is much faster than dividing again. Once (i) gives $p$ and $q$, part (ii) is just the discriminant and an inequality."
+     "zh": "應用題的關係式要寫齊單位的意思：$S=7200+600n$ 之中 7200 是底薪、600 是每件的佣金。寫得出這句，(b) 的解釋就有分。",
+     "en": "Read the relation with units: in $S=7200+600n$, the 7200 is the fixed part and the 600 is earned per piece. Explaining this earns the mark in part (b)."
     },
     "alt": [
      {
       "name": {
-       "zh": "驗算：取兩個 $r$ 值",
-       "en": "Check: test two values of $r$"
+       "zh": "驗算：三組數值",
+       "en": "Check: three pairs"
       },
-      "zh": "$r=196$ 時方程是 $x^{2}-4x+4=0$，即 $(x-2)^{2}=0$，有重根（符合「有實根」）。$r=100$ 時 $\\Delta=16-4(100)=-384<0$，沒有實根 —— 所以邊界 $196$ 正確。",
-      "en": "For $r=196$ the equation is $x^{2}-4x+4=0$, i.e. $(x-2)^{2}=0$, a repeated root, so real roots exist. For $r=100$, $\\Delta=16-4(100)=-384<0$ with no real roots, which confirms the boundary $196$."
+      "zh": "$n=5$：$7200+3000=10200$ ✓；$n=8$：$7200+4800=12000$ ✓；$n=38$：$7200+22800=30000$ ✓。",
+      "en": "For $n=5$: $7200+3000=10200$. For $n=8$: $7200+4800=12000$. For $n=38$: $7200+22800=30000$. All match."
+     }
+    ]
+   }
+  },
+  "eph-en05-q7": {
+   "answer": null,
+   "verify": "checked",
+   "topic": "en05",
+   "source": "Endeavour Lesson 5 Q15 · 部分變＋二次方程",
+   "solution": {
+    "steps": [
+     {
+      "title": {
+       "zh": "第 1 步 · 寫出 $f(x)=c+kx$ 與兩條方程",
+       "en": "Step 1 · Write $f(x)=c+kx$ and the two equations"
+      },
+      "math": "f(x)=c+kx\n220=c+3k\\ \\ldots(1)\n-20=c-3k\\ \\ldots(2)",
+      "zh": "一部分是常數 $c$，另一部分隨 $x$ 正變，所以 $f(x)=c+kx$。代入 $f(3)=220$ 與 $f(-3)=-20$。",
+      "en": "One part is constant and the other varies as $x$, so $f(x)=c+kx$. Substitute $f(3)=220$ and $f(-3)=-20$.",
+      "marking": "(1M)"
+     },
+     {
+      "title": {
+       "zh": "第 2 步 · 兩式相加求 $c$",
+       "en": "Step 2 · Add the two equations to find $c$"
+      },
+      "math": "(1)+(2):\\ 2c=200\n\\Rightarrow c=100",
+      "zh": "兩式相加，$3k$ 與 $-3k$ 相消：$2c=200$，所以 $c=100$。",
+      "en": "Adding the equations cancels $3k$ and $-3k$: $2c=200$, so $c=100$.",
+      "marking": "(1A)"
+     },
+     {
+      "title": {
+       "zh": "第 3 步 · 求 $k$，寫出 $f(x)$",
+       "en": "Step 3 · Find $k$ and write $f(x)$"
+      },
+      "math": "6k=240\n\\Rightarrow k=40\n\\Rightarrow f(x)=100+40x",
+      "zh": "由 (1)：$220=100+3k$，所以 $3k=120$，$k=40$。因此 $f(x)=100+40x$。",
+      "en": "From (1): $220=100+3k$, so $3k=120$ and $k=40$. Hence $f(x)=100+40x$.",
+      "marking": "(1A)",
+      "highlight": [
+       "f(x)=100+40x"
+      ]
+     },
+     {
+      "title": {
+       "zh": "第 4 步 · (b) 寫成二次方程",
+       "en": "Step 4 · (b) Form the quadratic equation"
+      },
+      "math": "100+40x=-4x^{2}\n\\Rightarrow 4x^{2}+40x+100=0\n\\Rightarrow x^{2}+10x+25=0",
+      "zh": "把 $f(x)=100+40x$ 代入 $f(x)=-4x^{2}$，所有項搬到左邊：$4x^{2}+40x+100=0$，全式除以 $4$ 得 $x^{2}+10x+25=0$。",
+      "en": "Substituting $f(x)=100+40x$ into $f(x)=-4x^{2}$ and moving everything left: $4x^{2}+40x+100=0$, or $x^{2}+10x+25=0$ after dividing by 4.",
+      "marking": "(1M)"
+     },
+     {
+      "title": {
+       "zh": "第 5 步 · (b) 分解求解",
+       "en": "Step 5 · (b) Factorise and solve"
+      },
+      "math": "(x+5)^{2}=0\n\\Rightarrow x=-5",
+      "zh": "$x^{2}+10x+25=(x+5)^{2}$，所以 $(x+5)^{2}=0$，得 $x=-5$（重根，只有一個解）。",
+      "en": "$x^{2}+10x+25=(x+5)^{2}$, so $(x+5)^{2}=0$ and $x=-5$ (a repeated root, so there is only one solution).",
+      "marking": "(1A)",
+      "highlight": [
+       "x=-5"
+      ]
+     }
+    ],
+    "traps": [
+     {
+      "label": "(b) 沒有搬成一邊",
+      "labelEn": "Not moving everything to one side",
+      "zh": "直接寫 $100+40x=-4x^{2}$ 就開始分解是錯的，要先把所有項搬到左邊成為 $=0$，才可以分解或代入公式。",
+      "en": "Factorising $100+40x=-4x^{2}$ straight away is wrong; everything must first be moved to one side so that the equation equals 0."
+     },
+     {
+      "label": "重根寫成兩個解",
+      "labelEn": "Writing a repeated root twice",
+      "zh": "$(x+5)^{2}=0$ 只有 $x=-5$ 一個解（重根）。寫成「$x=-5$ 或 $x=-5$」不會額外加分。",
+      "en": "$(x+5)^{2}=0$ has the single solution $x=-5$ (a repeated root). Writing it twice earns nothing extra."
+     }
+    ],
+    "tip": {
+     "zh": "(b) 是「先求 $f(x)$，再解方程」的固定套路：把 $f(x)$ 的結果整條代入，搬到一邊，再用因式分解。前一部分錯，(b) 一定跟著錯。",
+     "en": "Part (b) always follows part (a): substitute the whole expression for $f(x)$, move everything to one side, then factorise. An error in (a) always carries into (b)."
+    },
+    "alt": [
+     {
+      "name": {
+       "zh": "驗算：三個位置",
+       "en": "Check: three places"
+      },
+      "zh": "$f(3)=100+120=220$ ✓；$f(-3)=100-120=-20$ ✓；$x=-5$ 時 $f(-5)=100-200=-100$，而 $-4(-5)^{2}=-100$ ✓。",
+      "en": "$f(3)=100+120=220$ and $f(-3)=100-120=-20$. At $x=-5$, $f(-5)=100-200=-100$ and $-4(-5)^{2}=-100$, so both sides agree."
+     }
+    ]
+   }
+  },
+  "eph-en05-q8": {
+   "answer": null,
+   "verify": "checked",
+   "topic": "en05",
+   "source": "Endeavour Lesson 5 Q16 · 部分變（$x$ 與 $x^{2}$ 兩部分）",
+   "solution": {
+    "steps": [
+     {
+      "title": {
+       "zh": "第 1 步 · 寫出 $f(x)=ax+bx^{2}$ 與兩條方程",
+       "en": "Step 1 · Write $f(x)=ax+bx^{2}$ and the two equations"
+      },
+      "math": "f(x)=ax+bx^{2}\n60=5a+25b\\ \\ldots(1)\n120=8a+64b\\ \\ldots(2)",
+      "zh": "一部分隨 $x$ 變化（$ax$），另一部分隨 $x^{2}$ 變化（$bx^{2}$），所以 $f(x)=ax+bx^{2}$。代入 $f(5)=60$ 與 $f(8)=120$。",
+      "en": "One part varies as $x$ ($ax$) and the other as $x^{2}$ ($bx^{2}$), so $f(x)=ax+bx^{2}$. Substitute $f(5)=60$ and $f(8)=120$.",
+      "marking": "(1M)"
+     },
+     {
+      "title": {
+       "zh": "第 2 步 · 約簡後相減求 $b$",
+       "en": "Step 2 · Simplify, then subtract to find $b$"
+      },
+      "math": "(1)\\div5:\\ a+5b=12\n(2)\\div8:\\ a+8b=15\n\\Rightarrow b=1",
+      "zh": "先把 (1) 全式除以 5、把 (2) 全式除以 8，係數就變簡單：$a+5b=12$、$a+8b=15$。相減得 $3b=3$，所以 $b=1$。",
+      "en": "Divide (1) by 5 and (2) by 8 to simplify the coefficients: $a+5b=12$ and $a+8b=15$. Subtracting gives $3b=3$, so $b=1$.",
+      "marking": "(1A)"
+     },
+     {
+      "title": {
+       "zh": "第 3 步 · 求 $a$，寫出 $f(x)$",
+       "en": "Step 3 · Find $a$ and write $f(x)$"
+      },
+      "math": "a=12-5=7\n\\Rightarrow f(x)=7x+x^{2}",
+      "zh": "代回 $a+5b=12$：$a=12-5=7$。所以 $f(x)=7x+x^{2}$。",
+      "en": "Back in $a+5b=12$: $a=12-5=7$, so $f(x)=7x+x^{2}$.",
+      "marking": "(1A)",
+      "highlight": [
+       "f(x)=7x+x^{2}"
+      ]
+     },
+     {
+      "title": {
+       "zh": "第 4 步 · (b) 寫成二次方程",
+       "en": "Step 4 · (b) Form the quadratic equation"
+      },
+      "math": "x^{2}+7x=30\n\\Rightarrow x^{2}+7x-30=0",
+      "zh": "令 $f(x)=30$：$7x+x^{2}=30$，搬到一邊得 $x^{2}+7x-30=0$。",
+      "en": "Setting $f(x)=30$: $7x+x^{2}=30$, so $x^{2}+7x-30=0$.",
+      "marking": "(1M)"
+     },
+     {
+      "title": {
+       "zh": "第 5 步 · (b) 分解求解",
+       "en": "Step 5 · (b) Factorise and solve"
+      },
+      "math": "(x+10)(x-3)=0\n\\Rightarrow x=-10\\text{ or }x=3",
+      "zh": "要找兩個數相乘 $-30$、相加 $7$：$10$ 與 $-3$。所以 $(x+10)(x-3)=0$，$x=-10$ 或 $x=3$。兩個根都要寫。",
+      "en": "Two numbers multiplying to $-30$ and adding to $7$ are $10$ and $-3$: $(x+10)(x-3)=0$, so $x=-10$ or $x=3$. Both roots are needed.",
+      "marking": "(1A)",
+      "highlight": [
+       "x=-10",
+       "x=3"
+      ]
+     }
+    ],
+    "traps": [
+     {
+      "label": "沒有約簡就解",
+      "labelEn": "Solving without simplifying",
+      "zh": "$5a+25b=60$、$8a+64b=120$ 直接消元也可以，但數字大、易計錯。先各行約簡（$\\div5$、$\\div8$）就變成 $a+5b=12$、$a+8b=15$。",
+      "en": "Eliminating directly from $5a+25b=60$ and $8a+64b=120$ works but the numbers are large. Dividing by 5 and by 8 gives the friendlier $a+5b=12$ and $a+8b=15$."
+     },
+     {
+      "label": "只寫一個根",
+      "labelEn": "Keeping only one root",
+      "zh": "(b) 是二次方程，$x=-10$ 與 $x=3$ 都要寫；只寫一個當作半對。",
+      "en": "Part (b) is a quadratic equation, so both $x=-10$ and $x=3$ are needed; giving one is only half an answer."
+     }
+    ],
+    "tip": {
+     "zh": "「一部分隨 $x$、另一部分隨 $x^{2}$」＝ $ax+bx^{2}$，兩個未知數要兩對數值。解出係數後，把整條 $f(x)$ 寫出來，(b) 才可以直接用。",
+     "en": "“One part varies as $x$, the other as $x^{2}$” means $ax+bx^{2}$; two unknowns need two pairs of values. Write the whole $f(x)$ so that part (b) can start."
+    },
+    "alt": [
+     {
+      "name": {
+       "zh": "驗算：兩組已知值",
+       "en": "Check: both given pairs"
+      },
+      "zh": "$f(5)=35+25=60$ ✓；$f(8)=56+64=120$ ✓；$f(-10)=-70+100=30$ ✓；$f(3)=21+9=30$ ✓。",
+      "en": "$f(5)=35+25=60$ and $f(8)=56+64=120$. Also $f(-10)=-70+100=30$ and $f(3)=21+9=30$."
+     }
+    ]
+   }
+  },
+  "eph-en05-q9": {
+   "answer": null,
+   "verify": "checked",
+   "topic": "en05",
+   "source": "Endeavour Lesson 5 Q17 · 部分變＋截距＋判別式",
+   "solution": {
+    "steps": [
+     {
+      "title": {
+       "zh": "第 1 步 · 寫出 $f(x)=ax+bx^{2}$ 與兩條方程",
+       "en": "Step 1 · Write $f(x)=ax+bx^{2}$ and the two equations"
+      },
+      "math": "f(x)=ax+bx^{2}\n-12=3a+9b\\ \\ldots(1)\n12=-a+b\\ \\ldots(2)",
+      "zh": "兩部分分別是 $ax$ 與 $bx^{2}$，所以 $f(x)=ax+bx^{2}$。代入 $f(3)=-12$ 與 $f(-1)=12$。",
+      "en": "The two parts are $ax$ and $bx^{2}$, so $f(x)=ax+bx^{2}$. Substitute $f(3)=-12$ and $f(-1)=12$.",
+      "marking": "(1M)"
+     },
+     {
+      "title": {
+       "zh": "第 2 步 · 由 (2) 寫出 $b$，代入 (1) 求 $a$",
+       "en": "Step 2 · Make $b$ the subject of (2), substitute into (1)"
+      },
+      "math": "b=12+a\n\\Rightarrow 3a+9(12+a)=-12\n\\Rightarrow 12a=-120\n\\Rightarrow a=-10",
+      "zh": "由 (2) 得 $b=12+a$，代入 (1)：$3a+9(12+a)=-12$，即 $12a+108=-12$，所以 $12a=-120$，$a=-10$。",
+      "en": "From (2), $b=12+a$. Substituting into (1): $3a+9(12+a)=-12$, i.e. $12a+108=-12$, so $12a=-120$ and $a=-10$.",
+      "marking": "(1A)"
+     },
+     {
+      "title": {
+       "zh": "第 3 步 · 求 $b$，寫出 $f(x)$",
+       "en": "Step 3 · Find $b$ and write $f(x)$"
+      },
+      "math": "b=12-10=2\n\\Rightarrow f(x)=2x^{2}-10x",
+      "zh": "$b=12+(-10)=2$，所以 $f(x)=2x^{2}-10x$。",
+      "en": "$b=12+(-10)=2$, so $f(x)=2x^{2}-10x$.",
+      "marking": "(1A)",
+      "highlight": [
+       "f(x)=2x^{2}-10x"
+      ]
+     },
+     {
+      "title": {
+       "zh": "第 4 步 · (b) 求 $y=7f(x)$ 的 $x$ 截距",
+       "en": "Step 4 · (b) Find the $x$-intercepts of $y=7f(x)$"
+      },
+      "math": "7f(x)=0\n\\Rightarrow 2x(x-5)=0\n\\Rightarrow x=0\\text{ or }5",
+      "zh": "圖像與 $x$ 軸相交即 $7f(x)=0$，也就是 $f(x)=0$：$2x^{2}-10x=2x(x-5)=0$，得 $x=0$ 或 $x=5$，截距是 $(0,0)$ 與 $(5,0)$。",
+      "en": "The graph meets the $x$-axis where $7f(x)=0$, i.e. $f(x)=0$: $2x^{2}-10x=2x(x-5)=0$, so $x=0$ or $x=5$; the intercepts are $(0,0)$ and $(5,0)$.",
+      "marking": "(1A)",
+      "highlight": [
+       "0",
+       "5"
+      ]
+     },
+     {
+      "title": {
+       "zh": "第 5 步 · (c) 寫成標準形，用判別式",
+       "en": "Step 5 · (c) Rearrange and use the discriminant"
+      },
+      "math": "2x^{2}-10x-k=0\n\\Rightarrow \\Delta=100+8k>0",
+      "zh": "$f(x)=k$ 即 $2x^{2}-10x-k=0$。有兩個相異實根代表 $\\Delta>0$：$\\Delta=(-10)^{2}-4(2)(-k)=100+8k$。",
+      "en": "$f(x)=k$ means $2x^{2}-10x-k=0$. Two distinct real roots mean $\\Delta>0$: $\\Delta=(-10)^{2}-4(2)(-k)=100+8k$.",
+      "marking": "(1M)"
+     },
+     {
+      "title": {
+       "zh": "第 6 步 · (c) 解不等式",
+       "en": "Step 6 · (c) Solve the inequality"
+      },
+      "math": "8k>-100\n\\Rightarrow k>-\\frac{25}{2}",
+      "zh": "$100+8k>0$，移項得 $8k>-100$，所以 $k>-\\frac{25}{2}$（即 $k>-12.5$）。",
+      "en": "$100+8k>0$ gives $8k>-100$, so $k>-\\frac{25}{2}$ (that is $k>-12.5$).",
+      "marking": "(1A)",
+      "highlight": [
+       "k>-\\frac{25}{2}"
+      ]
+     }
+    ],
+    "traps": [
+     {
+      "label": "(c) 用了 $\\Delta\\ge 0$",
+      "labelEn": "Using $\\Delta\\ge 0$ in part (c)",
+      "zh": "「兩個相異實根」是 $\\Delta>0$；有等號的是「有實根／有重根」。用了 $\\ge$ 就會多出 $k=-12.5$。",
+      "en": "“Two distinct real roots” means $\\Delta>0$; the version with equality is “real roots” or “equal roots”. Using $\\ge$ wrongly includes $k=-12.5$."
+     },
+     {
+      "label": "(b) 只寫數字",
+      "labelEn": "Giving bare numbers in part (b)",
+      "zh": "問 $x$ 截距，寫成 $x=0$ 與 $x=5$（或座標 $(0,0)$、$(5,0)$）都可以，但要兩個；只寫「5」會漏了原點。",
+      "en": "For $x$-intercepts, write $x=0$ and $x=5$ (or the points $(0,0)$ and $(5,0)$). Both are needed — writing only 5 misses the origin."
+     }
+    ],
+    "tip": {
+     "zh": "這一題把三課的東西串起來：部分變求 $f(x)$ → 因式分解求截距 → 判別式求 $k$ 的範圍。每一部分都用上前面的一部分，錯一步就全部錯。",
+     "en": "This question links three ideas: partial variation to find $f(x)$, factorising for the intercepts, and the discriminant for the range of $k$. Each part uses the previous one, so one slip spoils the rest."
+    },
+    "alt": [
+     {
+      "name": {
+       "zh": "驗算：$k$ 的兩側",
+       "en": "Check: values on both sides of $k$"
+      },
+      "zh": "$k=-12$（符合 $k>-12.5$）：$2x^{2}-10x+12=0$，即 $x^{2}-5x+6=0$，$x=2$、$3$ 兩個相異實根 ✓。$k=-13$（不符合）：$2x^{2}-10x+13=0$，$\\Delta=100-104=-4<0$，無實根 ✓。",
+      "en": "For $k=-12$ (which satisfies $k>-12.5$): $2x^{2}-10x+12=0$, i.e. $x^{2}-5x+6=0$, with two distinct roots $2$ and $3$. For $k=-13$: $2x^{2}-10x+13=0$ has $\\Delta=100-104=-4<0$, so no real roots."
      }
     ]
    }
   },
   "eph-en05-m1": {
-   "answer": "C",
+   "answer": "D",
    "verify": "checked",
    "topic": "en05",
-   "source": "EPH WS05 Q5 · [HKDSE 2013 Paper 2 Q6]",
+   "source": "Endeavour Lesson 5 Q5 · 聯變（反變 $x$、正變 $y$）",
    "solution": {
     "steps": [
      {
       "title": {
-       "zh": "第 1 步 · 兩邊開平方，記得 $\\pm$",
-       "en": "Step 1 · Take square roots of both sides, keeping $\\pm$"
+       "zh": "第 1 步 · 寫出聯變方程",
+       "en": "Step 1 · Write the joint variation equation"
       },
-      "math": "(x+k)^{2}=9k^{2}\n\\Rightarrow x+k=\\pm 3k",
-      "zh": "左邊是「一個平方」，右邊是 $9k^{2}=(3k)^{2}$，所以兩邊開平方：$x+k=\\pm 3k$。正負兩個都要寫，否則會少一個根。",
-      "en": "The left side is a square and $9k^{2}=(3k)^{2}$, so take square roots: $x+k=\\pm 3k$. Both signs are needed, otherwise one root is lost."
+      "math": "z=\\frac{ky}{x}",
+      "zh": "$z$ 隨 $y$ 正變（$y$ 在分子），隨 $x$ 反變（$x$ 在分母），所以 $z=\\frac{ky}{x}$。",
+      "en": "$z$ varies directly as $y$ (on top) and inversely as $x$ (at the bottom), so $z=\\frac{ky}{x}$."
      },
      {
       "title": {
-       "zh": "第 2 步 · 分成兩種情況解 $x$",
-       "en": "Step 2 · Solve the two cases separately"
+       "zh": "第 2 步 · 求 $k$，寫出關係式",
+       "en": "Step 2 · Find $k$ and write the relation"
       },
-      "math": "x+k=3k\\ \\Rightarrow\\ x=2k\nx+k=-3k\\ \\Rightarrow\\ x=-4k",
-      "zh": "取正號：$x=3k-k=2k$。取負號：$x=-3k-k=-4k$。兩個都是根。",
-      "en": "With the plus sign: $x=3k-k=2k$. With the minus sign: $x=-3k-k=-4k$. Both are roots."
+      "math": "1=\\frac{k(3)}{9}\\ \\Rightarrow\\ k=3\n\\Rightarrow z=\\frac{3y}{x}",
+      "zh": "代入 $x=9$、$y=3$、$z=1$：$1=\\frac{3k}{9}=\\frac{k}{3}$，所以 $k=3$。關係式是 $z=\\frac{3y}{x}$。",
+      "en": "Substituting $x=9$, $y=3$, $z=1$: $1=\\frac{3k}{9}=\\frac{k}{3}$, so $k=3$. The relation is $z=\\frac{3y}{x}$."
      },
      {
       "title": {
-       "zh": "第 3 步 · 寫齊答案",
-       "en": "Step 3 · Write both roots"
+       "zh": "第 3 步 · 代入 $x=3$、$z=9$ 求 $y$",
+       "en": "Step 3 · Substitute $x=3$, $z=9$ to find $y$"
       },
-      "math": "x=-4k\\text{ or }x=2k",
-      "zh": "所以 $x=-4k$ 或 $x=2k$，答案是 C。",
-      "en": "Therefore $x=-4k$ or $x=2k$. The answer is C.",
+      "math": "9=\\frac{3y}{3}\\ \\Rightarrow\\ y=9",
+      "zh": "$x=3$ 時 $z=\\frac{3y}{3}=y$，所以 $y=z=9$，答案是 D。",
+      "en": "With $x=3$, $z=\\frac{3y}{3}=y$, so $y=z=9$. The answer is D.",
       "highlight": [
-       "x=-4k",
-       "x=2k"
+       "9"
       ]
      }
     ],
     "traps": [
      {
       "opt": "A",
-      "zh": "$x=2k$ 只是其中一個根：取了 $x+k=3k$ 之後就停手，忘了另外還有 $x+k=-3k$。",
-      "en": "$x=2k$ is only one root: the work stops after $x+k=3k$ and the case $x+k=-3k$ is forgotten."
+      "zh": "$\\frac{1}{9}$ 是把正變與反變寫反（$z=\\frac{kx}{y}$）：那麼 $k=\\frac{zy}{x}=\\frac{3}{9}=\\frac{1}{3}$，再解得 $y=\\frac{1}{9}$。方向一錯，答案就倒轉。",
+      "en": "$\\frac{1}{9}$ comes from swapping the directions ($z=\\frac{kx}{y}$), which gives $k=\\frac{1}{3}$ and then $y=\\frac{1}{9}$."
      },
      {
-      "opt": "B",
-      "zh": "$x=8k$ 來自 $x+k=9k$ —— 把 $9k^{2}$ 開平方當成 $9k$，忘記 $k$ 也要開方。$\\sqrt{9k^{2}}=3k$，不是 $9k$。",
-      "en": "$x=8k$ comes from $x+k=9k$: the square root of $9k^{2}$ was taken as $9k$. In fact $\\sqrt{9k^{2}}=3k$."
-     },
-     {
-      "opt": "D",
-      "zh": "$x=-10k$ 或 $8k$ 是同一個錯（$\\sqrt{9k^{2}}$ 寫成 $9k$），只是補上了 $\\pm$。",
-      "en": "$x=-10k$ or $8k$ repeats the same error ($\\sqrt{9k^{2}}$ written as $9k$), with $\\pm$ added."
+      "opt": "C",
+      "zh": "$3$ 是 $k$ 的值：求出 $k=3$ 就停手。題目問的是 $y$，要把 $x=3$、$z=9$ 代回關係式才是答案。",
+      "en": "$3$ is $k$: the work stops once $k=3$ is found. The question asks for $y$, so $x=3$ and $z=9$ must be substituted back."
      }
     ],
     "tip": {
-     "zh": "見到「括號平方 $=$ 數」就兩邊開平方，並且一定寫 $\\pm$；開方時整個 $9k^{2}$ 都要開（$\\sqrt{9}=3$、$\\sqrt{k^{2}}=k$）。",
-     "en": "When you see “a squared bracket equals a number”, take square roots and keep $\\pm$. The whole $9k^{2}$ is square-rooted: $\\sqrt{9}=3$ and $\\sqrt{k^{2}}=k$."
+     "zh": "聯變先寫方程（正變放分子、反變放分母），再求 $k$，最後代第二組數值。三步都寫出來，就不會把 $k$ 當答案。",
+     "en": "Write the joint equation (direct on top, inverse at the bottom), find $k$, then substitute the second set of values. Writing all three lines prevents answering $k$."
     },
     "alt": [
      {
       "name": {
-       "zh": "數值驗算：代 $k=1$",
-       "en": "Numeric check: put $k=1$"
+       "zh": "驗算：兩組數值",
+       "en": "Check: both pairs"
       },
-      "zh": "$k=1$ 時方程是 $(x+1)^{2}=9$，所以 $x+1=\\pm3$，即 $x=2$ 或 $x=-4$。四個選項只有 C 同時給出 $2$ 與 $-4$。",
-      "en": "With $k=1$ the equation is $(x+1)^{2}=9$, so $x+1=\\pm3$ and $x=2$ or $x=-4$. Only C gives both."
+      "zh": "$z=\\frac{3y}{x}$：$x=9$、$y=3$ 得 $z=\\frac{9}{9}=1$ ✓；$x=3$、$y=9$ 得 $z=\\frac{27}{3}=9$ ✓。",
+      "en": "For $z=\\frac{3y}{x}$: $x=9$, $y=3$ gives $z=1$; $x=3$, $y=9$ gives $z=9$. Both match."
      }
     ]
    }
   },
   "eph-en05-m2": {
-   "answer": "C",
+   "answer": "B",
    "verify": "checked",
    "topic": "en05",
-   "source": "EPH WS05 Q7 · [HKDSE Sample Paper 2 Q6]",
+   "source": "Endeavour Lesson 5 Q6 · 聯變（$\\sqrt{x}$ 與 $y^{3}$）",
    "solution": {
     "steps": [
      {
       "title": {
-       "zh": "第 1 步 · 移項，令右邊是 0",
-       "en": "Step 1 · Move everything to one side"
+       "zh": "第 1 步 · 寫出聯變方程",
+       "en": "Step 1 · Write the joint variation equation"
       },
-      "math": "(x+3c)(x-c+1)-(x+3c)=0",
-      "zh": "兩邊都有 $(x+3c)$，但右邊不是 $0$，所以不可以約走它（會漏根）。先把右邊的 $(x+3c)$ 搬到左邊。",
-      "en": "Both sides contain $(x+3c)$, but the right-hand side is not $0$, so it must not be cancelled (that would lose a root). Move it to the left first."
+      "math": "z=k\\sqrt{x}\\,y^{3}",
+      "zh": "「隨 $x$ 的平方根正變」是 $\\sqrt{x}$，「隨 $y$ 的立方正變」是 $y^{3}$，兩者都在分子：$z=k\\sqrt{x}\\,y^{3}$。",
+      "en": "“Directly as the square root of $x$” gives $\\sqrt{x}$ and “the cube of $y$” gives $y^{3}$; both are on top: $z=k\\sqrt{x}\\,y^{3}$."
      },
      {
       "title": {
-       "zh": "第 2 步 · 抽公因式 $(x+3c)$",
-       "en": "Step 2 · Factor out $(x+3c)$"
+       "zh": "第 2 步 · 求 $k$",
+       "en": "Step 2 · Find $k$"
       },
-      "math": "(x+3c)[(x-c+1)-1]=0\n\\Rightarrow (x+3c)(x-c)=0",
-      "zh": "抽出 $(x+3c)$ 之後，中括號是 $(x-c+1)-1=x-c$。所以方程變成 $(x+3c)(x-c)=0$。",
-      "en": "After factoring out $(x+3c)$ the bracket is $(x-c+1)-1=x-c$, so the equation becomes $(x+3c)(x-c)=0$."
+      "math": "27=k\\sqrt{9}(3)^{3}=k(3)(27)\n\\Rightarrow k=\\frac{1}{3}",
+      "zh": "代入 $x=9$、$y=3$：$\\sqrt{9}=3$、$3^{3}=27$，所以 $27=81k$，$k=\\frac{1}{3}$。",
+      "en": "Substituting $x=9$, $y=3$: $\\sqrt{9}=3$ and $3^{3}=27$, so $27=81k$ and $k=\\frac{1}{3}$."
      },
      {
       "title": {
-       "zh": "第 3 步 · 每個因式各自為 0",
-       "en": "Step 3 · Set each factor to 0"
+       "zh": "第 3 步 · 代入 $x=4$、$y=9$",
+       "en": "Step 3 · Substitute $x=4$, $y=9$"
       },
-      "math": "x+3c=0\\text{ or }x-c=0\n\\Rightarrow x=-3c\\text{ or }x=c",
-      "zh": "兩個因式各自等於 $0$：$x=-3c$ 或 $x=c$，答案是 C。",
-      "en": "Setting each factor to $0$: $x=-3c$ or $x=c$. The answer is C.",
+      "math": "z=\\frac{1}{3}(2)(729)=486",
+      "zh": "$\\sqrt{4}=2$、$9^{3}=729$，所以 $z=\\frac{1}{3}(2)(729)=486$，答案是 B。",
+      "en": "$\\sqrt{4}=2$ and $9^{3}=729$, so $z=\\frac{1}{3}(2)(729)=486$. The answer is B.",
       "highlight": [
-       "x=-3c",
-       "x=c"
+       "486"
       ]
      }
     ],
     "traps": [
      {
-      "opt": "B",
-      "zh": "$x=c-1$ 是直接令第二個括號 $x-c+1=0$，等於把右邊的 $(x+3c)$ 當成 $0$。這樣做漏了「右邊不是 $0$」這件事。",
-      "en": "$x=c-1$ comes from setting $x-c+1=0$, which effectively assumes the right-hand $(x+3c)$ is $0$. That is not allowed."
-     },
-     {
       "opt": "D",
-      "zh": "$x=-3c$ 是對的，但另一個根用了 $x=c-1$ —— 同一個錯：沒有先移項就解第二個括號。",
-      "en": "$x=-3c$ is correct, but the other root uses $x=c-1$, the same error of solving the second bracket without moving the right-hand side."
+      "zh": "$4374$ 是求 $k$ 時只用了 $y=3$ 而沒有立方：$k=\\frac{27}{3\\times3}=3$，於是 $z=3(2)(729)=4374$。第一個條件的 $y^{3}=27$ 不可以漏。",
+      "en": "$4374$ comes from using $y=3$ instead of $y^{3}=27$ when finding $k$: $k=3$, so $z=3(2)(729)=4374$."
      },
      {
       "opt": "A",
-      "zh": "$x=c$ 只寫了一個根，漏了 $(x+3c)=0$ 給出的 $x=-3c$。",
-      "en": "$x=c$ keeps only one root and loses $x=-3c$."
+      "zh": "$64$ 是 $4^{3}$：把「$y$ 的立方」錯用到 $x$ 身上，而且連 $k$ 與 $y$ 都沒有代入。",
+      "en": "$64$ is $4^{3}$: the cube was applied to $x$ and neither $k$ nor $y$ was used."
      }
     ],
     "tip": {
-     "zh": "「兩邊有同一個括號」＝ 先移項、再抽公因式、再令每個因式 $=0$。三步都不可以跳，尤其是第一步。",
-     "en": "The same bracket on both sides means: move everything to one side, factor it out, then set each factor to $0$. Never skip the first step."
+     "zh": "聯變的次方要逐一對應題目字眼：square root 對 $\\sqrt{x}$、cube 對 $y^{3}$。求 $k$ 時把兩個次方都算清（$3^{3}=27$、$9^{3}=729$），就不會選到相差 9 倍的答案。",
+     "en": "Match each power to the wording: “square root” means $\\sqrt{x}$, “cube” means $y^{3}$. Evaluating both when finding $k$ ($3^{3}=27$, $9^{3}=729$) rules out answers that differ by a factor of 9."
     },
     "alt": [
      {
       "name": {
-       "zh": "數值驗算：代 $c=1$",
-       "en": "Numeric check: put $c=1$"
+       "zh": "驗算：用比例",
+       "en": "Check: with a ratio"
       },
-      "zh": "$c=1$ 時方程是 $(x+3)x=(x+3)$，移項得 $(x+3)(x-1)=0$，所以 $x=-3$ 或 $x=1$，即 $x=-3c$ 或 $c$。",
-      "en": "With $c=1$ the equation is $(x+3)x=(x+3)$, i.e. $(x+3)(x-1)=0$, so $x=-3$ or $x=1$, which is $x=-3c$ or $c$."
+      "zh": "$x$ 由 9 變 4，$\\sqrt{x}$ 由 3 變 2（×$\\frac{2}{3}$）；$y$ 由 3 變 9（×3），$y^{3}$ ×$27$。所以 $z$ 由 $27$ 變 $27\\times\\frac{2}{3}\\times27=486$ ✓。",
+      "en": "$x$ goes from 9 to 4, so $\\sqrt{x}$ goes from 3 to 2 (a factor of $\\frac{2}{3}$); $y$ goes from 3 to 9, so $y^{3}$ grows 27 times. Hence $z=27\\times\\frac{2}{3}\\times27=486$."
      }
     ]
    }
   },
   "eph-en05-m3": {
-   "answer": "D",
+   "answer": "B",
    "verify": "checked",
    "topic": "en05",
-   "source": "EPH WS05 Q11 · [HKDSE Practice Paper 2 Q6, HKCEE 2009 Paper 2 Q8]",
+   "source": "Endeavour Lesson 5 Q7 · 哪一條式一定是常數",
    "solution": {
     "steps": [
      {
       "title": {
-       "zh": "第 1 步 · 等根 → 判別式 $=0$",
-       "en": "Step 1 · Equal roots means the discriminant is $0$"
+       "zh": "第 1 步 · 寫出方程",
+       "en": "Step 1 · Write the equation"
       },
-      "math": "\\Delta=(-m)^{2}-4(1)(6m)=0",
-      "zh": "方程是 $x^{2}-mx+6m=0$，所以 $a=1$、$b=-m$、$c=6m$。有等根就是 $\\Delta=0$，先寫這條式。",
-      "en": "For $x^{2}-mx+6m=0$ we have $a=1$, $b=-m$ and $c=6m$. Equal roots mean $\\Delta=0$."
+      "math": "z=\\frac{ky^{2}}{x}",
+      "zh": "$z$ 隨 $y^{2}$ 正變（分子）、隨 $x$ 反變（分母），所以 $z=\\frac{ky^{2}}{x}$。",
+      "en": "$z$ varies directly as $y^{2}$ (on top) and inversely as $x$ (at the bottom): $z=\\frac{ky^{2}}{x}$."
      },
      {
       "title": {
-       "zh": "第 2 步 · 展開判別式",
-       "en": "Step 2 · Expand the discriminant"
+       "zh": "第 2 步 · 把 $k$ 寫成主項",
+       "en": "Step 2 · Make $k$ the subject"
       },
-      "math": "m^{2}-24m=0",
-      "zh": "$(-m)^{2}=m^{2}$，而 $4(1)(6m)=24m$，所以判別式是 $m^{2}-24m$，令它等於 $0$。",
-      "en": "$(-m)^{2}=m^{2}$ and $4(1)(6m)=24m$, so the discriminant is $m^{2}-24m$, set equal to $0$."
+      "math": "k=\\frac{zx}{y^{2}}",
+      "zh": "兩邊乘 $x$、除以 $y^{2}$：$k=\\frac{zx}{y^{2}}$。因為 $k$ 是常數，所以 $\\frac{zx}{y^{2}}$ 一定是常數。",
+      "en": "Multiply by $x$ and divide by $y^{2}$: $k=\\frac{zx}{y^{2}}$. Since $k$ is constant, $\\frac{zx}{y^{2}}$ must be constant."
      },
      {
       "title": {
-       "zh": "第 3 步 · 分解，兩個值都要寫",
-       "en": "Step 3 · Factorise and keep both values"
+       "zh": "第 3 步 · 找出對應的選項",
+       "en": "Step 3 · Match the option"
       },
-      "math": "m(m-24)=0\n\\Rightarrow m=0\\text{ or }m=24",
-      "zh": "抽公因式 $m$：$m(m-24)=0$，所以 $m=0$ 或 $m=24$。兩個都要寫 —— 不要兩邊除 $m$（那就少了 $m=0$）。答案是 D。",
-      "en": "Factor out $m$: $m(m-24)=0$, so $m=0$ or $m=24$. Keep both — do not divide both sides by $m$, which would lose $m=0$. The answer is D.",
+      "math": "\\frac{zx}{y^{2}}=\\text{const.}\\iff \\frac{y^{2}}{zx}=\\text{const.}",
+      "zh": "選項中沒有 $\\frac{zx}{y^{2}}$，但它的倒數 $\\frac{y^{2}}{zx}$ 也一定是常數（常數的倒數仍是常數），所以答案是 B。",
+      "en": "The option list has no $\\frac{zx}{y^{2}}$, but its reciprocal $\\frac{y^{2}}{zx}$ is also constant (the reciprocal of a constant is constant), so the answer is B.",
       "highlight": [
-       "m=0",
-       "m=24"
+       "\\frac{y^{2}}{zx}"
       ]
      }
     ],
     "traps": [
      {
-      "opt": "B",
-      "zh": "$m=24$ 是把 $m^{2}-24m=0$ 兩邊同除 $m$ 之後的結果：除之前要先肯定 $m\\ne 0$，這裡不可以除，否則就漏了 $m=0$ 這個根。",
-      "en": "$m=24$ comes from dividing both sides of $m^{2}-24m=0$ by $m$. That division is only allowed when $m\\ne 0$, so the root $m=0$ is lost."
+      "opt": "A",
+      "zh": "$\\frac{x}{zy^{2}}$ 是把方向寫反（$z=\\frac{kx}{y^{2}}$）之後的倒數：$k=\\frac{zy^{2}}{x}$，倒數是 $\\frac{x}{zy^{2}}$。方向一錯，整條式都不同。",
+      "en": "$\\frac{x}{zy^{2}}$ is the reciprocal of the constant you get after reversing the directions ($k=\\frac{zy^{2}}{x}$)."
      },
      {
       "opt": "C",
-      "zh": "$0$ 或 $6$ 是算 $\\Delta$ 時把 $24m$ 的 $24$ 又除了一次 $4$（$4ac$ 的 $4$ 用了兩次），得 $m(m-6)=0$。",
-      "en": "$0$ or $6$ comes from dividing the $24$ in $24m$ by $4$ again (using the $4$ in $4ac$ twice), giving $m(m-6)=0$."
+      "zh": "$\\frac{xy^{2}}{z}$ 其實等於 $\\frac{x^{2}}{k}$：把 $z=\\frac{ky^{2}}{x}$ 代入，$\\frac{xy^{2}}{z}=\\frac{x^{2}}{k}$，仍然含 $x$，所以不是常數。",
+      "en": "$\\frac{xy^{2}}{z}$ equals $\\frac{x^{2}}{k}$ after substituting $z=\\frac{ky^{2}}{x}$, which still contains $x$ and is not constant."
      },
      {
-      "opt": "A",
-      "zh": "$m=6$ 是同一個錯，而且連 $m=0$ 也漏了。",
-      "en": "$m=6$ repeats that error and also loses $m=0$."
+      "opt": "D",
+      "zh": "$xy^{2}z$ 代入之後是 $\\frac{ky^{4}x^{2}}{x}=kx^{2}y^{4}$，含 $x$、$y$，不是常數。",
+      "en": "$xy^{2}z$ becomes $kx^{2}y^{4}$, which contains $x$ and $y$ and is not constant."
      }
     ],
     "tip": {
-     "zh": "等根只給出「$\\Delta=0$」一個條件，但解出來的 $m$ 可以有兩個值。分解之後兩個都要寫；要除一個字母之前，先問它可不可以是 $0$。",
-     "en": "Equal roots give only the condition $\\Delta=0$, but $m$ itself may take two values. Write both after factorising; before dividing by a letter, ask whether it can be $0$."
+     "zh": "問「哪一條是常數」就把方程整理成 $k=\\ldots$；如果選項是它的倒數，一樣是常數。把每個選項代一次，含 $x$ 或 $y$ 的就不是。",
+     "en": "For “which is constant”, rearrange into $k=\\ldots$; the reciprocal is also constant. Substituting into each option shows that anything still containing $x$ or $y$ is not constant."
     },
     "alt": [
      {
       "name": {
-       "zh": "驗算：兩個值各自代入",
-       "en": "Check: substitute both values"
+       "zh": "數值檢查",
+       "en": "Numeric check"
       },
-      "zh": "$m=24$ 時方程是 $x^{2}-24x+144=0$，即 $(x-12)^{2}=0$，有重根 ✓。$m=0$ 時方程是 $x^{2}=0$，即 $x=0$（重根）✓。兩個都成立。",
-      "en": "For $m=24$ the equation is $x^{2}-24x+144=0$, i.e. $(x-12)^{2}=0$, a repeated root. For $m=0$ it is $x^{2}=0$, i.e. $x=0$ twice. Both work."
+      "zh": "取 $k=12$：$x=3$、$y=2$ 時 $z=\\frac{12(4)}{3}=16$。此時 A $=\\frac{3}{16\\times4}=\\frac{3}{64}$、B $=\\frac{4}{48}=\\frac{1}{12}$、C $=\\frac{3\\times4}{16}=\\frac{3}{4}$、D $=3\\times4\\times16=192$。再取 $x=6$、$y=2$：$z=8$，只有 B 仍是 $\\frac{1}{12}$ ✓。",
+      "en": "Take $k=12$: with $x=3$, $y=2$ we get $z=16$. Then A $=\\frac{3}{64}$, B $=\\frac{1}{12}$, C $=\\frac{3}{4}$, D $=192$. With $x=6$, $y=2$ we get $z=8$, and only B is still $\\frac{1}{12}$."
      }
     ]
    }
   },
   "eph-en05-m4": {
-   "answer": "C",
+   "answer": "B",
    "verify": "checked",
    "topic": "en05",
-   "source": "EPH WS05 Q14 · [HKDSE Sample Paper 2 Q7, HKCEE 2010 Paper 2 Q10]",
+   "source": "Endeavour Lesson 5 Q8 · 哪一條式一定是常數（$\\sqrt{q}$ 與 $r^{4}$）",
    "solution": {
     "steps": [
      {
       "title": {
-       "zh": "第 1 步 · 先搬成 $=0$ 的標準形",
-       "en": "Step 1 · Rearrange into the $=0$ form"
+       "zh": "第 1 步 · 寫出方程",
+       "en": "Step 1 · Write the equation"
       },
-      "math": "x^{2}-4x+k=1\n\\Rightarrow x^{2}-4x+(k-1)=0",
-      "zh": "把 $1$ 搬到左邊，常數項就是 $k-1$（不是 $k$）。這一步錯了，之後全部都錯。",
-      "en": "Move $1$ to the left so that the constant term is $k-1$, not $k$. Getting this wrong spoils the rest."
+      "math": "p=\\frac{kr^{4}}{\\sqrt{q}}",
+      "zh": "$p$ 隨 $r^{4}$ 正變（分子）、隨 $\\sqrt{q}$ 反變（分母），所以 $p=\\frac{kr^{4}}{\\sqrt{q}}$。",
+      "en": "$p$ varies directly as $r^{4}$ (on top) and inversely as $\\sqrt{q}$ (at the bottom): $p=\\frac{kr^{4}}{\\sqrt{q}}$."
      },
      {
       "title": {
-       "zh": "第 2 步 · 無實根 → $\\Delta<0$",
-       "en": "Step 2 · No real roots means $\\Delta<0$"
+       "zh": "第 2 步 · 把 $k$ 寫成主項",
+       "en": "Step 2 · Make $k$ the subject"
       },
-      "math": "\\Delta=(-4)^{2}-4(1)(k-1)<0\n\\Rightarrow 16-4k+4<0",
-      "zh": "代入 $a=1$、$b=-4$、$c=k-1$：$\\Delta=16-4(k-1)=16-4k+4$。注意 $-4\\times(-1)=+4$。",
-      "en": "With $a=1$, $b=-4$ and $c=k-1$: $\\Delta=16-4(k-1)=16-4k+4$. Note that $-4\\times(-1)=+4$."
+      "math": "k=\\frac{p\\sqrt{q}}{r^{4}}",
+      "zh": "兩邊乘 $\\sqrt{q}$、除以 $r^{4}$：$k=\\frac{p\\sqrt{q}}{r^{4}}$，所以 $\\frac{p\\sqrt{q}}{r^{4}}$ 是常數。",
+      "en": "Multiply by $\\sqrt{q}$ and divide by $r^{4}$: $k=\\frac{p\\sqrt{q}}{r^{4}}$, so $\\frac{p\\sqrt{q}}{r^{4}}$ is constant."
      },
      {
       "title": {
-       "zh": "第 3 步 · 解不等式",
-       "en": "Step 3 · Solve the inequality"
+       "zh": "第 3 步 · 平方，對應選項",
+       "en": "Step 3 · Square it to match the options"
       },
-      "math": "20-4k<0\n\\Rightarrow k>5",
-      "zh": "化簡得 $20-4k<0$，即 $20<4k$，所以 $k>5$，答案是 C。",
-      "en": "Simplifying: $20-4k<0$, so $20<4k$ and $k>5$. The answer is C.",
+      "math": "k^{2}=\\frac{p^{2}q}{r^{8}}",
+      "zh": "常數的平方也是常數，所以 $\\frac{p^{2}q}{r^{8}}$ 一定是常數，答案是 B。",
+      "en": "The square of a constant is constant, so $\\frac{p^{2}q}{r^{8}}$ must be constant. The answer is B.",
       "highlight": [
-       "k>5"
+       "\\frac{p^{2}q}{r^{8}}"
       ]
      }
     ],
     "traps": [
      {
       "opt": "A",
-      "zh": "$k>4$ 是忘記把 $1$ 搬過去（用了常數項 $k$），所以算到 $16-4k<0$。",
-      "en": "$k>4$ comes from forgetting to move the $1$ (using the constant $k$), leading to $16-4k<0$."
+      "zh": "$\\frac{p^{2}r^{8}}{q}$ 是方向寫反（$p=\\frac{k\\sqrt{q}}{r^{4}}$）之後再平方：$k^{2}=\\frac{p^{2}r^{8}}{q}$。正變與反變的位置一調轉就會選到它。",
+      "en": "$\\frac{p^{2}r^{8}}{q}$ comes from reversing the directions ($p=\\frac{k\\sqrt{q}}{r^{4}}$) and then squaring."
      },
      {
       "opt": "D",
-      "zh": "$k<5$ 是數字對但不等號方向倒轉：除以 $-4$ 時要變號，這裡倒錯了。",
-      "en": "$k<5$ has the right number but the wrong direction: dividing by $-4$ reverses the inequality."
+      "zh": "$pr^{4}\\sqrt{q}$ 代入 $p$ 之後是 $kr^{8}$，仍然含 $r$，不是常數。",
+      "en": "$pr^{4}\\sqrt{q}$ becomes $kr^{8}$, which still contains $r$ and is not constant."
      },
      {
-      "opt": "B",
-      "zh": "$k<4$ 是兩個錯一起犯：常數項用錯，不等號又倒轉。",
-      "en": "$k<4$ makes both mistakes: the wrong constant term and the reversed inequality."
+      "opt": "C",
+      "zh": "$\\frac{p}{r^{4}\\sqrt{q}}$ 代入 $p$ 之後是 $\\frac{k}{q}$，含 $q$，不是常數；它是把 $\\sqrt{q}$ 又放到分母多一次。",
+      "en": "$\\frac{p}{r^{4}\\sqrt{q}}$ becomes $\\frac{k}{q}$, which contains $q$; the $\\sqrt{q}$ was moved to the denominator twice."
      }
     ],
     "tip": {
-     "zh": "判別式題目第一步永遠是「搬成 $=0$」。搬完先讀一次 $a$、$b$、$c$ 再代入，最後解不等式時留意除以負數要變號。",
-     "en": "The first step of any discriminant question is to rearrange into the $=0$ form. Then read off $a$, $b$, $c$ before substituting, and watch the inequality sign when dividing by a negative number."
+     "zh": "兩步：$k=\\ldots$ → 再平方（選項是平方後的樣子）。含 $q$ 的放在分母、含 $r^{4}$ 的放在分子，方向不要倒。",
+     "en": "Two steps: write $k=\\ldots$, then square it (the options are squared). The $q$ part belongs at the bottom and $r^{4}$ on top."
     },
     "alt": [
      {
       "name": {
-       "zh": "驗算：取界內與界外各一個數",
-       "en": "Check: one value on each side"
+       "zh": "數值檢查",
+       "en": "Numeric check"
       },
-      "zh": "$k=6$（符合 $k>5$）：$x^{2}-4x+5=0$，$\\Delta=16-20=-4<0$，無實根 ✓。$k=4$（不符合）：$x^{2}-4x+3=0$，$\\Delta=16-12=4>0$，有實根 ✓。",
-      "en": "For $k=6$ (satisfies $k>5$): $x^{2}-4x+5=0$ has $\\Delta=16-20=-4<0$, no real roots. For $k=4$: $x^{2}-4x+3=0$ has $\\Delta=16-12=4>0$, real roots exist."
+      "zh": "取 $k=2$：$r=2$、$q=9$ 時 $p=\\frac{2(16)}{3}=\\frac{32}{3}$。B $=\\frac{(32/3)^{2}\\times9}{256}=\\frac{1024/9\\times9}{256}=4=k^{2}$ ✓；換 $r=1$、$q=4$（$p=1$），B $=\\frac{1\\times4}{1}=4$ 仍然是 4 ✓。",
+      "en": "Take $k=2$: with $r=2$, $q=9$ we get $p=\\frac{32}{3}$ and B $=\\frac{(32/3)^{2}\\times9}{256}=4=k^{2}$. With $r=1$, $q=4$ we get $p=1$ and B $=4$ again."
      }
     ]
    }
   },
   "eph-en05-m5": {
-   "answer": "B",
+   "answer": "C",
    "verify": "checked",
    "topic": "en05",
-   "source": "EPH WS05 Q20 · [HKDSE 2018 Paper 2 Q36, HKCEE 2004 Paper 2 Q42]",
+   "source": "Endeavour Lesson 5 Q9 · 百分比變化（$x$ 加 25%、$y$ 加 20%）",
    "solution": {
     "steps": [
      {
       "title": {
-       "zh": "第 1 步 · 兩條式形狀一樣 → $a$、$b$ 是同一個方程的根",
-       "en": "Step 1 · Same shape twice: $a$ and $b$ are roots of one equation"
+       "zh": "第 1 步 · 寫出方程",
+       "en": "Step 1 · Write the equation"
       },
-      "math": "x^{2}+3x-12=0\n\\Rightarrow a+b=-3,\\ ab=-12",
-      "zh": "$a^{2}=12-3a$ 整理成 $a^{2}+3a-12=0$；$b$ 的式子一模一樣。所以 $a$、$b$ 都是 $x^{2}+3x-12=0$ 的根，而且 $a\\ne b$ 代表它們是兩個不同的根。用根與係數：和 $=-3$、積 $=-12$。",
-      "en": "$a^{2}=12-3a$ rearranges to $a^{2}+3a-12=0$, and the equation for $b$ is identical. So $a$ and $b$ are the two roots of $x^{2}+3x-12=0$ (and $a\\ne b$ says they are different). Hence the sum is $-3$ and the product is $-12$."
+      "math": "z=kxy^{2}",
+      "zh": "$z$ 隨 $x$ 與 $y^{2}$ 正變，所以 $z=kxy^{2}$。",
+      "en": "$z$ varies directly as $x$ and as $y^{2}$, so $z=kxy^{2}$."
      },
      {
       "title": {
-       "zh": "第 2 步 · 展開目標式，化成和與積",
-       "en": "Step 2 · Expand the target in terms of the sum and the product"
+       "zh": "第 2 步 · 把百分數變成倍數",
+       "en": "Step 2 · Turn the percentages into multipliers"
       },
-      "math": "(a-1)(b-1)=ab-a-b+1\n=ab-(a+b)+1",
-      "zh": "逐項展開：$ab-a-b+1$。把 $-a-b$ 寫成 $-(a+b)$，就只剩「積」與「和」兩塊。",
-      "en": "Expanding gives $ab-a-b+1$. Writing $-a-b$ as $-(a+b)$ leaves only the product and the sum."
+      "math": "x\\to 1.25x,\\ y\\to 1.2y",
+      "zh": "增加 $25\\%$ ＝ ×$1.25$；增加 $20\\%$ ＝ ×$1.2$。所以新的 $z$ 是 $z'=k(1.25x)(1.2y)^{2}$。",
+      "en": "An increase of $25\\%$ is $\\times1.25$ and an increase of $20\\%$ is $\\times1.2$, so $z'=k(1.25x)(1.2y)^{2}$."
      },
      {
       "title": {
-       "zh": "第 3 步 · 代入",
-       "en": "Step 3 · Substitute"
+       "zh": "第 3 步 · 合併倍數",
+       "en": "Step 3 · Combine the multipliers"
       },
-      "math": "=-12-(-3)+1=-8",
-      "zh": "代入 $ab=-12$、$a+b=-3$：$-12-(-3)+1=-12+3+1=-8$，答案是 B。",
-      "en": "Substituting $ab=-12$ and $a+b=-3$: $-12-(-3)+1=-12+3+1=-8$. The answer is B.",
+      "math": "=1.25\\times1.44\\,kxy^{2}\n=1.8z",
+      "zh": "$1.2^{2}=1.44$，而 $1.25\\times1.44=1.8$，所以 $z'=1.8z$，即 $z$ 增加了 $80\\%$，答案是 C。",
+      "en": "$1.2^{2}=1.44$ and $1.25\\times1.44=1.8$, so $z'=1.8z$: $z$ increases by $80\\%$. The answer is C.",
       "highlight": [
-       "-8"
+       "80\\%"
       ]
      }
     ],
     "traps": [
      {
       "opt": "A",
-      "zh": "$-14$ 是把 $a+b$ 當成 $+3$（和的負號漏了）：$-12-3+1=-14$。方程是 $x^{2}+3x-12=0$，和應該是 $-3$。",
-      "en": "$-14$ uses $a+b=+3$, dropping the minus sign: $-12-3+1=-14$. The sum for $x^{2}+3x-12=0$ is $-3$."
+      "zh": "$50\\%$ 是只用了一次 $1.2$（把 $y^{2}$ 當成 $y$）：$1.25\\times1.2=1.5$。$y$ 是平方，倍數要平方成 $1.44$。",
+      "en": "$50\\%$ uses $1.2$ only once (treating $y^{2}$ as $y$): $1.25\\times1.2=1.5$. Because $y$ is squared, its multiplier must be squared to $1.44$."
      },
      {
-      "opt": "C",
-      "zh": "$10$ 是把積當成 $+12$（符號錯）：$12-3+1=10$。常數項是 $-12$，積就是 $-12$。",
-      "en": "$10$ uses the product $+12$: $12-3+1=10$. The constant term is $-12$, so the product is $-12$."
+      "opt": "B",
+      "zh": "$1.5$ 是增加的倍數（$+50\\%$），寫成「decreased by $50\\%$」是方向倒轉：$1.5>1$ 代表增加。",
+      "en": "$1.5$ is an increase ($+50\\%$); calling it “decreased by $50\\%$” reverses the direction, since $1.5>1$ means an increase."
      },
      {
       "opt": "D",
-      "zh": "$16$ 是兩處都錯：積用 $+12$、和用 $+3$，得 $12+3+1=16$。",
-      "en": "$16$ makes both errors: $12+3+1=16$."
+      "zh": "$0.8$ 是把 $1.8$ 的小數點看錯（$1.8\\to0.8$），再寫成減少 $80\\%$。倍數大於 1 一定是增加。",
+      "en": "$0.8$ misreads $1.8$ as $0.8$ and then calls it a decrease of $80\\%$. A multiplier greater than 1 is always an increase."
      }
     ],
     "tip": {
-     "zh": "「$a\\ne b$，而兩條式一模一樣」是本題的暗號：$a$、$b$ 是同一個方程的兩個根。看到就立刻寫和與積，不要解方程。",
-     "en": "“$a\\ne b$ with two identical equations” is the signal: $a$ and $b$ are the two roots of one equation. Write the sum and the product immediately; do not solve it."
+     "zh": "百分比變化三步：每個量換成倍數（$1+$ 或 $1-$ 百分數）→ 平方、開方照做 → 相乘。倍數大於 1 是增加，小於 1 是減少。",
+     "en": "Three steps: turn each quantity into a multiplier, apply squares and roots, then multiply. A multiplier above 1 is an increase and below 1 is a decrease."
     },
     "alt": [
      {
       "name": {
-       "zh": "驗算：用求根公式取近似值",
-       "en": "Check: approximate the roots"
+       "zh": "驗算：代實際數字",
+       "en": "Check: use numbers"
       },
-      "zh": "$x^{2}+3x-12=0$ 的根是 $\\frac{-3\\pm\\sqrt{57}}{2}$，即約 $2.27$ 與 $-5.27$。$(2.27-1)(-5.27-1)=(1.27)(-6.27)\\approx-8$ ✓。",
-      "en": "The roots of $x^{2}+3x-12=0$ are $\\frac{-3\\pm\\sqrt{57}}{2}$, about $2.27$ and $-5.27$. Then $(2.27-1)(-5.27-1)=(1.27)(-6.27)\\approx-8$."
+      "zh": "取 $k=1$、$x=4$、$y=5$：$z=1(4)(25)=100$。$x$ 變 5、$y$ 變 6：$z'=1(5)(36)=180$，$\\frac{180}{100}=1.8$，增加 $80\\%$ ✓。",
+      "en": "Take $k=1$, $x=4$, $y=5$: $z=100$. After $x\\to5$ and $y\\to6$: $z'=180$, and $\\frac{180}{100}=1.8$, an increase of $80\\%$."
      }
     ]
    }
@@ -4992,69 +5309,69 @@
    "answer": "C",
    "verify": "checked",
    "topic": "en05",
-   "source": "EPH WS05 Q22 · [HKCEE 2001 Paper 2 Q39]",
+   "source": "Endeavour Lesson 5 Q10 · 百分比變化（$x$ 加 25%、$y$ 減 36%）",
    "solution": {
     "steps": [
      {
       "title": {
-       "zh": "第 1 步 · $a$、$b$ 是 $x^{2}+2x-9=0$ 的兩個根",
-       "en": "Step 1 · $a$ and $b$ are the roots of $x^{2}+2x-9=0$"
+       "zh": "第 1 步 · 寫出方程",
+       "en": "Step 1 · Write the equation"
       },
-      "math": "a+b=-2,\\ ab=-9",
-      "zh": "兩條式形狀一樣，而且 $a$、$b$ 相異，所以它們是 $x^{2}+2x-9=0$ 的兩個根。和 $=-2$、積 $=-9$。",
-      "en": "The two equations have the same shape and $a\\ne b$, so they are the two roots of $x^{2}+2x-9=0$: the sum is $-2$ and the product is $-9$."
+      "math": "z=\\frac{k\\sqrt{y}}{x}",
+      "zh": "$z$ 隨 $\\sqrt{y}$ 正變（分子）、隨 $x$ 反變（分母），所以 $z=\\frac{k\\sqrt{y}}{x}$。",
+      "en": "$z$ varies directly as $\\sqrt{y}$ (on top) and inversely as $x$ (at the bottom): $z=\\frac{k\\sqrt{y}}{x}$."
      },
      {
       "title": {
-       "zh": "第 2 步 · 用恆等式",
-       "en": "Step 2 · Use the identity"
+       "zh": "第 2 步 · 換成倍數",
+       "en": "Step 2 · Convert to multipliers"
       },
-      "math": "a^{2}+b^{2}=(a+b)^{2}-2ab",
-      "zh": "$(a+b)^{2}=a^{2}+2ab+b^{2}$，所以 $a^{2}+b^{2}=(a+b)^{2}-2ab$。",
-      "en": "Since $(a+b)^{2}=a^{2}+2ab+b^{2}$, we have $a^{2}+b^{2}=(a+b)^{2}-2ab$."
+      "math": "x\\to 1.25x,\\ y\\to 0.64y",
+      "zh": "增加 $25\\%$ ＝ ×$1.25$；減少 $36\\%$ ＝ ×$(1-0.36)=0.64$。",
+      "en": "An increase of $25\\%$ is $\\times1.25$; a decrease of $36\\%$ is $\\times(1-0.36)=0.64$."
      },
      {
       "title": {
-       "zh": "第 3 步 · 代入",
-       "en": "Step 3 · Substitute"
+       "zh": "第 3 步 · 開方後合併",
+       "en": "Step 3 · Take the square root, then combine"
       },
-      "math": "=(-2)^{2}-2(-9)\n=4+18=22",
-      "zh": "$(-2)^{2}=4$，而 $-2(-9)=+18$。兩者相加是 $22$，答案是 C。",
-      "en": "$(-2)^{2}=4$ and $-2(-9)=+18$. Their sum is $22$. The answer is C.",
+      "math": "\\sqrt{0.64y}=0.8\\sqrt{y}\nz'=\\frac{k(0.8\\sqrt{y})}{1.25x}\n=0.64z",
+      "zh": "$\\sqrt{0.64}=0.8$（因為 $0.8^{2}=0.64$），所以 $z'=\\frac{0.8}{1.25}z=0.64z$，即 $z$ 減少了 $36\\%$，答案是 C。",
+      "en": "$\\sqrt{0.64}=0.8$ (since $0.8^{2}=0.64$), so $z'=\\frac{0.8}{1.25}z=0.64z$: $z$ decreases by $36\\%$. The answer is C.",
       "highlight": [
-       "22"
+       "36\\%"
       ]
      }
     ],
     "traps": [
      {
-      "opt": "A",
-      "zh": "$-14$ 是把 $-2ab$ 寫成 $+2ab$：$4-18=-14$。積是負數時，$-2ab$ 會變加。",
-      "en": "$-14$ writes $-2ab$ as $+2ab$: $4-18=-14$. When the product is negative, $-2ab$ becomes a plus."
+      "opt": "D",
+      "zh": "$64\\%$ 是把倍數 $0.64$ 直接讀成「減少 $64\\%$」。倍數 $0.64$ 代表「餘下 $64\\%$」，即減少了 $1-0.64=36\\%$。",
+      "en": "$64\\%$ reads the multiplier $0.64$ as “a decrease of $64\\%$”. A multiplier of $0.64$ means $64\\%$ remains, so the decrease is $1-0.64=36\\%$."
      },
      {
       "opt": "B",
-      "zh": "$4$ 只算了 $(a+b)^{2}$，完全沒有減 $2ab$。",
-      "en": "$4$ is just $(a+b)^{2}$, with $2ab$ never subtracted."
+      "zh": "$52\\%$ 是把 $x$ 與 $y$ 的倍數掉轉除（$\\frac{1.25}{0.8}=1.5625$），方向變成增加，與正確的 $\\frac{0.8}{1.25}$ 相反。",
+      "en": "$52\\%$ divides the multipliers the wrong way round ($\\frac{1.25}{0.8}=1.5625$), turning a decrease into an increase."
      },
      {
-      "opt": "D",
-      "zh": "$81$ 是把 $a^{2}+b^{2}$ 當成 $(ab)^{2}=(-9)^{2}$。$a^{2}+b^{2}$ 是「兩個平方相加」，不是「積的平方」。",
-      "en": "$81$ treats $a^{2}+b^{2}$ as $(ab)^{2}=(-9)^{2}$. $a^{2}+b^{2}$ is a sum of squares, not the square of the product."
+      "opt": "A",
+      "zh": "$48\\%$ 是忘記開方：$\\frac{0.64}{1.25}=0.512$，即減少約 $49\\%$。$\\sqrt{0.64}=0.8$ 一定要開。",
+      "en": "$48\\%$ forgets the square root: $\\frac{0.64}{1.25}=0.512$, a decrease of about $49\\%$. The root $\\sqrt{0.64}=0.8$ is essential."
      }
     ],
     "tip": {
-     "zh": "和與積的公式要連符號一齊抄：$a+b=-2$、$ab=-9$。代 $2ab$ 時把整個 $-9$ 放進去，負負得正，就不會寫錯。",
-     "en": "Copy the sum and the product with their signs: $a+b=-2$, $ab=-9$. Putting the whole $-9$ into $2ab$ gives a plus and avoids the sign error."
+     "zh": "「減少 36%」＝ ×$0.64$；「隨 $\\sqrt{y}$ 變化」＝ 倍數要開方（$\\sqrt{0.64}=0.8$）；反變的 $x$ 在分母，倍數要除。三步都做對才會得 $-36\\%$。",
+     "en": "A 36% decrease is $\\times0.64$; a square-root variation needs the root of the multiplier ($\\sqrt{0.64}=0.8$); the inverse $x$ sits at the bottom, so divide. Only all three steps give $-36\\%$."
     },
     "alt": [
      {
       "name": {
-       "zh": "驗算：代近似根",
-       "en": "Check: substitute the approximate roots"
+       "zh": "驗算：代實際數字",
+       "en": "Check: use numbers"
       },
-      "zh": "$x^{2}+2x-9=0$ 的根是 $-1\\pm\\sqrt{10}$，即約 $-4.16$ 與 $2.16$。$a^{2}+b^{2}\\approx 17.31+4.67=22$ ✓。",
-      "en": "The roots of $x^{2}+2x-9=0$ are $-1\\pm\\sqrt{10}$, about $-4.16$ and $2.16$. Then $a^{2}+b^{2}\\approx 17.31+4.67=22$."
+      "zh": "取 $k=1$、$x=4$、$y=25$：$z=\\frac{5}{4}=1.25$。$x$ 變 5、$y$ 變 $0.64\\times25=16$：$z'=\\frac{\\sqrt{16}}{5}=\\frac{4}{5}=0.8$。$\\frac{0.8}{1.25}=0.64$，減少 $36\\%$ ✓。",
+      "en": "Take $k=1$, $x=4$, $y=25$: $z=\\frac{5}{4}=1.25$. After $x\\to5$ and $y\\to16$: $z'=\\frac{4}{5}=0.8$, and $\\frac{0.8}{1.25}=0.64$, a decrease of $36\\%$."
      }
     ]
    }
@@ -5063,69 +5380,78 @@
    "answer": "B",
    "verify": "checked",
    "topic": "en05",
-   "source": "EPH WS05 Q23 · [HKDSE 2015 Paper 2 Q34]",
+   "source": "Endeavour Lesson 5 Q12 · 部分變（求 $x$）",
    "solution": {
     "steps": [
      {
       "title": {
-       "zh": "第 1 步 · 寫出和與積",
-       "en": "Step 1 · Write the sum and the product"
+       "zh": "第 1 步 · 寫出 $y=c+kx$ 與兩條方程",
+       "en": "Step 1 · Write $y=c+kx$ and the two equations"
       },
-      "math": "\\alpha+\\beta=-q,\\ \\alpha\\beta=6",
-      "zh": "方程是 $x^{2}+qx+6=0$，$a=1$、$b=q$、$c=6$。所以和 $=-q$、積 $=6$。",
-      "en": "For $x^{2}+qx+6=0$ we have $a=1$, $b=q$ and $c=6$, so the sum is $-q$ and the product is $6$."
+      "math": "y=c+kx\n-6=c+3k\\ \\ldots(1)\n14=c-2k\\ \\ldots(2)",
+      "zh": "一部分是常數、另一部分隨 $x$ 正變，所以 $y=c+kx$。代入兩組數值得 (1) 與 (2)。",
+      "en": "One part is constant and the other varies as $x$, so $y=c+kx$. The two pairs give (1) and (2)."
      },
      {
       "title": {
-       "zh": "第 2 步 · 用恆等式拆開",
-       "en": "Step 2 · Apply the identity"
+       "zh": "第 2 步 · 相減求 $k$",
+       "en": "Step 2 · Subtract to find $k$"
       },
-      "math": "\\alpha^{2}+\\beta^{2}=(\\alpha+\\beta)^{2}-2\\alpha\\beta",
-      "zh": "目標式是平方和，用 $(\\alpha+\\beta)^{2}$ 減去多出來的 $2\\alpha\\beta$。",
-      "en": "For a sum of squares, take $(\\alpha+\\beta)^{2}$ and subtract the extra $2\\alpha\\beta$."
+      "math": "(1)-(2):\\ 5k=-20\n\\Rightarrow k=-4",
+      "zh": "$(1)-(2)$：$3k-(-2k)=5k$，右邊 $-6-14=-20$，所以 $5k=-20$，$k=-4$。",
+      "en": "$(1)-(2)$: $3k-(-2k)=5k$ and $-6-14=-20$, so $5k=-20$ and $k=-4$."
      },
      {
       "title": {
-       "zh": "第 3 步 · 代入",
-       "en": "Step 3 · Substitute"
+       "zh": "第 3 步 · 求 $c$，寫出關係式",
+       "en": "Step 3 · Find $c$ and write the relation"
       },
-      "math": "=(-q)^{2}-2(6)\n=q^{2}-12",
-      "zh": "$(-q)^{2}=q^{2}$，再減 $12$，得 $q^{2}-12$，答案是 B。",
-      "en": "$(-q)^{2}=q^{2}$, and subtracting $12$ gives $q^{2}-12$. The answer is B.",
+      "math": "c=-6-3(-4)=6\n\\Rightarrow y=6-4x",
+      "zh": "代回 (1)：$-6=c-12$，所以 $c=6$。關係式是 $y=6-4x$。",
+      "en": "Back in (1): $-6=c-12$, so $c=6$. The relation is $y=6-4x$."
+     },
+     {
+      "title": {
+       "zh": "第 4 步 · 令 $y=18$ 解 $x$",
+       "en": "Step 4 · Put $y=18$ and solve for $x$"
+      },
+      "math": "18=6-4x\n\\Rightarrow 4x=-12\n\\Rightarrow x=-3",
+      "zh": "把 $y=18$ 代入：$18=6-4x$，移項得 $-4x=12$，所以 $x=-3$，答案是 B。",
+      "en": "Substituting $y=18$: $18=6-4x$, so $-4x=12$ and $x=-3$. The answer is B.",
       "highlight": [
-       "q^{2}-12"
+       "-3"
       ]
      }
     ],
     "traps": [
      {
       "opt": "A",
-      "zh": "$q^{2}$ 只算了 $(\\alpha+\\beta)^{2}$，忘記減 $2\\alpha\\beta$。",
-      "en": "$q^{2}$ is only $(\\alpha+\\beta)^{2}$; $2\\alpha\\beta$ was never subtracted."
+      "zh": "$-66$ 是把 $18=6-4x$ 解錯成「先乘後加」：$18\\times(-4)+6=-66$。解一次方程要先移項，再除。",
+      "en": "$-66$ comes from solving $18=6-4x$ as $18\\times(-4)+6$. Move the term first, then divide."
      },
      {
       "opt": "C",
-      "zh": "$q^{2}+12$ 把積當成 $-6$（常數項的符號錯），於是 $-2(-6)=+12$。常數項是 $+6$。",
-      "en": "$q^{2}+12$ takes the product as $-6$, so $-2(-6)=+12$. The constant term is $+6$."
+      "zh": "$6$ 是常數 $c$：求到 $c=6$ 就停手。題目問 $y=18$ 時的 $x$，要代回關係式再解。",
+      "en": "$6$ is the constant $c$. The question asks for $x$ when $y=18$, so $18$ must be substituted and solved."
      },
      {
       "opt": "D",
-      "zh": "$q^{2}+24$ 把 $2\\times6$ 算成 $12$ 之後又加了兩次（等於用了 $\\alpha\\beta=-12$）。",
-      "en": "$q^{2}+24$ effectively uses $\\alpha\\beta=-12$, adding twice the correct amount in the wrong direction."
+      "zh": "$78$ 是符號錯：$x=18\\times4+6=78$。正確是 $-4x=18-6=12$，所以 $x=-3$。",
+      "en": "$78$ has a sign error ($x=18\\times4+6$). Correctly, $-4x=18-6=12$, so $x=-3$."
      }
     ],
     "tip": {
-     "zh": "答案一定是「$q^{2}$ 減一個正數」，因為 $\\alpha\\beta=6>0$。單看這點已經可以排除 C 與 D。",
-     "en": "The answer must be $q^{2}$ minus a positive number, because $\\alpha\\beta=6>0$. That alone rules out C and D."
+     "zh": "部分變的方程 $y=c+kx$ 一定是「先加後乘」：$y=c+kx$，所以解 $x$ 時要先把 $c$ 搬走，再除以 $k$。",
+     "en": "In $y=c+kx$ the product comes after the constant, so when solving for $x$ move $c$ first and then divide by $k$."
     },
     "alt": [
      {
       "name": {
-       "zh": "驗算：代 $q=5$",
-       "en": "Check: put $q=5$"
+       "zh": "驗算：兩組已知值",
+       "en": "Check: both given pairs"
       },
-      "zh": "$q=5$ 時方程是 $x^{2}+5x+6=0$，兩根是 $-2$、$-3$，$\\alpha^{2}+\\beta^{2}=4+9=13$；公式給 $25-12=13$ ✓。",
-      "en": "With $q=5$ the equation is $x^{2}+5x+6=0$ with roots $-2$ and $-3$, so $\\alpha^{2}+\\beta^{2}=4+9=13$; the formula gives $25-12=13$."
+      "zh": "$x=3$：$6-12=-6$ ✓；$x=-2$：$6+8=14$ ✓；$y=18$ 時 $18=6-4(-3)$ ✓。",
+      "en": "For $x=3$: $6-12=-6$. For $x=-2$: $6+8=14$. And with $x=-3$: $6-4(-3)=18$."
      }
     ]
    }
@@ -5134,362 +5460,78 @@
    "answer": "C",
    "verify": "checked",
    "topic": "en05",
-   "source": "EPH WS05 Q24 · [改編自 HKDSE 2015 Paper 2 Q34]",
+   "source": "Endeavour Lesson 5 Q13 · 部分變（求 $y$）",
    "solution": {
     "steps": [
      {
       "title": {
-       "zh": "第 1 步 · 寫出和與積",
-       "en": "Step 1 · Write the sum and the product"
+       "zh": "第 1 步 · 寫出 $y=c+kx^{2}$ 與兩條方程",
+       "en": "Step 1 · Write $y=c+kx^{2}$ and the two equations"
       },
-      "math": "\\alpha+\\beta=m,\\ \\alpha\\beta=-8",
-      "zh": "方程是 $x^{2}-mx-8=0$：和 $=-\\frac{-m}{1}=m$，積 $=\\frac{-8}{1}=-8$。",
-      "en": "For $x^{2}-mx-8=0$: the sum is $-\\frac{-m}{1}=m$ and the product is $\\frac{-8}{1}=-8$."
+      "math": "y=c+kx^{2}\n1=c+k\\ \\ldots(1)\n25=c+9k\\ \\ldots(2)",
+      "zh": "一部分是常數、另一部分隨 $x^{2}$ 變化，所以 $y=c+kx^{2}$。$x=-1$ 時 $(-1)^{2}=1$，得 $1=c+k$；$x=3$ 得 $25=c+9k$。",
+      "en": "One part is constant and the other varies as $x^{2}$, so $y=c+kx^{2}$. At $x=-1$, $(-1)^{2}=1$ gives $1=c+k$; at $x=3$ we get $25=c+9k$."
      },
      {
       "title": {
-       "zh": "第 2 步 · 化成和與積（注意只減一次 $\\alpha\\beta$）",
-       "en": "Step 2 · Rewrite with the sum and the product (subtract $\\alpha\\beta$ once)"
+       "zh": "第 2 步 · 相減求 $k$",
+       "en": "Step 2 · Subtract to find $k$"
       },
-      "math": "\\alpha^{2}+\\alpha\\beta+\\beta^{2}\n=(\\alpha+\\beta)^{2}-\\alpha\\beta",
-      "zh": "$(\\alpha+\\beta)^{2}=\\alpha^{2}+2\\alpha\\beta+\\beta^{2}$，目標式中間只有一個 $\\alpha\\beta$，所以減一次就夠。",
-      "en": "$(\\alpha+\\beta)^{2}=\\alpha^{2}+2\\alpha\\beta+\\beta^{2}$, while the target has only one $\\alpha\\beta$, so subtract it once."
+      "math": "(2)-(1):\\ 8k=24\n\\Rightarrow k=3",
+      "zh": "$(2)-(1)$：$8k=24$，所以 $k=3$。",
+      "en": "$(2)-(1)$ gives $8k=24$, so $k=3$."
      },
      {
       "title": {
-       "zh": "第 3 步 · 代入",
-       "en": "Step 3 · Substitute"
+       "zh": "第 3 步 · 求 $c$，寫出關係式",
+       "en": "Step 3 · Find $c$ and write the relation"
       },
-      "math": "=m^{2}-(-8)\n=m^{2}+8",
-      "zh": "代入 $\\alpha\\beta=-8$：$-(-8)=+8$，所以答案是 $m^{2}+8$，選 C。",
-      "en": "Substituting $\\alpha\\beta=-8$: $-(-8)=+8$, so the answer is $m^{2}+8$. Option C.",
+      "math": "c=1-3=-2\n\\Rightarrow y=3x^{2}-2",
+      "zh": "代回 (1)：$1=c+3$，所以 $c=-2$。關係式是 $y=3x^{2}-2$。",
+      "en": "Back in (1): $1=c+3$, so $c=-2$. The relation is $y=3x^{2}-2$."
+     },
+     {
+      "title": {
+       "zh": "第 4 步 · 代入 $x=4$",
+       "en": "Step 4 · Substitute $x=4$"
+      },
+      "math": "y=3(4)^{2}-2=48-2=46",
+      "zh": "$4^{2}=16$，所以 $y=3(16)-2=46$，答案是 C。",
+      "en": "$4^{2}=16$, so $y=3(16)-2=46$. The answer is C.",
       "highlight": [
-       "m^{2}+8"
+       "46"
       ]
      }
     ],
     "traps": [
      {
       "opt": "D",
-      "zh": "$m^{2}+16$ 是用了平方和 $\\alpha^{2}+\\beta^{2}$ 的公式 $(\\alpha+\\beta)^{2}-2\\alpha\\beta$：減了兩次 $\\alpha\\beta$。本題是 $\\alpha^{2}+\\alpha\\beta+\\beta^{2}$，只減一次。",
-      "en": "$m^{2}+16$ uses the sum-of-squares formula $(\\alpha+\\beta)^{2}-2\\alpha\\beta$, subtracting $\\alpha\\beta$ twice. This question has only one $\\alpha\\beta$."
-     },
-     {
-      "opt": "B",
-      "zh": "$m^{2}-8$ 用了「$+\\alpha\\beta$」而不是「$-\\alpha\\beta$」。展開之後中間是 $2\\alpha\\beta$，要減一次才會變一個。",
-      "en": "$m^{2}-8$ adds $\\alpha\\beta$ instead of subtracting it. After expanding there are two, so one must be removed."
+      "zh": "$50$ 是 $3(16)+2$：常數 $c$ 的符號寫反（用了 $+2$ 而不是 $-2$）。",
+      "en": "$50$ is $3(16)+2$: the sign of $c$ was flipped (using $+2$ instead of $-2$)."
      },
      {
       "opt": "A",
-      "zh": "$m^{2}-16$ 把積當成 $+8$，再用 $2\\alpha\\beta$ 去減。積的符號是 $-8$。",
-      "en": "$m^{2}-16$ takes the product as $+8$ and subtracts $2\\alpha\\beta$. The product here is $-8$."
-     }
-    ],
-    "tip": {
-     "zh": "寫這類題之前，先做一次展開：$(\\alpha+\\beta)^{2}=\\alpha^{2}+2\\alpha\\beta+\\beta^{2}$，然後數一數目標式有幾個 $\\alpha\\beta$，就知道要減幾次。",
-     "en": "Expand first: $(\\alpha+\\beta)^{2}=\\alpha^{2}+2\\alpha\\beta+\\beta^{2}$. Count how many $\\alpha\\beta$ terms the target has — that tells you how many to subtract."
-    },
-    "alt": [
-     {
-      "name": {
-       "zh": "驗算：代 $m=2$",
-       "en": "Check: put $m=2$"
-      },
-      "zh": "$m=2$ 時方程是 $x^{2}-2x-8=0$，即 $(x-4)(x+2)=0$，兩根 $4$、$-2$。$\\alpha^{2}+\\alpha\\beta+\\beta^{2}=16-8+4=12$；公式給 $4+8=12$ ✓。",
-      "en": "With $m=2$ the equation is $x^{2}-2x-8=0$, i.e. $(x-4)(x+2)=0$, roots $4$ and $-2$. Then $\\alpha^{2}+\\alpha\\beta+\\beta^{2}=16-8+4=12$, and the formula gives $4+8=12$."
-     }
-    ]
-   }
-  },
-  "eph-en05-m9": {
-   "answer": "A",
-   "verify": "checked",
-   "topic": "en05",
-   "source": "EPH WS05 Q26 · [HKDSE 2012 Paper 2 Q35]",
-   "solution": {
-    "steps": [
-     {
-      "title": {
-       "zh": "第 1 步 · 先把 $i^{7}$ 化簡",
-       "en": "Step 1 · Simplify $i^{7}$ first"
-      },
-      "math": "i^{7}=i^{4+3}=i^{3}=-i",
-      "zh": "$7\\div4$ 餘 $3$，所以 $i^{7}=i^{3}=-i$。高次冪一定要先化簡，不要硬乘。",
-      "en": "$7\\div4$ leaves remainder $3$, so $i^{7}=i^{3}=-i$. Always simplify a high power first."
-     },
-     {
-      "title": {
-       "zh": "第 2 步 · 展開，並把 $i^{2}$ 換成 $-1$",
-       "en": "Step 2 · Expand and replace $i^{2}$ by $-1$"
-      },
-      "math": "(-i)(\\alpha i-6)\n=-\\alpha i^{2}+6i",
-      "zh": "$(-i)(\\alpha i)=-\\alpha i^{2}$，$(-i)(-6)=+6i$。兩個負號相乘是正，這裡最易錯。",
-      "en": "$(-i)(\\alpha i)=-\\alpha i^{2}$ and $(-i)(-6)=+6i$. Two minus signs give a plus — the step most often wrong."
-     },
-     {
-      "title": {
-       "zh": "第 3 步 · 用 $i^{2}=-1$ 收尾",
-       "en": "Step 3 · Finish with $i^{2}=-1$"
-      },
-      "math": "=-\\alpha(-1)+6i\n=\\alpha+6i",
-      "zh": "$-\\alpha i^{2}=-\\alpha(-1)=\\alpha$，所以結果是 $\\alpha+6i$，答案是 A。",
-      "en": "$-\\alpha i^{2}=-\\alpha(-1)=\\alpha$, so the result is $\\alpha+6i$. The answer is A.",
-      "highlight": [
-       "\\alpha+6i"
-      ]
-     }
-    ],
-    "traps": [
-     {
-      "opt": "B",
-      "zh": "$\\alpha-6i$ 是把 $(-i)(-6)$ 算成 $-6i$：兩個負數相乘是正，所以應該是 $+6i$。",
-      "en": "$\\alpha-6i$ evaluates $(-i)(-6)$ as $-6i$. Two negatives give a plus, so it is $+6i$."
-     },
-     {
-      "opt": "C",
-      "zh": "$-\\alpha+6i$ 是把 $-\\alpha i^{2}$ 算成 $-\\alpha$：忘記 $i^{2}=-1$，負負得正。",
-      "en": "$-\\alpha+6i$ evaluates $-\\alpha i^{2}$ as $-\\alpha$, forgetting that $i^{2}=-1$."
-     },
-     {
-      "opt": "D",
-      "zh": "$-\\alpha-6i$ 兩個符號都錯。",
-      "en": "$-\\alpha-6i$ gets both signs wrong."
-     }
-    ],
-    "tip": {
-     "zh": "次序：先把 $i$ 的冪化成 $\\pm i$ 或 $\\pm1$，再展開，最後才處理 $i^{2}$。三個步驟分開寫，符號就不會亂。",
-     "en": "Order of work: reduce the power of $i$ to $\\pm i$ or $\\pm1$, expand, then deal with $i^{2}$. Keeping the three steps separate keeps the signs right."
-    },
-    "alt": [
-     {
-      "name": {
-       "zh": "數值驗算：代 $\\alpha=1$",
-       "en": "Numeric check: put $\\alpha=1$"
-      },
-      "zh": "$\\alpha=1$ 時 $i^{7}(i-6)=-i(i-6)=-i^{2}+6i=1+6i$，與 $\\alpha+6i$ 相符。",
-      "en": "With $\\alpha=1$: $i^{7}(i-6)=-i(i-6)=-i^{2}+6i=1+6i$, matching $\\alpha+6i$."
-     }
-    ]
-   }
-  },
-  "eph-en05-m10": {
-   "answer": "A",
-   "verify": "checked",
-   "topic": "en05",
-   "source": "EPH WS05 Q28 · [HKDSE Sample Paper 2 Q34]",
-   "solution": {
-    "steps": [
-     {
-      "title": {
-       "zh": "第 1 步 · 先把分數的 $i$ 趕出分母",
-       "en": "Step 1 · Clear the $i$ from the denominator"
-      },
-      "math": "\\frac{2k-3i}{i}=\\frac{(2k-3i)(-i)}{i(-i)}\n=-2ki+3i^{2}\n=-3-2ki",
-      "zh": "分母是 $i$，分子分母同乘 $-i$（乘 $i$ 也可以）：$i(-i)=-i^{2}=1$。分子展開：$(2k)(-i)=-2ki$，$(-3i)(-i)=3i^{2}=-3$。所以分數等於 $-3-2ki$。",
-      "en": "Multiply numerator and denominator by $-i$ (multiplying by $i$ also works): $i(-i)=-i^{2}=1$. Expanding: $(2k)(-i)=-2ki$ and $(-3i)(-i)=3i^{2}=-3$, so the fraction is $-3-2ki$."
-     },
-     {
-      "title": {
-       "zh": "第 2 步 · 代回原式（注意前面的減號）",
-       "en": "Step 2 · Put it back, watching the minus sign"
-      },
-      "math": "3ki-(-3-2ki)=3ki+3+2ki",
-      "zh": "原式是 $3ki$ 減去這個分數：$-( -3-2ki)=+3+2ki$。減號要分配給括號內每一項。",
-      "en": "The expression subtracts the fraction from $3ki$: $-(-3-2ki)=+3+2ki$. The minus sign multiplies every term in the bracket."
-     },
-     {
-      "title": {
-       "zh": "第 3 步 · 合併同類項",
-       "en": "Step 3 · Collect like terms"
-      },
-      "math": "=3+5ki",
-      "zh": "$3ki+2ki=5ki$，加上常數 $3$，結果是 $3+5ki$，答案是 A。",
-      "en": "$3ki+2ki=5ki$, plus the constant $3$, giving $3+5ki$. The answer is A.",
-      "highlight": [
-       "3+5ki"
-      ]
-     }
-    ],
-    "traps": [
-     {
-      "opt": "B",
-      "zh": "$-3+5ki$ 是減號只分配給 $2ki$：$3ki+2ki-3$。減號要給括號內每一項，$-(-3)=+3$。",
-      "en": "$-3+5ki$ applies the minus sign to $2ki$ only. It must multiply every term: $-(-3)=+3$."
-     },
-     {
-      "opt": "C",
-      "zh": "$3+ki$ 是把 $(-3i)(-i)$ 算成 $+3i$ 之類的符號錯，令虛部的係數只剩 $1$。答案是 $5ki$。",
-      "en": "$3+ki$ mishandles the signs so the imaginary coefficient becomes $1$ instead of $5$."
-     },
-     {
-      "opt": "D",
-      "zh": "$-3+ki$ 兩處都錯：減號沒有分配好，虛部也算錯。",
-      "en": "$-3+ki$ makes both errors: the minus sign is not distributed and the imaginary part is wrong."
-     }
-    ],
-    "tip": {
-     "zh": "分母是純虛數 $ni$ 時，分子分母同乘 $i$（或 $-i$）最快，因為 $i\\cdot i=-1$ 會把分母變成實數。做完記得檢查分母已經沒有 $i$。",
-     "en": "When the denominator is purely imaginary, $ni$, multiply numerator and denominator by $i$ (or $-i$): $i\\cdot i=-1$ makes the denominator real. Check that no $i$ is left below the line."
-    },
-    "alt": [
-     {
-      "name": {
-       "zh": "數值驗算：代 $k=1$",
-       "en": "Numeric check: put $k=1$"
-      },
-      "zh": "$k=1$ 時原式是 $3i-\\frac{2-3i}{i}$。而 $\\frac{2-3i}{i}=(2-3i)(-i)=-3-2i$，所以 $3i-(-3-2i)=3+5i$ ✓。",
-      "en": "With $k=1$: $3i-\\frac{2-3i}{i}$. Now $\\frac{2-3i}{i}=(2-3i)(-i)=-3-2i$, so $3i-(-3-2i)=3+5i$."
-     }
-    ]
-   }
-  },
-  "eph-en05-m11": {
-   "answer": "B",
-   "verify": "checked",
-   "topic": "en05",
-   "source": "EPH WS05 Q31 · [HKDSE 2013 Paper 2 Q36]",
-   "solution": {
-    "steps": [
-     {
-      "title": {
-       "zh": "第 1 步 · 逐個冪化簡（除以 4 看餘數）",
-       "en": "Step 1 · Reduce each power with the remainder after dividing by 4"
-      },
-      "math": "i^{18}=-1,\\ i^{19}=-i,\\ i^{20}=1,\\ i^{21}=i",
-      "zh": "餘數 $2\\to-1$、$3\\to-i$、$0\\to1$、$1\\to i$。所以 $i^{18}=-1$、$i^{19}=-i$、$i^{20}=1$、$i^{21}=i$。",
-      "en": "Remainders: $2\\to-1$, $3\\to-i$, $0\\to1$, $1\\to i$. Hence $i^{18}=-1$, $i^{19}=-i$, $i^{20}=1$ and $i^{21}=i$."
-     },
-     {
-      "title": {
-       "zh": "第 2 步 · 代入原式",
-       "en": "Step 2 · Substitute"
-      },
-      "math": "3(-1)+2(-i)-3(1)-5(i)",
-      "zh": "逐項乘入：$3i^{18}=-3$、$2i^{19}=-2i$、$-3i^{20}=-3$、$-5i^{21}=-5i$。",
-      "en": "Term by term: $3i^{18}=-3$, $2i^{19}=-2i$, $-3i^{20}=-3$ and $-5i^{21}=-5i$."
-     },
-     {
-      "title": {
-       "zh": "第 3 步 · 合併，讀出實部",
-       "en": "Step 3 · Collect terms and read off the real part"
-      },
-      "math": "=-6-7i",
-      "zh": "實部：$-3-3=-6$；虛部：$-2i-5i=-7i$。所以式子是 $-6-7i$，實部是 $-6$，答案是 B。",
-      "en": "Real part: $-3-3=-6$; imaginary part: $-2i-5i=-7i$. The expression is $-6-7i$, so the real part is $-6$. The answer is B.",
-      "highlight": [
-       "-6"
-      ]
-     }
-    ],
-    "traps": [
-     {
-      "opt": "A",
-      "zh": "$-7$ 是虛部（$i$ 的係數），不是實部。題目問 real part。",
-      "en": "$-7$ is the imaginary part, not the real part."
-     },
-     {
-      "opt": "C",
-      "zh": "$0$ 是把 $i^{18}$ 與 $i^{20}$ 都當成 $1$，令 $3-3=0$。實際上 $i^{18}=-1$、$i^{20}=1$。",
-      "en": "$0$ treats both $i^{18}$ and $i^{20}$ as $1$, so $3-3=0$. In fact $i^{18}=-1$ and $i^{20}=1$."
-     },
-     {
-      "opt": "D",
-      "zh": "$6$ 是符號寫反：$-3-3=-6$，不是 $+6$。",
-      "en": "$6$ has the sign reversed: $-3-3=-6$, not $+6$."
-     }
-    ],
-    "tip": {
-     "zh": "問實部就只計沒有 $i$ 的項，問虛部就只計 $i$ 的係數（連符號）。計完先把整條式子寫成 $a+bi$，就不會答錯部位。",
-     "en": "For the real part count only the terms without $i$; for the imaginary part take the coefficient of $i$ with its sign. Writing the whole expression as $a+bi$ first avoids answering the wrong part."
-    },
-    "alt": [
-     {
-      "name": {
-       "zh": "驗算：只抽實部再算一次",
-       "en": "Check: collect the real parts only"
-      },
-      "zh": "$i^{18}$ 與 $i^{20}$ 才是實數項：$3(-1)-3(1)=-6$，與答案一致（其餘兩項含 $i$，屬虛部）。",
-      "en": "Only $i^{18}$ and $i^{20}$ are real: $3(-1)-3(1)=-6$, which confirms the answer (the other two terms carry $i$ and belong to the imaginary part)."
-     }
-    ]
-   }
-  },
-  "eph-en05-m12": {
-   "answer": "A",
-   "verify": "checked",
-   "topic": "en05",
-   "source": "EPH WS05 Q37 · [HKDSE 2020 Paper 2 Q37]",
-   "solution": {
-    "steps": [
-     {
-      "title": {
-       "zh": "第 1 步 · 化簡 $z_{1}$（分子分母乘 $2-i$）",
-       "en": "Step 1 · Simplify $z_{1}$ by multiplying by $2-i$"
-      },
-      "math": "z_{1}=\\frac{(3-ki)(2-i)}{5}\n=\\frac{6-k}{5}-\\frac{3+2k}{5}i",
-      "zh": "$(3-ki)(2-i)=6-3i-2ki+k i^{2}=6-k-(3+2k)i$，而 $(2+i)(2-i)=4-i^{2}=5$。",
-      "en": "$(3-ki)(2-i)=6-3i-2ki+k i^{2}=6-k-(3+2k)i$ and $(2+i)(2-i)=4-i^{2}=5$."
-     },
-     {
-      "title": {
-       "zh": "第 2 步 · 化簡 $z_{2}$（分子分母乘 $3+i$）",
-       "en": "Step 2 · Simplify $z_{2}$ by multiplying by $3+i$"
-      },
-      "math": "z_{2}=\\frac{(-k-4i)(3+i)}{10}\n=\\frac{4-3k}{10}-\\frac{k+12}{10}i",
-      "zh": "$(-k-4i)(3+i)=-3k-ki-12i-4i^{2}=4-3k-(k+12)i$，而 $(3-i)(3+i)=9-i^{2}=10$。",
-      "en": "$(-k-4i)(3+i)=-3k-ki-12i-4i^{2}=4-3k-(k+12)i$ and $(3-i)(3+i)=9-i^{2}=10$."
-     },
-     {
-      "title": {
-       "zh": "第 3 步 · 虛部相等，解出 $k$",
-       "en": "Step 3 · Equate the imaginary parts and solve for $k$"
-      },
-      "math": "-\\frac{3+2k}{5}=-\\frac{k+12}{10}\n\\Rightarrow 2(3+2k)=k+12\n\\Rightarrow k=2",
-      "zh": "兩邊乘 $10$：$-2(3+2k)=-(k+12)$，即 $6+4k=k+12$，所以 $3k=6$，$k=2$。",
-      "en": "Multiply by $10$: $-2(3+2k)=-(k+12)$, i.e. $6+4k=k+12$, so $3k=6$ and $k=2$."
-     },
-     {
-      "title": {
-       "zh": "第 4 步 · 代回求 $z_{2}-z_{1}$",
-       "en": "Step 4 · Substitute back to find $z_{2}-z_{1}$"
-      },
-      "math": "z_{1}=\\frac{4}{5}-\\frac{7}{5}i,\\ z_{2}=-\\frac{1}{5}-\\frac{7}{5}i\n\\Rightarrow z_{2}-z_{1}=-1",
-      "zh": "$k=2$ 時 $z_{1}=\\frac{6-2}{5}-\\frac{3+4}{5}i=\\frac{4}{5}-\\frac{7}{5}i$，$z_{2}=\\frac{4-6}{10}-\\frac{2+12}{10}i=-\\frac{1}{5}-\\frac{7}{5}i$。兩者虛部相同（都是 $-\\frac{7}{5}$），相減只剩實部：$-\\frac{1}{5}-\\frac{4}{5}=-1$，答案是 A。",
-      "en": "With $k=2$, $z_{1}=\\frac{6-2}{5}-\\frac{3+4}{5}i=\\frac{4}{5}-\\frac{7}{5}i$ and $z_{2}=\\frac{4-6}{10}-\\frac{2+12}{10}i=-\\frac{1}{5}-\\frac{7}{5}i$. Their imaginary parts are equal, so the difference is real: $-\\frac{1}{5}-\\frac{4}{5}=-1$. The answer is A.",
-      "highlight": [
-       "-1"
-      ]
-     }
-    ],
-    "traps": [
-     {
-      "opt": "D",
-      "zh": "$2$ 是 $k$ 的值，不是 $z_{2}-z_{1}$。求出 $k$ 之後一定要代回兩個數再相減 —— 這是最常見的「答錯問題」。",
-      "en": "$2$ is the value of $k$, not of $z_{2}-z_{1}$. After finding $k$, substitute back and subtract; answering the wrong quantity is the classic slip."
-     },
-     {
-      "opt": "C",
-      "zh": "$1$ 是計了 $z_{1}-z_{2}$：$\\frac{4}{5}-\\left(-\\frac{1}{5}\\right)=1$。題目問的是 $z_{2}-z_{1}$，次序要對。",
-      "en": "$1$ is $z_{1}-z_{2}$. The question asks for $z_{2}-z_{1}$, so the order matters."
+      "zh": "$29$ 是 $3(9)+2$：既用了上一組的 $x=3$（沒有代 $x=4$），又把 $c$ 的符號寫反。",
+      "en": "$29$ is $3(9)+2$: it uses the old $x=3$ instead of $x=4$ and also flips the sign of $c$."
      },
      {
       "opt": "B",
-      "zh": "$0$ 是假設「虛部相等」代表 $z_{1}=z_{2}$。虛部相等只表示相減之後是實數，$z_{1}$、$z_{2}$ 的實部仍然不同。",
-      "en": "$0$ assumes equal imaginary parts mean $z_{1}=z_{2}$. It only means the difference is real; the real parts still differ."
+      "zh": "$35$ 不是任何一組已知值代入的結果：$3(16)-13$ 之類的混合運算。代一次 $x=4$ 就會見到是 46。",
+      "en": "$35$ does not come from substituting any consistent values. Substituting $x=4$ once gives 46."
      }
     ],
     "tip": {
-     "zh": "兩步走：先用「虛部相等」求 $k$，再代回求 $z_{2}-z_{1}$。虛部相等時相減一定是實數，所以答案會是一個數，不是 $a+bi$。",
-     "en": "Two steps: use equal imaginary parts to find $k$, then substitute back for $z_{2}-z_{1}$. When the imaginary parts are equal the difference is real, so the answer is a plain number."
+     "zh": "部分變最後一步一定是「代入 $x$」而不是答 $c$ 或 $k$。$(x)^{2}$ 的負號會消失：$x=-1$ 與 $x=1$ 的 $y$ 相同。",
+     "en": "The last step is always substituting $x$, not reporting $c$ or $k$. A negative $x$ loses its sign when squared: $x=-1$ and $x=1$ give the same $y$."
     },
     "alt": [
      {
       "name": {
-       "zh": "驗算：$k=2$ 時兩者的虛部",
-       "en": "Check: the imaginary parts when $k=2$"
+       "zh": "驗算：兩組已知值",
+       "en": "Check: both given pairs"
       },
-      "zh": "$k=2$ 時 $z_{1}$ 的虛部是 $-\\frac{3+4}{5}=-\\frac{7}{5}$，$z_{2}$ 的虛部是 $-\\frac{2+12}{10}=-\\frac{7}{5}$，確實相等；相減得 $-\\frac{1}{5}-\\frac{4}{5}=-1$ ✓。",
-      "en": "With $k=2$ the imaginary part of $z_{1}$ is $-\\frac{3+4}{5}=-\\frac{7}{5}$ and that of $z_{2}$ is $-\\frac{2+12}{10}=-\\frac{7}{5}$, so they are equal, and the difference is $-1$."
+      "zh": "$x=-1$：$3-2=1$ ✓；$x=3$：$27-2=25$ ✓；$x=4$：$48-2=46$ ✓。",
+      "en": "For $x=-1$: $3-2=1$. For $x=3$: $27-2=25$. For $x=4$: $48-2=46$."
      }
     ]
    }
