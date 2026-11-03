@@ -587,8 +587,78 @@
         } catch (e) {}
       }
 
+      syncNavSlider();                 // 分頁列畫完 → 更新滑動條（只有溢出時才顯示）
+      if (typeof window.requestAnimationFrame === "function") {
+        window.requestAnimationFrame(syncNavSlider);   // 字體載入後寬度可能再變
+      }
+
       updateWrongBadge();
     });
+  }
+
+  /* ── 分頁列的滑動條 ────────────────────────────────────────────────────
+     為什麼要自己做：Windows 11 的系統捲軸是 overlay，平時完全隱藏，學生見不到
+     「右邊還有頁」。所以 .pagenav 關掉系統捲軸，這裡畫一條永遠可見的滑動條：
+     長度＝可見比例、位置＝捲動位置；可以拖動，也可以點軌道直接跳。
+     分頁列每次重畫（換頁／換語言）都叫一次 syncNavSlider()。 */
+  function navSliderBar() {
+    var nav = qs("#pagenav");
+    if (!nav || !nav.parentNode) return null;
+    var bar = qs("#nav-slider");
+    if (bar) return bar;
+    bar = el("div", "nav-slider");
+    bar.id = "nav-slider";
+    bar.appendChild(el("div", "thumb"));
+    if (nav.nextSibling) nav.parentNode.insertBefore(bar, nav.nextSibling);
+    else nav.parentNode.appendChild(bar);
+
+    bar.addEventListener("pointerdown", function (e) {
+      var thumb = bar.firstChild;
+      var maxScroll = nav.scrollWidth - nav.clientWidth;
+      if (maxScroll <= 1) return;
+      var rect = bar.getBoundingClientRect();
+      var tw = thumb.offsetWidth || 40;
+      var startX = e.clientX;
+      var startLeft = nav.scrollLeft;
+      if (e.target !== thumb) {                       // 點在軌道上：直接跳到那個位置
+        var span0 = Math.max(1, rect.width - tw);
+        nav.scrollLeft = ((e.clientX - rect.left - tw / 2) / span0) * maxScroll;
+        startLeft = nav.scrollLeft;
+      }
+      try { bar.setPointerCapture(e.pointerId); } catch (err) {}
+      function move(ev) {
+        var span = Math.max(1, (bar.getBoundingClientRect().width || 1) - tw);
+        nav.scrollLeft = startLeft + ((ev.clientX - startX) * maxScroll / span);
+      }
+      function up() {
+        bar.removeEventListener("pointermove", move);
+        bar.removeEventListener("pointerup", up);
+        bar.removeEventListener("pointercancel", up);
+        syncNavSlider();
+      }
+      bar.addEventListener("pointermove", move);
+      bar.addEventListener("pointerup", up);
+      bar.addEventListener("pointercancel", up);
+      e.preventDefault();
+    });
+    nav.addEventListener("scroll", syncNavSlider, { passive: true });
+    window.addEventListener("resize", syncNavSlider);
+    return bar;
+  }
+
+  function syncNavSlider() {
+    var nav = qs("#pagenav");
+    var bar = nav && navSliderBar();
+    if (!nav || !bar) return;
+    var span = nav.scrollWidth - nav.clientWidth;
+    if (span <= 1) { bar.classList.remove("on"); return; }   // 全部頁數都放得落：不顯示
+    bar.classList.add("on");
+    var thumb = bar.firstChild;
+    var usable = bar.clientWidth || 200;
+    var w = Math.max(36, usable * (nav.clientWidth / nav.scrollWidth));
+    var room = Math.max(0, usable - w);
+    thumb.style.width = w + "px";
+    thumb.style.transform = "translateX(" + ((nav.scrollLeft / span) * room) + "px)";
   }
 
   /* 分頁列的「第 i 頁」按鈕。

@@ -108,6 +108,7 @@ for (const t of LESSONS.topics) {
   ok(navCells >= 1 && navCells <= expectedPages(t),
      t.id + " 分頁列只渲染需要顯示的格（" + navCells + " / 邏輯上最多 " + expectedPages(t) + "）");
   ok(!!p0.$("#pagenav .pg.current"), t.id + " 分頁列標出「現時頁」");
+  ok(!!p0.$("#nav-slider"), t.id + " 分頁列有滑動條元素（#nav-slider）");
   /* 概念卡：一頁全部顯示（不再按「下一張」逐張揭）——卡片數、每張有序號、底部一個完成鈕 */
   const nCards0 = (t.lessons[0].conceptCards || []).length;
   ok(p0.$$(".ccard-head h3").length === nCards0,
@@ -186,12 +187,20 @@ for (const t of LESSONS.topics) {
   }
 }
 
-/* ── 3c. 分頁列要顯示橫向滾動條（老師要求；否則學生不知道右邊還有頁）── */
+/* ── 3c. 分頁列要有「永遠可見」的滑動條 ──────────────────────────────────
+   老師要求：分頁列一定要見到滑動條，否則學生不知道右邊還有頁。
+   系統捲軸在 Windows 11 是 overlay、會自動隱藏（學生實測「乜都見唔到」），
+   所以改為自訂滑動條 .nav-slider：分頁列關掉系統捲軸，由 app.js 畫一條
+   長度＝可見比例、位置＝捲動位置的 bar，可拖可點。 */
 const cssNav = fs.readFileSync(path.join(root, "assets", "style.css"), "utf8");
-ok(/\.pagenav \{[\s\S]{0,220}?scrollbar-width: thin/.test(cssNav),
-   "分頁列顯示橫向滾動條（scrollbar-width: thin）");
-ok(!/\.pagenav::-webkit-scrollbar \{ display: none/.test(cssNav),
-   "分頁列不再隱藏滾動條");
+ok(/\.pagenav \{[\s\S]{0,420}?overflow-x: auto/.test(cssNav) &&
+   /\.pagenav \{[\s\S]{0,420}?min-width: 0/.test(cssNav),
+   "分頁列可橫向捲動，且闊度受父容器限制（min-width: 0）—— 否則整個分頁列會被切走");
+ok(/\.nav-slider \{[\s\S]{0,260}?height: 10px/.test(cssNav) &&
+   /\.nav-slider \.thumb \{[\s\S]{0,200}?background/.test(cssNav),
+   "分頁列有自訂滑動條（.nav-slider ＋ .thumb）");
+ok(/\.nav-slider\.on \{ display: block; \}/.test(cssNav),
+   "滑動條只在頁數溢出時顯示（未溢出不多餘一條 bar）");
 
 /* ── 3b. 長公式要分幾行顯示（不是橫向滾動）──────────────────────────── */
 console.log("\n— 長公式斷行 —");

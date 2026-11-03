@@ -121,22 +121,20 @@ window.LEARN_TOPIC_EN05 = {
      "id": "en5-c3",
      "topic": "en05",
      "title": {
-      "zh": "部分變：一部分是常數、一部分隨 $x$ 變化",
-      "en": "Partial variation: one part constant, one part varying"
+      "zh": "部分變：$y$ 是幾部分相加，不一定有常數項",
+      "en": "Partial variation: $y$ is a sum of parts — not always a constant plus one part"
      },
      "body": {
-      "zh": "「$y$ 的一部分是常數，另一部分隨 $x^{2}$ 正變」寫成：\n{{math:0}}\n兩個未知數（$c$ 與 $k$）一定要兩對數值，兩條方程相減就可以消去 $c$：\n{{math:1}}\n解出 $c$、$k$ 之後要把整個關係式寫出來（$y=5-x^{2}$），題目才算答完。\n留意字眼：partly varies as $x$ ＝ $kx$；partly varies as $x^{2}$ ＝ $kx^{2}$；「the sum of two parts」＝ 兩部分相加，即 $c+kx^{n}$。",
-      "en": "“One part of $y$ is constant and the other part varies directly as $x^{2}$” is written as:\n{{math:0}}\nTwo unknowns ($c$ and $k$) need two pairs of values; subtracting the two equations eliminates $c$:\n{{math:1}}\nAfter finding $c$ and $k$, write out the whole relation ($y=5-x^{2}$) to finish the question.\nWatch the wording: partly varies as $x$ means $kx$; partly varies as $x^{2}$ means $kx^{2}$; “the sum of two parts” means adding them, i.e. $c+kx^{n}$."
+      "zh": "「部分變」只是指 $y$ 由幾部分相加而成，各部分可以各自變化；不一定是「一個常數 ＋ 一個隨 $x$ 變化的部分」。常見有三種寫法：\n① 一部分是常數、一部分隨 $x^{n}$ 變化（最常見）：{{math:0}}\n② 兩部分都隨 $x$ 變化，只是次方不同（沒有常數項）：{{math:1}}\n③ 一部分正變、一部分反變（例如一部分隨 $x$、一部分隨 $\\frac{1}{x}$）：{{math:2}}\n由題目字眼寫出方程：\n· partly constant and partly varies as $x$ → $c+kx$\n· partly varies as $x$ and partly varies as $x^{2}$ → $ax+bx^{2}$（沒有常數項）\n· the sum of two parts, one part varies as $x$, the other as $\\frac{1}{x}$ → $ax+\\frac{b}{x}$\n未知數有幾個，就需要幾對已知值：$c$ 與 $k$ 兩個未知數 → 兩對；$a$ 與 $b$ 兩個未知數 → 兩對。（只有一對數值就解不到，題目一定會給兩對。）\n例（本課卷一第 8 題）：一部分隨 $x$、一部分隨 $x^{2}$，$f(5)=60$、$f(8)=120$：\n{{math:3}}",
+      "en": "“Partial variation” only means that $y$ is a sum of parts, and each part may vary in its own way — it is not always “a constant plus one part varying as $x$”. Three common shapes:\n(1) one part constant and one part varying as $x^{n}$ (the most common): {{math:0}}\n(2) both parts vary as $x$, but with different powers (no constant term): {{math:1}}\n(3) one part varies directly and one part inversely (say $x$ and $\\frac{1}{x}$): {{math:2}}\nTurning the wording into an equation:\n· partly constant and partly varies as $x$ → $c+kx$\n· partly varies as $x$ and partly varies as $x^{2}$ → $ax+bx^{2}$ (no constant term)\n· the sum of two parts, one part varies as $x$, the other as $\\frac{1}{x}$ → $ax+\\frac{b}{x}$\nThe number of unknowns is the number of pairs of values needed: two unknowns ($c$, $k$) need two pairs; two unknowns ($a$, $b$) also need two pairs. One pair is never enough, so the question always gives two.\nExample (Paper 1 question 8 of this lesson): one part varies as $x$, the other as $x^{2}$, and $f(5)=60$, $f(8)=120$:\n{{math:3}}"
      },
      "math": [
       "y=c+kx^{2}",
-      "1=c+4k\n-4=c+9k\n\\Rightarrow 5k=-5\n\\Rightarrow k=-1\n\\Rightarrow c=5\n\\Rightarrow y=5-x^{2}"
+      "f(x)=ax+bx^{2}",
+      "y=ax+\\frac{b}{x}",
+      "f(5)=60,\\ f(8)=120\n5a+25b=60\n8a+64b=120\n\\Rightarrow a+5b=12,\\ a+8b=15\n\\Rightarrow b=1,\\ a=7\n\\Rightarrow f(x)=7x+x^{2}"
      ],
      "vocab": [
-      {
-       "en": "partly constant",
-       "zh": "部分為常數"
-      },
       {
        "en": "partly varies as",
        "zh": "部分隨…變化"
@@ -144,11 +142,15 @@ window.LEARN_TOPIC_EN05 = {
       {
        "en": "the sum of two parts",
        "zh": "兩部分之和"
+      },
+      {
+       "en": "constant term",
+       "zh": "常數項"
       }
      ],
      "warn": {
-      "zh": "兩個錯最常見：① 只寫 $y=kx^{2}$，漏了常數 $c$；② 只給一對數值就想求兩個未知數（一定求不到，題目會給兩對）。另外解完方程要寫回關係式，答案不可停在 $k=-1$。",
-      "en": "Two common errors: (1) writing only $y=kx^{2}$ and losing the constant $c$; (2) trying to find two unknowns from one pair of values (two pairs are always given). Remember to write the finished relation, not just $k=-1$."
+      "zh": "最常見的誤解：以為「部分變」一定要寫成「常數 ＋ 一部分」。本課第 8、9 題都是 $ax+bx^{2}$，沒有常數項。看到「the sum of two parts」就按文字逐部分寫；也不要假設兩部分的次方相同。最後，未知數有幾個就要幾對數值，解完要把整個 $f(x)$ 寫出來。",
+      "en": "The commonest misunderstanding is that partial variation must look like “constant + one part”. Questions 8 and 9 of this lesson are $ax+bx^{2}$ with no constant term. Write one term per part as the wording says, do not assume both parts have the same power, and finish by writing the whole $f(x)$."
      }
     },
     {

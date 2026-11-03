@@ -22,6 +22,7 @@ S.5 課後研習的專屬溫習站：**概念卡 → 逐步示範 → MC／短�
 |---|---|
 | `index.html` | 首頁（課題卡、統計、其他網站跳轉列） |
 | `topic.html?t=en01&p=N` | 課題頁：概念卡（**一頁全部顯示**，頁尾「看完了，開始練習 →」；2026-09-29 前是逐張按「下一張」）→ 示範頁 → MC 練習頁 |
+| `assets/app.js` | 前端；分頁列的滑動條 `.nav-slider` 由 `syncNavSlider()` 畫（2026-11-03：Windows 11 的系統捲軸會自動隱藏，所以不用系統捲軸） |
 | `wrong.html` | 弱點升級庫（答錯的 MC ＋ 學生自己加入的長／短答） |
 | `start.html` | 開始之前（使用指南） |
 | `data/learn/*.json` | ✅ **手改**：`bank`／`concepts`／`solutions`／`lessons`／`prompt-templates` |
@@ -40,7 +41,7 @@ S.5 課後研習的專屬溫習站：**概念卡 → 逐步示範 → MC／短�
 ```powershell
 cd "C:\Code Buddy\Endeavour"
 
-python -X utf8 tools/make_learn_data.py     # 生成（會更新三個 HTML 的版本戳）
+python -X utf8 tools/make_learn_data.py     # 生成（會更新四個 HTML 的版本戳；style.css／i18n.js 亦會加 ?v=）
 python -X utf8 tools/learn_check.py         # 0 錯 0 警
 $env:NODE_PATH = "C:\Code Buddy\DSEPass\node_modules"
 node tools\learn_katex_check.js             # all LaTeX renders cleanly

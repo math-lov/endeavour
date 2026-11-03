@@ -38,7 +38,15 @@ OUT_ROOT = BASE          # 網站就在 repo 根目錄（Pages 由 root 提供�
 # 瀏覽器與 GitHub Pages 的 CDN 就用回自己的舊檔 —— 學生「老師改了，但我看不到」。
 # 現在改成依內容算 hash：內容一變，?v= 必變，下次載入一定取到新檔。
 STAMP_RE = re.compile(r'window\.__V\s*=\s*[^;]+;')
-STAMP_HTML = ("index.html", "topic.html", "wrong.html")
+# HTML 裡的 <link>/<script> 也要帶版本戳：以前只有 data/index.js 與 assets/app.js 有 ?v=，
+# style.css 與 i18n.js 沒有 → 老師改 CSS／字串後，學生（與老師自己）仍然用快取的舊檔。
+STAMP_LINKS = (
+    (re.compile(r'href="assets/style\.css(?:\?v=[0-9a-f]*)?"'),
+     'href="assets/style.css?v=%s"'),
+    (re.compile(r'src="assets/i18n\.js(?:\?v=[0-9a-f]*)?"'),
+     'src="assets/i18n.js?v=%s"'),
+)
+STAMP_HTML = ("index.html", "topic.html", "wrong.html", "start.html")
 STAMP_ASSETS = ("assets/app.js", "assets/i18n.js", "assets/style.css",
                 "data/learn/bank.json", "data/learn/lessons.json",
                 "data/learn/solutions.json", "data/learn/concepts.json",
@@ -77,6 +85,8 @@ def write_stamp(stamp: str) -> list:
         with open(path, encoding="utf-8") as f:
             src = f.read()
         new = STAMP_RE.sub('window.__V = "%s";' % stamp, src, count=1)
+        for pat, tpl in STAMP_LINKS:                 # style.css／i18n.js 一樣要版本戳
+            new = pat.sub(tpl % stamp, new)
         if new != src:
             with open(path, "w", encoding="utf-8", newline="\n") as f:
                 f.write(new)

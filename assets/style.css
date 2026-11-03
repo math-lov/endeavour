@@ -165,15 +165,36 @@ body {
 .ring.full::after { content: "✓"; color: var(--ok-ink); font-size: 16px; }
 
 /* ── 分頁列（學習／示範／練習頁）──────────────────────────────────────── */
-/* 分頁列可以橫向捲動；老師要求顯示滾動條（否則學生不知道右邊還有頁） */
+/* 分頁列可以橫向捲動；老師要求「一定要見到滑動條」（否則學生不知道右邊還有頁）。
+   2026-11-03 修正兩件事：
+   ① 分頁列本身是 flex 項（.subbar 是 display:flex），以前基底闊度是 max-content、
+      min-width:auto，視窗一窄就整個分頁列撐爆 .subbar、被視窗切走，分頁列自己
+      永遠不會出現捲軸（scrollWidth === clientWidth）→ 改成 flex:1 1 100% + min-width:0。
+   ② 就算可以捲，Windows 11 的系統捲軸是 overlay、會自動隱藏，學生仍然「見唔到」→
+      關掉系統捲軸，改用 app.js 畫的自訂滑動條 .nav-slider（永遠可見、可拖、可點）。 */
 .pagenav {
-  display: flex; gap: 8px; overflow-x: auto; padding: 8px 2px 10px;
-  scrollbar-width: thin; scrollbar-color: #c2cfdd transparent;
+  display: flex; gap: 8px; overflow-x: auto; padding: 8px 2px 6px;
+  flex: 1 1 100%; min-width: 0; max-width: 100%;
+  /* 系統捲軸在 Windows 11 預設會自動隱藏（overlay），學生完全看不到「右邊還有頁」，
+     所以關掉系統捲軸，改用下面自訂、永遠可見的滑動條 .nav-slider。 */
+  scrollbar-width: none; -ms-overflow-style: none;
 }
-.pagenav::-webkit-scrollbar { height: 9px; }
-.pagenav::-webkit-scrollbar-track { background: #eef3f9; border-radius: 999px; }
-.pagenav::-webkit-scrollbar-thumb { background: #c2cfdd; border-radius: 999px; }
-.pagenav::-webkit-scrollbar-thumb:hover { background: #a9bccf; }
+.pagenav::-webkit-scrollbar { display: none; }
+
+/* 分頁列的自訂滑動條：長度＝可見比例、位置＝捲動位置；可拖動、可點軌道跳頁 */
+.nav-slider {
+  flex: 1 1 100%; height: 10px; margin: -4px 2px 6px; position: relative;
+  display: none; border-radius: 999px; background: #e7eef6; border: 1px solid #dde7f1;
+  touch-action: none; cursor: pointer;
+}
+.nav-slider.on { display: block; }
+.nav-slider .thumb {
+  position: absolute; top: 1px; bottom: 1px; left: 0; width: 40px; min-width: 36px;
+  border-radius: 999px; background: #b7c8da; cursor: grab;
+  transition: background .15s ease;
+}
+.nav-slider .thumb:hover { background: #a2b7cd; }
+.nav-slider .thumb:active { background: #8fa8c2; cursor: grabbing; }
 .pagenav .pg {
   flex: none; min-width: 46px; height: 44px; padding: 0 12px;
   border-radius: var(--btn-radius); border: 1.5px solid var(--line); background: var(--card);
