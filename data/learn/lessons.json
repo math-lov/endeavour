@@ -318,6 +318,94 @@
      ]
     }
    ]
+  },
+  {
+   "id": "en05",
+   "stage": 1,
+   "unit": 5,
+   "subtopic": "quadratic-equations",
+   "source": "S.K.H. Bishop Baker Secondary School · S.5 After-School Tutorial · Endeavour Lesson 5（EPH WS05：Quadratic Equations in One Unknown and Complex Numbers）",
+   "name": {
+    "zh": "Lesson 5 · 一元二次方程與複數（全章重溫）",
+    "en": "Lesson 5 · Quadratic equations and complex numbers (chapter review)"
+   },
+   "intro": {
+    "zh": "這一課是「一元二次方程與複數」的整章重溫，題目照工作紙 WS05 的編排分四組：\n① 解方程：因式分解、兩邊開平方、二次公式；兩邊有同一個括號時，先移項再令每個因式 $=0$；\n② 判別式 $\\Delta=b^{2}-4ac$：判斷根的性質，並求 $k$ 的範圍；\n③ 根與係數 $\\alpha+\\beta=-\\frac{b}{a}$、$\\alpha\\beta=\\frac{c}{a}$：把對稱式化成和與積，或者消去未知的 $p$；\n④ 複數：$i^{2}=-1$、$i$ 的冪、加減乘與除法（分母乘共軛）。\n卷一有 6 條長題，步驟照官方評分寫上 1M／1A；卷二有 12 題 MC，每頁 3 題。",
+    "en": "This lesson reviews the whole chapter on quadratic equations and complex numbers, following the four groups in worksheet WS05:\n(1) solving equations: factorisation, taking square roots, the quadratic formula; when the same bracket appears on both sides, move everything to one side and set each factor to $0$;\n(2) the discriminant $\\Delta=b^{2}-4ac$: decide the nature of the roots and find the range of $k$;\n(3) sum and product of roots $\\alpha+\\beta=-\\frac{b}{a}$ and $\\alpha\\beta=\\frac{c}{a}$: turn symmetric expressions into the sum and the product, or eliminate an unknown $p$;\n(4) complex numbers: $i^{2}=-1$, powers of $i$, the four operations, and division by multiplying by the conjugate.\nThere are 6 Paper 1 questions with the official 1M / 1A marks written out, and 12 Paper 2 multiple-choice questions, three per page."
+   },
+   "cmdHints": [
+    {
+     "en": "Solve the equation",
+     "zh": "解方程（「or」前後所有根都要寫）"
+    },
+    {
+     "en": "has no real roots",
+     "zh": "無實根 → $\\Delta<0$（解不等式，方向不要倒轉）"
+    },
+    {
+     "en": "has equal roots",
+     "zh": "有等根 → $\\Delta=0$"
+    },
+    {
+     "en": "The roots of ... are $\\alpha$ and $\\beta$",
+     "zh": "兩根是和與積 → 不要解方程，寫 $\\alpha+\\beta$、$\\alpha\\beta$"
+    },
+    {
+     "en": "in the form $a+bi$",
+     "zh": "寫成 $a+bi$：實部、虛部分開寫，不可留下 $i^{2}$"
+    },
+    {
+     "en": "the real part / the imaginary part of ...",
+     "zh": "實部＝不含 $i$ 的部分；虛部＝$i$ 的係數（連符號）"
+    }
+   ],
+   "lessons": [
+    {
+     "id": "en05-1",
+     "title": {
+      "zh": "Lesson 5（卷一 6 題 ＋ 卷二 12 題）",
+      "en": "Lesson 5 (6 Paper 1 questions + 12 Paper 2 questions)"
+     },
+     "conceptCards": [
+      "en5-c1",
+      "en5-c2",
+      "en5-c3",
+      "en5-c4",
+      "en5-c5",
+      "en5-c6"
+     ],
+     "longQuestionIds": [
+      "eph-en05-q1",
+      "eph-en05-q2",
+      "eph-en05-q3",
+      "eph-en05-q4",
+      "eph-en05-q5",
+      "eph-en05-q6"
+     ],
+     "mcPages": [
+      [
+       "eph-en05-m1",
+       "eph-en05-m2",
+       "eph-en05-m3"
+      ],
+      [
+       "eph-en05-m4",
+       "eph-en05-m7",
+       "eph-en05-m6"
+      ],
+      [
+       "eph-en05-m5",
+       "eph-en05-m8",
+       "eph-en05-m11"
+      ],
+      [
+       "eph-en05-m9",
+       "eph-en05-m10",
+       "eph-en05-m12"
+      ]
+     ]
+    }
+   ]
   }
  ],
  "assessments": []

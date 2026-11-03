@@ -635,6 +635,239 @@
     "zh": "兩個最常見的錯：① 減號只乘第一項 —— 通分後第二塊要寫成 $-5(x+4)=-5x-20$，漏了負號整個分子都錯；② 以為分子可以與分母「約字母」，例如把 $\\frac{5x+1}{(x-1)(x+2)}$ 的 $x$ 約走。約分只可以約整塊公因式。",
     "en": "Two common errors. (1) Applying the minus sign to the first term only: the second numerator must be $-5(x+4)=-5x-20$. (2) Cancelling a single $x$ against the denominator; only complete common factors may be cancelled."
    }
+  },
+  {
+   "id": "en5-c1",
+   "topic": "en05",
+   "title": {
+    "zh": "解一元二次方程：先看形狀，再選方法",
+    "en": "Solving a quadratic equation: read the shape, then choose a method"
+   },
+   "body": {
+    "zh": "先整理成 $ax^{2}+bx+c=0$（右邊是 $0$），再選方法。\n① 可以分解就分解：$x^{2}+10x+25=(x+5)^{2}=0$，得 $x=-5$（重根）。\n② 形狀是「括號平方 $=$ 正數」時，兩邊開平方，記得有正負兩個：\n{{math:0}}\n③ 兩邊有同一個括號：不可以直接約走（會漏根），先移項令右邊是 $0$，再令每個因式各自為 $0$：\n{{math:1}}\n④ 分解不到（根是根式）才用二次公式：\n{{math:2}}\n無論用哪一招，答案要寫齊所有根（「or」前後都要）。",
+    "en": "First write it as $ax^{2}+bx+c=0$ (with $0$ on the right), then choose a method.\n(1) Factorise when possible: $x^{2}+10x+25=(x+5)^{2}=0$ gives $x=-5$ (a repeated root).\n(2) When the shape is “a squared bracket equals a positive number”, take the square root of both sides and keep both signs:\n{{math:0}}\n(3) When the same bracket appears on both sides, never cancel it (that loses a root). Move everything to one side so the right-hand side is $0$, then set each factor to $0$:\n{{math:1}}\n(4) Use the quadratic formula only when factorisation is not clean:\n{{math:2}}\nWhichever method you use, write every root (both sides of “or”)."
+   },
+   "math": [
+    "(x+3)^{2}=9\n\\Rightarrow x+3=\\pm 3\n\\Rightarrow x=0\\text{ or }x=-6",
+    "(x+3c)(x-c+1)=(x+3c)\n\\Rightarrow (x+3c)(x-c+1-1)=0\n\\Rightarrow (x+3c)(x-c)=0\n\\Rightarrow x=-3c\\text{ or }x=c",
+    "x=\\frac{-b\\pm\\sqrt{b^{2}-4ac}}{2a}"
+   ],
+   "vocab": [
+    {
+     "en": "factorisation",
+     "zh": "因式分解"
+    },
+    {
+     "en": "take the square root",
+     "zh": "兩邊開平方"
+    },
+    {
+     "en": "quadratic formula",
+     "zh": "二次公式"
+    },
+    {
+     "en": "repeated root",
+     "zh": "重根"
+    }
+   ],
+   "warn": {
+    "zh": "兩邊有相同括號時直接「約走」，等於假設它 $\\ne 0$，那個根就漏了。做法：先移項令右邊是 $0$，抽公因式，再令每個因式 $=0$。另外，開平方時一定寫 $\\pm$，只寫正數就少一個根。",
+    "en": "Cancelling a bracket that appears on both sides assumes it is not $0$, so that root disappears. Move everything to one side, factorise, then set each factor to $0$. When taking square roots, always keep the $\\pm$ sign or one root is lost."
+   }
+  },
+  {
+   "id": "en5-c2",
+   "topic": "en05",
+   "title": {
+    "zh": "判別式 $\\Delta=b^{2}-4ac$：一句話決定根的性質",
+    "en": "The discriminant $\\Delta=b^{2}-4ac$: one number decides the nature of the roots"
+   },
+   "body": {
+    "zh": "先寫成 $ax^{2}+bx+c=0$，再算判別式：\n{{math:0}}\n題目字眼對照：\n· 「有兩個相異實根」→ $\\Delta>0$\n· 「有等根／重根」→ $\\Delta=0$\n· 「無實根」→ $\\Delta<0$\n· 「有實根」→ $\\Delta\\ge 0$（等根也算有實根，所以有等號）\n判別式不含 $x$，所以最常用來求方程裡的未知係數 $k$：\n{{math:1}}\n兩個常見變化：① 先搬成 $=0$ 才讀出 $a$、$b$、$c$（例如 $kx^{2}-30x+9=0$ 的 $a=k$）；② 問「兩個等正根」時，除了 $\\Delta=0$ 還要看兩根之和為正。",
+    "en": "Write the equation as $ax^{2}+bx+c=0$ first, then compute the discriminant:\n{{math:0}}\nMatch the wording:\n· “two distinct real roots” → $\\Delta>0$\n· “equal (repeated) roots” → $\\Delta=0$\n· “no real roots” → $\\Delta<0$\n· “real roots” → $\\Delta\\ge 0$ (equal roots count, so the equality is included)\nThe discriminant contains no $x$, so it is used to find an unknown coefficient $k$:\n{{math:1}}\nTwo common variations: (1) rearrange into the standard form before reading off $a$, $b$ and $c$ (for example $kx^{2}-30x+9=0$ has $a=k$); (2) for “two equal positive roots”, $\\Delta=0$ alone is not enough — the sum of the roots must also be positive."
+   },
+   "math": [
+    "\\Delta=b^{2}-4ac",
+    "15x^{2}+6x-k=0\\ \\text{no real roots}\n\\Rightarrow \\Delta=6^{2}-4(15)(-k)<0\n\\Rightarrow 36+60k<0\n\\Rightarrow k<-\\frac{3}{5}"
+   ],
+   "vocab": [
+    {
+     "en": "discriminant",
+     "zh": "判別式"
+    },
+    {
+     "en": "distinct real roots",
+     "zh": "相異實根"
+    },
+    {
+     "en": "range of values",
+     "zh": "取值範圍"
+    }
+   ],
+   "warn": {
+    "zh": "最常見的錯是忘記先搬成「$=0$」：$x^{2}-4x+k=1$ 的常數項是 $k-1$，不是 $k$。另一個是解不等式時方向倒轉 —— 除以負數要變號；「無實根」只有 $<$，少了等號就錯了。",
+    "en": "The commonest slip is forgetting to rearrange into the “$=0$” form: for $x^{2}-4x+k=1$ the constant term is $k-1$, not $k$. The other is flipping the inequality the wrong way — dividing by a negative number reverses it, and “no real roots” uses $<$ only."
+   }
+  },
+  {
+   "id": "en5-c3",
+   "topic": "en05",
+   "title": {
+    "zh": "根與係數：用「和」與「積」代替解方程",
+    "en": "Sum and product of roots instead of solving the equation"
+   },
+   "body": {
+    "zh": "若 $\\alpha$、$\\beta$ 是 $ax^{2}+bx+c=0$ 的兩個根：\n{{math:0}}\n不必解方程（根通常是無理數）—— 把所有目標式化成「和」與「積」就夠：\n{{math:1}}\n{{math:2}}\n例（本課卷一第 5 題）：$x^{2}+rx+s=0$ 的根是 $3p$ 與 $4p$，求證 $12r^{2}=49s$：\n{{math:3}}\n關鍵是「目標式不含 $p$」，所以由 (1) 把 $p$ 寫成 $r$ 的式子，代入 (2) 消去 $p$。",
+    "en": "If $\\alpha$ and $\\beta$ are the roots of $ax^{2}+bx+c=0$:\n{{math:0}}\nThere is no need to solve the equation (the roots are usually irrational) — turn every target expression into the sum and the product:\n{{math:1}}\n{{math:2}}\nExample (Paper 1 question 5 of this lesson): the roots of $x^{2}+rx+s=0$ are $3p$ and $4p$; prove that $12r^{2}=49s$:\n{{math:3}}\nThe target contains no $p$, so make $p$ the subject of (1) and substitute it into (2) to eliminate it."
+   },
+   "math": [
+    "\\alpha+\\beta=-\\frac{b}{a},\\ \\alpha\\beta=\\frac{c}{a}",
+    "\\alpha^{2}+\\beta^{2}=(\\alpha+\\beta)^{2}-2\\alpha\\beta",
+    "\\alpha^{2}+\\alpha\\beta+\\beta^{2}=(\\alpha+\\beta)^{2}-\\alpha\\beta",
+    "3p+4p=-r\\ \\Rightarrow\\ 7p=-r\\ \\ldots(1)\n3p(4p)=s\\ \\Rightarrow\\ 12p^{2}=s\\ \\ldots(2)\np=-\\frac{r}{7}\n\\Rightarrow 12\\left(\\frac{r^{2}}{49}\\right)=s\n\\Rightarrow 12r^{2}=49s"
+   ],
+   "vocab": [
+    {
+     "en": "sum of roots",
+     "zh": "兩根之和"
+    },
+    {
+     "en": "product of roots",
+     "zh": "兩根之積"
+    },
+    {
+     "en": "in terms of",
+     "zh": "以…表示"
+    },
+    {
+     "en": "eliminate",
+     "zh": "消去"
+    }
+   ],
+   "warn": {
+    "zh": "常見三個錯：① 硬解方程求根，再逐個平方相加；② 忘記和是 $-\\frac{b}{a}$（負號漏了）；③ 用了 $\\alpha^{2}+\\beta^{2}=(\\alpha+\\beta)^{2}-2\\alpha\\beta$ 之後，把 $2\\alpha\\beta$ 的符號寫錯 —— $\\alpha\\beta$ 本身是負數時，$-2\\alpha\\beta$ 會變加。",
+    "en": "Three common errors: (1) solving the equation and squaring each root; (2) dropping the minus sign in $-\\frac{b}{a}$; (3) mishandling the sign of $2\\alpha\\beta$ — when $\\alpha\\beta$ is negative, $-2\\alpha\\beta$ becomes a plus."
+   }
+  },
+  {
+   "id": "en5-c4",
+   "topic": "en05",
+   "title": {
+    "zh": "複數：實部、虛部與 $i$ 的冪",
+    "en": "Complex numbers: the real part, the imaginary part and powers of $i$"
+   },
+   "body": {
+    "zh": "複數寫成 $a+bi$，其中 $a$、$b$ 是實數，$i=\\sqrt{-1}$。\n· 實部（real part）＝ $a$，即不含 $i$ 的部分；\n· 虛部（imaginary part）＝ $b$，即 $i$ 的係數，連符號一起寫。\n例：$4-ki$（$k$ 是實數）的實部是 $4$，虛部是 $-k$（不是 $k$）。\n化簡時只需要一條規則：\n{{math:0}}\n任何 $4$ 的倍數次方都是 $1$：\n{{math:1}}\n高次冪不要硬乘，看餘數（見下面的重點框）。\n「$z$ 是實數」＝ 虛部 $=0$；「$z$ 是純虛數」＝ 實部 $=0$ 且虛部 $\\ne 0$。",
+    "en": "A complex number is written as $a+bi$, where $a$ and $b$ are real numbers and $i=\\sqrt{-1}$.\n· the real part is $a$, the part without $i$;\n· the imaginary part is $b$, the coefficient of $i$, together with its sign.\nExample: for $4-ki$ ($k$ real), the real part is $4$ and the imaginary part is $-k$ (not $k$).\nOnly one rule is needed when simplifying:\n{{math:0}}\nEvery power that is a multiple of $4$ equals $1$:\n{{math:1}}\nDo not multiply out high powers; use the remainder (see the key box below).\n“$z$ is real” means the imaginary part $=0$; “$z$ is purely imaginary” means the real part $=0$ and the imaginary part $\\ne 0$."
+   },
+   "math": [
+    "i^{2}=-1",
+    "i^{4k}=1"
+   ],
+   "box": {
+    "tag": {
+     "zh": "重點",
+     "en": "Key"
+    },
+    "title": {
+     "zh": "$i$ 的冪：除以 $4$ 看餘數",
+     "en": "Powers of $i$: divide by $4$ and look at the remainder"
+    },
+    "zh": "把次方除以 $4$，餘數直接決定答案：\n{{math:0}}\n例：$18\\div 4$ 餘 $2$，所以 $i^{18}=-1$；$23\\div 4$ 餘 $3$，所以 $i^{23}=-i$。\n{{math:1}}",
+    "en": "Divide the power by $4$; the remainder decides the answer:\n{{math:0}}\nExamples: $18\\div 4$ leaves remainder $2$, so $i^{18}=-1$; $23\\div 4$ leaves remainder $3$, so $i^{23}=-i$.\n{{math:1}}",
+    "math": [
+     "\\text{remainder }1\\rightarrow i,\\ 2\\rightarrow -1\n\\text{remainder }3\\rightarrow -i,\\ 0\\rightarrow 1",
+     "i^{18}=i^{4(4)+2}=-1\ni^{23}=i^{4(5)+3}=-i"
+    ]
+   },
+   "vocab": [
+    {
+     "en": "real part",
+     "zh": "實部"
+    },
+    {
+     "en": "imaginary part",
+     "zh": "虛部"
+    },
+    {
+     "en": "power",
+     "zh": "冪"
+    }
+   ],
+   "warn": {
+    "zh": "虛部是「$i$ 的係數」連符號：$4-ki$ 的虛部是 $-k$；$a+bi$ 的虛部是 $b$，不是 $bi$。另外 $i^{n}$ 只看 $n\\div 4$ 的餘數，逐次乘很易錯。",
+    "en": "The imaginary part is the coefficient of $i$ with its sign: for $4-ki$ it is $-k$; for $a+bi$ it is $b$, not $bi$. For $i^{n}$, use the remainder of $n\\div 4$; multiplying step by step is error-prone."
+   }
+  },
+  {
+   "id": "en5-c5",
+   "topic": "en05",
+   "title": {
+    "zh": "複數的加減乘：最後一定要寫成 $a+bi$",
+    "en": "Adding, subtracting and multiplying complex numbers: always end with $a+bi$"
+   },
+   "body": {
+    "zh": "加減：實部歸實部、虛部歸虛部；減號要分配給後面每一項：\n{{math:0}}\n乘：照分配律展開，遇到 $i^{2}$ 就換成 $-1$，最後整理：\n{{math:1}}\n高次冪先化簡，再做四則運算：\n{{math:2}}\n題目要求「express in the form $a+bi$」時，實部與虛部要分開寫：$\\frac{3+i}{10}$ 寫成 $\\frac{3}{10}+\\frac{1}{10}i$。",
+    "en": "For addition and subtraction, group the real parts and the imaginary parts; the minus sign must multiply every term that follows:\n{{math:0}}\nFor multiplication, expand as usual, replace $i^{2}$ by $-1$, then tidy up:\n{{math:1}}\nSimplify high powers before doing the four operations:\n{{math:2}}\nWhen a question says “express in the form $a+bi$”, write the two parts separately: $\\frac{3+i}{10}$ becomes $\\frac{3}{10}+\\frac{1}{10}i$."
+   },
+   "math": [
+    "(4+5i)-(6-7i)\n=4+5i-6+7i\n=-2+12i",
+    "(1-2i)(3+4i)\n=3+4i-6i-8i^{2}\n=3-2i+8\n=11-2i",
+    "3i^{18}+2i^{19}-3i^{20}-5i^{21}\n=3(-1)+2(-i)-3(1)-5(i)\n=-6-7i"
+   ],
+   "vocab": [
+    {
+     "en": "expand",
+     "zh": "展開"
+    },
+    {
+     "en": "simplify",
+     "zh": "化簡"
+    },
+    {
+     "en": "like terms",
+     "zh": "同類項"
+    }
+   ],
+   "warn": {
+    "zh": "兩個最常見的錯：① 減號只乘第一項（$-(6-7i)=-6+7i$，不是 $-6-7i$）；② 忘記 $i^{2}=-1$，把 $8i^{2}$ 留在答案裡。答案最後一定不可以有 $i^{2}$。",
+    "en": "Two common errors: (1) applying the minus sign to the first term only ($-(6-7i)=-6+7i$, not $-6-7i$); (2) leaving $i^{2}$ in the answer instead of replacing it by $-1$. A finished answer never contains $i^{2}$."
+   }
+  },
+  {
+   "id": "en5-c6",
+   "topic": "en05",
+   "title": {
+    "zh": "複數除法：分母乘共軛，把 $i$ 趕出分母",
+    "en": "Dividing complex numbers: multiply by the conjugate to clear the denominator"
+   },
+   "body": {
+    "zh": "分子、分母同時乘分母的共軛（$a+bi$ 的共軛是 $a-bi$），分母就變成實數 $a^{2}+b^{2}$：\n{{math:0}}\n分母是純虛數 $ni$ 時，乘 $\\frac{i}{i}$ 最快（$i\\cdot i=i^{2}=-1$）：\n{{math:1}}\n同一題常常要接著做下一部分，所以務必整理成 $a+bi$（實部、虛部分開寫）：\n{{math:2}}\n記住：共軛只是「換掉中間的符號」，兩項都要照抄。",
+    "en": "Multiply the numerator and the denominator by the conjugate of the denominator ($a-bi$ for $a+bi$); the denominator becomes the real number $a^{2}+b^{2}$:\n{{math:0}}\nWhen the denominator is purely imaginary, $ni$, multiply by $\\frac{i}{i}$ (because $i\\cdot i=i^{2}=-1$):\n{{math:1}}\nThese questions usually continue into the next part, so always tidy the result into $a+bi$:\n{{math:2}}\nRemember: the conjugate only flips the sign in the middle; both terms stay the same."
+   },
+   "math": [
+    "\\frac{1}{1+7i}=\\frac{1-7i}{(1+7i)(1-7i)}\n=\\frac{1-7i}{1-49i^{2}}\n=\\frac{1-7i}{50}\n=\\frac{1}{50}-\\frac{7}{50}i",
+    "\\frac{2k-3i}{i}=\\frac{(2k-3i)(-i)}{i(-i)}\n=-3-2ki",
+    "\\frac{100}{1+7i}=100\\left(\\frac{1}{50}-\\frac{7}{50}i\\right)\n=2-14i"
+   ],
+   "vocab": [
+    {
+     "en": "conjugate",
+     "zh": "共軛"
+    },
+    {
+     "en": "denominator",
+     "zh": "分母"
+    },
+    {
+     "en": "rationalise",
+     "zh": "分母實數化"
+    }
+   ],
+   "warn": {
+    "zh": "只乘分子不乘分母，或者共軛只乘一項 —— 要「分子分母整塊乘」。另外 $(1+7i)(1-7i)=1^{2}-(7i)^{2}=1-49(-1)=50$：最後那個負號最容易漏，漏了整個答案都錯。",
+    "en": "Some students multiply only the numerator, or apply the conjugate to one term only — the whole numerator and denominator must be multiplied. Also $(1+7i)(1-7i)=1^{2}-(7i)^{2}=1-49(-1)=50$: the last minus sign is the one most often dropped."
+   }
   }
  ]
 }

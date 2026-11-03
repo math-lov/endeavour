@@ -1154,6 +1154,373 @@
     "D": "$(x+1)(x+2)(x-2)^{2}$"
    },
    "review": null
+  },
+  {
+   "id": "eph-en05-q1",
+   "type": "long",
+   "kind": "short",
+   "topic": "en05",
+   "unit": 5,
+   "subtopic": "quadratic-equations",
+   "difficulty": 2,
+   "code": "EN5-Q1",
+   "source": "EPH WS05 P1 Q1 · 長方形對角線（同款：HKDSE 2019 Paper 1 Q3）",
+   "stem": {
+    "en": "The breadth and the length of a rectangle are $(26+2r)$ cm and $(10-4r)$ cm respectively. If the length of a diagonal of the rectangle is 34 cm, find $r$.",
+    "zh": "一個長方形的闊與長分別為 $(26+2r)$ cm 與 $(10-4r)$ cm。若長方形的一條對角線長 34 cm，求 $r$。"
+   },
+   "marks": 3,
+   "review": null
+  },
+  {
+   "id": "eph-en05-q2",
+   "type": "long",
+   "kind": "short",
+   "topic": "en05",
+   "unit": 5,
+   "subtopic": "quadratic-equations",
+   "difficulty": 2,
+   "code": "EN5-Q2",
+   "source": "EPH WS05 P1 Q2 · [HKCEE 2007 Paper 1 Q5]",
+   "stem": {
+    "en": "Let $k$ be a constant. If the quadratic equation $15x^{2}+6x-k=0$ has no real roots, find the range of values of $k$.",
+    "zh": "設 $k$ 為常數。若二次方程 $15x^{2}+6x-k=0$ 沒有實根，求 $k$ 的取值範圍。"
+   },
+   "marks": 4,
+   "review": null
+  },
+  {
+   "id": "eph-en05-q3",
+   "type": "long",
+   "kind": "short",
+   "topic": "en05",
+   "unit": 5,
+   "subtopic": "quadratic-equations",
+   "difficulty": 1,
+   "code": "EN5-Q3",
+   "source": "EPH WS05 P1 Q3 · [HKDSE Practice Paper 1 Q17(b)(ii)]",
+   "stem": {
+    "en": "Find the range of values of $a$ such that the quadratic equation $-5x^{2}+10x-2=a$ has real roots.",
+    "zh": "求 $a$ 的取值範圍，使二次方程 $-5x^{2}+10x-2=a$ 有實根。"
+   },
+   "marks": 2,
+   "review": null
+  },
+  {
+   "id": "eph-en05-q4",
+   "type": "long",
+   "kind": "short",
+   "topic": "en05",
+   "unit": 5,
+   "subtopic": "quadratic-equations",
+   "difficulty": 3,
+   "code": "EN5-Q4",
+   "source": "EPH WS05 P1 Q4 · [HKDSE 2022 Paper 1 Q17(a)]（工作紙用 $a$、$b$ 表示兩根，與常數 $b$ 撞名，本站改用 $\\alpha$、$\\beta$）",
+   "stem": {
+    "en": "Let $b$ be a real constant. The roots of the equation $2x^{2}-bx+8=0$ are $\\alpha$ and $\\beta$. Express $\\alpha^{2}+\\beta^{2}$ in terms of $b$.",
+    "zh": "設 $b$ 為實常數。方程 $2x^{2}-bx+8=0$ 的兩個根為 $\\alpha$ 與 $\\beta$。以 $b$ 表示 $\\alpha^{2}+\\beta^{2}$。"
+   },
+   "marks": 3,
+   "review": null
+  },
+  {
+   "id": "eph-en05-q5",
+   "type": "long",
+   "kind": "short",
+   "topic": "en05",
+   "unit": 5,
+   "subtopic": "quadratic-equations",
+   "difficulty": 3,
+   "code": "EN5-Q5",
+   "source": "EPH WS05 P1 Q5 · [HKDSE 2023 Paper 1 Q16(a)]",
+   "stem": {
+    "en": "Let $r$ and $s$ be real constants. If the roots of the equation $x^{2}+rx+s=0$ are $3p$ and $4p$, prove that $12r^{2}=49s$.",
+    "zh": "設 $r$、$s$ 為實常數。若方程 $x^{2}+rx+s=0$ 的兩個根為 $3p$ 與 $4p$，求證 $12r^{2}=49s$。"
+   },
+   "marks": 2,
+   "review": null
+  },
+  {
+   "id": "eph-en05-q6",
+   "type": "long",
+   "topic": "en05",
+   "unit": 5,
+   "subtopic": "quadratic-equations",
+   "difficulty": 3,
+   "code": "EN5-Q6",
+   "source": "EPH WS05 P1 Q6 · [HKDSE Practice Paper 1 Q17]",
+   "stem": {
+    "en": "Let $p$, $q$ and $r$ be real constants.",
+    "zh": "設 $p$、$q$、$r$ 為實常數。"
+   },
+   "parts": [
+    {
+     "label": "(a)",
+     "en": "Express $\\dfrac{1}{1+7i}$ in the form $a+bi$, where $a$ and $b$ are real numbers.",
+     "zh": "把 $\\dfrac{1}{1+7i}$ 寫成 $a+bi$ 的形式，其中 $a$、$b$ 為實數。",
+     "marks": 2
+    },
+    {
+     "label": "(b)",
+     "en": "The roots of the quadratic equation $x^{2}+px+q=0$ are $\\dfrac{100}{1+7i}$ and $\\dfrac{100}{1-7i}$. Find (i) $p$ and $q$, (ii) the range of values of $r$ such that the quadratic equation $x^{2}+px+q=r$ has real roots.",
+     "zh": "二次方程 $x^{2}+px+q=0$ 的兩個根為 $\\dfrac{100}{1+7i}$ 與 $\\dfrac{100}{1-7i}$。求 (i) $p$ 與 $q$；(ii) $r$ 的取值範圍，使二次方程 $x^{2}+px+q=r$ 有實根。",
+     "marks": 5
+    }
+   ],
+   "marks": 7,
+   "review": null
+  },
+  {
+   "id": "eph-en05-m1",
+   "type": "mc",
+   "topic": "en05",
+   "unit": 5,
+   "subtopic": "quadratic-equations",
+   "difficulty": 1,
+   "code": "EN5-M1",
+   "source": "EPH WS05 Q5 · [HKDSE 2013 Paper 2 Q6]",
+   "stem": {
+    "en": "Let $k$ be a constant. Solve the equation $(x+k)^{2}=9k^{2}$.",
+    "zh": "設 $k$ 為常數。解方程 $(x+k)^{2}=9k^{2}$。"
+   },
+   "options": {
+    "A": "$x=2k$",
+    "B": "$x=8k$",
+    "C": "$x=-4k$ or $x=2k$",
+    "D": "$x=-10k$ or $x=8k$"
+   },
+   "review": null
+  },
+  {
+   "id": "eph-en05-m2",
+   "type": "mc",
+   "topic": "en05",
+   "unit": 5,
+   "subtopic": "quadratic-equations",
+   "difficulty": 2,
+   "code": "EN5-M2",
+   "source": "EPH WS05 Q7 · [HKDSE Sample Paper 2 Q6]",
+   "stem": {
+    "en": "Let $c$ be a constant. Solve the equation $(x+3c)(x-c+1)=(x+3c)$.",
+    "zh": "設 $c$ 為常數。解方程 $(x+3c)(x-c+1)=(x+3c)$。"
+   },
+   "options": {
+    "A": "$x=c$",
+    "B": "$x=c-1$",
+    "C": "$x=-3c$ or $x=c$",
+    "D": "$x=-3c$ or $x=c-1$"
+   },
+   "review": null
+  },
+  {
+   "id": "eph-en05-m3",
+   "type": "mc",
+   "topic": "en05",
+   "unit": 5,
+   "subtopic": "quadratic-equations",
+   "difficulty": 2,
+   "code": "EN5-M3",
+   "source": "EPH WS05 Q11 · [HKDSE Practice Paper 2 Q6, HKCEE 2009 Paper 2 Q8]",
+   "stem": {
+    "en": "Let $m$ be a constant. If the quadratic equation $x^{2}-mx+6m=0$ has equal roots, then $m=$",
+    "zh": "設 $m$ 為常數。若二次方程 $x^{2}-mx+6m=0$ 有等根，則 $m=$"
+   },
+   "options": {
+    "A": "$6$",
+    "B": "$24$",
+    "C": "$0$ or $6$",
+    "D": "$0$ or $24$"
+   },
+   "review": null
+  },
+  {
+   "id": "eph-en05-m4",
+   "type": "mc",
+   "topic": "en05",
+   "unit": 5,
+   "subtopic": "quadratic-equations",
+   "difficulty": 2,
+   "code": "EN5-M4",
+   "source": "EPH WS05 Q14 · [HKDSE Sample Paper 2 Q7, HKCEE 2010 Paper 2 Q10]",
+   "stem": {
+    "en": "Find the range of values of $k$ such that the quadratic equation $x^{2}-4x+k=1$ has no real roots.",
+    "zh": "求 $k$ 的取值範圍，使二次方程 $x^{2}-4x+k=1$ 沒有實根。"
+   },
+   "options": {
+    "A": "$k>4$",
+    "B": "$k<4$",
+    "C": "$k>5$",
+    "D": "$k<5$"
+   },
+   "review": null
+  },
+  {
+   "id": "eph-en05-m5",
+   "type": "mc",
+   "topic": "en05",
+   "unit": 5,
+   "subtopic": "quadratic-equations",
+   "difficulty": 3,
+   "code": "EN5-M5",
+   "source": "EPH WS05 Q20 · [HKDSE 2018 Paper 2 Q36, HKCEE 2004 Paper 2 Q42]",
+   "stem": {
+    "en": "If $a\\ne b$ and $a^{2}=12-3a$, $b^{2}=12-3b$, then $(a-1)(b-1)=$",
+    "zh": "若 $a\\ne b$ 且 $a^{2}=12-3a$、$b^{2}=12-3b$，則 $(a-1)(b-1)=$"
+   },
+   "options": {
+    "A": "$-14$",
+    "B": "$-8$",
+    "C": "$10$",
+    "D": "$16$"
+   },
+   "review": null
+  },
+  {
+   "id": "eph-en05-m6",
+   "type": "mc",
+   "topic": "en05",
+   "unit": 5,
+   "subtopic": "quadratic-equations",
+   "difficulty": 3,
+   "code": "EN5-M6",
+   "source": "EPH WS05 Q22 · [HKCEE 2001 Paper 2 Q39]",
+   "stem": {
+    "en": "If $a$ and $b$ are distinct real numbers such that $a^{2}+2a-9=0$ and $b^{2}+2b-9=0$, find $a^{2}+b^{2}$.",
+    "zh": "若 $a$、$b$ 為相異實數，且 $a^{2}+2a-9=0$、$b^{2}+2b-9=0$，求 $a^{2}+b^{2}$。"
+   },
+   "options": {
+    "A": "$-14$",
+    "B": "$4$",
+    "C": "$22$",
+    "D": "$81$"
+   },
+   "review": null
+  },
+  {
+   "id": "eph-en05-m7",
+   "type": "mc",
+   "topic": "en05",
+   "unit": 5,
+   "subtopic": "quadratic-equations",
+   "difficulty": 2,
+   "code": "EN5-M7",
+   "source": "EPH WS05 Q23 · [HKDSE 2015 Paper 2 Q34]",
+   "stem": {
+    "en": "Let $q$ be a constant. If the roots of the quadratic equation $x^{2}+qx+6=0$ are $\\alpha$ and $\\beta$, then $\\alpha^{2}+\\beta^{2}=$",
+    "zh": "設 $q$ 為常數。若二次方程 $x^{2}+qx+6=0$ 的兩根為 $\\alpha$ 與 $\\beta$，則 $\\alpha^{2}+\\beta^{2}=$"
+   },
+   "options": {
+    "A": "$q^{2}$",
+    "B": "$q^{2}-12$",
+    "C": "$q^{2}+12$",
+    "D": "$q^{2}+24$"
+   },
+   "review": null
+  },
+  {
+   "id": "eph-en05-m8",
+   "type": "mc",
+   "topic": "en05",
+   "unit": 5,
+   "subtopic": "quadratic-equations",
+   "difficulty": 3,
+   "code": "EN5-M8",
+   "source": "EPH WS05 Q24 · [改編自 HKDSE 2015 Paper 2 Q34]",
+   "stem": {
+    "en": "Let $m$ be a constant. If the roots of the quadratic equation $x^{2}-mx-8=0$ are $\\alpha$ and $\\beta$, then $\\alpha^{2}+\\alpha\\beta+\\beta^{2}=$",
+    "zh": "設 $m$ 為常數。若二次方程 $x^{2}-mx-8=0$ 的兩根為 $\\alpha$ 與 $\\beta$，則 $\\alpha^{2}+\\alpha\\beta+\\beta^{2}=$"
+   },
+   "options": {
+    "A": "$m^{2}-16$",
+    "B": "$m^{2}-8$",
+    "C": "$m^{2}+8$",
+    "D": "$m^{2}+16$"
+   },
+   "review": null
+  },
+  {
+   "id": "eph-en05-m9",
+   "type": "mc",
+   "topic": "en05",
+   "unit": 5,
+   "subtopic": "quadratic-equations",
+   "difficulty": 2,
+   "code": "EN5-M9",
+   "source": "EPH WS05 Q26 · [HKDSE 2012 Paper 2 Q35]",
+   "stem": {
+    "en": "$i^{7}(\\alpha i-6)=$",
+    "zh": "$i^{7}(\\alpha i-6)=$"
+   },
+   "options": {
+    "A": "$\\alpha+6i$",
+    "B": "$\\alpha-6i$",
+    "C": "$-\\alpha+6i$",
+    "D": "$-\\alpha-6i$"
+   },
+   "review": null
+  },
+  {
+   "id": "eph-en05-m10",
+   "type": "mc",
+   "topic": "en05",
+   "unit": 5,
+   "subtopic": "quadratic-equations",
+   "difficulty": 3,
+   "code": "EN5-M10",
+   "source": "EPH WS05 Q28 · [HKDSE Sample Paper 2 Q34]",
+   "stem": {
+    "en": "If $k$ is a real number, then $3ki-\\dfrac{2k-3i}{i}=$",
+    "zh": "若 $k$ 為實數，則 $3ki-\\dfrac{2k-3i}{i}=$"
+   },
+   "options": {
+    "A": "$3+5ki$",
+    "B": "$-3+5ki$",
+    "C": "$3+ki$",
+    "D": "$-3+ki$"
+   },
+   "review": null
+  },
+  {
+   "id": "eph-en05-m11",
+   "type": "mc",
+   "topic": "en05",
+   "unit": 5,
+   "subtopic": "quadratic-equations",
+   "difficulty": 2,
+   "code": "EN5-M11",
+   "source": "EPH WS05 Q31 · [HKDSE 2013 Paper 2 Q36]",
+   "stem": {
+    "en": "The real part of $3i^{18}+2i^{19}-3i^{20}-5i^{21}$ is",
+    "zh": "$3i^{18}+2i^{19}-3i^{20}-5i^{21}$ 的實部是"
+   },
+   "options": {
+    "A": "$-7$",
+    "B": "$-6$",
+    "C": "$0$",
+    "D": "$6$"
+   },
+   "review": null
+  },
+  {
+   "id": "eph-en05-m12",
+   "type": "mc",
+   "topic": "en05",
+   "unit": 5,
+   "subtopic": "quadratic-equations",
+   "difficulty": 3,
+   "code": "EN5-M12",
+   "source": "EPH WS05 Q37 · [HKDSE 2020 Paper 2 Q37]",
+   "stem": {
+    "en": "Define $z_{1}=\\dfrac{3-ki}{2+i}$ and $z_{2}=\\dfrac{-k-4i}{3-i}$, where $k$ is a real number. If the imaginary part of $z_{1}$ is equal to the imaginary part of $z_{2}$, then $z_{2}-z_{1}=$",
+    "zh": "定義 $z_{1}=\\dfrac{3-ki}{2+i}$ 與 $z_{2}=\\dfrac{-k-4i}{3-i}$，其中 $k$ 為實數。若 $z_{1}$ 的虛部等於 $z_{2}$ 的虛部，則 $z_{2}-z_{1}=$"
+   },
+   "options": {
+    "A": "$-1$",
+    "B": "$0$",
+    "C": "$1$",
+    "D": "$2$"
+   },
+   "review": null
   }
  ]
 }
